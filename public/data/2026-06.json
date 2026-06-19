@@ -1,1 +1,109 @@
-[]
+[
+  {
+    "id": "2026-06-17T07:30:00+09:00-breakfast",
+    "datetime": "2026-06-17T07:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/17-0730-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "カレーライス"
+      },
+      {
+        "name": "目玉焼き"
+      },
+      {
+        "name": "スライスチーズ"
+      },
+      {
+        "name": "らっきょう"
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 720,
+      "protein_g": 22,
+      "fat_g": 28,
+      "carbohydrate_g": 88,
+      "salt_g": 3.5
+    },
+    "memo": "",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-17T12:30:00+09:00-lunch",
+    "datetime": "2026-06-17T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/17-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "蒙古タンメン中本 汁なし麻辛"
+      },
+      {
+        "name": "海老マヨおにぎり"
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 780,
+      "protein_g": 18,
+      "fat_g": 18,
+      "carbohydrate_g": 122,
+      "salt_g": 6.5
+    },
+    "memo": "",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-17T20:00:00+09:00-dinner",
+    "datetime": "2026-06-17T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/17-2000-dinner-1.webp",
+      "images/2026/06/17-2000-dinner-2.webp",
+      "images/2026/06/17-2000-dinner-3.webp"
+    ],
+    "items": [
+      {
+        "name": "ミートソースごはん（チーズのせ）"
+      },
+      {
+        "name": "枝豆"
+      },
+      {
+        "name": "さけるチーズ（個包装）"
+      },
+      {
+        "name": "ポリッピ スパイス"
+      },
+      {
+        "name": "ストロングゼロ DRY ×2"
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 1200,
+      "protein_g": 30,
+      "fat_g": 36,
+      "carbohydrate_g": 73,
+      "salt_g": 4.3,
+      "alcohol_g": 71
+    },
+    "memo": "宅飲み",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  }
+]
