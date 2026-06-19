@@ -25,3 +25,17 @@ export function groupByDate(entries: MealEntry[]): [string, MealEntry[]][] {
   }
   return [...map.entries()]
 }
+
+export interface DailyTotal {
+  date: string // YYYY-MM-DD
+  totals: Nutrition
+}
+
+// Daily summed nutrition, sorted ascending by date (oldest first) for charts.
+// Optionally limited to the most recent `days` calendar days that have data.
+export function dailyTotals(entries: MealEntry[], days?: number): DailyTotal[] {
+  const all = groupByDate(entries)
+    .map(([date, es]) => ({ date, totals: sumNutrition(es.map((e) => e.nutrition)) }))
+    .sort((a, b) => (a.date < b.date ? -1 : 1))
+  return typeof days === 'number' ? all.slice(-days) : all
+}

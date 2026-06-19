@@ -1,5 +1,6 @@
 import { useMealData } from './data/DataSourceContext'
 import { DailySummary } from './components/DailySummary'
+import { NutrientTrend } from './components/NutrientTrend'
 import { Timeline } from './components/Timeline'
 
 // The application is completely agnostic to where its data comes from.
@@ -21,6 +22,7 @@ export function App() {
       ) : (
         <>
           <DailySummary config={config} entries={entries} />
+          <NutrientTrend config={config} entries={entries} />
           <Timeline config={config} entries={entries} />
         </>
       )}
