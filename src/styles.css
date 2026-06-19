@@ -1,0 +1,186 @@
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --ink: #2b2b2b;
+  --muted: #8a8a8a;
+  --accent: #85b79d;
+  --chip: #eef2f0;
+  font-family: system-ui, -apple-system, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+
+.state {
+  text-align: center;
+  color: var(--muted);
+  padding: 48px 16px;
+}
+
+.app-header h1 {
+  font-size: 22px;
+  padding: 20px 0 8px;
+}
+
+.mock-badge {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  background: #d98880;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  z-index: 10;
+}
+
+/* Daily summary */
+.summary {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.summary h2 {
+  font-size: 15px;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.summary__count {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: normal;
+}
+
+.summary__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.summary__cell {
+  text-align: center;
+}
+
+.summary__value {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.summary__label {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.summary__unit {
+  margin-left: 2px;
+}
+
+/* Timeline */
+.timeline h2 {
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.timeline__date {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 20px 0 8px;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  background: var(--card);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card__photo {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card__body {
+  padding: 10px 12px 12px 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.card__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__type {
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.card__time {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.card__name {
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.card__memo {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.card__nutri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.chip {
+  background: var(--chip);
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  color: #555;
+}
+
+.card__tags {
+  margin-top: 6px;
+}
+
+.tag {
+  font-size: 12px;
+  color: var(--accent);
+  margin-right: 6px;
+}
