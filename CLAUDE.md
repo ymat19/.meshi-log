@@ -71,3 +71,12 @@ npm run preview      # ビルド結果をローカル確認
 リポジトリは public。Settings → Pages → **Source を「GitHub Actions」** に設定する。
 `main` への push で `.github/workflows/deploy.yml` が動き、ビルドして公開する。
 （「Deploy from a branch」は使わない。ビルド成果物をコミットしない方針のため。）
+
+公開URL: https://ymat19.github.io/.meshi-log/
+
+## 運用ルール
+
+- **変更が本番サイトに反映（デプロイ成功＆反映確認）できたら、毎回その公開URLを
+  ユーザーに提示する。** その際、**モックプレビュー用の `?mock=1` 付き URL も必ず併記する。**
+  - 本番: https://ymat19.github.io/.meshi-log/
+  - モック: https://ymat19.github.io/.meshi-log/?mock=1
