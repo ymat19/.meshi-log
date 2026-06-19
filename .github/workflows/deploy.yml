@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      # Enables Pages and sets the source to GitHub Actions automatically,
+      # so no manual repo setting is required.
+      - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
