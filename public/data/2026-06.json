@@ -256,5 +256,174 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-19T07:30:00+09:00-breakfast",
+    "datetime": "2026-06-19T07:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/19-0730-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん",
+        "nutrition": {
+          "energy_kcal": 250,
+          "protein_g": 4,
+          "carbohydrate_g": 55
+        }
+      },
+      {
+        "name": "いわし塩焼き 2尾",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 18,
+          "fat_g": 10,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "梅干し",
+        "nutrition": {
+          "energy_kcal": 5,
+          "salt_g": 2
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 435,
+      "protein_g": 22,
+      "fat_g": 10,
+      "carbohydrate_g": 56,
+      "salt_g": 4
+    },
+    "memo": "",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-19T12:30:00+09:00-lunch",
+    "datetime": "2026-06-19T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/19-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "袋ラーメン（卵入り）",
+        "nutrition": {
+          "energy_kcal": 530,
+          "protein_g": 18,
+          "fat_g": 23,
+          "carbohydrate_g": 65,
+          "salt_g": 6
+        }
+      },
+      {
+        "name": "ブリトー ハム&チーズ",
+        "nutrition": {
+          "energy_kcal": 280,
+          "protein_g": 10,
+          "fat_g": 14,
+          "carbohydrate_g": 28,
+          "salt_g": 1.5
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 810,
+      "protein_g": 28,
+      "fat_g": 37,
+      "carbohydrate_g": 93,
+      "salt_g": 7.5
+    },
+    "memo": "",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-19T20:00:00+09:00-dinner",
+    "datetime": "2026-06-19T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/19-2000-dinner-1.webp",
+      "images/2026/06/19-2000-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "タコライス（ミート・チーズ・トマト）",
+        "nutrition": {
+          "energy_kcal": 550,
+          "protein_g": 20,
+          "fat_g": 18,
+          "carbohydrate_g": 70,
+          "salt_g": 3
+        }
+      },
+      {
+        "name": "ピーマン（2個）",
+        "nutrition": {
+          "energy_kcal": 20,
+          "carbohydrate_g": 3
+        }
+      },
+      {
+        "name": "焼きちくわ",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 3,
+          "carbohydrate_g": 4,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "チーズ",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 4,
+          "fat_g": 5,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "ポリッピ スパイス",
+        "nutrition": {
+          "energy_kcal": 130,
+          "protein_g": 5,
+          "fat_g": 8,
+          "carbohydrate_g": 10
+        }
+      },
+      {
+        "name": "ストロングゼロ DRY（500ml）",
+        "nutrition": {
+          "energy_kcal": 225,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 1015,
+      "protein_g": 32,
+      "fat_g": 31,
+      "carbohydrate_g": 87,
+      "salt_g": 4,
+      "alcohol_g": 36
+    },
+    "memo": "宅飲み",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
