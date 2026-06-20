@@ -46,6 +46,9 @@ export interface NutrientDef {
   key: NutrientKey
   label: string
   unit: string
+  // When true, every recorded entry MUST carry this nutrient (validated in CI).
+  // Optional nutrients (e.g. alcohol) are only present when relevant.
+  required?: boolean
 }
 
 export interface MealTypeDef {
