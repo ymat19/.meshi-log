@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import {
-  Bar,
-  BarChart,
   CartesianGrid,
+  Line,
+  LineChart,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -14,37 +15,58 @@ import { dailyTotals } from '../lib/nutrition'
 const PERIODS = [7, 30, 90] as const
 const STORAGE_KEY = 'meshi-log:trend'
 
-// Which nutrient tags the user has added, and which one is currently shown.
-// Persisted to localStorage so the selection survives reloads.
+// Stable colour per nutrient, assigned by its position in the config so a
+// nutrient always draws (and lights up its tag) in the same colour regardless
+// of which others are selected.
+const PALETTE = [
+  '#85b79d',
+  '#e08e6d',
+  '#6d9fe0',
+  '#c98bd1',
+  '#d1b86d',
+  '#7bc4c4',
+  '#d17b95',
+  '#9d85b7',
+  '#8aa86d',
+] as const
+
+// Which nutrient tags the user has added, and which of them are currently
+// drawn. Multiple nutrients can be selected at once — every selected tag is
+// rendered as its own line. Persisted to localStorage so it survives reloads.
 interface TrendState {
   nutrients: NutrientKey[]
-  selected: NutrientKey | null
+  selected: NutrientKey[]
 }
 
 // Read persisted state, dropping any keys no longer present in the config and
-// repairing the selection so it always points at an existing tag (or null).
+// keeping the selection a subset of the added tags. Tolerates the previous
+// single-key `selected` format by coercing it into an array.
 function loadState(validKeys: NutrientKey[], fallback: NutrientKey): TrendState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (raw) {
-      const parsed = JSON.parse(raw) as Partial<TrendState>
+      const parsed = JSON.parse(raw) as Partial<TrendState> & {
+        selected?: NutrientKey[] | NutrientKey | null
+      }
       const nutrients = (parsed.nutrients ?? []).filter((k) =>
         validKeys.includes(k),
       )
-      const selected =
-        parsed.selected && nutrients.includes(parsed.selected)
-          ? parsed.selected
-          : (nutrients[0] ?? null)
+      const rawSelected = Array.isArray(parsed.selected)
+        ? parsed.selected
+        : parsed.selected
+          ? [parsed.selected]
+          : []
+      const selected = rawSelected.filter((k) => nutrients.includes(k))
       return { nutrients, selected }
     }
   } catch {
     // Malformed storage — fall through to the default below.
   }
   // First visit: start with a single nutrient so the chart isn't empty.
-  return { nutrients: [fallback], selected: fallback }
+  return { nutrients: [fallback], selected: [fallback] }
 }
 
-// Daily trend of a selected nutrient over a selectable period.
+// Daily trend of any number of selected nutrients over a selectable period.
 export function NutrientTrend({
   config,
   entries,
@@ -54,6 +76,9 @@ export function NutrientTrend({
 }) {
   const validKeys = config.nutrients.map((n) => n.key)
   const fallback = config.nutrients[0].key
+
+  const colorFor = (key: NutrientKey) =>
+    PALETTE[validKeys.indexOf(key) % PALETTE.length]
 
   const [state, setState] = useState<TrendState>(() =>
     loadState(validKeys, fallback),
@@ -83,36 +108,50 @@ export function NutrientTrend({
     return () => document.removeEventListener('mousedown', onDown)
   }, [adding])
 
-  const selectNutrient = (key: NutrientKey) =>
-    setState((s) => ({ ...s, selected: key }))
+  // Toggle a tag in/out of the drawn set.
+  const toggleNutrient = (key: NutrientKey) =>
+    setState((s) => ({
+      ...s,
+      selected: s.selected.includes(key)
+        ? s.selected.filter((k) => k !== key)
+        : [...s.selected, key],
+    }))
 
   const addNutrient = (key: NutrientKey) => {
-    setState((s) => ({ nutrients: [...s.nutrients, key], selected: key }))
+    setState((s) => ({
+      nutrients: [...s.nutrients, key],
+      selected: [...s.selected, key],
+    }))
     setAdding(false)
   }
 
   const removeNutrient = (key: NutrientKey) =>
-    setState((s) => {
-      const nutrients = s.nutrients.filter((k) => k !== key)
-      const selected =
-        s.selected === key ? (nutrients[0] ?? null) : s.selected
-      return { nutrients, selected }
-    })
+    setState((s) => ({
+      nutrients: s.nutrients.filter((k) => k !== key),
+      selected: s.selected.filter((k) => k !== key),
+    }))
 
-  const def = config.nutrients.find((n) => n.key === state.selected)
   const available = config.nutrients.filter(
     (n) => !state.nutrients.includes(n.key),
   )
 
+  // Keep the drawn nutrients in config order so lines and legend are stable.
+  const drawn = config.nutrients.filter((n) => state.selected.includes(n.key))
+
+  // Each line is plotted as a percentage of that nutrient's daily target, so
+  // nutrients with wildly different units/scales (kcal vs g) share one axis and
+  // none gets pinned to the bottom. The tooltip recovers the real amount.
   const data = useMemo(
     () =>
-      state.selected
-        ? dailyTotals(entries, days).map((d) => ({
-            date: d.date.slice(5), // MM-DD
-            value: d.totals[state.selected!] ?? 0,
-          }))
-        : [],
-    [entries, days, state.selected],
+      dailyTotals(entries, days).map((d) => {
+        const row: Record<string, number | string> = { date: d.date.slice(5) }
+        for (const n of drawn) {
+          const value = d.totals[n.key] ?? 0
+          row[n.key] = n.target ? (value / n.target) * 100 : value
+        }
+        return row
+      }),
+    [entries, days, drawn],
   )
 
   return (
@@ -135,26 +174,33 @@ export function NutrientTrend({
       <div className="trend__tags">
         {config.nutrients
           .filter((n) => state.nutrients.includes(n.key))
-          .map((n) => (
-            <span
-              key={n.key}
-              className={`ntag${n.key === state.selected ? ' is-active' : ''}`}
-            >
-              <button
-                className="ntag__label"
-                onClick={() => selectNutrient(n.key)}
+          .map((n) => {
+            const active = state.selected.includes(n.key)
+            const color = colorFor(n.key)
+            return (
+              <span
+                key={n.key}
+                className={`ntag${active ? ' is-active' : ''}`}
+                style={
+                  active ? { background: color, borderColor: color } : undefined
+                }
               >
-                {n.label}
-              </button>
-              <button
-                className="ntag__remove"
-                onClick={() => removeNutrient(n.key)}
-                aria-label={`${n.label}を外す`}
-              >
-                ×
-              </button>
-            </span>
-          ))}
+                <button
+                  className="ntag__label"
+                  onClick={() => toggleNutrient(n.key)}
+                >
+                  {n.label}
+                </button>
+                <button
+                  className="ntag__remove"
+                  onClick={() => removeNutrient(n.key)}
+                  aria-label={`${n.label}を外す`}
+                >
+                  ×
+                </button>
+              </span>
+            )
+          })}
 
         {available.length > 0 && (
           <div className="ntag-add" ref={addRef}>
@@ -183,24 +229,60 @@ export function NutrientTrend({
         )}
       </div>
 
-      {def ? (
+      {drawn.length > 0 ? (
         <ResponsiveContainer width="100%" height={220}>
-          <BarChart
+          <LineChart
             data={data}
             margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
           >
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" tick={{ fontSize: 11 }} minTickGap={16} />
-            <YAxis tick={{ fontSize: 11 }} width={40} />
+            <YAxis
+              tick={{ fontSize: 11 }}
+              width={44}
+              // Always keep the 100% target line in view, even on low-intake days.
+              domain={[0, (max: number) => Math.max(110, Math.ceil(max / 10) * 10)]}
+              tickFormatter={(v: number) => `${v}%`}
+            />
+            <ReferenceLine
+              y={100}
+              stroke="#bbb"
+              strokeDasharray="4 4"
+              label={{ value: '目標', position: 'right', fontSize: 10, fill: '#999' }}
+            />
             <Tooltip
-              formatter={(v: number) => [`${v} ${def.unit}`, def.label]}
+              formatter={(value, _name, item) => {
+                const def = config.nutrients.find(
+                  (n) => n.key === item.dataKey,
+                )
+                const pct = Math.round(Number(value))
+                if (!def?.target) {
+                  return [`${pct}`, def?.label ?? item.dataKey]
+                }
+                // Recover the real amount from the plotted percentage.
+                const real = Math.round(((Number(value) / 100) * def.target) * 10) / 10
+                return [`${real} ${def.unit}（目標比 ${pct}%）`, def.label]
+              }}
               labelFormatter={(l) => `${l}`}
             />
-            <Bar dataKey="value" fill="#85b79d" radius={[3, 3, 0, 0]} />
-          </BarChart>
+            {drawn.map((n) => (
+              <Line
+                key={n.key}
+                type="monotone"
+                dataKey={n.key}
+                name={n.label}
+                stroke={colorFor(n.key)}
+                strokeWidth={2}
+                dot={false}
+                activeDot={{ r: 4 }}
+              />
+            ))}
+          </LineChart>
         </ResponsiveContainer>
       ) : (
-        <p className="trend__empty">＋ から栄養素を追加してください</p>
+        <p className="trend__empty">
+          タグをクリックして表示する栄養素を選んでください
+        </p>
       )}
     </section>
   )

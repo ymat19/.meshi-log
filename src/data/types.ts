@@ -49,6 +49,12 @@ export interface NutrientDef {
   // When true, every recorded entry MUST carry this nutrient (validated in CI).
   // Optional nutrients (e.g. alcohol) are only present when relevant.
   required?: boolean
+  // Reference daily amount used to plot the trend as a percentage of target,
+  // so nutrients with very different units/scales share one axis. For nutrients
+  // you want to meet (protein, fibre) this is a recommended minimum; for ones
+  // you want to cap (salt, saturated fat, sugar, alcohol, energy) it is an
+  // upper guideline. Editable defaults — not medical advice.
+  target?: number
 }
 
 export interface MealTypeDef {
