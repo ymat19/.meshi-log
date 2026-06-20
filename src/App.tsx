@@ -16,7 +16,7 @@ export function App() {
   return (
     <main>
       <header className="app-header">
-        <h1>🍽 .meshi-log</h1>
+        <h1>.meshi-log</h1>
       </header>
       {entries.length === 0 ? (
         <p className="state">まだ記録がありません。</p>
