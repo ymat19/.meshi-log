@@ -3,6 +3,7 @@ import {
   CartesianGrid,
   Line,
   LineChart,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -137,11 +138,17 @@ export function NutrientTrend({
   // Keep the drawn nutrients in config order so lines and legend are stable.
   const drawn = config.nutrients.filter((n) => state.selected.includes(n.key))
 
+  // Each line is plotted as a percentage of that nutrient's daily target, so
+  // nutrients with wildly different units/scales (kcal vs g) share one axis and
+  // none gets pinned to the bottom. The tooltip recovers the real amount.
   const data = useMemo(
     () =>
       dailyTotals(entries, days).map((d) => {
         const row: Record<string, number | string> = { date: d.date.slice(5) }
-        for (const n of drawn) row[n.key] = d.totals[n.key] ?? 0
+        for (const n of drawn) {
+          const value = d.totals[n.key] ?? 0
+          row[n.key] = n.target ? (value / n.target) * 100 : value
+        }
         return row
       }),
     [entries, days, drawn],
@@ -230,13 +237,31 @@ export function NutrientTrend({
           >
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="date" tick={{ fontSize: 11 }} minTickGap={16} />
-            <YAxis tick={{ fontSize: 11 }} width={40} />
+            <YAxis
+              tick={{ fontSize: 11 }}
+              width={44}
+              // Always keep the 100% target line in view, even on low-intake days.
+              domain={[0, (max: number) => Math.max(110, Math.ceil(max / 10) * 10)]}
+              tickFormatter={(v: number) => `${v}%`}
+            />
+            <ReferenceLine
+              y={100}
+              stroke="#bbb"
+              strokeDasharray="4 4"
+              label={{ value: '目標', position: 'right', fontSize: 10, fill: '#999' }}
+            />
             <Tooltip
               formatter={(value, _name, item) => {
                 const def = config.nutrients.find(
                   (n) => n.key === item.dataKey,
                 )
-                return [`${value} ${def?.unit ?? ''}`, def?.label ?? item.dataKey]
+                const pct = Math.round(Number(value))
+                if (!def?.target) {
+                  return [`${pct}`, def?.label ?? item.dataKey]
+                }
+                // Recover the real amount from the plotted percentage.
+                const real = Math.round(((Number(value) / 100) * def.target) * 10) / 10
+                return [`${real} ${def.unit}（目標比 ${pct}%）`, def.label]
               }}
               labelFormatter={(l) => `${l}`}
             />
