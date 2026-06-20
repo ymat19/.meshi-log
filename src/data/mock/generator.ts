@@ -84,11 +84,18 @@ export function generateMeals(endDate: Date, days: number, seed = 42): Generated
       const datetime = `${month}-${pad(day)}T${pad(HOURS[type])}:${pad(minute)}:00+09:00`
       const nutrition = jitter(dish.base, 0.85 + rand() * 0.3)
 
+      // Some meals are shot from multiple angles / multiple plates — emit a few
+      // photos now and then so the gallery + badge UI shows up in previews.
+      const photoCount = rand() > 0.7 ? 2 + Math.floor(rand() * 2) : 1
+      const photos = Array.from({ length: photoCount }, (_, i) =>
+        mockPhoto(photoCount > 1 ? `${dish.name} ${i + 1}` : dish.name, Math.floor(rand() * 1000)),
+      )
+
       const entry: MealEntry = {
         id: `${datetime}-${type}`,
         datetime,
         type,
-        photos: [mockPhoto(dish.name, Math.floor(rand() * 1000))],
+        photos,
         items: [{ name: dish.name, nutrition }],
         nutrition,
         memo: '',
