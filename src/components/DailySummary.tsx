@@ -1,7 +1,16 @@
-import type { Config, MealEntry } from '../data/types'
+import type { Config, MealEntry, NutrientKey } from '../data/types'
 import { sumNutrition } from '../lib/nutrition'
 
-// Shows aggregated nutrition totals for the most recent day that has records.
+// Nutrients you want to *reach* (target is a recommended minimum). Everything
+// else is treated as an upper guideline you want to stay under. This decides
+// whether hitting 100%+ of target reads as good (green) or as over-budget.
+const MEET_TARGETS: ReadonlySet<NutrientKey> = new Set<NutrientKey>([
+  'protein_g',
+  'fiber_g',
+])
+
+// Shows aggregated nutrition totals for the most recent day that has records,
+// each compared against its daily target.
 export function DailySummary({
   config,
   entries,
@@ -20,15 +29,38 @@ export function DailySummary({
         <span className="summary__count">{ofDay.length} 食</span>
       </h2>
       <div className="summary__grid">
-        {config.nutrients.map((n) => (
-          <div key={n.key} className="summary__cell">
-            <div className="summary__value">{totals[n.key] ?? 0}</div>
-            <div className="summary__label">
-              {n.label}
-              <span className="summary__unit">{n.unit}</span>
+        {config.nutrients.map((n) => {
+          const value = totals[n.key] ?? 0
+          const pct = n.target ? Math.round((value / n.target) * 100) : null
+          // For "meet" nutrients reaching the target is good; for the rest
+          // (caps) exceeding it is the warning state.
+          const over =
+            pct !== null &&
+            (MEET_TARGETS.has(n.key) ? pct < 100 : pct > 100)
+          return (
+            <div key={n.key} className="summary__cell">
+              <div className="summary__value">{value}</div>
+              {n.target != null && (
+                <div className="summary__target">
+                  / {n.target}
+                  {pct !== null && (
+                    <span
+                      className={
+                        'summary__pct' + (over ? ' summary__pct--over' : ' summary__pct--ok')
+                      }
+                    >
+                      {pct}%
+                    </span>
+                  )}
+                </div>
+              )}
+              <div className="summary__label">
+                {n.label}
+                <span className="summary__unit">{n.unit}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </section>
   )
