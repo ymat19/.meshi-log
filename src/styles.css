@@ -35,6 +35,49 @@ main {
   padding: 20px 0 8px;
 }
 
+/* 禁酒日数バナー（目立つトップ表示） */
+.sober {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: linear-gradient(135deg, #85b79d, #5e9b80);
+  color: #fff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(94, 155, 128, 0.35);
+}
+
+.sober__icon {
+  font-size: 22px;
+}
+
+.sober__label {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sober__days {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1;
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.sober__unit {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sober__note {
+  flex-basis: 100%;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
 .mock-badge {
   position: fixed;
   top: 8px;
