@@ -119,18 +119,108 @@ main {
   margin: 0;
 }
 
-.trend__controls {
+/* Nutrient tags: add the ones you care about, click to switch, × to remove */
+.trend__tags {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  margin-bottom: 14px;
 }
 
-.trend__controls select {
-  font-size: 13px;
-  padding: 4px 8px;
+.ntag {
+  display: inline-flex;
+  align-items: stretch;
+  font-size: 12px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 999px;
   background: #fff;
+  overflow: hidden;
+}
+
+.ntag__label {
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  padding: 4px 4px 4px 12px;
+  cursor: pointer;
+}
+
+.ntag__remove {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1;
+  padding: 0 8px 0 2px;
+  cursor: pointer;
+}
+
+.ntag.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.ntag.is-active .ntag__label,
+.ntag.is-active .ntag__remove {
+  color: #fff;
+}
+
+.ntag-add {
+  position: relative;
+  display: inline-flex;
+}
+
+.ntag-add__btn {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 1px dashed #c7c7c7;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.ntag-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 4px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.ntag-menu button {
+  text-align: left;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.ntag-menu button:hover {
+  background: var(--chip);
+}
+
+.trend__empty {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 40px 16px;
 }
 
 .trend__periods {
