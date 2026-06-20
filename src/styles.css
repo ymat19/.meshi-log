@@ -202,11 +202,6 @@ main {
   border-radius: 999px;
 }
 
-.card__time {
-  font-size: 12px;
-  color: var(--muted);
-}
-
 .card__name {
   font-weight: 600;
   margin: 6px 0;
