@@ -6,7 +6,8 @@
     "dev": "vite",
     "validate": "tsx scripts/validate-data.ts",
     "build": "tsc --noEmit && npm run validate && vite build",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -14,12 +15,14 @@
     "recharts": "^2.15.4"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.42.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "sharp": "^0.35.2",
     "tsx": "^4.22.4",
     "typescript": "^5.6.3",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "wrangler": "^4.103.0"
   }
 }

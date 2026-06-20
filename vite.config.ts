@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { cloudflare } from '@cloudflare/vite-plugin'
 
-// Standard Vite build: output to dist/ (git-ignored). GitHub Actions builds
-// and deploys it to Pages. Runtime data lives in public/ and is copied into
-// the build as-is. base is relative so assets resolve under the project path
-// (https://<user>.github.io/.meshi-log/).
+// Vite build: output to dist/ (git-ignored). Cloudflare Workers builds and
+// serves it as static assets (see wrangler.jsonc). Runtime data lives in
+// public/ and is copied into the build as-is. base is relative so the same
+// build works whether served at the root domain or a sub-path.
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), cloudflare()],
   base: './',
 })
