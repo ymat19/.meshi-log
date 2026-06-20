@@ -105,5 +105,156 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-18T07:30:00+09:00-breakfast",
+    "datetime": "2026-06-18T07:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/18-0730-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "いわし塩焼き",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 9,
+          "fat_g": 5,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "スープ（味噌汁系）",
+        "nutrition": {
+          "energy_kcal": 30,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "ツナマヨおにぎり",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 5,
+          "fat_g": 7,
+          "carbohydrate_g": 40,
+          "salt_g": 1.2
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 350,
+      "protein_g": 16,
+      "fat_g": 12,
+      "carbohydrate_g": 43,
+      "salt_g": 3.7
+    },
+    "memo": "",
+    "tags": [
+      "中食",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-18T12:30:00+09:00-lunch",
+    "datetime": "2026-06-18T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/18-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "照焼チキンとたまごサンド",
+        "nutrition": {
+          "energy_kcal": 370,
+          "protein_g": 15,
+          "fat_g": 20,
+          "carbohydrate_g": 30,
+          "salt_g": 2
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 370,
+      "protein_g": 15,
+      "fat_g": 20,
+      "carbohydrate_g": 30,
+      "salt_g": 2
+    },
+    "memo": "",
+    "tags": [
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-18T20:00:00+09:00-dinner",
+    "datetime": "2026-06-18T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/18-2000-dinner-1.webp",
+      "images/2026/06/18-2000-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ミートソースパスタ（粉チーズ）",
+        "nutrition": {
+          "energy_kcal": 550,
+          "protein_g": 20,
+          "fat_g": 18,
+          "carbohydrate_g": 70,
+          "salt_g": 3
+        }
+      },
+      {
+        "name": "ゆで卵",
+        "nutrition": {
+          "energy_kcal": 80,
+          "protein_g": 6,
+          "fat_g": 6,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "銀杏",
+        "nutrition": {
+          "energy_kcal": 30,
+          "carbohydrate_g": 7
+        }
+      },
+      {
+        "name": "6Pチーズ",
+        "nutrition": {
+          "energy_kcal": 55,
+          "protein_g": 3.5,
+          "fat_g": 4.5,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "ストロングゼロ DRY（500ml）",
+        "nutrition": {
+          "energy_kcal": 225,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 940,
+      "protein_g": 31,
+      "fat_g": 29,
+      "carbohydrate_g": 80,
+      "salt_g": 3.6,
+      "alcohol_g": 36
+    },
+    "memo": "宅飲み",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
