@@ -5,14 +5,15 @@ import type { Config } from './types'
 // so mock and real modes stay perfectly in sync.
 export const config: Config = {
   nutrients: [
-    { key: 'energy_kcal', label: 'エネルギー', unit: 'kcal' },
-    { key: 'protein_g', label: 'たんぱく質', unit: 'g' },
-    { key: 'fat_g', label: '脂質', unit: 'g' },
-    { key: 'saturated_fat_g', label: '飽和脂肪酸', unit: 'g' },
-    { key: 'carbohydrate_g', label: '炭水化物', unit: 'g' },
-    { key: 'sugar_g', label: '糖質', unit: 'g' },
-    { key: 'fiber_g', label: '食物繊維', unit: 'g' },
-    { key: 'salt_g', label: '食塩相当量', unit: 'g' },
+    { key: 'energy_kcal', label: 'エネルギー', unit: 'kcal', required: true },
+    { key: 'protein_g', label: 'たんぱく質', unit: 'g', required: true },
+    { key: 'fat_g', label: '脂質', unit: 'g', required: true },
+    { key: 'saturated_fat_g', label: '飽和脂肪酸', unit: 'g', required: true },
+    { key: 'carbohydrate_g', label: '炭水化物', unit: 'g', required: true },
+    { key: 'sugar_g', label: '糖質', unit: 'g', required: true },
+    { key: 'fiber_g', label: '食物繊維', unit: 'g', required: true },
+    { key: 'salt_g', label: '食塩相当量', unit: 'g', required: true },
+    // Only present when the meal contained alcohol; not required.
     { key: 'alcohol_g', label: 'アルコール', unit: 'g' },
   ],
   mealTypes: [
