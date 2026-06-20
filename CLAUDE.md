@@ -74,6 +74,15 @@ npm run preview      # ビルド結果をローカル確認
 
 公開URL: https://ymat19.github.io/.meshi-log/
 
+## PR プレビュー（Cloudflare Pages）
+
+本番は GitHub Pages のまま。**PR ごとのプレビューは Cloudflare Pages に併用させる**
+（GitHub Pages 単体では PR ごとのプレビュー URL を出せないため）。Git 連携するだけで
+push / PR のたびに固有 URL（`*.pages.dev`）が自動生成される。アプリのパス参照は
+すべて相対（`base: './'` ／ `import.meta.env.BASE_URL` ／ 画像 `images/...`）なので、
+サブドメイン直下配信でもコード改修なしで動く。設定手順は
+[docs/pr-preview.md](./docs/pr-preview.md) を参照。
+
 ## 運用ルール
 
 - **変更が本番サイトに反映（デプロイ成功＆反映確認）できたら、毎回その公開URLを
