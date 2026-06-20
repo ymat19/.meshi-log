@@ -130,6 +130,29 @@ main {
   font-weight: 700;
 }
 
+.summary__target {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 1px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.summary__pct {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.summary__pct--ok {
+  color: #16a34a;
+}
+
+.summary__pct--over {
+  color: #dc2626;
+}
+
 .summary__label {
   font-size: 11px;
   color: var(--muted);
