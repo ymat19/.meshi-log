@@ -1,4 +1,5 @@
 import { useMealData } from './data/DataSourceContext'
+import { SoberBanner } from './components/SoberBanner'
 import { DailySummary } from './components/DailySummary'
 import { NutrientTrend } from './components/NutrientTrend'
 import { Timeline } from './components/Timeline'
@@ -15,12 +16,13 @@ export function App() {
   return (
     <main>
       <header className="app-header">
-        <h1>🍽 meshi-log</h1>
+        <h1>.meshi-log</h1>
       </header>
       {entries.length === 0 ? (
         <p className="state">まだ記録がありません。</p>
       ) : (
         <>
+          <SoberBanner entries={entries} />
           <DailySummary config={config} entries={entries} />
           <NutrientTrend config={config} entries={entries} />
           <Timeline config={config} entries={entries} />
