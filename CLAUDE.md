@@ -1,25 +1,30 @@
 # .meshi-log
 
 個人用の食事記録ダッシュボード。チャットに食事の写真を送ると、エージェントが
-栄養成分を推定 → 対話で訂正 → JSON としてリポジトリにコミットし、GitHub Pages
-上のダッシュボードに反映される。メタボリックシンドローム管理のため、栄養成分の
-記録・集計・統計を主目的とする。
+栄養成分を推定 → 対話で訂正 → JSON としてリポジトリにコミットし、Cloudflare
+Workers 上のダッシュボードに反映される。メタボリックシンドローム管理のため、
+栄養成分の記録・集計・統計を主目的とする。
 
 ## 技術スタック
 
 - Vite + React + TypeScript
-- **デプロイは GitHub Actions**（`actions/deploy-pages`）。push のたびに CI が
-  ビルドして Pages に公開する。**ビルド成果物（dist/）はコミットしない**
-  （`.gitignore` 済み）。生成物を Git 管理しないため source/dist の drift が
-  起きない、というのが標準プラクティス。
-- データ（月別 JSON・画像）は `public/` に置き、ビルド時に dist へコピーされる。
-  記録を追加 → push すると Actions が再デプロイ（数十秒〜1分のラグ）。
+- **デプロイは Cloudflare Workers**（静的アセット配信、`wrangler.jsonc`）。
+  リポジトリを Cloudflare に連携しており、`main` への push のたびに Workers Builds
+  がビルドして公開する。**ビルド成果物（dist/）はコミットしない**（`.gitignore`
+  済み）。生成物を Git 管理しないため source/dist の drift が起きない、という
+  のが標準プラクティス。
+- データ（月別 JSON・画像）は `public/` に置き、ビルド時に dist へコピーされ、
+  Workers の静的アセットとして配信される。記録を追加 → push すると Cloudflare が
+  再デプロイ（数十秒〜1分のラグ）。
+- CI（`.github/workflows/ci.yml`）は PR でビルドを検証するのみ（デプロイはしない）。
+  `@cloudflare/vite-plugin` は Node 22+ を要求するため、CI も Node 22 を使う。
 
 ## ディレクトリ構成
 
 ```
 index.html               Vite エントリ
-.github/workflows/deploy.yml   Pages へのビルド&デプロイ
+wrangler.jsonc           Cloudflare Workers の設定（静的アセット配信）
+.github/workflows/ci.yml       PR でのビルド検証（デプロイはしない）
 src/                      アプリ本体（mock/real を一切意識しない）
   data/
     types.ts              全データの型（唯一の真実）
@@ -63,20 +68,23 @@ dist/                     ビルド出力（git 管理外）
 npm install
 npm run dev          # 開発サーバ。?mock=1 でモックプレビュー
 npm run build        # dist/ にビルド（型チェック込み）
-npm run preview      # ビルド結果をローカル確認
+npm run preview      # ビルドして wrangler dev でローカル確認（Workers 相当）
+npm run deploy       # ビルドして wrangler deploy で本番公開（通常は CI に任せる）
 ```
 
-## GitHub Pages の設定
+## Cloudflare Workers の設定
 
-リポジトリは public。Settings → Pages → **Source を「GitHub Actions」** に設定する。
-`main` への push で `.github/workflows/deploy.yml` が動き、ビルドして公開する。
-（「Deploy from a branch」は使わない。ビルド成果物をコミットしない方針のため。）
+リポジトリを Cloudflare の Workers Builds に連携している。`main` への push で
+自動的にビルド＆公開される（GitHub Actions ではデプロイしない）。Worker 設定は
+`wrangler.jsonc`（`assets.not_found_handling: single-page-application` で SPA 配信）。
+`@cloudflare/vite-plugin` は Node 22+ を要求するので、ローカル・CI とも Node 22 以上を使う。
 
-公開URL: https://ymat19.github.io/.meshi-log/
+公開URL: https://meshi-log.<account>.workers.dev
+（実際の workers.dev サブドメイン／カスタムドメインは初回デプロイ後に確認して反映する）
 
 ## 運用ルール
 
 - **変更が本番サイトに反映（デプロイ成功＆反映確認）できたら、毎回その公開URLを
   ユーザーに提示する。** その際、**モックプレビュー用の `?mock=1` 付き URL も必ず併記する。**
-  - 本番: https://ymat19.github.io/.meshi-log/
-  - モック: https://ymat19.github.io/.meshi-log/?mock=1
+  - 本番: https://meshi-log.<account>.workers.dev
+  - モック: https://meshi-log.<account>.workers.dev/?mock=1
