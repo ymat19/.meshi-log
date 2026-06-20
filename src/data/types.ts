@@ -27,7 +27,11 @@ export interface MealItem {
 
 export interface MealEntry {
   id: string
-  datetime: string // ISO 8601 with JST offset, e.g. 2026-06-19T12:30:00+09:00
+  // ISO 8601 with JST offset, e.g. 2026-06-19T12:30:00+09:00.
+  // NOTE: only the DATE part is meaningful (used for day-grouping and ordering).
+  // The time-of-day is not captured reliably (stripped from uploads) and is not
+  // displayed in the UI — do not treat it as the real meal time.
+  datetime: string
   type: MealType
   photos: string[]
   items: MealItem[]

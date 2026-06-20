@@ -1,10 +1,6 @@
 import type { Config, MealEntry, MealType } from '../data/types'
 import { groupByDate } from '../lib/nutrition'
 
-function timeOf(datetime: string): string {
-  return datetime.slice(11, 16)
-}
-
 export function Timeline({
   config,
   entries,
@@ -48,7 +44,6 @@ function MealCard({
       <div className="card__body">
         <div className="card__head">
           <span className="card__type">{typeLabel}</span>
-          <span className="card__time">{timeOf(entry.datetime)}</span>
         </div>
         <div className="card__name">{entry.items.map((i) => i.name).join('、')}</div>
         {entry.memo && <p className="card__memo">{entry.memo}</p>}
