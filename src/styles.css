@@ -289,6 +289,27 @@ main {
   padding: 40px 16px;
 }
 
+.trend__controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trend__reset {
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.trend__reset:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .trend__periods {
   display: flex;
   gap: 4px;
