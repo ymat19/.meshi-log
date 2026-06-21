@@ -272,9 +272,17 @@ export function NutrientTrend({
             />
             <ReferenceLine
               y={100}
-              stroke="#bbb"
-              strokeDasharray="4 4"
-              label={{ value: '目標', position: 'right', fontSize: 10, fill: '#999' }}
+              stroke="#e8a13a"
+              strokeWidth={1.5}
+              strokeDasharray="6 4"
+              ifOverflow="extendDomain"
+              label={{
+                value: '目標 100%',
+                position: 'insideTopRight',
+                fontSize: 11,
+                fontWeight: 700,
+                fill: '#c97e16',
+              }}
             />
             <Tooltip
               formatter={(value, _name, item) => {
