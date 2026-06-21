@@ -643,5 +643,83 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-21T07:30:00+09:00-breakfast",
+    "datetime": "2026-06-21T07:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/21-0730-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "かきたま汁（卵1個・ネギ）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7,
+          "fat_g": 5,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 3,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "水餃子 ×6",
+        "nutrition": {
+          "energy_kcal": 210,
+          "protein_g": 7,
+          "fat_g": 9,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 22,
+          "sugar_g": 20.5,
+          "fiber_g": 1.5,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "納豆（卵1個入り）",
+        "nutrition": {
+          "energy_kcal": 166,
+          "protein_g": 14.5,
+          "fat_g": 9.5,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 6.2,
+          "sugar_g": 3.2,
+          "fiber_g": 3,
+          "salt_g": 0.7
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 754,
+      "protein_g": 33.1,
+      "fat_g": 24.3,
+      "saturated_fat_g": 7.8,
+      "carbohydrate_g": 96.6,
+      "sugar_g": 91.1,
+      "fiber_g": 5.5,
+      "salt_g": 3.5
+    },
+    "memo": "卵は計2個（かきたま汁・納豆に各1個）。既製品出典 — アイリスオーヤマ 低温製法米のおいしいごはん 200g: 288kcal/P4.6/F0.8/C65.4/食塩0g（公式表示値、出典 https://search.kakaku.com/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9%E3%82%AA%E3%83%BC%E3%83%A4%E3%83%9E%20%E4%BD%8E%E6%B8%A9%E8%A3%BD%E6%B3%95%E7%B1%B3%E3%81%AE%E3%81%8A%E3%81%84%E3%81%97%E3%81%84%E3%81%94%E3%81%AF%E3%82%93/ ）。水餃子・納豆はメーカー特定不可のため記憶ベース推定。昼・夜は居酒屋で内訳不明のため未記録。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
