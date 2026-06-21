@@ -824,23 +824,23 @@
     "photos": [],
     "items": [
       {
-        "name": "ビール 中ジョッキ ×3",
+        "name": "ビール 中ジョッキ ×1",
         "nutrition": {
-          "energy_kcal": 540,
-          "protein_g": 3.9,
+          "energy_kcal": 180,
+          "protein_g": 1.3,
           "fat_g": 0,
           "saturated_fat_g": 0,
-          "carbohydrate_g": 40.5,
-          "sugar_g": 40.5,
+          "carbohydrate_g": 13.5,
+          "sugar_g": 13.5,
           "fiber_g": 0,
           "salt_g": 0,
-          "alcohol_g": 52.2
+          "alcohol_g": 17.4
         }
       },
       {
-        "name": "ハイボール ×3",
+        "name": "ハイボール ×1",
         "nutrition": {
-          "energy_kcal": 300,
+          "energy_kcal": 100,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -848,22 +848,22 @@
           "sugar_g": 0,
           "fiber_g": 0,
           "salt_g": 0,
-          "alcohol_g": 39
+          "alcohol_g": 13
         }
       }
     ],
     "nutrition": {
-      "energy_kcal": 840,
-      "protein_g": 3.9,
+      "energy_kcal": 280,
+      "protein_g": 1.3,
       "fat_g": 0,
       "saturated_fat_g": 0,
-      "carbohydrate_g": 40.5,
-      "sugar_g": 40.5,
+      "carbohydrate_g": 13.5,
+      "sugar_g": 13.5,
       "fiber_g": 0,
       "salt_g": 0,
-      "alcohol_g": 91.2
+      "alcohol_g": 30.4
     },
-    "memo": "飲みの間食（ビール中ジョッキ×3・ハイボール×3）。ビール435ml/5%換算、ハイボールは居酒屋グラス換算。純アルコール約91g。出典 — ビール https://www.eiyoukeisan.com/calorie/gramphoto/nomimono/beer.html ／ ハイボール https://www.sakekaitori.com/knowledge/20211006-highball/ 。",
+    "memo": "飲みの間食（ビール中ジョッキ×1・ハイボール×1）。ビール435ml/5%換算、ハイボールは居酒屋グラス換算。純アルコール約30g。出典 — ビール https://www.eiyoukeisan.com/calorie/gramphoto/nomimono/beer.html ／ ハイボール https://www.sakekaitori.com/knowledge/20211006-highball/ 。",
     "tags": [
       "お酒"
     ],
