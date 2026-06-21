@@ -721,5 +721,235 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-21T12:30:00+09:00-lunch",
+    "datetime": "2026-06-21T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "ホタルイカのレバ刺し風（磯丸水産）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 8,
+          "fat_g": 5,
+          "saturated_fat_g": 1,
+          "carbohydrate_g": 2,
+          "sugar_g": 2,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "ちくわの磯辺揚げ（磯丸水産）",
+        "nutrition": {
+          "energy_kcal": 250,
+          "protein_g": 10,
+          "fat_g": 13,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 22,
+          "sugar_g": 20,
+          "fiber_g": 1,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "活鯵の姿造り（磯丸水産）",
+        "nutrition": {
+          "energy_kcal": 130,
+          "protein_g": 20,
+          "fat_g": 5,
+          "saturated_fat_g": 1,
+          "carbohydrate_g": 1,
+          "sugar_g": 1,
+          "fiber_g": 0,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "ビール 中ジョッキ ×3",
+        "nutrition": {
+          "energy_kcal": 540,
+          "protein_g": 3.9,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 40.5,
+          "sugar_g": 40.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 52.2
+        }
+      },
+      {
+        "name": "ハイボール ×1",
+        "nutrition": {
+          "energy_kcal": 100,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 13
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 1110,
+      "protein_g": 41.9,
+      "fat_g": 23,
+      "saturated_fat_g": 3.5,
+      "carbohydrate_g": 65.5,
+      "sugar_g": 63.5,
+      "fiber_g": 1,
+      "salt_g": 3.3,
+      "alcohol_g": 65.2
+    },
+    "memo": "磯丸水産（昼）。ビールは中ジョッキ435ml/5%換算（1杯約180kcal・純アルコール17.4g）。出典 — 磯丸水産メニュー https://www.umenu.jp/menus/127.html ／ ビール栄養 https://www.eiyoukeisan.com/calorie/gramphoto/nomimono/beer.html ／ ハイボール https://www.sakekaitori.com/knowledge/20211006-highball/ 。刺身・揚げ物はチェーン公式の栄養成分が非公開のため推定。",
+    "tags": [
+      "外食",
+      "お酒",
+      "刺身",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-21T16:00:00+09:00-snack",
+    "datetime": "2026-06-21T16:00:00+09:00",
+    "type": "snack",
+    "photos": [],
+    "items": [
+      {
+        "name": "ビール 中ジョッキ ×3",
+        "nutrition": {
+          "energy_kcal": 540,
+          "protein_g": 3.9,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 40.5,
+          "sugar_g": 40.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 52.2
+        }
+      },
+      {
+        "name": "ハイボール ×3",
+        "nutrition": {
+          "energy_kcal": 300,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 39
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 840,
+      "protein_g": 3.9,
+      "fat_g": 0,
+      "saturated_fat_g": 0,
+      "carbohydrate_g": 40.5,
+      "sugar_g": 40.5,
+      "fiber_g": 0,
+      "salt_g": 0,
+      "alcohol_g": 91.2
+    },
+    "memo": "飲みの間食（ビール中ジョッキ×3・ハイボール×3）。ビール435ml/5%換算、ハイボールは居酒屋グラス換算。純アルコール約91g。出典 — ビール https://www.eiyoukeisan.com/calorie/gramphoto/nomimono/beer.html ／ ハイボール https://www.sakekaitori.com/knowledge/20211006-highball/ 。",
+    "tags": [
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-21T20:00:00+09:00-dinner",
+    "datetime": "2026-06-21T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "特製鳥豚つけ麺 大盛り（玉 赤備）",
+        "nutrition": {
+          "energy_kcal": 1150,
+          "protein_g": 50,
+          "fat_g": 35,
+          "saturated_fat_g": 11,
+          "carbohydrate_g": 145,
+          "sugar_g": 140,
+          "fiber_g": 6,
+          "salt_g": 8
+        }
+      },
+      {
+        "name": "ビール 中ジョッキ ×1",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 1.3,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 13.5,
+          "sugar_g": 13.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 17.4
+        }
+      },
+      {
+        "name": "唐揚げ（中華屋・1皿）",
+        "nutrition": {
+          "energy_kcal": 550,
+          "protein_g": 30,
+          "fat_g": 35,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 25,
+          "sugar_g": 20,
+          "fiber_g": 1,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "ウーロンハイ ×3",
+        "nutrition": {
+          "energy_kcal": 300,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 2180,
+      "protein_g": 81.3,
+      "fat_g": 70,
+      "saturated_fat_g": 17,
+      "carbohydrate_g": 183.5,
+      "sugar_g": 173.5,
+      "fiber_g": 7,
+      "salt_g": 10.5,
+      "alcohol_g": 53.4
+    },
+    "memo": "夜のはしご。玉 赤備（川崎・豚鶏つけ麺 https://tabelog.com/kanagawa/A1405/A140501/14039229/ ）で特製鳥豚つけ麺 大盛り＋ビール中1、その後 中華屋で唐揚げ＋ウーロンハイ3。つけ麺・唐揚げは公式栄養非公開のため推定（特製＋大盛りで高カロリー・高塩分）。ウーロンハイ出典 https://miraizaka.com/blog_list/13111/ 。ビールは中ジョッキ435ml/5%換算。",
+    "tags": [
+      "外食",
+      "お酒",
+      "麺",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
