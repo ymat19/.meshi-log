@@ -30,6 +30,24 @@ const PALETTE = [
   '#8aa86d',
 ] as const
 
+// The nutrients shown by default (first visit and after pressing リセット).
+// Chosen to surface what matters most for metabolic-syndrome management:
+// energy budget, saturated fat, sugar, and protein.
+const DEFAULT_NUTRIENTS: readonly NutrientKey[] = [
+  'energy_kcal',
+  'saturated_fat_g',
+  'sugar_g',
+  'protein_g',
+] as const
+
+// The default tag/selection set, filtered to nutrients the config actually
+// defines so a config change can never leave the chart referencing a dead key.
+function defaultState(validKeys: NutrientKey[], fallback: NutrientKey): TrendState {
+  const keys = DEFAULT_NUTRIENTS.filter((k) => validKeys.includes(k))
+  const list = keys.length > 0 ? [...keys] : [fallback]
+  return { nutrients: list, selected: list }
+}
+
 // Which nutrient tags the user has added, and which of them are currently
 // drawn. Multiple nutrients can be selected at once — every selected tag is
 // rendered as its own line. Persisted to localStorage so it survives reloads.
@@ -62,8 +80,8 @@ function loadState(validKeys: NutrientKey[], fallback: NutrientKey): TrendState 
   } catch {
     // Malformed storage — fall through to the default below.
   }
-  // First visit: start with a single nutrient so the chart isn't empty.
-  return { nutrients: [fallback], selected: [fallback] }
+  // First visit: start with the default nutrient set.
+  return defaultState(validKeys, fallback)
 }
 
 // Daily trend of any number of selected nutrients over a selectable period.
@@ -131,6 +149,9 @@ export function NutrientTrend({
       selected: s.selected.filter((k) => k !== key),
     }))
 
+  // Restore the default nutrient set (and selection).
+  const reset = () => setState(defaultState(validKeys, fallback))
+
   const available = config.nutrients.filter(
     (n) => !state.nutrients.includes(n.key),
   )
@@ -158,16 +179,21 @@ export function NutrientTrend({
     <section className="trend">
       <div className="trend__head">
         <h2>推移</h2>
-        <div className="trend__periods">
-          {PERIODS.map((p) => (
-            <button
-              key={p}
-              className={p === days ? 'is-active' : ''}
-              onClick={() => setDays(p)}
-            >
-              {p}日
-            </button>
-          ))}
+        <div className="trend__controls">
+          <button className="trend__reset" onClick={reset}>
+            リセット
+          </button>
+          <div className="trend__periods">
+            {PERIODS.map((p) => (
+              <button
+                key={p}
+                className={p === days ? 'is-active' : ''}
+                onClick={() => setDays(p)}
+              >
+                {p}日
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
