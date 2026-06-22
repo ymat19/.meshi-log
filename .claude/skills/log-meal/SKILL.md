@@ -1,6 +1,6 @@
 ---
 name: log-meal
-description: .meshi-log に食事を記録する。ユーザーが食事の写真を送る、または「記録して」等と依頼したときに使う。写真から栄養成分を推定し、対話で訂正し、確定後にエントリと画像をコミットして GitHub Pages にデプロイし、公開URLを提示する。
+description: .meshi-log に食事を記録する。ユーザーが食事の写真を送る、または「記録して」等と依頼したときに使う。写真から栄養成分を推定し、対話で訂正し、確定後にエントリと画像をコミットして Cloudflare Workers にデプロイし、公開URLを提示する。
 ---
 
 # 食事記録 (log-meal)
@@ -118,11 +118,11 @@ MealEntry の形（`src/data/types.ts` が唯一の真実）:
 
 `public/data/` と `public/images/` の変更を、**デプロイ対象ブランチ（既定 `main`）**
 にコミットして push する。記録はデータなので PR は不要、直接 push でよい。
-push で `.github/workflows/deploy.yml` が再ビルド→デプロイする（数十秒〜1分）。
+`main` への push で Cloudflare Workers Builds が再ビルド→デプロイする（数十秒〜1分）。
 
 ## 6. 反映確認 & URL 提示
 
 デプロイ成功と本番反映を確認したら、運用ルールどおり公開URLを必ず提示する:
 
-- 本番: https://ymat19.github.io/.meshi-log/
-- モック: https://ymat19.github.io/.meshi-log/?mock=1
+- 本番: https://meshi-log.ymat19.workers.dev
+- モック: https://meshi-log.ymat19.workers.dev/?mock=1
