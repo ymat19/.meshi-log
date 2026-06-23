@@ -1155,5 +1155,224 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-23T07:30:00+09:00-breakfast",
+    "datetime": "2026-06-23T07:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/23-0730-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "絹豆腐 150g",
+        "nutrition": {
+          "energy_kcal": 84,
+          "protein_g": 7.4,
+          "fat_g": 4.5,
+          "carbohydrate_g": 3,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "carbohydrate_g": 0.4,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "焼き海苔 数枚",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.6,
+          "carbohydrate_g": 0.3,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "carbohydrate_g": 0.3,
+          "salt_g": 0.2
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 513,
+      "protein_g": 23.1,
+      "fat_g": 15.2,
+      "carbohydrate_g": 69.4,
+      "salt_g": 0.7,
+      "saturated_fat_g": 5.6,
+      "fiber_g": 1.3,
+      "sugar_g": 68.1
+    },
+    "memo": "推定値。イル・ド・フランス ミニカマンベール（1個25g 65kcal）: https://www.amazon.co.jp/dp/B0BL25BTCV / 豆腐・海苔・卵は推定。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-23T12:30:00+09:00-lunch",
+    "datetime": "2026-06-23T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/23-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "7プレミアム 大盛り油そば（冷凍/365g）",
+        "nutrition": {
+          "energy_kcal": 548,
+          "protein_g": 21.5,
+          "fat_g": 12,
+          "carbohydrate_g": 91.6,
+          "sugar_g": 85.4,
+          "fiber_g": 6.2,
+          "salt_g": 4.7
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "carbohydrate_g": 0.3,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "スライスチーズ 1枚",
+        "nutrition": {
+          "energy_kcal": 55,
+          "protein_g": 3.5,
+          "fat_g": 4.4,
+          "carbohydrate_g": 0.3,
+          "salt_g": 0.5
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 674,
+      "protein_g": 31.2,
+      "fat_g": 21.2,
+      "carbohydrate_g": 92.2,
+      "salt_g": 5.4,
+      "saturated_fat_g": 8.0,
+      "fiber_g": 6.2,
+      "sugar_g": 86.0
+    },
+    "memo": "推定値。7プレミアム 大盛り油そば（冷凍）公式: https://www.sej.co.jp/products/a/item/410431/ / 追加の卵・チーズは推定。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-23T20:00:00+09:00-dinner",
+    "datetime": "2026-06-23T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/23-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 うまトマハンバーグ（単品）",
+        "nutrition": {
+          "energy_kcal": 487,
+          "protein_g": 28.3,
+          "fat_g": 29.5,
+          "carbohydrate_g": 24.8,
+          "salt_g": 4.4
+        }
+      },
+      {
+        "name": "ピーマン 2個",
+        "nutrition": {
+          "energy_kcal": 15,
+          "protein_g": 0.6,
+          "carbohydrate_g": 3,
+          "fiber_g": 1.4,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "スライスチーズ 2枚",
+        "nutrition": {
+          "energy_kcal": 110,
+          "protein_g": 7,
+          "fat_g": 8.8,
+          "carbohydrate_g": 0.6,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbohydrate_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 1160,
+      "protein_g": 40.5,
+      "fat_g": 39.1,
+      "carbohydrate_g": 93.8,
+      "salt_g": 5.4,
+      "alcohol_g": 36,
+      "saturated_fat_g": 16.8,
+      "fiber_g": 1.9,
+      "sugar_g": 91.9
+    },
+    "memo": "推定値。松屋 うまトマハンバーグ単品: https://food-db.work/foods/matsuya-ldr324/（公式 https://www.matsuyafoods.co.jp）/ チーズ2枚・ピーマンは推定。ストロングゼロは既往記録値。",
+    "tags": [
+      "外食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
