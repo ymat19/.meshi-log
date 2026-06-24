@@ -1281,9 +1281,9 @@
       "fat_g": 21.2,
       "carbohydrate_g": 92.2,
       "salt_g": 5.4,
-      "saturated_fat_g": 8.0,
+      "saturated_fat_g": 8,
       "fiber_g": 6.2,
-      "sugar_g": 86.0
+      "sugar_g": 86
     },
     "memo": "推定値。7プレミアム 大盛り油そば（冷凍）公式: https://www.sej.co.jp/products/a/item/410431/ / 追加の卵・チーズは推定。",
     "tags": [
@@ -1371,6 +1371,210 @@
     "tags": [
       "外食",
       "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-24T08:00:00+09:00-breakfast",
+    "datetime": "2026-06-24T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/24-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "炊き込みご飯（栗・銀杏・人参・椎茸／自炊・約200g）",
+        "nutrition": {
+          "energy_kcal": 330,
+          "protein_g": 5,
+          "fat_g": 3,
+          "carbohydrate_g": 68,
+          "salt_g": 1.2,
+          "saturated_fat_g": 0.5,
+          "fiber_g": 1.5,
+          "sugar_g": 66.5
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）",
+        "nutrition": {
+          "energy_kcal": 243,
+          "protein_g": 9.2,
+          "fat_g": 14.9,
+          "carbohydrate_g": 17.6,
+          "salt_g": 3.2,
+          "saturated_fat_g": 5,
+          "fiber_g": 2.5,
+          "sugar_g": 15.1
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 573,
+      "protein_g": 14.2,
+      "fat_g": 17.9,
+      "carbohydrate_g": 85.6,
+      "salt_g": 4.4,
+      "saturated_fat_g": 5.5,
+      "fiber_g": 4,
+      "sugar_g": 81.6
+    },
+    "memo": "炊き込みご飯は自炊（推定）。松屋 豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html",
+    "tags": [
+      "自炊",
+      "外食",
+      "汁物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-24T12:30:00+09:00-lunch",
+    "datetime": "2026-06-24T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/24-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "ごつ盛り ソース焼きそば（マヨ込み・171g）",
+        "nutrition": {
+          "energy_kcal": 784,
+          "protein_g": 13,
+          "fat_g": 39.2,
+          "carbohydrate_g": 94.9,
+          "salt_g": 5.6,
+          "saturated_fat_g": 17,
+          "fiber_g": 3,
+          "sugar_g": 91.9
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 784,
+      "protein_g": 13,
+      "fat_g": 39.2,
+      "carbohydrate_g": 94.9,
+      "salt_g": 5.6,
+      "saturated_fat_g": 17,
+      "fiber_g": 3,
+      "sugar_g": 91.9
+    },
+    "memo": "ごつ盛りソース焼きそば(東洋水産,171g,マヨ込み): https://www.maruchan.co.jp/products/search/205635.html フライドガーリックのトッピングは微量のため未加算。",
+    "tags": [
+      "中食",
+      "麺",
+      "インスタント"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-24T20:00:00+09:00-dinner",
+    "datetime": "2026-06-24T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/24-2000-dinner.webp",
+      "images/2026/06/24-2000-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 牛皿（並・1つ）",
+        "nutrition": {
+          "energy_kcal": 377,
+          "protein_g": 12.4,
+          "fat_g": 33.7,
+          "carbohydrate_g": 6,
+          "salt_g": 1.6,
+          "saturated_fat_g": 14,
+          "fiber_g": 0.3,
+          "sugar_g": 5.7
+        }
+      },
+      {
+        "name": "白ごはん（普通盛り 約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "carbohydrate_g": 74,
+          "salt_g": 0,
+          "saturated_fat_g": 0.2,
+          "fiber_g": 1,
+          "sugar_g": 73
+        }
+      },
+      {
+        "name": "卵黄 1個",
+        "nutrition": {
+          "energy_kcal": 55,
+          "protein_g": 2.5,
+          "fat_g": 4.5,
+          "carbohydrate_g": 0.2,
+          "salt_g": 0,
+          "saturated_fat_g": 1.6,
+          "fiber_g": 0,
+          "sugar_g": 0.2
+        }
+      },
+      {
+        "name": "カマンベールチーズ（約90g）",
+        "nutrition": {
+          "energy_kcal": 279,
+          "protein_g": 17.2,
+          "fat_g": 22.2,
+          "carbohydrate_g": 0.8,
+          "salt_g": 1.7,
+          "saturated_fat_g": 14.4,
+          "fiber_g": 0,
+          "sugar_g": 0.8
+        }
+      },
+      {
+        "name": "豆腐（約150g）",
+        "nutrition": {
+          "energy_kcal": 84,
+          "protein_g": 7.4,
+          "fat_g": 4.5,
+          "carbohydrate_g": 3,
+          "salt_g": 0,
+          "saturated_fat_g": 0.8,
+          "fiber_g": 0.5,
+          "sugar_g": 2.5
+        }
+      },
+      {
+        "name": "-196 ストロング 無糖ドライ 350ml（9%）",
+        "nutrition": {
+          "energy_kcal": 168,
+          "protein_g": 0,
+          "fat_g": 0,
+          "carbohydrate_g": 0.4,
+          "salt_g": 0.05,
+          "alcohol_g": 24.8,
+          "saturated_fat_g": 0,
+          "fiber_g": 0,
+          "sugar_g": 0.4
+        }
+      }
+    ],
+    "nutrition": {
+      "energy_kcal": 1275,
+      "protein_g": 44.5,
+      "fat_g": 65.5,
+      "carbohydrate_g": 84.4,
+      "salt_g": 3.35,
+      "alcohol_g": 24.8,
+      "saturated_fat_g": 31,
+      "fiber_g": 1.8,
+      "sugar_g": 82.6
+    },
+    "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは記憶ベース推定（汎用カマンベール約90g）。豆腐・ごはん量は推定。",
+    "tags": [
+      "外食",
+      "お酒",
+      "丼"
     ],
     "estimated": true,
     "schemaVersion": 1
