@@ -289,6 +289,40 @@ main {
   padding: 40px 16px;
 }
 
+/* Legend for the good/warning bands behind the trend chart. */
+.trend__zone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 0;
+  padding: 0 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.trend__zone-ok::before,
+.trend__zone-ng::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.trend__zone-ok::before {
+  background: rgba(133, 183, 157, 0.45);
+}
+
+.trend__zone-ng::before {
+  background: rgba(224, 85, 109, 0.45);
+}
+
+.trend__zone--mixed {
+  display: block;
+}
+
 .trend__controls {
   display: flex;
   align-items: center;

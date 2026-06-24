@@ -3,6 +3,7 @@ import {
   CartesianGrid,
   Line,
   LineChart,
+  ReferenceArea,
   ReferenceLine,
   ResponsiveContainer,
   Tooltip,
@@ -159,6 +160,20 @@ export function NutrientTrend({
   // Keep the drawn nutrients in config order so lines and legend are stable.
   const drawn = config.nutrients.filter((n) => state.selected.includes(n.key))
 
+  // The 100% line means opposite things for 上限型 (stay under) and 目標型
+  // (reach it), so the good/bad zones can only be shaded when every drawn
+  // nutrient points the same way. With a mixed selection a single horizontal
+  // band would be misleading, so we show a hint instead of a band.
+  const reachCount = drawn.filter((n) => n.goal === 'reach').length
+  const zone =
+    drawn.length === 0
+      ? 'none'
+      : reachCount === drawn.length
+        ? 'reach' // all 目標型: good above 100, bad below
+        : reachCount === 0
+          ? 'limit' // all 上限型: good below 100, bad above
+          : 'mixed'
+
   // Each line is plotted as a percentage of that nutrient's daily target, so
   // nutrients with wildly different units/scales (kcal vs g) share one axis and
   // none gets pinned to the bottom. The tooltip recovers the real amount.
@@ -262,6 +277,32 @@ export function NutrientTrend({
             margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
           >
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            {/* Shade the good (green) / warning (red) zones around the 100%
+                line. Only meaningful when all drawn nutrients share a goal
+                direction — see `zone` above. */}
+            {zone === 'limit' && (
+              <>
+                <ReferenceArea y1={0} y2={100} fill="#85b79d" fillOpacity={0.06} />
+                <ReferenceArea
+                  y1={100}
+                  fill="#e0556d"
+                  fillOpacity={0.08}
+                  label={{ value: '超過注意', position: 'insideTopLeft', fontSize: 10, fill: '#c0455c' }}
+                />
+              </>
+            )}
+            {zone === 'reach' && (
+              <>
+                <ReferenceArea y1={100} fill="#85b79d" fillOpacity={0.06} />
+                <ReferenceArea
+                  y1={0}
+                  y2={100}
+                  fill="#e0556d"
+                  fillOpacity={0.08}
+                  label={{ value: '不足注意', position: 'insideBottomLeft', fontSize: 10, fill: '#c0455c' }}
+                />
+              </>
+            )}
             <XAxis dataKey="date" tick={{ fontSize: 11 }} minTickGap={16} />
             <YAxis
               tick={{ fontSize: 11 }}
@@ -277,7 +318,7 @@ export function NutrientTrend({
               strokeDasharray="6 4"
               ifOverflow="extendDomain"
               label={{
-                value: '目標 100%',
+                value: '基準 100%',
                 position: 'insideTopRight',
                 fontSize: 11,
                 fontWeight: 700,
@@ -316,6 +357,24 @@ export function NutrientTrend({
       ) : (
         <p className="trend__empty">
           タグをクリックして表示する栄養素を選んでください
+        </p>
+      )}
+
+      {zone === 'limit' && (
+        <p className="trend__zone">
+          <span className="trend__zone-ok">緑＝基準以下でOK</span>
+          <span className="trend__zone-ng">赤＝超過注意（上限型）</span>
+        </p>
+      )}
+      {zone === 'reach' && (
+        <p className="trend__zone">
+          <span className="trend__zone-ok">緑＝基準以上でOK</span>
+          <span className="trend__zone-ng">赤＝不足注意（目標型）</span>
+        </p>
+      )}
+      {zone === 'mixed' && (
+        <p className="trend__zone trend__zone--mixed">
+          上限型と目標型が混在中。1タイプだけ表示すると基準帯（緑＝OK／赤＝注意）が出ます。
         </p>
       )}
     </section>

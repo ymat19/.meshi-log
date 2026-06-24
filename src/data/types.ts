@@ -58,6 +58,12 @@ export interface NutrientDef {
   // you want to cap (salt, saturated fat, sugar, alcohol, energy) it is an
   // upper guideline. Editable defaults — not medical advice.
   target?: number
+  // Which direction of the target is the "bad" one, so the UI can show whether
+  // crossing 100% is good or bad:
+  //  - 'limit' (上限型): stay UNDER the target — exceeding it is the warning.
+  //  - 'reach' (目標型): reach the target — falling short is the warning.
+  // Defaults to 'limit' when unset.
+  goal?: 'limit' | 'reach'
 }
 
 export interface MealTypeDef {
