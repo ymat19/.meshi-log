@@ -1519,16 +1519,16 @@
         }
       },
       {
-        "name": "カマンベールチーズ（約90g）",
+        "name": "ミニカマンベール 1個（25g）",
         "nutrition": {
-          "energy_kcal": 279,
-          "protein_g": 17.2,
-          "fat_g": 22.2,
-          "carbohydrate_g": 0.8,
-          "salt_g": 1.7,
-          "saturated_fat_g": 14.4,
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "carbohydrate_g": 0.2,
+          "salt_g": 0.4,
+          "saturated_fat_g": 3.2,
           "fiber_g": 0,
-          "sugar_g": 0.8
+          "sugar_g": 0.2
         }
       },
       {
@@ -1560,17 +1560,17 @@
       }
     ],
     "nutrition": {
-      "energy_kcal": 1275,
-      "protein_g": 44.5,
-      "fat_g": 65.5,
-      "carbohydrate_g": 84.4,
-      "salt_g": 3.35,
+      "energy_kcal": 1061,
+      "protein_g": 31.6,
+      "fat_g": 48.4,
+      "carbohydrate_g": 83.8,
+      "salt_g": 2.05,
       "alcohol_g": 24.8,
-      "saturated_fat_g": 31,
+      "saturated_fat_g": 19.8,
       "fiber_g": 1.8,
-      "sugar_g": 82.6
+      "sugar_g": 82
     },
-    "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは記憶ベース推定（汎用カマンベール約90g）。豆腐・ごはん量は推定。",
+    "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは個包装ミニ1個（約25g、6/23と同型）に訂正。豆腐・ごはん量は推定。",
     "tags": [
       "外食",
       "お酒",
