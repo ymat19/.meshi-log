@@ -1,13 +1,5 @@
-import type { Config, MealEntry, NutrientKey } from '../data/types'
+import type { Config, MealEntry } from '../data/types'
 import { entryTotals, sumNutrition } from '../lib/nutrition'
-
-// Nutrients you want to *reach* (target is a recommended minimum). Everything
-// else is treated as an upper guideline you want to stay under. This decides
-// whether hitting 100%+ of target reads as good (green) or as over-budget.
-const MEET_TARGETS: ReadonlySet<NutrientKey> = new Set<NutrientKey>([
-  'protein_g',
-  'fiber_g',
-])
 
 // Shows aggregated nutrition totals for the most recent day that has records,
 // each compared against its daily target.
@@ -32,11 +24,11 @@ export function DailySummary({
         {config.nutrients.map((n) => {
           const value = totals[n.key] ?? 0
           const pct = n.target ? Math.round((value / n.target) * 100) : null
-          // For "meet" nutrients reaching the target is good; for the rest
-          // (caps) exceeding it is the warning state.
+          // 目標型 ('reach') wants pct >= 100; 上限型 ('limit', the default)
+          // wants pct <= 100. The "bad" side decides the red/green colouring.
           const over =
             pct !== null &&
-            (MEET_TARGETS.has(n.key) ? pct < 100 : pct > 100)
+            (n.goal === 'reach' ? pct < 100 : pct > 100)
           return (
             <div key={n.key} className="summary__cell">
               <div className="summary__value">{value}</div>

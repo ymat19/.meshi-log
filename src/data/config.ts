@@ -7,6 +7,10 @@ export const config: Config = {
   // `target` is a daily reference amount. The trend chart plots each nutrient as
   // a percentage of its target so different units share one axis.
   //
+  // `goal` marks whether the target is an upper limit to stay under ('limit',
+  // the default) or a minimum to reach ('reach'). Only たんぱく質・食物繊維 are
+  // 目標型; everything else is 上限型. Drives the good/bad colouring everywhere.
+  //
   // These targets are personalised for a weight-loss / metabolic-syndrome phase
   // (身長170cm・体重76kg・BMI26.2＝肥満1度・体脂肪率24.9%・内臓脂肪レベル11・実測
   // 基礎代謝1,615kcal）, derived from a deep-research pass over the evidence:
@@ -24,12 +28,12 @@ export const config: Config = {
   // 医療助言ではない編集可能な既定値。体組成の変化を見て微調整すること。
   nutrients: [
     { key: 'energy_kcal', label: 'エネルギー', unit: 'kcal', required: true, target: 1800 },
-    { key: 'protein_g', label: 'たんぱく質', unit: 'g', required: true, target: 110 },
+    { key: 'protein_g', label: 'たんぱく質', unit: 'g', required: true, target: 110, goal: 'reach' },
     { key: 'fat_g', label: '脂質', unit: 'g', required: true, target: 50 },
     { key: 'saturated_fat_g', label: '飽和脂肪酸', unit: 'g', required: true, target: 14 },
     { key: 'carbohydrate_g', label: '炭水化物', unit: 'g', required: true, target: 225 },
     { key: 'sugar_g', label: '糖質', unit: 'g', required: true, target: 200 },
-    { key: 'fiber_g', label: '食物繊維', unit: 'g', required: true, target: 22 },
+    { key: 'fiber_g', label: '食物繊維', unit: 'g', required: true, target: 22, goal: 'reach' },
     { key: 'salt_g', label: '食塩相当量', unit: 'g', required: true, target: 6 },
     // Only present when the meal contained alcohol; not required.
     // 減量中はできるだけ控える前提だが、上限の目安は節度ある適度な飲酒の純アル20g。

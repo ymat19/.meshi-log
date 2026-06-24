@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import {
   CartesianGrid,
   Line,
   LineChart,
+  ReferenceArea,
   ReferenceLine,
   ResponsiveContainer,
   Tooltip,
@@ -14,6 +15,11 @@ import { dailyTotals } from '../lib/nutrition'
 
 const PERIODS = [7, 30, 90] as const
 const STORAGE_KEY = 'meshi-log:trend'
+
+// Colour a line segment turns when it sits on the "bad" side of its 100% line
+// (above for 上限型, below for 目標型). Shared with the warning band fill so the
+// danger signal reads the same whether the selection is mixed or homogeneous.
+const DANGER = '#e0556d'
 
 // Stable colour per nutrient, assigned by its position in the config so a
 // nutrient always draws (and lights up its tag) in the same colour regardless
@@ -159,6 +165,20 @@ export function NutrientTrend({
   // Keep the drawn nutrients in config order so lines and legend are stable.
   const drawn = config.nutrients.filter((n) => state.selected.includes(n.key))
 
+  // The 100% line means opposite things for 上限型 (stay under) and 目標型
+  // (reach it), so the good/bad zones can only be shaded when every drawn
+  // nutrient points the same way. With a mixed selection a single horizontal
+  // band would be misleading, so we show a hint instead of a band.
+  const reachCount = drawn.filter((n) => n.goal === 'reach').length
+  const zone =
+    drawn.length === 0
+      ? 'none'
+      : reachCount === drawn.length
+        ? 'reach' // all 目標型: good above 100, bad below
+        : reachCount === 0
+          ? 'limit' // all 上限型: good below 100, bad above
+          : 'mixed'
+
   // Each line is plotted as a percentage of that nutrient's daily target, so
   // nutrients with wildly different units/scales (kcal vs g) share one axis and
   // none gets pinned to the bottom. The tooltip recovers the real amount.
@@ -174,6 +194,79 @@ export function NutrientTrend({
       }),
     [entries, days, drawn],
   )
+
+  // Each nutrient is drawn as its own solid colour line so it stays
+  // identifiable. On the "bad" side of its 100% line (above for 上限型, below
+  // for 目標型) we OVERLAY a red dashed line, so the danger stretch reads as the
+  // nutrient's colour and red alternating — flagging risk without two lines
+  // collapsing into indistinguishable solid red. `danger` is the overlay stroke:
+  //   null            → no overlay (the line never crosses into its bad side)
+  //   DANGER          → solid red overlay (whole line is on the bad side)
+  //   url(#id)        → gradient: red on the bad side, transparent on the safe
+  // The gradient is vertical; offset 0 = top (dataMax), 1 = bottom (dataMin),
+  // switching opacity at where 100% falls within the line's own value range.
+  const lineStrokes = useMemo(() => {
+    return drawn.map((n) => {
+      const color = colorFor(n.key)
+      const isReach = n.goal === 'reach'
+      const onBadSide = (pct: number) => (isReach ? pct < 100 : pct > 100)
+      const vals = data
+        .map((d) => d[n.key])
+        .filter((v): v is number => typeof v === 'number')
+      const id = `trend-danger-${n.key}`
+      if (vals.length === 0) return { key: n.key, color, danger: null as string | null }
+      const dataMax = Math.max(...vals)
+      const dataMin = Math.min(...vals)
+      if (dataMax === dataMin) {
+        return { key: n.key, color, danger: onBadSide(dataMax) ? DANGER : null }
+      }
+      const off = Math.min(1, Math.max(0, (dataMax - 100) / (dataMax - dataMin)))
+      if (off <= 0) return { key: n.key, color, danger: isReach ? DANGER : null }
+      if (off >= 1) return { key: n.key, color, danger: isReach ? null : DANGER }
+      // Red on the bad side (opacity 1), transparent on the safe side.
+      const topOpacity = isReach ? 0 : 1 // top region (0..off) = above 100
+      const botOpacity = isReach ? 1 : 0 // bottom region (off..1) = below 100
+      return { key: n.key, color, danger: `url(#${id})`, id, off, topOpacity, botOpacity }
+    })
+  }, [drawn, data])
+
+  // Custom tooltip: each nutrient may be rendered as two overlapping lines
+  // (base + red danger overlay) sharing a dataKey, so dedupe by key to avoid
+  // listing it twice. Also recovers the real amount from the plotted %.
+  const renderTip = (props: {
+    active?: boolean
+    label?: string | number
+    payload?: { dataKey?: string | number; value?: number }[]
+  }) => {
+    if (!props.active || !props.payload?.length) return null
+    const seen = new Set<string>()
+    const rows: JSX.Element[] = []
+    for (const item of props.payload) {
+      const key = String(item.dataKey)
+      if (seen.has(key)) continue
+      seen.add(key)
+      const def = config.nutrients.find((n) => n.key === key)
+      const pct = Math.round(Number(item.value))
+      const text =
+        def?.target == null
+          ? `${pct}`
+          : `${Math.round(((Number(item.value) / 100) * def.target) * 10) / 10} ${def.unit}（目標比 ${pct}%）`
+      rows.push(
+        <div className="trend__tip-row" key={key}>
+          <span className="trend__tip-name" style={{ color: colorFor(key as NutrientKey) }}>
+            {def?.label ?? key}
+          </span>
+          <span className="trend__tip-val">{text}</span>
+        </div>,
+      )
+    }
+    return (
+      <div className="trend__tip">
+        <div className="trend__tip-label">{props.label}</div>
+        {rows}
+      </div>
+    )
+  }
 
   return (
     <section className="trend">
@@ -261,7 +354,43 @@ export function NutrientTrend({
             data={data}
             margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
           >
+            <defs>
+              {lineStrokes.map((s) =>
+                s.id ? (
+                  <linearGradient key={s.id} id={s.id} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset={s.off} stopColor={DANGER} stopOpacity={s.topOpacity} />
+                    <stop offset={s.off} stopColor={DANGER} stopOpacity={s.botOpacity} />
+                  </linearGradient>
+                ) : null,
+              )}
+            </defs>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            {/* Shade the good (green) / warning (red) zones around the 100%
+                line. Only meaningful when all drawn nutrients share a goal
+                direction — see `zone` above. */}
+            {zone === 'limit' && (
+              <>
+                <ReferenceArea y1={0} y2={100} fill="#85b79d" fillOpacity={0.06} />
+                <ReferenceArea
+                  y1={100}
+                  fill="#e0556d"
+                  fillOpacity={0.08}
+                  label={{ value: '超過注意', position: 'insideTopLeft', fontSize: 10, fill: '#c0455c' }}
+                />
+              </>
+            )}
+            {zone === 'reach' && (
+              <>
+                <ReferenceArea y1={100} fill="#85b79d" fillOpacity={0.06} />
+                <ReferenceArea
+                  y1={0}
+                  y2={100}
+                  fill="#e0556d"
+                  fillOpacity={0.08}
+                  label={{ value: '不足注意', position: 'insideBottomLeft', fontSize: 10, fill: '#c0455c' }}
+                />
+              </>
+            )}
             <XAxis dataKey="date" tick={{ fontSize: 11 }} minTickGap={16} />
             <YAxis
               tick={{ fontSize: 11 }}
@@ -277,45 +406,70 @@ export function NutrientTrend({
               strokeDasharray="6 4"
               ifOverflow="extendDomain"
               label={{
-                value: '目標 100%',
+                value: '基準 100%',
                 position: 'insideTopRight',
                 fontSize: 11,
                 fontWeight: 700,
                 fill: '#c97e16',
               }}
             />
-            <Tooltip
-              formatter={(value, _name, item) => {
-                const def = config.nutrients.find(
-                  (n) => n.key === item.dataKey,
-                )
-                const pct = Math.round(Number(value))
-                if (!def?.target) {
-                  return [`${pct}`, def?.label ?? item.dataKey]
-                }
-                // Recover the real amount from the plotted percentage.
-                const real = Math.round(((Number(value) / 100) * def.target) * 10) / 10
-                return [`${real} ${def.unit}（目標比 ${pct}%）`, def.label]
-              }}
-              labelFormatter={(l) => `${l}`}
-            />
-            {drawn.map((n) => (
-              <Line
-                key={n.key}
-                type="monotone"
-                dataKey={n.key}
-                name={n.label}
-                stroke={colorFor(n.key)}
-                strokeWidth={2}
-                dot={false}
-                activeDot={{ r: 4 }}
-              />
-            ))}
+            <Tooltip content={renderTip} />
+            {drawn.map((n, i) => {
+              const s = lineStrokes[i]
+              return (
+                <Fragment key={n.key}>
+                  <Line
+                    type="monotone"
+                    dataKey={n.key}
+                    name={n.label}
+                    stroke={s.color}
+                    strokeWidth={2}
+                    dot={false}
+                    activeDot={{ r: 4, fill: s.color }}
+                    isAnimationActive={false}
+                  />
+                  {s.danger && (
+                    // Red dashes over the bad stretch; gaps reveal the base
+                    // colour, so danger reads as colour+red alternating.
+                    <Line
+                      type="monotone"
+                      dataKey={n.key}
+                      stroke={s.danger}
+                      strokeWidth={2}
+                      strokeDasharray="6 6"
+                      dot={false}
+                      activeDot={false}
+                      legendType="none"
+                      isAnimationActive={false}
+                    />
+                  )}
+                </Fragment>
+              )
+            })}
           </LineChart>
         </ResponsiveContainer>
       ) : (
         <p className="trend__empty">
           タグをクリックして表示する栄養素を選んでください
+        </p>
+      )}
+
+      {zone === 'limit' && (
+        <p className="trend__zone">
+          <span className="trend__zone-ok">緑帯＝基準以下でOK</span>
+          <span className="trend__zone-ng">赤い破線＝超過注意（上限型）</span>
+        </p>
+      )}
+      {zone === 'reach' && (
+        <p className="trend__zone">
+          <span className="trend__zone-ok">緑帯＝基準以上でOK</span>
+          <span className="trend__zone-ng">赤い破線＝不足注意（目標型）</span>
+        </p>
+      )}
+      {zone === 'mixed' && (
+        <p className="trend__zone trend__zone--mixed">
+          <span className="trend__zone-ng">赤い破線の区間＝注意</span>
+          （上限型は100%超／目標型は100%未満）。1タイプだけ表示すると背景にも基準帯が出ます。
         </p>
       )}
     </section>

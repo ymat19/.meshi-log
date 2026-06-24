@@ -289,6 +289,70 @@ main {
   padding: 40px 16px;
 }
 
+/* Legend for the good/warning bands behind the trend chart. */
+.trend__zone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 0;
+  padding: 0 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.trend__zone-ok::before,
+.trend__zone-ng::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.trend__zone-ok::before {
+  background: rgba(133, 183, 157, 0.45);
+}
+
+.trend__zone-ng::before {
+  background: rgba(224, 85, 109, 0.45);
+}
+
+.trend__zone--mixed {
+  display: block;
+}
+
+/* Custom trend tooltip (replaces the default so duplicate base+overlay lines
+   are not listed twice). */
+.trend__tip {
+  background: var(--card, #fff);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.trend__tip-label {
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.trend__tip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.trend__tip-name {
+  font-weight: 600;
+}
+
+.trend__tip-val {
+  color: var(--text, #333);
+}
+
 .trend__controls {
   display: flex;
   align-items: center;
