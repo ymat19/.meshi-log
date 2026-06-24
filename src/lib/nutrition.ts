@@ -1,5 +1,12 @@
 import type { MealEntry, Nutrition, NutrientKey } from '../data/types'
 
+// A meal's total nutrition, derived by summing its items. The entry itself
+// stores no total, so this is the only way a meal total exists — there is
+// nothing to drift from the breakdown.
+export function entryTotals(entry: MealEntry): Nutrition {
+  return sumNutrition(entry.items.map((i) => i.nutrition))
+}
+
 // Sums a set of nutrition records key by key, ignoring undefined values.
 export function sumNutrition(records: Nutrition[]): Nutrition {
   const total: Nutrition = {}
@@ -56,7 +63,8 @@ export function soberStreak(entries: MealEntry[], today = todayJST()): SoberStre
   for (const e of entries) {
     const date = e.datetime.slice(0, 10)
     if (earliest === null || date < earliest) earliest = date
-    if ((e.nutrition.alcohol_g ?? 0) > 0 && (lastDrink === null || date > lastDrink)) {
+    const drank = e.items.some((i) => (i.nutrition.alcohol_g ?? 0) > 0)
+    if (drank && (lastDrink === null || date > lastDrink)) {
       lastDrink = date
     }
   }
@@ -75,7 +83,7 @@ export interface DailyTotal {
 // Optionally limited to the most recent `days` calendar days that have data.
 export function dailyTotals(entries: MealEntry[], days?: number): DailyTotal[] {
   const all = groupByDate(entries)
-    .map(([date, es]) => ({ date, totals: sumNutrition(es.map((e) => e.nutrition)) }))
+    .map(([date, es]) => ({ date, totals: sumNutrition(es.map(entryTotals)) }))
     .sort((a, b) => (a.date < b.date ? -1 : 1))
   return typeof days === 'number' ? all.slice(-days) : all
 }

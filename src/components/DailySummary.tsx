@@ -1,5 +1,5 @@
 import type { Config, MealEntry, NutrientKey } from '../data/types'
-import { sumNutrition } from '../lib/nutrition'
+import { entryTotals, sumNutrition } from '../lib/nutrition'
 
 // Nutrients you want to *reach* (target is a recommended minimum). Everything
 // else is treated as an upper guideline you want to stay under. This decides
@@ -20,7 +20,7 @@ export function DailySummary({
 }) {
   const latestDate = entries[0].datetime.slice(0, 10)
   const ofDay = entries.filter((e) => e.datetime.slice(0, 10) === latestDate)
-  const totals = sumNutrition(ofDay.map((e) => e.nutrition))
+  const totals = sumNutrition(ofDay.map(entryTotals))
 
   return (
     <section className="summary">

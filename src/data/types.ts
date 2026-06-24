@@ -22,7 +22,11 @@ export type NutrientKey = keyof Nutrition
 
 export interface MealItem {
   name: string
-  nutrition?: Nutrition
+  // Every food item carries its own full nutrition breakdown — it is the single
+  // source of truth. A meal's total is always derived by summing its items
+  // (see entryTotals in lib/nutrition.ts); the entry never stores a redundant
+  // total that could drift from the breakdown.
+  nutrition: Nutrition
 }
 
 export interface MealEntry {
@@ -35,7 +39,6 @@ export interface MealEntry {
   type: MealType
   photos: string[]
   items: MealItem[]
-  nutrition: Nutrition // totals for the entry
   memo: string
   tags: string[]
   estimated: boolean // true when nutrition came from AI estimation
