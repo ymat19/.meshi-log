@@ -97,7 +97,6 @@ export function generateMeals(endDate: Date, days: number, seed = 42): Generated
         type,
         photos,
         items: [{ name: dish.name, nutrition }],
-        nutrition,
         memo: '',
         tags: dish.tags,
         estimated: true,

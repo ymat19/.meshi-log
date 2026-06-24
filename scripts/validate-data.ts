@@ -1,15 +1,18 @@
-// Validates that every recorded meal carries all *required* nutrients — both at
-// the entry-total level AND for every individual food item.
+// Validates that every recorded food item carries all *required* nutrients.
+//
+// A meal's total is DERIVED by summing its items (entryTotals in
+// lib/nutrition.ts) — the entry stores no redundant total — so "合計 = 食品の
+// 合計" holds by construction and needs no checking. What still needs guarding
+// is that the breakdown is complete: every item must carry all required
+// nutrients, or the dashboard silently aggregates a missing value as 0.
 //
 // The Nutrition type is an open record of optional fields, so TypeScript alone
-// cannot guarantee that real data actually fills them in — missing values just
-// silently aggregate to 0 on the dashboard. This script closes that gap at CI
-// time (and at commit time via the husky pre-commit hook): config.ts is the
-// single source of truth for which nutrients are required, and any entry — or
-// any item within it — missing one of them fails the build / blocks the commit.
+// cannot guarantee data fills them in. This script closes that gap at CI time
+// (and at commit time via the husky pre-commit hook): config.ts is the single
+// source of truth for which nutrients are required.
 //
-// alcohol_g stays optional by design: it is only present when the meal actually
-// contained alcohol (a sober day legitimately omits it).
+// alcohol_g stays optional by design: it is only present when the item actually
+// contained alcohol (a sober meal legitimately omits it).
 
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -27,7 +30,7 @@ const requiredKeys = config.nutrients
 interface Problem {
   file: string
   id: string
-  // Which item is incomplete, or 'エントリ合計' for the entry-level total.
+  // Which item is incomplete, or 'items' when a meal has no items at all.
   where: string
   missing: NutrientKey[]
 }
@@ -37,41 +40,9 @@ const problems: Problem[] = []
 const readJson = (path: string): unknown =>
   JSON.parse(readFileSync(path, 'utf8'))
 
-// Every nutrient the app knows about (required + optional, e.g. alcohol_g).
-const allKeys = config.nutrients.map((n) => n.key) as NutrientKey[]
-
-// Allowed gap between a stored entry total and the sum of its items. Both are
-// recorded to one decimal place, so a single rounding step (0.1) is tolerated;
-// anything larger means the total drifted from the breakdown.
-const SUM_TOLERANCE = 0.1
-const r1 = (n: number): number => Math.round(n * 10) / 10
-
 // Required nutrients absent (or non-numeric) on a given nutrition record.
 const missingFrom = (n: Nutrition | undefined): NutrientKey[] =>
   requiredKeys.filter((k) => typeof (n ?? {})[k] !== 'number')
-
-// Per-nutrient sum of a meal's item breakdown.
-const sumItems = (entry: MealEntry): Nutrition => {
-  const total: Nutrition = {}
-  for (const item of entry.items ?? []) {
-    const n = item.nutrition ?? {}
-    for (const k of allKeys) {
-      const v = n[k]
-      if (typeof v === 'number') total[k] = (total[k] ?? 0) + v
-    }
-  }
-  return total
-}
-
-interface Mismatch {
-  file: string
-  id: string
-  key: NutrientKey
-  entry: number
-  itemsSum: number
-}
-
-const mismatches: Mismatch[] = []
 
 const index = readJson(resolve(dataDir, 'index.json')) as { months: string[] }
 
@@ -79,36 +50,22 @@ for (const month of index.months) {
   const file = `${month}.json`
   const entries = readJson(resolve(dataDir, file)) as MealEntry[]
   for (const entry of entries) {
-    // Entry-total level.
-    const entryMissing = missingFrom(entry.nutrition)
-    if (entryMissing.length > 0) {
-      problems.push({ file, id: entry.id, where: 'エントリ合計', missing: entryMissing })
+    // A meal with no items has no derivable nutrition at all.
+    if (!entry.items || entry.items.length === 0) {
+      problems.push({ file, id: entry.id, where: 'items', missing: requiredKeys })
+      continue
     }
-    // Item level: every food item must carry a full nutrition breakdown.
-    for (const item of entry.items ?? []) {
+    // Every food item must carry a full nutrition breakdown.
+    for (const item of entry.items) {
       const itemMissing = missingFrom(item.nutrition)
       if (itemMissing.length > 0) {
         problems.push({ file, id: entry.id, where: item.name, missing: itemMissing })
       }
     }
-    // Consistency: the stored entry total must equal the sum of its items
-    // (一食の合計 = 食品の合計). This keeps the redundant total honest — it is a
-    // checksum over the breakdown, not an independently-edited number.
-    const itemsSum = sumItems(entry)
-    for (const k of allKeys) {
-      const entryVal = entry.nutrition?.[k] ?? 0
-      const sumVal = r1(itemsSum[k] ?? 0)
-      if (Math.abs(entryVal - sumVal) > SUM_TOLERANCE) {
-        mismatches.push({ file, id: entry.id, key: k, entry: entryVal, itemsSum: sumVal })
-      }
-    }
   }
 }
 
-let failed = false
-
 if (problems.length > 0) {
-  failed = true
   console.error(
     `\n❌ データ検証に失敗: 必須栄養素が欠けている箇所が ${problems.length} 件あります。\n`,
   )
@@ -118,29 +75,14 @@ if (problems.length > 0) {
   }
   console.error(
     `\n必須栄養素: ${requiredKeys.join(', ')}\n` +
-      `（全エントリの合計と、各 item の nutrition すべてに必要です。\n` +
-      ` 任意項目は config.ts で required を付けないことで除外できます。例: alcohol_g）\n`,
+      `（各 item の nutrition すべてに必要です。一食の合計はこれらの item から\n` +
+      ` 自動で導出されます。任意項目は config.ts で required を付けないことで\n` +
+      ` 除外できます。例: alcohol_g）\n`,
   )
+  process.exit(1)
 }
-
-if (mismatches.length > 0) {
-  failed = true
-  console.error(
-    `\n❌ データ検証に失敗: エントリ合計が食品(item)の合計と一致しない箇所が ${mismatches.length} 件あります。\n`,
-  )
-  for (const m of mismatches) {
-    console.error(`  [${m.file}] ${m.id}`)
-    console.error(`      ${m.key}: 合計=${m.entry} だが item 合計=${m.itemsSum}`)
-  }
-  console.error(
-    `\n一食の合計(entry.nutrition)は、その食品(items)の合計でなければなりません。\n` +
-      `合計を別途編集せず、必ず item の合計値を入れてください（許容誤差 ±${SUM_TOLERANCE}）。\n`,
-  )
-}
-
-if (failed) process.exit(1)
 
 console.log(
-  `✅ データ検証OK: 必須栄養素 (${requiredKeys.join(', ')}) を全エントリ合計・全 item が保持し、` +
-    `かつ各エントリ合計が食品の合計と一致しています。`,
+  `✅ データ検証OK: 全 item が必須栄養素 (${requiredKeys.join(', ')}) を保持しています` +
+    `（一食の合計は item から導出）。`,
 )

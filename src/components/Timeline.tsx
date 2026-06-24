@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { Config, MealEntry, MealType } from '../data/types'
-import { groupByDate } from '../lib/nutrition'
+import { entryTotals, groupByDate } from '../lib/nutrition'
 
 export function Timeline({
   config,
@@ -40,6 +40,7 @@ function MealCard({
   const [galleryOpen, setGalleryOpen] = useState(false)
   const photoCount = entry.photos.length
   const alt = entry.items[0]?.name ?? '食事'
+  const totals = entryTotals(entry)
 
   return (
     <article className="card">
@@ -69,7 +70,7 @@ function MealCard({
         {entry.memo && <p className="card__memo">{entry.memo}</p>}
         <div className="card__nutri">
           {config.nutrients.map((n) => {
-            const v = entry.nutrition[n.key]
+            const v = totals[n.key]
             if (typeof v !== 'number') return null
             return (
               <span key={n.key} className="chip">

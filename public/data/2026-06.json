@@ -60,16 +60,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 710,
-      "protein_g": 21.3,
-      "fat_g": 29.1,
-      "saturated_fat_g": 11.3,
-      "carbohydrate_g": 89.6,
-      "sugar_g": 84.9,
-      "fiber_g": 4.7,
-      "salt_g": 3.3
-    },
     "memo": "",
     "tags": [
       "自炊"
@@ -112,16 +102,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 780,
-      "protein_g": 18,
-      "fat_g": 18,
-      "saturated_fat_g": 4.5,
-      "carbohydrate_g": 125,
-      "sugar_g": 119,
-      "fiber_g": 6,
-      "salt_g": 6.5
-    },
     "memo": "",
     "tags": [
       "中食",
@@ -207,17 +187,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1225,
-      "protein_g": 31.5,
-      "fat_g": 31,
-      "saturated_fat_g": 10.9,
-      "carbohydrate_g": 73.8,
-      "sugar_g": 66.3,
-      "fiber_g": 7.5,
-      "salt_g": 3.8,
-      "alcohol_g": 71
-    },
     "memo": "宅飲み",
     "tags": [
       "自炊",
@@ -274,16 +243,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 350,
-      "protein_g": 16,
-      "fat_g": 13,
-      "salt_g": 3.7,
-      "saturated_fat_g": 2.8,
-      "carbohydrate_g": 43.1,
-      "sugar_g": 41.6,
-      "fiber_g": 1.5
-    },
     "memo": "",
     "tags": [
       "中食",
@@ -314,16 +273,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 370,
-      "protein_g": 15,
-      "fat_g": 20,
-      "carbohydrate_g": 30,
-      "salt_g": 2,
-      "saturated_fat_g": 5,
-      "sugar_g": 28,
-      "fiber_g": 2
-    },
     "memo": "",
     "tags": [
       "中食"
@@ -407,17 +356,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 940,
-      "protein_g": 30.5,
-      "fat_g": 28.7,
-      "carbohydrate_g": 79.1,
-      "salt_g": 3.8,
-      "saturated_fat_g": 9.8,
-      "sugar_g": 73.6,
-      "fiber_g": 5.5,
-      "alcohol_g": 36
-    },
     "memo": "宅飲み",
     "tags": [
       "自炊",
@@ -474,16 +412,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 435,
-      "protein_g": 22.2,
-      "carbohydrate_g": 56.2,
-      "fat_g": 10.5,
-      "saturated_fat_g": 3,
-      "sugar_g": 55.2,
-      "fiber_g": 1,
-      "salt_g": 4
-    },
     "memo": "",
     "tags": [
       "自炊",
@@ -527,16 +455,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 810,
-      "protein_g": 28,
-      "fat_g": 37,
-      "carbohydrate_g": 93,
-      "salt_g": 7.5,
-      "saturated_fat_g": 14,
-      "sugar_g": 88,
-      "fiber_g": 5
-    },
     "memo": "",
     "tags": [
       "中食",
@@ -634,17 +552,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1015,
-      "protein_g": 32.6,
-      "fat_g": 31.6,
-      "carbohydrate_g": 88.9,
-      "salt_g": 4.6,
-      "saturated_fat_g": 10.6,
-      "sugar_g": 82.5,
-      "fiber_g": 6.4,
-      "alcohol_g": 36
-    },
     "memo": "宅飲み",
     "tags": [
       "自炊",
@@ -743,16 +650,6 @@
         "memo": "既製品 出典: https://mognavi.jp/product/109515 / https://ichiebuy.com/seven-eleven-burrito"
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1056,
-      "protein_g": 49.2,
-      "fat_g": 51,
-      "carbohydrate_g": 99.3,
-      "salt_g": 6.6,
-      "saturated_fat_g": 23.5,
-      "sugar_g": 92.1,
-      "fiber_g": 7.2
-    },
     "memo": "ホットサンド（食パン・ハム・スライスチーズ・目玉焼き）＋らっきょう＋セブンのブリトー。既製品(ブリトー)は栄養成分をWeb検索して出典付きで記録。",
     "tags": [
       "自炊",
@@ -855,17 +752,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1029,
-      "protein_g": 35.2,
-      "fat_g": 42,
-      "carbohydrate_g": 85.9,
-      "sugar_g": 76.6,
-      "fiber_g": 8.6,
-      "salt_g": 5.4,
-      "saturated_fat_g": 15.6,
-      "alcohol_g": 25
-    },
     "memo": "蒙古タンメン中本 汁なし麻辛麺（冷凍）にピーマン追加、豆腐＋6Pチーズ、ポテトフライ、ストロングゼロ。既製品は全て栄養成分をWeb検索し出典付きで記録。",
     "tags": [
       "自炊",
@@ -937,16 +823,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 754,
-      "protein_g": 33.1,
-      "fat_g": 24.3,
-      "saturated_fat_g": 7.8,
-      "carbohydrate_g": 96.6,
-      "sugar_g": 91.1,
-      "fiber_g": 5.5,
-      "salt_g": 3.5
-    },
     "memo": "卵は計2個（かきたま汁・納豆に各1個）。既製品出典 — アイリスオーヤマ 低温製法米のおいしいごはん 200g: 288kcal/P4.6/F0.8/C65.4/食塩0g（公式表示値、出典 https://search.kakaku.com/%E3%82%A2%E3%82%A4%E3%83%AA%E3%82%B9%E3%82%AA%E3%83%BC%E3%83%A4%E3%83%9E%20%E4%BD%8E%E6%B8%A9%E8%A3%BD%E6%B3%95%E7%B1%B3%E3%81%AE%E3%81%8A%E3%81%84%E3%81%97%E3%81%84%E3%81%94%E3%81%AF%E3%82%93/ ）。水餃子・納豆はメーカー特定不可のため記憶ベース推定。昼・夜は居酒屋で内訳不明のため未記録。",
     "tags": [
       "自炊"
@@ -1028,17 +904,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1110,
-      "protein_g": 41.9,
-      "fat_g": 23,
-      "saturated_fat_g": 3.5,
-      "carbohydrate_g": 65.5,
-      "sugar_g": 63.5,
-      "fiber_g": 1,
-      "salt_g": 3.3,
-      "alcohol_g": 65.2
-    },
     "memo": "磯丸水産（昼）。ビールは中ジョッキ435ml/5%換算（1杯約180kcal・純アルコール17.4g）。出典 — 磯丸水産メニュー https://www.umenu.jp/menus/127.html ／ ビール栄養 https://www.eiyoukeisan.com/calorie/gramphoto/nomimono/beer.html ／ ハイボール https://www.sakekaitori.com/knowledge/20211006-highball/ 。刺身・揚げ物はチェーン公式の栄養成分が非公開のため推定。",
     "tags": [
       "外食",
@@ -1084,17 +949,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 280,
-      "protein_g": 1.3,
-      "fat_g": 0,
-      "saturated_fat_g": 0,
-      "carbohydrate_g": 13.5,
-      "sugar_g": 13.5,
-      "fiber_g": 0,
-      "salt_g": 0,
-      "alcohol_g": 30.4
-    },
     "memo": "飲みの間食（ビール中ジョッキ×1・ハイボール×1）。ビール435ml/5%換算、ハイボールは居酒屋グラス換算。純アルコール約30g。出典 — ビール https://www.eiyoukeisan.com/calorie/gramphoto/nomimono/beer.html ／ ハイボール https://www.sakekaitori.com/knowledge/20211006-highball/ 。",
     "tags": [
       "お酒"
@@ -1163,17 +1017,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 2180,
-      "protein_g": 81.3,
-      "fat_g": 70,
-      "saturated_fat_g": 17,
-      "carbohydrate_g": 183.5,
-      "sugar_g": 173.5,
-      "fiber_g": 7,
-      "salt_g": 10.5,
-      "alcohol_g": 53.4
-    },
     "memo": "夜のはしご。玉 赤備（川崎・豚鶏つけ麺 https://tabelog.com/kanagawa/A1405/A140501/14039229/ ）で特製鳥豚つけ麺 大盛り＋ビール中1、その後 中華屋で唐揚げ＋ウーロンハイ3。つけ麺・唐揚げは公式栄養非公開のため推定（特製＋大盛りで高カロリー・高塩分）。ウーロンハイ出典 https://miraizaka.com/blog_list/13111/ 。ビールは中ジョッキ435ml/5%換算。",
     "tags": [
       "外食",
@@ -1245,16 +1088,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 752,
-      "protein_g": 28,
-      "fat_g": 28,
-      "carbohydrate_g": 94.5,
-      "salt_g": 4,
-      "saturated_fat_g": 9,
-      "sugar_g": 86.5,
-      "fiber_g": 8
-    },
     "memo": "推定値。手作りのカレーライスに目玉焼き・納豆・たくあんを添えた朝食。",
     "tags": [
       "自炊",
@@ -1285,16 +1118,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 271,
-      "protein_g": 15.7,
-      "fat_g": 11.2,
-      "carbohydrate_g": 27.3,
-      "salt_g": 1.3,
-      "saturated_fat_g": 5,
-      "sugar_g": 26.2,
-      "fiber_g": 1.1
-    },
     "memo": "セブン公式の栄養成分表示に基づく。ブリトー ハム＆チーズ: https://www.sej.co.jp/products/a/item/053053/",
     "tags": [
       "中食",
@@ -1367,17 +1190,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1103,
-      "protein_g": 43,
-      "fat_g": 48,
-      "carbohydrate_g": 61.5,
-      "salt_g": 7.6,
-      "saturated_fat_g": 20,
-      "sugar_g": 56.5,
-      "fiber_g": 5,
-      "alcohol_g": 36
-    },
     "memo": "晩酌。家系ラーメンとストロング缶は栄養成分の出典あり、カプレーゼとカマンベールは推定。横浜家系ラーメン: パッケージ表示(1食241g・448kcal)。-196 ストロングゼロ 無糖ドライ(9%・52kcal/100ml): https://products.suntory.co.jp/d/4901777241015/",
     "tags": [
       "中食",
@@ -1462,16 +1274,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 513,
-      "protein_g": 23.1,
-      "fat_g": 15.3,
-      "saturated_fat_g": 5.8,
-      "carbohydrate_g": 69.4,
-      "sugar_g": 68.2,
-      "fiber_g": 1.2,
-      "salt_g": 0.7
-    },
     "memo": "推定値。イル・ド・フランス ミニカマンベール（1個25g 65kcal）: https://www.amazon.co.jp/dp/B0BL25BTCV / 豆腐・海苔・卵は推定。",
     "tags": [
       "自炊"
@@ -1527,16 +1329,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 674,
-      "protein_g": 31.2,
-      "fat_g": 21.2,
-      "carbohydrate_g": 92.2,
-      "sugar_g": 86,
-      "fiber_g": 6.2,
-      "salt_g": 5.4,
-      "saturated_fat_g": 7.4
-    },
     "memo": "推定値。7プレミアム 大盛り油そば（冷凍）公式: https://www.sej.co.jp/products/a/item/410431/ / 追加の卵・チーズは推定。",
     "tags": [
       "中食",
@@ -1620,17 +1412,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1160,
-      "protein_g": 40.5,
-      "fat_g": 39.2,
-      "carbohydrate_g": 93.8,
-      "salt_g": 5.4,
-      "saturated_fat_g": 16.8,
-      "sugar_g": 89.9,
-      "fiber_g": 3.9,
-      "alcohol_g": 36
-    },
     "memo": "推定値。松屋 うまトマハンバーグ単品: https://food-db.work/foods/matsuya-ldr324/（公式 https://www.matsuyafoods.co.jp）/ チーズ2枚・ピーマンは推定。ストロングゼロは既往記録値。",
     "tags": [
       "外食",
@@ -1674,16 +1455,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 573,
-      "protein_g": 14.2,
-      "fat_g": 17.9,
-      "carbohydrate_g": 85.6,
-      "salt_g": 4.4,
-      "saturated_fat_g": 5.5,
-      "fiber_g": 4,
-      "sugar_g": 81.6
-    },
     "memo": "炊き込みご飯は自炊（推定）。松屋 豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html",
     "tags": [
       "自炊",
@@ -1715,16 +1486,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 784,
-      "protein_g": 13,
-      "fat_g": 39.2,
-      "carbohydrate_g": 94.9,
-      "salt_g": 5.6,
-      "saturated_fat_g": 17,
-      "fiber_g": 3,
-      "sugar_g": 91.9
-    },
     "memo": "ごつ盛りソース焼きそば(東洋水産,171g,マヨ込み): https://www.maruchan.co.jp/products/search/205635.html フライドガーリックのトッピングは微量のため未加算。",
     "tags": [
       "中食",
@@ -1823,17 +1584,6 @@
         }
       }
     ],
-    "nutrition": {
-      "energy_kcal": 1061,
-      "protein_g": 31.6,
-      "fat_g": 48.4,
-      "carbohydrate_g": 83.8,
-      "salt_g": 2.1,
-      "saturated_fat_g": 19.8,
-      "fiber_g": 1.8,
-      "sugar_g": 82,
-      "alcohol_g": 24.8
-    },
     "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは個包装ミニ1個（約25g、6/23と同型）に訂正。豆腐・ごはん量は推定。",
     "tags": [
       "外食",
