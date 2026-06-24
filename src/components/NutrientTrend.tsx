@@ -16,6 +16,11 @@ import { dailyTotals } from '../lib/nutrition'
 const PERIODS = [7, 30, 90] as const
 const STORAGE_KEY = 'meshi-log:trend'
 
+// Colour a line segment turns when it sits on the "bad" side of its 100% line
+// (above for 上限型, below for 目標型). Shared with the warning band fill so the
+// danger signal reads the same whether the selection is mixed or homogeneous.
+const DANGER = '#e0556d'
+
 // Stable colour per nutrient, assigned by its position in the config so a
 // nutrient always draws (and lights up its tag) in the same colour regardless
 // of which others are selected.
@@ -190,6 +195,37 @@ export function NutrientTrend({
     [entries, days, drawn],
   )
 
+  // Per-line stroke: each line turns red (DANGER) on the bad side of its own
+  // 100% line, so even a mixed selection shows every nutrient's danger zone
+  // correctly (上限型 reddens above 100, 目標型 below). Implemented as a vertical
+  // gradient with a hard colour switch at the 100% offset within the line's own
+  // value range. Flat lines (no range) fall back to a solid colour.
+  const lineStrokes = useMemo(() => {
+    return drawn.map((n) => {
+      const color = colorFor(n.key)
+      const isReach = n.goal === 'reach'
+      const onBadSide = (pct: number) => (isReach ? pct < 100 : pct > 100)
+      const vals = data
+        .map((d) => d[n.key])
+        .filter((v): v is number => typeof v === 'number')
+      const id = `trend-grad-${n.key}`
+      if (vals.length === 0) return { key: n.key, color, stroke: color }
+      const dataMax = Math.max(...vals)
+      const dataMin = Math.min(...vals)
+      if (dataMax === dataMin) {
+        // Flat line: one solid colour, red only if the whole line is bad.
+        return { key: n.key, color, stroke: onBadSide(dataMax) ? DANGER : color }
+      }
+      // offset 0 = top (dataMax), offset 1 = bottom (dataMin); place the switch
+      // where 100% falls, clamped into [0,1].
+      const off = Math.min(1, Math.max(0, (dataMax - 100) / (dataMax - dataMin)))
+      // Above 100 is the top region (0..off); below is the bottom (off..1).
+      const topColor = isReach ? color : DANGER
+      const botColor = isReach ? DANGER : color
+      return { key: n.key, color, stroke: `url(#${id})`, id, off, topColor, botColor }
+    })
+  }, [drawn, data])
+
   return (
     <section className="trend">
       <div className="trend__head">
@@ -276,6 +312,16 @@ export function NutrientTrend({
             data={data}
             margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
           >
+            <defs>
+              {lineStrokes.map((s) =>
+                s.id ? (
+                  <linearGradient key={s.id} id={s.id} x1="0" y1="0" x2="0" y2="1">
+                    <stop offset={s.off} stopColor={s.topColor} />
+                    <stop offset={s.off} stopColor={s.botColor} />
+                  </linearGradient>
+                ) : null,
+              )}
+            </defs>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             {/* Shade the good (green) / warning (red) zones around the 100%
                 line. Only meaningful when all drawn nutrients share a goal
@@ -340,16 +386,16 @@ export function NutrientTrend({
               }}
               labelFormatter={(l) => `${l}`}
             />
-            {drawn.map((n) => (
+            {drawn.map((n, i) => (
               <Line
                 key={n.key}
                 type="monotone"
                 dataKey={n.key}
                 name={n.label}
-                stroke={colorFor(n.key)}
+                stroke={lineStrokes[i].stroke}
                 strokeWidth={2}
                 dot={false}
-                activeDot={{ r: 4 }}
+                activeDot={{ r: 4, fill: lineStrokes[i].color }}
               />
             ))}
           </LineChart>
@@ -374,7 +420,8 @@ export function NutrientTrend({
       )}
       {zone === 'mixed' && (
         <p className="trend__zone trend__zone--mixed">
-          上限型と目標型が混在中。1タイプだけ表示すると基準帯（緑＝OK／赤＝注意）が出ます。
+          <span className="trend__zone-ng">線が赤い区間＝注意</span>
+          （上限型は100%超／目標型は100%未満）。1タイプだけ表示すると背景にも基準帯が出ます。
         </p>
       )}
     </section>
