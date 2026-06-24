@@ -323,6 +323,36 @@ main {
   display: block;
 }
 
+/* Custom trend tooltip (replaces the default so duplicate base+overlay lines
+   are not listed twice). */
+.trend__tip {
+  background: var(--card, #fff);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.trend__tip-label {
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.trend__tip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.trend__tip-name {
+  font-weight: 600;
+}
+
+.trend__tip-val {
+  color: var(--text, #333);
+}
+
 .trend__controls {
   display: flex;
   align-items: center;
