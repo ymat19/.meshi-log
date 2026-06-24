@@ -1,0 +1,10 @@
+# 栄養データの整合性チェック: 必須栄養素が一つでも欠けていればコミットを中止する。
+# 食事記録(public/data/**)が変更されたときだけ走らせる（src だけの変更では不要）。
+if git diff --cached --name-only | grep -q '^public/data/'; then
+  echo "🥗 栄養データを検証中 (npm run validate)…"
+  npm run validate || {
+    echo ""
+    echo "❌ 必須栄養素が欠けているためコミットを中止しました。上記の欠落を埋めてください。"
+    exit 1
+  }
+fi

@@ -8,27 +8,67 @@
     ],
     "items": [
       {
-        "name": "カレーライス"
+        "name": "カレーライス",
+        "nutrition": {
+          "energy_kcal": 520,
+          "protein_g": 10,
+          "fat_g": 16,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 82,
+          "sugar_g": 78,
+          "fiber_g": 4,
+          "salt_g": 2
+        }
       },
       {
-        "name": "目玉焼き"
+        "name": "目玉焼き",
+        "nutrition": {
+          "energy_kcal": 100,
+          "protein_g": 7,
+          "fat_g": 8,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
       },
       {
-        "name": "スライスチーズ"
+        "name": "スライスチーズ",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 4,
+          "fat_g": 5,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.5
+        }
       },
       {
-        "name": "らっきょう"
+        "name": "らっきょう",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 0.3,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 7,
+          "sugar_g": 6.3,
+          "fiber_g": 0.7,
+          "salt_g": 0.5
+        }
       }
     ],
     "nutrition": {
-      "energy_kcal": 720,
-      "protein_g": 22,
-      "fat_g": 28,
-      "saturated_fat_g": 11,
-      "carbohydrate_g": 88,
-      "sugar_g": 83,
-      "fiber_g": 5,
-      "salt_g": 3.5
+      "energy_kcal": 710,
+      "protein_g": 21.3,
+      "fat_g": 29.1,
+      "saturated_fat_g": 11.3,
+      "carbohydrate_g": 89.6,
+      "sugar_g": 84.9,
+      "fiber_g": 4.7,
+      "salt_g": 3.3
     },
     "memo": "",
     "tags": [
@@ -46,19 +86,39 @@
     ],
     "items": [
       {
-        "name": "蒙古タンメン中本 汁なし麻辛"
+        "name": "蒙古タンメン中本 汁なし麻辛",
+        "nutrition": {
+          "energy_kcal": 550,
+          "protein_g": 13,
+          "fat_g": 12,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 87,
+          "sugar_g": 82,
+          "fiber_g": 5,
+          "salt_g": 5.3
+        }
       },
       {
-        "name": "海老マヨおにぎり"
+        "name": "海老マヨおにぎり",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 5,
+          "fat_g": 6,
+          "saturated_fat_g": 1,
+          "carbohydrate_g": 38,
+          "sugar_g": 37,
+          "fiber_g": 1,
+          "salt_g": 1.2
+        }
       }
     ],
     "nutrition": {
       "energy_kcal": 780,
       "protein_g": 18,
       "fat_g": 18,
-      "saturated_fat_g": 5,
-      "carbohydrate_g": 122,
-      "sugar_g": 116,
+      "saturated_fat_g": 4.5,
+      "carbohydrate_g": 125,
+      "sugar_g": 119,
       "fiber_g": 6,
       "salt_g": 6.5
     },
@@ -81,30 +141,81 @@
     ],
     "items": [
       {
-        "name": "ミートソースごはん（チーズのせ）"
+        "name": "ミートソースごはん（チーズのせ）",
+        "nutrition": {
+          "energy_kcal": 480,
+          "protein_g": 18,
+          "fat_g": 16,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 58,
+          "sugar_g": 54,
+          "fiber_g": 4,
+          "salt_g": 2.2
+        }
       },
       {
-        "name": "枝豆"
+        "name": "枝豆",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 5,
+          "fat_g": 2.5,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 4,
+          "sugar_g": 1.5,
+          "fiber_g": 2.5,
+          "salt_g": 0.6
+        }
       },
       {
-        "name": "6Pチーズ"
+        "name": "6Pチーズ",
+        "nutrition": {
+          "energy_kcal": 55,
+          "protein_g": 3.5,
+          "fat_g": 4.5,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
       },
       {
-        "name": "ポリッピ スパイス"
+        "name": "ポリッピ スパイス",
+        "nutrition": {
+          "energy_kcal": 130,
+          "protein_g": 5,
+          "fat_g": 8,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 10,
+          "sugar_g": 9,
+          "fiber_g": 1,
+          "salt_g": 0.5
+        }
       },
       {
-        "name": "ストロングゼロ DRY ×2"
+        "name": "ストロングゼロ DRY ×2",
+        "nutrition": {
+          "energy_kcal": 500,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 1.4,
+          "fiber_g": 0,
+          "salt_g": 0.2,
+          "alcohol_g": 71
+        }
       }
     ],
     "nutrition": {
-      "energy_kcal": 1200,
-      "protein_g": 30,
-      "fat_g": 36,
-      "saturated_fat_g": 14,
-      "carbohydrate_g": 73,
-      "sugar_g": 67,
-      "fiber_g": 6,
-      "salt_g": 4.3,
+      "energy_kcal": 1225,
+      "protein_g": 31.5,
+      "fat_g": 31,
+      "saturated_fat_g": 10.9,
+      "carbohydrate_g": 73.8,
+      "sugar_g": 66.3,
+      "fiber_g": 7.5,
+      "salt_g": 3.8,
       "alcohol_g": 71
     },
     "memo": "宅飲み",
@@ -129,14 +240,24 @@
           "energy_kcal": 90,
           "protein_g": 9,
           "fat_g": 5,
-          "salt_g": 1
+          "salt_g": 1,
+          "saturated_fat_g": 1.4,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0
         }
       },
       {
         "name": "スープ（味噌汁系）",
         "nutrition": {
           "energy_kcal": 30,
-          "salt_g": 1.5
+          "salt_g": 1.5,
+          "protein_g": 2,
+          "fat_g": 1,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 3,
+          "sugar_g": 2,
+          "fiber_g": 1
         }
       },
       {
@@ -146,19 +267,22 @@
           "protein_g": 5,
           "fat_g": 7,
           "carbohydrate_g": 40,
-          "salt_g": 1.2
+          "salt_g": 1.2,
+          "saturated_fat_g": 1.2,
+          "sugar_g": 39.5,
+          "fiber_g": 0.5
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 350,
       "protein_g": 16,
-      "fat_g": 12,
-      "saturated_fat_g": 3,
-      "carbohydrate_g": 43,
-      "sugar_g": 40,
-      "fiber_g": 3,
-      "salt_g": 3.7
+      "fat_g": 13,
+      "salt_g": 3.7,
+      "saturated_fat_g": 2.8,
+      "carbohydrate_g": 43.1,
+      "sugar_g": 41.6,
+      "fiber_g": 1.5
     },
     "memo": "",
     "tags": [
@@ -183,7 +307,10 @@
           "protein_g": 15,
           "fat_g": 20,
           "carbohydrate_g": 30,
-          "salt_g": 2
+          "salt_g": 2,
+          "saturated_fat_g": 5,
+          "sugar_g": 28,
+          "fiber_g": 2
         }
       }
     ],
@@ -191,11 +318,11 @@
       "energy_kcal": 370,
       "protein_g": 15,
       "fat_g": 20,
-      "saturated_fat_g": 6,
       "carbohydrate_g": 30,
+      "salt_g": 2,
+      "saturated_fat_g": 5,
       "sugar_g": 28,
-      "fiber_g": 2,
-      "salt_g": 2
+      "fiber_g": 2
     },
     "memo": "",
     "tags": [
@@ -220,7 +347,10 @@
           "protein_g": 20,
           "fat_g": 18,
           "carbohydrate_g": 70,
-          "salt_g": 3
+          "salt_g": 3,
+          "saturated_fat_g": 5,
+          "sugar_g": 66,
+          "fiber_g": 4
         }
       },
       {
@@ -229,14 +359,24 @@
           "energy_kcal": 80,
           "protein_g": 6,
           "fat_g": 6,
-          "salt_g": 0.3
+          "salt_g": 0.3,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0
         }
       },
       {
         "name": "銀杏",
         "nutrition": {
           "energy_kcal": 30,
-          "carbohydrate_g": 7
+          "carbohydrate_g": 7,
+          "protein_g": 1,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "sugar_g": 5.5,
+          "fiber_g": 1.5,
+          "salt_g": 0
         }
       },
       {
@@ -245,26 +385,37 @@
           "energy_kcal": 55,
           "protein_g": 3.5,
           "fat_g": 4.5,
-          "salt_g": 0.3
+          "salt_g": 0.3,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0
         }
       },
       {
         "name": "ストロングゼロ DRY（500ml）",
         "nutrition": {
           "energy_kcal": 225,
-          "alcohol_g": 36
+          "alcohol_g": 36,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 1.4,
+          "fiber_g": 0,
+          "salt_g": 0.2
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 940,
-      "protein_g": 31,
-      "fat_g": 29,
-      "saturated_fat_g": 10,
-      "carbohydrate_g": 80,
-      "sugar_g": 75,
-      "fiber_g": 5,
-      "salt_g": 3.6,
+      "protein_g": 30.5,
+      "fat_g": 28.7,
+      "carbohydrate_g": 79.1,
+      "salt_g": 3.8,
+      "saturated_fat_g": 9.8,
+      "sugar_g": 73.6,
+      "fiber_g": 5.5,
       "alcohol_g": 36
     },
     "memo": "宅飲み",
@@ -288,7 +439,12 @@
         "nutrition": {
           "energy_kcal": 250,
           "protein_g": 4,
-          "carbohydrate_g": 55
+          "carbohydrate_g": 55,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "sugar_g": 54.5,
+          "fiber_g": 0.5,
+          "salt_g": 0
         }
       },
       {
@@ -297,25 +453,35 @@
           "energy_kcal": 180,
           "protein_g": 18,
           "fat_g": 10,
-          "salt_g": 2
+          "salt_g": 2,
+          "saturated_fat_g": 2.8,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0
         }
       },
       {
         "name": "梅干し",
         "nutrition": {
           "energy_kcal": 5,
-          "salt_g": 2
+          "salt_g": 2,
+          "protein_g": 0.2,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1,
+          "sugar_g": 0.5,
+          "fiber_g": 0.5
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 435,
-      "protein_g": 22,
-      "fat_g": 10,
-      "saturated_fat_g": 2.5,
-      "carbohydrate_g": 56,
-      "sugar_g": 54.5,
-      "fiber_g": 1.5,
+      "protein_g": 22.2,
+      "carbohydrate_g": 56.2,
+      "fat_g": 10.5,
+      "saturated_fat_g": 3,
+      "sugar_g": 55.2,
+      "fiber_g": 1,
       "salt_g": 4
     },
     "memo": "",
@@ -341,7 +507,10 @@
           "protein_g": 18,
           "fat_g": 23,
           "carbohydrate_g": 65,
-          "salt_g": 6
+          "salt_g": 6,
+          "saturated_fat_g": 8,
+          "sugar_g": 61,
+          "fiber_g": 4
         }
       },
       {
@@ -351,7 +520,10 @@
           "protein_g": 10,
           "fat_g": 14,
           "carbohydrate_g": 28,
-          "salt_g": 1.5
+          "salt_g": 1.5,
+          "saturated_fat_g": 6,
+          "sugar_g": 27,
+          "fiber_g": 1
         }
       }
     ],
@@ -359,11 +531,11 @@
       "energy_kcal": 810,
       "protein_g": 28,
       "fat_g": 37,
-      "saturated_fat_g": 13,
       "carbohydrate_g": 93,
-      "sugar_g": 89,
-      "fiber_g": 4,
-      "salt_g": 7.5
+      "salt_g": 7.5,
+      "saturated_fat_g": 14,
+      "sugar_g": 88,
+      "fiber_g": 5
     },
     "memo": "",
     "tags": [
@@ -389,14 +561,23 @@
           "protein_g": 20,
           "fat_g": 18,
           "carbohydrate_g": 70,
-          "salt_g": 3
+          "salt_g": 3,
+          "saturated_fat_g": 6,
+          "sugar_g": 66,
+          "fiber_g": 4
         }
       },
       {
         "name": "ピーマン（2個）",
         "nutrition": {
           "energy_kcal": 20,
-          "carbohydrate_g": 3
+          "carbohydrate_g": 3,
+          "protein_g": 0.6,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "sugar_g": 1.6,
+          "fiber_g": 1.4,
+          "salt_g": 0
         }
       },
       {
@@ -405,7 +586,11 @@
           "energy_kcal": 30,
           "protein_g": 3,
           "carbohydrate_g": 4,
-          "salt_g": 0.6
+          "salt_g": 0.6,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.1,
+          "sugar_g": 4,
+          "fiber_g": 0
         }
       },
       {
@@ -414,7 +599,11 @@
           "energy_kcal": 60,
           "protein_g": 4,
           "fat_g": 5,
-          "salt_g": 0.3
+          "salt_g": 0.3,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0
         }
       },
       {
@@ -423,26 +612,37 @@
           "energy_kcal": 130,
           "protein_g": 5,
           "fat_g": 8,
-          "carbohydrate_g": 10
+          "carbohydrate_g": 10,
+          "saturated_fat_g": 1.5,
+          "sugar_g": 9,
+          "fiber_g": 1,
+          "salt_g": 0.5
         }
       },
       {
         "name": "ストロングゼロ DRY（500ml）",
         "nutrition": {
           "energy_kcal": 225,
-          "alcohol_g": 36
+          "alcohol_g": 36,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 1.4,
+          "fiber_g": 0,
+          "salt_g": 0.2
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 1015,
-      "protein_g": 32,
-      "fat_g": 31,
-      "saturated_fat_g": 11,
-      "carbohydrate_g": 87,
-      "sugar_g": 81,
-      "fiber_g": 6,
-      "salt_g": 4,
+      "protein_g": 32.6,
+      "fat_g": 31.6,
+      "carbohydrate_g": 88.9,
+      "salt_g": 4.6,
+      "saturated_fat_g": 10.6,
+      "sugar_g": 82.5,
+      "fiber_g": 6.4,
       "alcohol_g": 36
     },
     "memo": "宅飲み",
@@ -470,7 +670,10 @@
           "protein_g": 10,
           "fat_g": 4,
           "carbohydrate_g": 58,
-          "salt_g": 1.5
+          "salt_g": 1.5,
+          "saturated_fat_g": 1,
+          "sugar_g": 55,
+          "fiber_g": 3
         }
       },
       {
@@ -480,7 +683,10 @@
           "protein_g": 9,
           "fat_g": 6,
           "carbohydrate_g": 1,
-          "salt_g": 1
+          "salt_g": 1,
+          "saturated_fat_g": 2,
+          "sugar_g": 1,
+          "fiber_g": 0
         }
       },
       {
@@ -490,7 +696,10 @@
           "protein_g": 13,
           "fat_g": 17,
           "carbohydrate_g": 1,
-          "salt_g": 2
+          "salt_g": 2,
+          "saturated_fat_g": 11,
+          "sugar_g": 1,
+          "fiber_g": 0
         }
       },
       {
@@ -500,7 +709,10 @@
           "protein_g": 7,
           "fat_g": 9,
           "carbohydrate_g": 0.3,
-          "salt_g": 0.3
+          "salt_g": 0.3,
+          "saturated_fat_g": 2.5,
+          "sugar_g": 0.3,
+          "fiber_g": 0
         }
       },
       {
@@ -510,7 +722,10 @@
           "protein_g": 0.2,
           "fat_g": 0,
           "carbohydrate_g": 7,
-          "salt_g": 0.4
+          "salt_g": 0.4,
+          "saturated_fat_g": 0,
+          "sugar_g": 6.3,
+          "fiber_g": 0.7
         }
       },
       {
@@ -521,20 +736,22 @@
           "fat_g": 15,
           "carbohydrate_g": 32,
           "sugar_g": 28.5,
-          "salt_g": 1.4
+          "salt_g": 1.4,
+          "saturated_fat_g": 7,
+          "fiber_g": 3.5
         },
         "memo": "既製品 出典: https://mognavi.jp/product/109515 / https://ichiebuy.com/seven-eleven-burrito"
       }
     ],
     "nutrition": {
       "energy_kcal": 1056,
-      "protein_g": 49,
+      "protein_g": 49.2,
       "fat_g": 51,
-      "saturated_fat_g": 22,
-      "carbohydrate_g": 99,
-      "sugar_g": 92,
-      "fiber_g": 7,
-      "salt_g": 6.6
+      "carbohydrate_g": 99.3,
+      "salt_g": 6.6,
+      "saturated_fat_g": 23.5,
+      "sugar_g": 92.1,
+      "fiber_g": 7.2
     },
     "memo": "ホットサンド（食パン・ハム・スライスチーズ・目玉焼き）＋らっきょう＋セブンのブリトー。既製品(ブリトー)は栄養成分をWeb検索して出典付きで記録。",
     "tags": [
@@ -563,7 +780,8 @@
           "carbohydrate_g": 72.7,
           "sugar_g": 66.3,
           "fiber_g": 6.4,
-          "salt_g": 4.1
+          "salt_g": 4.1,
+          "saturated_fat_g": 7
         },
         "memo": "既製品 出典: https://www.sej.co.jp/products/a/item/410506/ / https://mognavi.jp/product/2727"
       },
@@ -576,7 +794,9 @@
           "carbohydrate_g": 0.7,
           "sugar_g": 0,
           "salt_g": 0.1,
-          "alcohol_g": 25
+          "alcohol_g": 25,
+          "saturated_fat_g": 0,
+          "fiber_g": 0
         },
         "memo": "既製品 出典: https://products.suntory.co.jp/d/4901777240971/ / https://www.chu-hi-guide.com/196-strong-zero-dry/ （100ml52kcal×3.5、アルコール9%×350ml≈25g）"
       },
@@ -587,7 +807,10 @@
           "protein_g": 7.4,
           "fat_g": 9.4,
           "carbohydrate_g": 0.4,
-          "salt_g": 0.9
+          "salt_g": 0.9,
+          "saturated_fat_g": 6,
+          "sugar_g": 0.4,
+          "fiber_g": 0
         },
         "memo": "既製品 出典: https://www.snow6p.jp/products/ / https://www.fatsecret.jp/カロリー-栄養/雪印乳業/6pチーズ/1個"
       },
@@ -598,7 +821,10 @@
           "protein_g": 0.7,
           "fat_g": 4.1,
           "carbohydrate_g": 5.5,
-          "salt_g": 0.28
+          "salt_g": 0.28,
+          "saturated_fat_g": 1.8,
+          "sugar_g": 5.2,
+          "fiber_g": 0.3
         },
         "memo": "既製品 出典: https://www.sej.co.jp/products/a/item/321665/ / https://www.kumitasu.com/products/detail/19844/"
       },
@@ -609,7 +835,10 @@
           "protein_g": 7,
           "fat_g": 5,
           "carbohydrate_g": 3,
-          "salt_g": 0
+          "salt_g": 0,
+          "saturated_fat_g": 0.8,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5
         }
       },
       {
@@ -619,19 +848,22 @@
           "protein_g": 0.6,
           "fat_g": 0.1,
           "carbohydrate_g": 3.6,
-          "salt_g": 0
+          "salt_g": 0,
+          "saturated_fat_g": 0,
+          "sugar_g": 2.2,
+          "fiber_g": 1.4
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 1029,
-      "protein_g": 35,
+      "protein_g": 35.2,
       "fat_g": 42,
-      "saturated_fat_g": 14,
-      "carbohydrate_g": 86,
-      "sugar_g": 78,
-      "fiber_g": 8,
+      "carbohydrate_g": 85.9,
+      "sugar_g": 76.6,
+      "fiber_g": 8.6,
       "salt_g": 5.4,
+      "saturated_fat_g": 15.6,
       "alcohol_g": 25
     },
     "memo": "蒙古タンメン中本 汁なし麻辛麺（冷凍）にピーマン追加、豆腐＋6Pチーズ、ポテトフライ、ストロングゼロ。既製品は全て栄養成分をWeb検索し出典付きで記録。",
@@ -1020,8 +1252,8 @@
       "carbohydrate_g": 94.5,
       "salt_g": 4,
       "saturated_fat_g": 9,
-      "fiber_g": 8,
-      "sugar_g": 86.5
+      "sugar_g": 86.5,
+      "fiber_g": 8
     },
     "memo": "推定値。手作りのカレーライスに目玉焼き・納豆・たくあんを添えた朝食。",
     "tags": [
@@ -1060,8 +1292,8 @@
       "carbohydrate_g": 27.3,
       "salt_g": 1.3,
       "saturated_fat_g": 5,
-      "fiber_g": 1.1,
-      "sugar_g": 26.2
+      "sugar_g": 26.2,
+      "fiber_g": 1.1
     },
     "memo": "セブン公式の栄養成分表示に基づく。ブリトー ハム＆チーズ: https://www.sej.co.jp/products/a/item/053053/",
     "tags": [
@@ -1141,10 +1373,10 @@
       "fat_g": 48,
       "carbohydrate_g": 61.5,
       "salt_g": 7.6,
-      "alcohol_g": 36,
       "saturated_fat_g": 20,
+      "sugar_g": 56.5,
       "fiber_g": 5,
-      "sugar_g": 56.5
+      "alcohol_g": 36
     },
     "memo": "晩酌。家系ラーメンとストロング缶は栄養成分の出典あり、カプレーゼとカマンベールは推定。横浜家系ラーメン: パッケージ表示(1食241g・448kcal)。-196 ストロングゼロ 無糖ドライ(9%・52kcal/100ml): https://products.suntory.co.jp/d/4901777241015/",
     "tags": [
@@ -1184,7 +1416,10 @@
           "protein_g": 7.4,
           "fat_g": 4.5,
           "carbohydrate_g": 3,
-          "salt_g": 0
+          "salt_g": 0,
+          "saturated_fat_g": 0.8,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5
         }
       },
       {
@@ -1194,7 +1429,10 @@
           "protein_g": 4.3,
           "fat_g": 5.1,
           "carbohydrate_g": 0.4,
-          "salt_g": 0.4
+          "salt_g": 0.4,
+          "saturated_fat_g": 3.2,
+          "sugar_g": 0.4,
+          "fiber_g": 0
         }
       },
       {
@@ -1203,7 +1441,11 @@
           "energy_kcal": 5,
           "protein_g": 0.6,
           "carbohydrate_g": 0.3,
-          "salt_g": 0.1
+          "salt_g": 0.1,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "sugar_g": 0.1,
+          "fiber_g": 0.2
         }
       },
       {
@@ -1213,19 +1455,22 @@
           "protein_g": 6.2,
           "fat_g": 4.8,
           "carbohydrate_g": 0.3,
-          "salt_g": 0.2
+          "salt_g": 0.2,
+          "saturated_fat_g": 1.6,
+          "sugar_g": 0.3,
+          "fiber_g": 0
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 513,
       "protein_g": 23.1,
-      "fat_g": 15.2,
+      "fat_g": 15.3,
+      "saturated_fat_g": 5.8,
       "carbohydrate_g": 69.4,
-      "salt_g": 0.7,
-      "saturated_fat_g": 5.6,
-      "fiber_g": 1.3,
-      "sugar_g": 68.1
+      "sugar_g": 68.2,
+      "fiber_g": 1.2,
+      "salt_g": 0.7
     },
     "memo": "推定値。イル・ド・フランス ミニカマンベール（1個25g 65kcal）: https://www.amazon.co.jp/dp/B0BL25BTCV / 豆腐・海苔・卵は推定。",
     "tags": [
@@ -1251,7 +1496,8 @@
           "carbohydrate_g": 91.6,
           "sugar_g": 85.4,
           "fiber_g": 6.2,
-          "salt_g": 4.7
+          "salt_g": 4.7,
+          "saturated_fat_g": 3
         }
       },
       {
@@ -1261,7 +1507,10 @@
           "protein_g": 6.2,
           "fat_g": 4.8,
           "carbohydrate_g": 0.3,
-          "salt_g": 0.2
+          "salt_g": 0.2,
+          "saturated_fat_g": 1.6,
+          "sugar_g": 0.3,
+          "fiber_g": 0
         }
       },
       {
@@ -1271,7 +1520,10 @@
           "protein_g": 3.5,
           "fat_g": 4.4,
           "carbohydrate_g": 0.3,
-          "salt_g": 0.5
+          "salt_g": 0.5,
+          "saturated_fat_g": 2.8,
+          "sugar_g": 0.3,
+          "fiber_g": 0
         }
       }
     ],
@@ -1280,10 +1532,10 @@
       "protein_g": 31.2,
       "fat_g": 21.2,
       "carbohydrate_g": 92.2,
-      "salt_g": 5.4,
-      "saturated_fat_g": 8,
+      "sugar_g": 86,
       "fiber_g": 6.2,
-      "sugar_g": 86
+      "salt_g": 5.4,
+      "saturated_fat_g": 7.4
     },
     "memo": "推定値。7プレミアム 大盛り油そば（冷凍）公式: https://www.sej.co.jp/products/a/item/410431/ / 追加の卵・チーズは推定。",
     "tags": [
@@ -1308,7 +1560,10 @@
           "protein_g": 28.3,
           "fat_g": 29.5,
           "carbohydrate_g": 24.8,
-          "salt_g": 4.4
+          "salt_g": 4.4,
+          "saturated_fat_g": 11,
+          "sugar_g": 22.8,
+          "fiber_g": 2
         }
       },
       {
@@ -1318,7 +1573,10 @@
           "protein_g": 0.6,
           "carbohydrate_g": 3,
           "fiber_g": 1.4,
-          "salt_g": 0
+          "salt_g": 0,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "sugar_g": 1.6
         }
       },
       {
@@ -1328,7 +1586,10 @@
           "protein_g": 7,
           "fat_g": 8.8,
           "carbohydrate_g": 0.6,
-          "salt_g": 1
+          "salt_g": 1,
+          "saturated_fat_g": 5.6,
+          "sugar_g": 0.6,
+          "fiber_g": 0
         }
       },
       {
@@ -1352,20 +1613,23 @@
           "fat_g": 0,
           "carbohydrate_g": 0,
           "salt_g": 0,
-          "alcohol_g": 36
+          "alcohol_g": 36,
+          "saturated_fat_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0
         }
       }
     ],
     "nutrition": {
       "energy_kcal": 1160,
       "protein_g": 40.5,
-      "fat_g": 39.1,
+      "fat_g": 39.2,
       "carbohydrate_g": 93.8,
       "salt_g": 5.4,
-      "alcohol_g": 36,
       "saturated_fat_g": 16.8,
-      "fiber_g": 1.9,
-      "sugar_g": 91.9
+      "sugar_g": 89.9,
+      "fiber_g": 3.9,
+      "alcohol_g": 36
     },
     "memo": "推定値。松屋 うまトマハンバーグ単品: https://food-db.work/foods/matsuya-ldr324/（公式 https://www.matsuyafoods.co.jp）/ チーズ2枚・ピーマンは推定。ストロングゼロは既往記録値。",
     "tags": [
@@ -1564,11 +1828,11 @@
       "protein_g": 31.6,
       "fat_g": 48.4,
       "carbohydrate_g": 83.8,
-      "salt_g": 2.05,
-      "alcohol_g": 24.8,
+      "salt_g": 2.1,
       "saturated_fat_g": 19.8,
       "fiber_g": 1.8,
-      "sugar_g": 82
+      "sugar_g": 82,
+      "alcohol_g": 24.8
     },
     "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは個包装ミニ1個（約25g、6/23と同型）に訂正。豆腐・ごはん量は推定。",
     "tags": [
