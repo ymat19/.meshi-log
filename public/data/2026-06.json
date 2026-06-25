@@ -1688,7 +1688,7 @@
           "energy_kcal": 515,
           "protein_g": 7,
           "fat_g": 25,
-          "saturated_fat_g": 2.5,
+          "saturated_fat_g": 3.5,
           "carbohydrate_g": 66,
           "sugar_g": 59.7,
           "fiber_g": 6.3,
@@ -1709,7 +1709,7 @@
         }
       }
     ],
-    "memo": "マクドナルド Lサイズセット。ドリンクはゼロカロリーコーラ。出典: アボカドマヨチーズシュリンプ https://www.mcdonalds.co.jp/products/6820/ ／ マックフライポテト(L) https://www.mcdonalds.co.jp/products/2050/ ／ コーラゼロはゼロカロリー。バーガーの飽和脂肪酸・食物繊維は公式非掲載のため推定。",
+    "memo": "マクドナルド Lサイズセット。ドリンクはゼロカロリーコーラ。出典: アボカドマヨチーズシュリンプ https://www.mcdonalds.co.jp/products/6820/ ／ マックフライポテト(L) https://www.mcdonalds.co.jp/products/2050/ ／ コーラゼロはゼロカロリー。バーガーの飽和脂肪酸・食物繊維は公式非掲載のため推定。 ポテトの飽和脂肪酸は日本マック非公表のため米国マックLポテト比から約3.5gと推定。",
     "tags": [
       "外食",
       "揚げ物"
