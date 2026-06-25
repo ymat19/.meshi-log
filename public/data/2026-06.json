@@ -1778,16 +1778,16 @@
         }
       },
       {
-        "name": "明治プロビオヨーグルトR-1（112g）",
+        "name": "明治プロビオヨーグルトR-1 ドリンクタイプ（112ml）",
         "nutrition": {
-          "energy_kcal": 89,
-          "protein_g": 3.9,
-          "fat_g": 3.4,
-          "saturated_fat_g": 2.1,
-          "carbohydrate_g": 10.8,
-          "sugar_g": 10.8,
+          "energy_kcal": 71,
+          "protein_g": 3.3,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 13.2,
+          "sugar_g": 13.2,
           "fiber_g": 0,
-          "salt_g": 0.13
+          "salt_g": 0.11
         }
       },
       {
@@ -1805,7 +1805,7 @@
         }
       }
     ],
-    "memo": "カツオのたたきにネギ・ししとう。ご飯200gとR-1ヨーグルト付き。出典: R-1 https://www.meiji.co.jp/products/probioticsyogurt/49722000.html ／ ストロングゼロ500ml(9%)は過去記録(2026-06-23)を流用。カツオ・薬味・ご飯は標準的な食品成分からの推定。",
+    "memo": "カツオのたたきにネギ・ししとう。ご飯200gとR-1ドリンク付き。出典: R-1ドリンクタイプ112ml https://www.meiji.co.jp/products/probioticsyogurt/4902705096011.html ／ ストロングゼロ500ml(9%)は過去記録(2026-06-23)を流用。カツオ・薬味・ご飯は標準的な食品成分からの推定。",
     "tags": [
       "自炊",
       "魚",
