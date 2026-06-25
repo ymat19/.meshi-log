@@ -1592,5 +1592,226 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-25T08:00:00+09:00-breakfast",
+    "datetime": "2026-06-25T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/25-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "アボカド（1/2個・約70g）",
+        "nutrition": {
+          "energy_kcal": 131,
+          "protein_g": 1.8,
+          "fat_g": 13.1,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 4.3,
+          "sugar_g": 0.4,
+          "fiber_g": 3.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "絹豆腐（約150g）",
+        "nutrition": {
+          "energy_kcal": 84,
+          "protein_g": 7.4,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 3,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "つけ醤油（小さじ1.5・約9ml）",
+        "nutrition": {
+          "energy_kcal": 8,
+          "protein_g": 0.8,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0.9,
+          "sugar_g": 0.9,
+          "fiber_g": 0,
+          "salt_g": 1.3
+        }
+      }
+    ],
+    "memo": "自炊。豆腐・アボカドをつけ醤油で。栄養値は標準的な食品成分からの推定。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-25T12:30:00+09:00-lunch",
+    "datetime": "2026-06-25T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/25-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "アボカドマヨチーズシュリンプ",
+        "nutrition": {
+          "energy_kcal": 459,
+          "protein_g": 14.8,
+          "fat_g": 21.9,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 51.4,
+          "sugar_g": 48.4,
+          "fiber_g": 3,
+          "salt_g": 2.4
+        }
+      },
+      {
+        "name": "マックフライポテト（L）",
+        "nutrition": {
+          "energy_kcal": 515,
+          "protein_g": 7,
+          "fat_g": 25,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 66,
+          "sugar_g": 59.7,
+          "fiber_g": 6.3,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "コカ・コーラ ゼロ（L）",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "マクドナルド Lサイズセット。ドリンクはゼロカロリーコーラ。出典: アボカドマヨチーズシュリンプ https://www.mcdonalds.co.jp/products/6820/ ／ マックフライポテト(L) https://www.mcdonalds.co.jp/products/2050/ ／ コーラゼロはゼロカロリー。バーガーの飽和脂肪酸・食物繊維は公式非掲載のため推定。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-25T20:00:00+09:00-dinner",
+    "datetime": "2026-06-25T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/25-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオ（たたき・約100g）",
+        "nutrition": {
+          "energy_kcal": 120,
+          "protein_g": 26,
+          "fat_g": 2.5,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "ししとう（約6本・30g）",
+        "nutrition": {
+          "energy_kcal": 8,
+          "protein_g": 0.5,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.6,
+          "sugar_g": 0.5,
+          "fiber_g": 1.1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ねぎ（小口・約15g）",
+        "nutrition": {
+          "energy_kcal": 4,
+          "protein_g": 0.3,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1,
+          "sugar_g": 0.6,
+          "fiber_g": 0.4,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "白ごはん（200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "明治プロビオヨーグルトR-1（112g）",
+        "nutrition": {
+          "energy_kcal": 89,
+          "protein_g": 3.9,
+          "fat_g": 3.4,
+          "saturated_fat_g": 2.1,
+          "carbohydrate_g": 10.8,
+          "sugar_g": 10.8,
+          "fiber_g": 0,
+          "salt_g": 0.13
+        }
+      },
+      {
+        "name": "-196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "カツオのたたきにネギ・ししとう。ご飯200gとR-1ヨーグルト付き。出典: R-1 https://www.meiji.co.jp/products/probioticsyogurt/49722000.html ／ ストロングゼロ500ml(9%)は過去記録(2026-06-23)を流用。カツオ・薬味・ご飯は標準的な食品成分からの推定。",
+    "tags": [
+      "自炊",
+      "魚",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
