@@ -1813,5 +1813,268 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-26T07:00:00+09:00-breakfast",
+    "datetime": "2026-06-26T07:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/26-0700-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "あさりスンドゥブ（サガミヤ・豆腐300g＋たれ・生卵入り）",
+        "nutrition": {
+          "energy_kcal": 182,
+          "protein_g": 14.1,
+          "fat_g": 9.3,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 10.9,
+          "sugar_g": 9.6,
+          "fiber_g": 1.3,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "生卵 1個（スンドゥブに投入）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      }
+    ],
+    "memo": "サガミヤ あさりスンドゥブ: https://sagamiya-kk.co.jp/products/ka_h_asari_sundubu.html （1食=豆腐300g+たれ20gの公式値。生卵は別途投入分を加算）。飽和脂肪酸は公式未記載のため豆腐の脂肪組成から推定。",
+    "tags": [
+      "自炊",
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-26T12:30:00+09:00-lunch",
+    "datetime": "2026-06-26T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/26-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "ビッグマック",
+        "nutrition": {
+          "energy_kcal": 525,
+          "protein_g": 26.1,
+          "fat_g": 28,
+          "saturated_fat_g": 10,
+          "carbohydrate_g": 42.1,
+          "sugar_g": 39.3,
+          "fiber_g": 2.8,
+          "salt_g": 2.7
+        }
+      },
+      {
+        "name": "ザバス ミルクプロテイン脂肪0 カフェラテ 430ml",
+        "nutrition": {
+          "energy_kcal": 193,
+          "protein_g": 30,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 18.5,
+          "sugar_g": 18.5,
+          "fiber_g": 0,
+          "salt_g": 0.48
+        }
+      }
+    ],
+    "memo": "ビッグマック: https://www.mcdonalds.co.jp/products/1210/ （飽和脂肪酸は公式未記載のため米国マック値から推定）。ザバス ミルクプロテイン脂肪0 カフェラテ430ml: https://www.meiji.co.jp/products/sports/4902705128804.html",
+    "tags": [
+      "外食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-26T21:30:00+09:00-dinner",
+    "datetime": "2026-06-26T21:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/26-2130-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ザ・プレミアム・モルツ 中ジョッキ ×8.5（2人で17杯の半分）",
+        "nutrition": {
+          "energy_kcal": 1224,
+          "protein_g": 8.5,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 85,
+          "sugar_g": 85,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 118
+        }
+      },
+      {
+        "name": "ちからこぶ たれ ×1（2本の半分）",
+        "nutrition": {
+          "energy_kcal": 148,
+          "protein_g": 13,
+          "fat_g": 9,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 3,
+          "sugar_g": 3,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "もも貴族焼 たれ ×0.5",
+        "nutrition": {
+          "energy_kcal": 118,
+          "protein_g": 9,
+          "fat_g": 7,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 3,
+          "sugar_g": 3,
+          "fiber_g": 0.3,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "とり釜飯 ×0.5",
+        "nutrition": {
+          "energy_kcal": 211,
+          "protein_g": 7,
+          "fat_g": 4,
+          "saturated_fat_g": 1.2,
+          "carbohydrate_g": 36,
+          "sugar_g": 35,
+          "fiber_g": 0.6,
+          "salt_g": 1.3
+        }
+      },
+      {
+        "name": "鶏旨丼 たれ ×0.5",
+        "nutrition": {
+          "energy_kcal": 215,
+          "protein_g": 10,
+          "fat_g": 6,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 33,
+          "sugar_g": 32,
+          "fiber_g": 0.6,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "ホルモンネギ盛ポン酢 ×0.5",
+        "nutrition": {
+          "energy_kcal": 67,
+          "protein_g": 5,
+          "fat_g": 4,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 2,
+          "sugar_g": 2,
+          "fiber_g": 0.3,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "塩だれキューリ ×0.5",
+        "nutrition": {
+          "energy_kcal": 28,
+          "protein_g": 0.6,
+          "fat_g": 1.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 2.5,
+          "sugar_g": 1.8,
+          "fiber_g": 0.7,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "SDあずきパフェラテ ×0.5",
+        "nutrition": {
+          "energy_kcal": 110,
+          "protein_g": 3,
+          "fat_g": 4,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 16,
+          "sugar_g": 15,
+          "fiber_g": 1,
+          "salt_g": 0.1
+        }
+      }
+    ],
+    "memo": "鳥貴族（2人分の注文を半分で計上）。カロリーは外食カロリーまとめ（https://tokushita.net/torikizoku-calorie/ ）を参照、P/F/飽和脂肪酸/食物繊維は鳥貴族が公式に栄養成分非公開のため記憶ベース推定。ビールはザ・プレミアム・モルツ中ジョッキ（公式144kcal/杯相当）×17杯÷2＝8.5杯換算。レシートは店名・住所・電話・登録番号を画像でマスク済み。",
+    "tags": [
+      "外食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-26T23:30:00+09:00-snack",
+    "datetime": "2026-06-26T23:30:00+09:00",
+    "type": "snack",
+    "photos": [
+      "images/2026/06/26-2330-snack.webp"
+    ],
+    "items": [
+      {
+        "name": "マルちゃん正麺カップ 芳醇こく醤油（119g）",
+        "nutrition": {
+          "energy_kcal": 395,
+          "protein_g": 13,
+          "fat_g": 11.3,
+          "saturated_fat_g": 5.5,
+          "carbohydrate_g": 60.2,
+          "sugar_g": 57.7,
+          "fiber_g": 2.5,
+          "salt_g": 6.1
+        }
+      }
+    ],
+    "memo": "マルちゃん正麺カップ 芳醇こく醤油 119g: https://www.maruchan.co.jp/products/search/maruchanseimencup_hojunkokushoyu.html （飽和脂肪酸・食物繊維は公式未記載のため油揚げ麺・大豆食物繊維配合から推定。糖質=炭水化物-食物繊維）。鳥貴族後の締めラーメン。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
