@@ -2076,5 +2076,188 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-27T08:00:00+09:00-breakfast",
+    "datetime": "2026-06-27T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/27-0800-breakfast.webp",
+      "images/2026/06/27-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオ（焼き・約170g、薬味ねぎ/生姜）",
+        "nutrition": {
+          "energy_kcal": 220,
+          "protein_g": 42,
+          "fat_g": 5,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 1,
+          "fiber_g": 0.5,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "ご飯（1合＝約330g）",
+        "nutrition": {
+          "energy_kcal": 515,
+          "protein_g": 8.3,
+          "fat_g": 1,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 122,
+          "sugar_g": 117,
+          "fiber_g": 5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス WHEY PROTEIN マスカット風味（430ml）",
+        "nutrition": {
+          "energy_kcal": 94,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.9,
+          "sugar_g": 3.2,
+          "fiber_g": 0.7,
+          "salt_g": 0.38
+        }
+      }
+    ],
+    "memo": "ザバス WHEY PROTEIN マスカット風味 430ml（明治公式）: https://www.meiji.co.jp/sports/savas/products/built_powered/whey_20.html （94kcal/P20/脂質0/炭水化物3.9g・糖類3.2g/食塩0.38g）。カツオ・ご飯1合は推定。",
+    "tags": [
+      "自炊",
+      "魚",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-27T12:30:00+09:00-lunch",
+    "datetime": "2026-06-27T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/27-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "大阪王将 羽根つき餃子 ×6",
+        "nutrition": {
+          "energy_kcal": 258,
+          "protein_g": 7.2,
+          "fat_g": 12,
+          "saturated_fat_g": 3.6,
+          "carbohydrate_g": 30,
+          "sugar_g": 28,
+          "fiber_g": 2,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "ししとう（焼き・約6本）",
+        "nutrition": {
+          "energy_kcal": 15,
+          "protein_g": 0.5,
+          "fat_g": 1,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 0.6,
+          "fiber_g": 0.9,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "ご飯 200g",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 71,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（2切れ・約15g）",
+        "nutrition": {
+          "energy_kcal": 4,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1,
+          "sugar_g": 0.6,
+          "fiber_g": 0.4,
+          "salt_g": 0.6
+        }
+      }
+    ],
+    "memo": "大阪王将 羽根つき餃子（公式 1個24.5g＝43kcal/P1.2/F2.0/C5.0/食塩0.3g）×6: https://www.eat-and.jp/foods/products/242.html 。ししとう・たくあんは推定。",
+    "tags": [
+      "中食",
+      "餃子"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-27T19:00:00+09:00-dinner",
+    "datetime": "2026-06-27T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/27-1900-dinner.webp",
+      "images/2026/06/27-1900-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "鶏もも照り焼き（約230gで調理→半量・約115g）",
+        "nutrition": {
+          "energy_kcal": 240,
+          "protein_g": 19,
+          "fat_g": 14.5,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 8,
+          "sugar_g": 7.8,
+          "fiber_g": 0.2,
+          "salt_g": 1.1
+        }
+      },
+      {
+        "name": "ピーマンと卵の炒め物（ピーマン5個・卵2個で調理→半量）",
+        "nutrition": {
+          "energy_kcal": 145,
+          "protein_g": 7,
+          "fat_g": 11,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 4,
+          "sugar_g": 2.3,
+          "fiber_g": 1.7,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "ご飯 200g",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 71,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "自炊。鶏もも照り焼き・ピーマン卵炒めとも調理量の半分を喫食（本人申告）。値は推定。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
