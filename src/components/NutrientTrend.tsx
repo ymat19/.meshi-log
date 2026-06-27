@@ -14,7 +14,19 @@ import type { Config, MealEntry, NutrientKey } from '../data/types'
 import { dailyTotals } from '../lib/nutrition'
 
 const PERIODS = [7, 30, 90] as const
-const STORAGE_KEY = 'meshi-log:trend'
+const DEFAULT_DAYS = 30
+
+// Chart view state lives in the URL query string (not localStorage) so a view
+// is shareable/bookmarkable and survives reloads without hidden device-local
+// state. `?mock` (handled elsewhere) is preserved untouched.
+//   n   = added nutrient tags (comma-separated)
+//   sel = the subset currently drawn — omitted when it equals `n` (all drawn)
+//   d   = period in days — omitted when it is the default (30)
+// All three are omitted entirely when the view is the default, keeping the
+// common-case URL clean.
+const QS_NUTRIENTS = 'n'
+const QS_SELECTED = 'sel'
+const QS_PERIOD = 'd'
 
 // Colour a line segment turns when it sits on the "bad" side of its 100% line
 // (above for 上限型, below for 目標型). Shared with the warning band fill so the
@@ -56,38 +68,51 @@ function defaultState(validKeys: NutrientKey[], fallback: NutrientKey): TrendSta
 
 // Which nutrient tags the user has added, and which of them are currently
 // drawn. Multiple nutrients can be selected at once — every selected tag is
-// rendered as its own line. Persisted to localStorage so it survives reloads.
+// rendered as its own line. Reflected into the URL query string so it survives
+// reloads and can be shared.
 interface TrendState {
   nutrients: NutrientKey[]
   selected: NutrientKey[]
 }
 
-// Read persisted state, dropping any keys no longer present in the config and
-// keeping the selection a subset of the added tags. Tolerates the previous
-// single-key `selected` format by coercing it into an array.
+// Order-insensitive set equality. Selection/tag order has no rendering meaning
+// (tags and lines are always laid out in config order), so we compare as sets.
+function sameSet(a: NutrientKey[], b: NutrientKey[]): boolean {
+  if (a.length !== b.length) return false
+  const set = new Set(a)
+  return b.every((k) => set.has(k))
+}
+
+// Parse a comma-separated key list, dropping anything the config no longer
+// defines so a config change can never leave the chart referencing a dead key.
+function parseKeys(raw: string | null, validKeys: NutrientKey[]): NutrientKey[] {
+  if (!raw) return []
+  return raw
+    .split(',')
+    .filter((k): k is NutrientKey => validKeys.includes(k as NutrientKey))
+}
+
+// Read state from the URL query string. Falls back to the default set when no
+// nutrients are specified. A present-but-empty `sel` is honoured as "nothing
+// drawn"; an absent `sel` means "all added tags drawn".
 function loadState(validKeys: NutrientKey[], fallback: NutrientKey): TrendState {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) {
-      const parsed = JSON.parse(raw) as Partial<TrendState> & {
-        selected?: NutrientKey[] | NutrientKey | null
-      }
-      const nutrients = (parsed.nutrients ?? []).filter((k) =>
-        validKeys.includes(k),
+  const params = new URLSearchParams(window.location.search)
+  if (!params.has(QS_NUTRIENTS)) return defaultState(validKeys, fallback)
+  const nutrients = parseKeys(params.get(QS_NUTRIENTS), validKeys)
+  if (nutrients.length === 0) return defaultState(validKeys, fallback)
+  const selected = params.has(QS_SELECTED)
+    ? parseKeys(params.get(QS_SELECTED), validKeys).filter((k) =>
+        nutrients.includes(k),
       )
-      const rawSelected = Array.isArray(parsed.selected)
-        ? parsed.selected
-        : parsed.selected
-          ? [parsed.selected]
-          : []
-      const selected = rawSelected.filter((k) => nutrients.includes(k))
-      return { nutrients, selected }
-    }
-  } catch {
-    // Malformed storage — fall through to the default below.
-  }
-  // First visit: start with the default nutrient set.
-  return defaultState(validKeys, fallback)
+    : [...nutrients]
+  return { nutrients, selected }
+}
+
+// Read the period from the URL, accepting only the offered options.
+function loadPeriod(): number {
+  const raw = new URLSearchParams(window.location.search).get(QS_PERIOD)
+  const n = raw ? Number(raw) : NaN
+  return (PERIODS as readonly number[]).includes(n) ? n : DEFAULT_DAYS
 }
 
 // Daily trend of any number of selected nutrients over a selectable period.
@@ -107,18 +132,37 @@ export function NutrientTrend({
   const [state, setState] = useState<TrendState>(() =>
     loadState(validKeys, fallback),
   )
-  const [days, setDays] = useState<number>(30)
+  const [days, setDays] = useState<number>(() => loadPeriod())
   const [adding, setAdding] = useState(false)
   const addRef = useRef<HTMLDivElement>(null)
 
-  // Persist on every change.
+  // Reflect state into the URL on every change, preserving any other params
+  // (e.g. ?mock) and omitting anything equal to its default so the common-case
+  // URL stays clean. Uses replaceState so toggling tags doesn't spam history.
   useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
-    } catch {
-      // Ignore quota / privacy-mode failures — state still works in-memory.
+    const params = new URLSearchParams(window.location.search)
+    const def = defaultState(validKeys, fallback)
+    const isDefault =
+      sameSet(state.nutrients, def.nutrients) &&
+      sameSet(state.selected, def.selected)
+    if (isDefault) {
+      params.delete(QS_NUTRIENTS)
+      params.delete(QS_SELECTED)
+    } else {
+      params.set(QS_NUTRIENTS, state.nutrients.join(','))
+      if (sameSet(state.selected, state.nutrients)) {
+        params.delete(QS_SELECTED)
+      } else {
+        params.set(QS_SELECTED, state.selected.join(','))
+      }
     }
-  }, [state])
+    if (days === DEFAULT_DAYS) params.delete(QS_PERIOD)
+    else params.set(QS_PERIOD, String(days))
+
+    const qs = params.toString()
+    const url = `${window.location.pathname}${qs ? `?${qs}` : ''}${window.location.hash}`
+    window.history.replaceState(null, '', url)
+  }, [state, days, validKeys, fallback])
 
   // Close the add menu when clicking elsewhere.
   useEffect(() => {
