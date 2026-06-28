@@ -2259,5 +2259,104 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-28T08:00:00+09:00-breakfast",
+    "datetime": "2026-06-28T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/28-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "鶏もも照り焼き 残り（約115g）",
+        "nutrition": {
+          "energy_kcal": 240,
+          "protein_g": 19,
+          "fat_g": 14.5,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 8,
+          "sugar_g": 7.8,
+          "fiber_g": 0.2,
+          "salt_g": 1.1
+        }
+      },
+      {
+        "name": "ピーマンと卵の炒め物 残り",
+        "nutrition": {
+          "energy_kcal": 145,
+          "protein_g": 7,
+          "fat_g": 11,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 4,
+          "sugar_g": 2.3,
+          "fiber_g": 1.7,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "ご飯 200g",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 71,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 ココア味 430ml",
+        "nutrition": {
+          "energy_kcal": 191,
+          "protein_g": 30,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 18.1,
+          "sugar_g": 17.4,
+          "fiber_g": 0.7,
+          "salt_g": 0.38
+        }
+      }
+    ],
+    "memo": "朝食。鶏もも照り焼き・ピーマン卵炒めは6/27夕食で作った分の残り半量（過去記録値を流用）。ご飯200gは新規。ザバス MILK PROTEIN 脂肪0 ココア味 430ml（明治公式）: https://www.meiji.co.jp/products/sports/4902705098633.html （191kcal/P30/脂質0/炭水化物18.1g・糖質17.4g/食塩0.38g）。",
+    "tags": [
+      "自炊",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-28T12:30:00+09:00-lunch",
+    "datetime": "2026-06-28T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/28-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "なか卯 カツ丼 並盛",
+        "nutrition": {
+          "energy_kcal": 820,
+          "protein_g": 29.9,
+          "fat_g": 28.4,
+          "saturated_fat_g": 8.5,
+          "carbohydrate_g": 107.8,
+          "sugar_g": 105.3,
+          "fiber_g": 2.5,
+          "salt_g": 4
+        }
+      }
+    ],
+    "memo": "外食。なか卯 カツ丼 並盛（公式準拠: 820kcal/P29.9/脂質28.4/炭水化物107.8/食塩4.0g）出典 https://www.fatsecret.jp/カロリー-栄養/なか卯/カツ丼-(並盛)/1人前 。飽和脂肪酸・食物繊維は公式未記載のため推定、糖質=炭水化物−食物繊維で算出。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
