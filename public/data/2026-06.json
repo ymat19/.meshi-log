@@ -2358,5 +2358,89 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-28T22:00:00+09:00-dinner",
+    "datetime": "2026-06-28T22:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/28-2200-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ブランデー 60ml（40%）",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 19
+        }
+      },
+      {
+        "name": "チョコレート効果 カカオ86% 2粒",
+        "nutrition": {
+          "energy_kcal": 58,
+          "protein_g": 1.4,
+          "fat_g": 4.6,
+          "saturated_fat_g": 2.8,
+          "carbohydrate_g": 3.6,
+          "sugar_g": 2,
+          "fiber_g": 1.6,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ゆで卵 1個",
+        "nutrition": {
+          "energy_kcal": 70,
+          "protein_g": 6.2,
+          "fat_g": 5,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 ミルクチョコレート風味 200ml",
+        "nutrition": {
+          "energy_kcal": 112,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 8,
+          "sugar_g": 7.7,
+          "fiber_g": 0.7,
+          "salt_g": 0.21
+        }
+      }
+    ],
+    "memo": "晩酌。ブランデー60ml（40%想定、蒸留酒で糖質0、純アルコール=60×0.40×0.789≒19g）。チョコレート効果 カカオ86%（明治公式 1枚5g・29kcal）: https://www.meiji.co.jp/sweets/chocolate/chocokoka/products/ ×2粒。ザバス MILK PROTEIN 脂肪0 ミルクチョコレート風味 200ml（明治公式 112kcal/P20/脂質0/炭水化物8.0・糖質7.7/食塩0.21）: https://www.meiji.co.jp/products/sports/4902705068087.html 。ミニカマンベール（イル・ド・フランス 1個25g・65kcal、6/23記録と同型）: https://www.amazon.co.jp/dp/B0BL25BTCV 。ゆで卵Mサイズは推定。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "晩酌"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
