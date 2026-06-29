@@ -2442,5 +2442,229 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-29T08:00:00+09:00-breakfast",
+    "datetime": "2026-06-29T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/06/29-0800-breakfast.webp",
+      "images/2026/06/29-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "なか卯 親子丼（並・ご飯込み）",
+        "nutrition": {
+          "energy_kcal": 673,
+          "protein_g": 31.5,
+          "fat_g": 17.8,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 99.7,
+          "sugar_g": 97.2,
+          "fiber_g": 2.5,
+          "salt_g": 3.8
+        }
+      },
+      {
+        "name": "たくあん（自分で追加・約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "ザバス ミルクプロテイン 脂肪0 ココア風味 15g（200ml）",
+        "nutrition": {
+          "energy_kcal": 102,
+          "protein_g": 15,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 10.6,
+          "sugar_g": 10,
+          "fiber_g": 0.6,
+          "salt_g": 0.24
+        }
+      }
+    ],
+    "memo": "なか卯 親子丼（並）にたくあんを自分で追加、ザバス ミルクプロテイン15g併飲。出典 — なか卯親子丼 https://eat-treat.jp/user-food2021s/27944 ／ ザバス ミルクプロテイン脂肪0 ココア15g(200ml) 公式 https://www.meiji.co.jp/products/sports/4902705014541.html 。親子丼の飽和脂肪酸・食物繊維は標準的な鶏卵・米から推定。",
+    "tags": [
+      "外食",
+      "丼"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-29T12:30:00+09:00-lunch",
+    "datetime": "2026-06-29T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/06/29-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "あさりスンドゥブ（サガミヤ・豆腐300g＋たれ）",
+        "nutrition": {
+          "energy_kcal": 182,
+          "protein_g": 14.1,
+          "fat_g": 9.3,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 10.9,
+          "sugar_g": 9.6,
+          "fiber_g": 1.3,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "生卵 1個（スンドゥブに投入）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      }
+    ],
+    "memo": "サガミヤ あさりスンドゥブ（豆腐300g＋たれ）に生卵1個。出典 https://sagamiya-kk.co.jp/products/ka_h_asari_sundubu.html （6/26と同一商品のため過去記録値を流用）。飽和脂肪酸は豆腐の脂肪組成から推定。",
+    "tags": [
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-06-29T22:00:00+09:00-dinner",
+    "datetime": "2026-06-29T22:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/06/29-2200-dinner.webp",
+      "images/2026/06/29-2200-dinner-2.webp",
+      "images/2026/06/29-2200-dinner-3.webp",
+      "images/2026/06/29-2200-dinner-4.webp"
+    ],
+    "items": [
+      {
+        "name": "鶏もも 焼き（皮つき・塩・150g）",
+        "nutrition": {
+          "energy_kcal": 300,
+          "protein_g": 25.5,
+          "fat_g": 21,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "粉チーズ（パルメザン・約15g）",
+        "nutrition": {
+          "energy_kcal": 67,
+          "protein_g": 6.6,
+          "fat_g": 4.5,
+          "saturated_fat_g": 2.9,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.57
+        }
+      },
+      {
+        "name": "トマト 1個（約150g・塩少々）",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 1.1,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 7,
+          "sugar_g": 5.5,
+          "fiber_g": 1.5,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "アボカド 半分（約70g）＋醤油",
+        "nutrition": {
+          "energy_kcal": 137,
+          "protein_g": 2.3,
+          "fat_g": 13.1,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 5.3,
+          "sugar_g": 1.4,
+          "fiber_g": 3.9,
+          "salt_g": 1.3
+        }
+      },
+      {
+        "name": "アイリスオーヤマ 低温製法米のおいしいごはん 200g",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ゆで卵 1個（塩少々）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "ザバス ミルクプロテイン 脂肪0 20g（200ml）",
+        "nutrition": {
+          "energy_kcal": 112,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 8,
+          "sugar_g": 7.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.21
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "鶏もも焼き(皮つき・塩)に粉チーズ・黒胡椒。トマト・アボカド(醤油)・アイリス低温製法米200g・ゆで卵・ザバスミルクプロテイン20g・ストロングゼロ500ml。出典 — アイリスオーヤマ低温製法米のおいしいごはん200g パック表示(1食200g=288kcal/P4.6/F0.8/C65.4) ／ ザバス ミルクプロテイン脂肪0 20g(200ml) 公式 https://www.meiji.co.jp/products/sports/4902705068087.html ／ サントリー -196 ストロングゼロ9% 500ml(過去記録流用・260kcal・純アルコール36g) https://products.suntory.co.jp/d/4901777241015/ 。鶏もも・粉チーズ・トマト・アボカドは推定。実際は6/30 1時頃の遅い夕食だが本人希望により6/29の夕食として記録。",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
