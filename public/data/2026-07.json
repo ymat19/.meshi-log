@@ -1,0 +1,186 @@
+[
+  {
+    "id": "2026-07-01T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-01T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/01-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん（低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "鶏もも低温調理（皮つき・約130g）",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 25,
+          "fat_g": 19,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "温泉卵/生卵（約50g）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.1,
+          "fat_g": 5.1,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "納豆1パック＋付属たれ（約45g）",
+        "nutrition": {
+          "energy_kcal": 94,
+          "protein_g": 7.8,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 6.9,
+          "sugar_g": 3.9,
+          "fiber_g": 3,
+          "salt_g": 0.6
+        }
+      }
+    ],
+    "memo": "パックごはんはパッケージ栄養成分表示（写真ラベル: 288kcal/P4.6/F0.8/C65.4/食塩相当量0g）に基づく。鶏もも低温調理・温泉卵・納豆は標準的な食品成分からの推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-01T12:30:00+09:00-lunch",
+    "datetime": "2026-07-01T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/01-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "アボカドマヨチーズシュリンプ（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 459,
+          "protein_g": 14.8,
+          "fat_g": 21.9,
+          "saturated_fat_g": 5.5,
+          "carbohydrate_g": 51.4,
+          "sugar_g": 49.4,
+          "fiber_g": 2,
+          "salt_g": 2.4
+        }
+      },
+      {
+        "name": "マックフライポテト L（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 515,
+          "protein_g": 7,
+          "fat_g": 25,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 66,
+          "sugar_g": 59.7,
+          "fiber_g": 6.3,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "コカ・コーラ ゼロ L",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      }
+    ],
+    "memo": "マクドナルド公式栄養成分より。アボカドマヨチーズシュリンプ: https://www.mcdonalds.co.jp/products/6820/ （459kcal/P14.8/F21.9/C51.4/食物繊維2.0/食塩2.4）。マックフライポテトL: https://www.mcdonalds.co.jp/products/2050/ （515kcal/P7.0/F25.0/C66.0/食物繊維6.3/食塩0.9）。飽和脂肪酸は公式非掲載のため推定（バーガー5.5g・ポテト2.3g）。糖質=炭水化物-食物繊維。コーラはゼロでカロリー0（食塩は微量のナトリウムぶん）。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-01T19:30:00+09:00-dinner",
+    "datetime": "2026-07-01T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/01-1930-dinner.webp",
+      "images/2026/07/01-1930-dinner-receipt.webp"
+    ],
+    "items": [
+      {
+        "name": "五目焼きそば（あんかけ）",
+        "nutrition": {
+          "energy_kcal": 780,
+          "protein_g": 24,
+          "fat_g": 32,
+          "saturated_fat_g": 5.5,
+          "carbohydrate_g": 90,
+          "sugar_g": 83,
+          "fiber_g": 7,
+          "salt_g": 4.5
+        }
+      },
+      {
+        "name": "揚げレバー",
+        "nutrition": {
+          "energy_kcal": 320,
+          "protein_g": 20,
+          "fat_g": 18,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 18,
+          "sugar_g": 17,
+          "fiber_g": 1,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "ザ・プレミアム・モルツ 中ジョッキ×3",
+        "nutrition": {
+          "energy_kcal": 495,
+          "protein_g": 4.2,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 37.8,
+          "sugar_g": 37.8,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 45.6
+        }
+      }
+    ],
+    "memo": "ビールはザ・プレミアム・モルツ（サントリー公式: https://products.suntory.co.jp/d/4901777393370/ 、47kcal・糖質3.6g/100ml・アルコール分5.5%）。中ジョッキ=生ビール350ml換算×3杯、純アルコール45.6g。五目焼きそば・揚げレバーは外食のため標準的な料理からの推定。糖質=炭水化物-食物繊維。レシート画像は店舗情報（店名・電話・住所・登録番号）を黒塗りマスク済み。",
+    "tags": [
+      "外食",
+      "麺",
+      "揚げ物",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  }
+]
