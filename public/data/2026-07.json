@@ -112,5 +112,116 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-01T23:30:00+09:00-dinner",
+    "datetime": "2026-07-01T23:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/01-2330-dinner.webp",
+      "images/2026/07/01-2330-dinner-2.webp",
+      "images/2026/07/01-2330-dinner-3.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "鶏もも（皮つき・約100g）",
+        "nutrition": {
+          "energy_kcal": 208,
+          "protein_g": 19,
+          "fat_g": 15,
+          "saturated_fat_g": 4.2,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "トマトソース（カットトマト約100g・味付け）",
+        "nutrition": {
+          "energy_kcal": 35,
+          "protein_g": 1,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 7,
+          "sugar_g": 5.8,
+          "fiber_g": 1.2,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "粉チーズ（パルメザン・約10g）",
+        "nutrition": {
+          "energy_kcal": 47,
+          "protein_g": 4.4,
+          "fat_g": 3,
+          "saturated_fat_g": 1.9,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "焼きちくわ 2本",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 6,
+          "fat_g": 1,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 8,
+          "sugar_g": 8,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "7/1の夕食（記録は7/2 0時過ぎだが今日=7/1の夕飯として記録、時刻は概算）。既製品出典 — アイリスオーヤマ 低温製法米のおいしいごはん200g: パッケージ表示288kcal/P4.6/F0.8/C65.4/食塩0（写真ラベルで確認）。イル・ド・フランス ミニカマンベール25g・焼きちくわ・-196 ストロングゼロ無糖ドライ500ml(52kcal/100ml・9%・純アルコール36g https://products.suntory.co.jp/d/4901777241015/ )は過去記録流用。鶏もも(皮つき100g)・トマトソース・粉チーズ(約10g)は食品成分表からの推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
