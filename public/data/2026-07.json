@@ -68,6 +68,120 @@
     "schemaVersion": 1
   },
   {
+    "id": "2026-07-01T09:00:00+09:00-breakfast",
+    "datetime": "2026-07-01T09:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/01-0900-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "アボカドマヨチーズシュリンプ（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 459,
+          "protein_g": 14.8,
+          "fat_g": 21.9,
+          "saturated_fat_g": 5.5,
+          "carbohydrate_g": 51.4,
+          "sugar_g": 49.4,
+          "fiber_g": 2,
+          "salt_g": 2.4
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "アボカドマヨチーズシュリンプはマクドナルド公式より（https://www.mcdonalds.co.jp/products/6820/ 459kcal/P14.8/F21.9/C51.4/食物繊維2.0/食塩2.4）。飽和脂肪酸は公式非掲載のため推定(5.5g)。ザバスは明治公式より（https://www.meiji.co.jp/products/sports/4902705095465.html 200ml当たり107kcal/P20.0/脂質0/炭水化物6.8(糖質6.5・食物繊維0-0.7)/食塩0.19）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-01T12:00:00+09:00-lunch",
+    "datetime": "2026-07-01T12:00:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/01-1200-lunch.webp",
+      "images/2026/07/01-1200-lunch-2.webp",
+      "images/2026/07/01-1200-lunch-3.webp"
+    ],
+    "items": [
+      {
+        "name": "具だくさん豚汁（丸美屋 レンジDELI 220g）",
+        "nutrition": {
+          "energy_kcal": 134,
+          "protein_g": 7.5,
+          "fat_g": 5.5,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 14,
+          "sugar_g": 12,
+          "fiber_g": 2,
+          "salt_g": 2.1
+        }
+      },
+      {
+        "name": "絹ごし豆腐（約150g・豚汁に追加）",
+        "nutrition": {
+          "energy_kcal": 84,
+          "protein_g": 7.4,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 3,
+          "sugar_g": 2.1,
+          "fiber_g": 0.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "アボカド（約75g・1/2個）",
+        "nutrition": {
+          "energy_kcal": 132,
+          "protein_g": 1.6,
+          "fat_g": 13.1,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 4.7,
+          "sugar_g": 0.5,
+          "fiber_g": 4.2,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "白米ごはん（約150g）",
+        "nutrition": {
+          "energy_kcal": 234,
+          "protein_g": 3.8,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 55.7,
+          "sugar_g": 53.4,
+          "fiber_g": 2.3,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "豚汁は丸美屋 レンジDELI 具だくさん豚汁220gに豆腐を追加したもの。豚汁は製品栄養成分より（220g当たり134kcal/P7.5/F5.5/C14/食塩2.1、出典 https://www.marumiya.co.jp/product/series/range/other/ ）。飽和脂肪酸・食物繊維は非掲載のため推定(1.8g/2.0g)。追加した絹ごし豆腐(約150g)・アボカド(約75g/半個)・白米(約150g)は日本食品標準成分表からの推定。糖質=炭水化物-食物繊維。分量は写真からの推定値。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
     "id": "2026-07-01T12:30:00+09:00-lunch",
     "datetime": "2026-07-01T12:30:00+09:00",
     "type": "lunch",
