@@ -244,12 +244,26 @@
           "fiber_g": 3,
           "salt_g": 2.8
         }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 バナナ風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 103,
+          "protein_g": 15,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 10.8,
+          "sugar_g": 10.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.26
+        }
       }
     ],
-    "memo": "スパイスバスマティ飯にゆで卵。テイクアウトの単品皿。分量・栄養は記憶ベースの推定（既製品/店舗名の特定不可のため公式値なし）。",
+    "memo": "ビリヤニは店舗特定不可のため記憶ベース推定。ザバスは公式栄養成分より。出典 ザバス MILK PROTEIN 脂肪0 バナナ風味 200ml: https://www.meiji.co.jp/products/sports/4902705018099.html",
     "tags": [
       "外食",
-      "テイクアウト"
+      "テイクアウト",
+      "プロテイン"
     ],
     "estimated": true,
     "schemaVersion": 1
