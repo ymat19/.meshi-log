@@ -360,12 +360,39 @@
           "fiber_g": 0,
           "salt_g": 0.8
         }
+      },
+      {
+        "name": "食パン（6枚切り 1枚）",
+        "nutrition": {
+          "energy_kcal": 158,
+          "protein_g": 5.6,
+          "fat_g": 2.6,
+          "saturated_fat_g": 1.1,
+          "carbohydrate_g": 28,
+          "sugar_g": 26.6,
+          "fiber_g": 1.4,
+          "salt_g": 0.7
+        }
+      },
+      {
+        "name": "ウェイパー卵スープ（卵1個・具なし）",
+        "nutrition": {
+          "energy_kcal": 82,
+          "protein_g": 6.5,
+          "fat_g": 5.5,
+          "saturated_fat_g": 1.7,
+          "carbohydrate_g": 1,
+          "sugar_g": 1,
+          "fiber_g": 0,
+          "salt_g": 2
+        }
       }
     ],
-    "memo": "家飲み。ちくわはパッケージ表示「1袋5本=105g=123kcal・食塩1.2%」から3本(63g)で按分。ストロングゼロ・ミニカマンベールは過去記録の確定値を流用。",
+    "memo": "家飲み＋締めに食パン1枚とウェイパー卵スープ。ちくわはパッケージ表示（1袋5本=105g=123kcal・食塩1.2%）から3本(63g)按分。ストロングゼロ・ミニカマンベールは過去記録の確定値を流用。卵スープは卵1個＋ウェイパー小さじ1相当で推定（ウェイパーは食塩多めのため塩分は推定値）。",
     "tags": [
       "お酒",
-      "中食"
+      "中食",
+      "自炊"
     ],
     "estimated": true,
     "schemaVersion": 1
