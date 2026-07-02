@@ -273,7 +273,8 @@
     "datetime": "2026-07-02T12:30:00+09:00",
     "type": "lunch",
     "photos": [
-      "images/2026/07/02-1230-lunch.webp"
+      "images/2026/07/02-1230-lunch.webp",
+      "images/2026/07/02-1230-lunch-rice.webp"
     ],
     "items": [
       {
@@ -288,9 +289,22 @@
           "fiber_g": 2,
           "salt_g": 1.8
         }
+      },
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
       }
     ],
-    "memo": "王将の冷凍餃子。大阪王将 羽根つき餃子の公式栄養成分（1個24.5g=43kcal, P1.2/F2.0/C5.0/塩0.3g）×6個で算出。出典 大阪王将 羽根つき餃子: https://s-hyoji.com/list/?i=B0B9782DQ5 / https://www.eat-and.jp/foods/products/407.html",
+    "memo": "餃子＋パックごはんの昼食。大阪王将 羽根つき餃子の公式栄養成分（1個24.5g=43kcal, P1.2/F2.0/C5.0/塩0.3g）×6個で算出。出典 大阪王将 羽根つき餃子: https://s-hyoji.com/list/?i=B0B9782DQ5 / https://www.eat-and.jp/foods/products/407.html。パックごはんは過去記録の確定値を流用。",
     "tags": [
       "自炊",
       "冷凍食品",
@@ -304,23 +318,9 @@
     "datetime": "2026-07-02T20:00:00+09:00",
     "type": "dinner",
     "photos": [
-      "images/2026/07/02-2000-dinner.webp",
-      "images/2026/07/02-2000-dinner-rice.webp"
+      "images/2026/07/02-2000-dinner.webp"
     ],
     "items": [
-      {
-        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
-        "nutrition": {
-          "energy_kcal": 288,
-          "protein_g": 4.6,
-          "fat_g": 0.8,
-          "saturated_fat_g": 0.2,
-          "carbohydrate_g": 65.4,
-          "sugar_g": 64.9,
-          "fiber_g": 0.5,
-          "salt_g": 0
-        }
-      },
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
@@ -362,9 +362,8 @@
         }
       }
     ],
-    "memo": "家飲み。ちくわはパッケージ表示「1袋5本=105g=123kcal・食塩1.2%」から3本(63g)で按分。パックごはん・ストロングゼロ・ミニカマンベールは過去記録の確定値を流用。",
+    "memo": "家飲み。ちくわはパッケージ表示「1袋5本=105g=123kcal・食塩1.2%」から3本(63g)で按分。ストロングゼロ・ミニカマンベールは過去記録の確定値を流用。",
     "tags": [
-      "自炊",
       "お酒",
       "中食"
     ],
