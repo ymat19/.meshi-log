@@ -223,5 +223,138 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-02T08:30:00+09:00-breakfast",
+    "datetime": "2026-07-02T08:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/02-0830-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "エッグビリヤニ（テイクアウト・約400g＋ゆで卵）",
+        "nutrition": {
+          "energy_kcal": 730,
+          "protein_g": 20,
+          "fat_g": 26,
+          "saturated_fat_g": 7,
+          "carbohydrate_g": 102,
+          "sugar_g": 99,
+          "fiber_g": 3,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "スパイスバスマティ飯にゆで卵。テイクアウトの単品皿。分量・栄養は記憶ベースの推定（既製品/店舗名の特定不可のため公式値なし）。",
+    "tags": [
+      "外食",
+      "テイクアウト"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-02T12:30:00+09:00-lunch",
+    "datetime": "2026-07-02T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/02-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "大阪王将 羽根つき餃子 6個",
+        "nutrition": {
+          "energy_kcal": 258,
+          "protein_g": 7.2,
+          "fat_g": 12,
+          "saturated_fat_g": 3.8,
+          "carbohydrate_g": 30,
+          "sugar_g": 28,
+          "fiber_g": 2,
+          "salt_g": 1.8
+        }
+      }
+    ],
+    "memo": "王将の冷凍餃子。大阪王将 羽根つき餃子の公式栄養成分（1個24.5g=43kcal, P1.2/F2.0/C5.0/塩0.3g）×6個で算出。出典 大阪王将 羽根つき餃子: https://s-hyoji.com/list/?i=B0B9782DQ5 / https://www.eat-and.jp/foods/products/407.html",
+    "tags": [
+      "自炊",
+      "冷凍食品",
+      "餃子"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-02T20:00:00+09:00-dinner",
+    "datetime": "2026-07-02T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/02-2000-dinner.webp",
+      "images/2026/07/02-2000-dinner-rice.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "セブンプレミアム 淡路島の藻塩ちくわ 3本",
+        "nutrition": {
+          "energy_kcal": 74,
+          "protein_g": 7.6,
+          "fat_g": 1.3,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 8.5,
+          "sugar_g": 8.5,
+          "fiber_g": 0,
+          "salt_g": 0.8
+        }
+      }
+    ],
+    "memo": "家飲み。ちくわはパッケージ表示「1袋5本=105g=123kcal・食塩1.2%」から3本(63g)で按分。パックごはん・ストロングゼロ・ミニカマンベールは過去記録の確定値を流用。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
