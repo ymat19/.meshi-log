@@ -497,5 +497,119 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-03T19:30:00+09:00-dinner",
+    "datetime": "2026-07-03T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/03-1930-dinner.webp",
+      "images/2026/07/03-1930-dinner-2.webp",
+      "images/2026/07/03-1930-dinner-3.webp",
+      "images/2026/07/03-1930-dinner-4.webp"
+    ],
+    "items": [
+      {
+        "name": "炊き込みご飯（にんじん・銀杏・椎茸／自炊・米0.8合・約260g）",
+        "nutrition": {
+          "energy_kcal": 435,
+          "protein_g": 6.6,
+          "fat_g": 4,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 90,
+          "sugar_g": 88,
+          "fiber_g": 2,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "かまぼこ（トップバリュ・約130g／つまみ＋炊き込み込み）",
+        "nutrition": {
+          "energy_kcal": 121,
+          "protein_g": 15.6,
+          "fat_g": 1.2,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 12.6,
+          "sugar_g": 12.6,
+          "fiber_g": 0,
+          "salt_g": 3.25
+        }
+      },
+      {
+        "name": "銀杏（つまみ）",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 1,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 7,
+          "sugar_g": 5.5,
+          "fiber_g": 1.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たまご豆腐（約100g）",
+        "nutrition": {
+          "energy_kcal": 76,
+          "protein_g": 6.5,
+          "fat_g": 5.3,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 0.9,
+          "sugar_g": 0.9,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "クレアおばさんの具だくさんコーンチャウダー（グリコ 180g）",
+        "nutrition": {
+          "energy_kcal": 124,
+          "protein_g": 3.1,
+          "fat_g": 3.8,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 19.4,
+          "sugar_g": 17.9,
+          "fiber_g": 1.5,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "宅飲み。炊き込みご飯（にんじん・銀杏・椎茸）は自炊で、6/24の炊き込みご飯記録（約200g=330kcal）の per-g 値を米0.8合(約260g)にスケールして推定。銀杏つまみは6/24記録の確定値を流用。かまぼこ(トップバリュ)は標準の蒸しかまぼこ成分(100g=93kcal/P12/F0.9/C9.7/塩2.5)×約130gで、つまみ＋炊き込み内の分を合算。クレアおばさん具だくさんコーンチャウダーはグリコ公式(180g=124kcal/P3.1/F3.8/C19.4/塩1.5 https://www.glico.com/jp/product/food_curry/creastew/44429/ )。ストロングゼロ無糖ドライ500ml(9%): https://products.suntory.co.jp/d/4901777240971/ 。ザバスはキャラメル風味(パッケージ確認)。たまご豆腐は標準成分から推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "中食",
+      "晩酌"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
