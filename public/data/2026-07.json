@@ -397,5 +397,92 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-03T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-03T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/03-0800-breakfast.webp",
+      "images/2026/07/03-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "クレアおばさんの具だくさんクリームチャウダー（グリコ 180g）",
+        "nutrition": {
+          "energy_kcal": 129,
+          "protein_g": 4.3,
+          "fat_g": 5.4,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 15.7,
+          "sugar_g": 14.2,
+          "fiber_g": 1.5,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "食パン（6枚切り 1枚）",
+        "nutrition": {
+          "energy_kcal": 158,
+          "protein_g": 5.6,
+          "fat_g": 2.6,
+          "saturated_fat_g": 1.1,
+          "carbohydrate_g": 28,
+          "sugar_g": 26.6,
+          "fiber_g": 1.4,
+          "salt_g": 0.7
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "クリームチャウダーはグリコ公式より（https://www.glico.com/jp/product/food_curry/creastew/44425/ 1食180gあたり129kcal/P4.3/F5.4/C15.7/食塩1.5）。飽和脂肪酸・食物繊維は公式非掲載のため生クリーム系スープの標準から推定(飽和3.0/繊維1.5)、糖質=炭水化物-食物繊維。食パン・ザバスは過去記録の確定値を流用。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-03T12:30:00+09:00-lunch",
+    "datetime": "2026-07-03T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/03-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "袋ラーメン（卵入り）",
+        "nutrition": {
+          "energy_kcal": 530,
+          "protein_g": 18,
+          "fat_g": 23,
+          "saturated_fat_g": 8,
+          "carbohydrate_g": 65,
+          "sugar_g": 61,
+          "fiber_g": 4,
+          "salt_g": 6
+        }
+      }
+    ],
+    "memo": "袋インスタントラーメンに生卵1個。銘柄不明のため過去記録（袋ラーメン卵入り）の確定値を流用。",
+    "tags": [
+      "自炊",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
