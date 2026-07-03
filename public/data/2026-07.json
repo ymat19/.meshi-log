@@ -464,20 +464,33 @@
     ],
     "items": [
       {
-        "name": "袋ラーメン（卵入り）",
+        "name": "日清 チキンラーメン（85g）",
         "nutrition": {
-          "energy_kcal": 530,
-          "protein_g": 18,
-          "fat_g": 23,
-          "saturated_fat_g": 8,
-          "carbohydrate_g": 65,
-          "sugar_g": 61,
-          "fiber_g": 4,
-          "salt_g": 6
+          "energy_kcal": 377,
+          "protein_g": 8.2,
+          "fat_g": 14.5,
+          "saturated_fat_g": 6.4,
+          "carbohydrate_g": 53.6,
+          "sugar_g": 50.9,
+          "fiber_g": 2.7,
+          "salt_g": 5.6
+        }
+      },
+      {
+        "name": "生卵（1個）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.1,
+          "fat_g": 5.1,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
         }
       }
     ],
-    "memo": "袋インスタントラーメンに生卵1個。銘柄不明のため過去記録（袋ラーメン卵入り）の確定値を流用。",
+    "memo": "チキンラーメンに生卵1個。チキンラーメンは日清公式より（1食85gあたり377kcal/P8.2/F14.5/C53.6/食塩5.6 https://www.eatsmart.jp/do/caloriecheck/detail/param/foodCode/9900520002101 ）。糖質・食物繊維は標準的な同製品値から推定。当初「袋ラーメン汎用値」で記録していたのをチキンラーメンの実値に訂正。",
     "tags": [
       "自炊",
       "麺"
