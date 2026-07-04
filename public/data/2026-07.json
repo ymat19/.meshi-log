@@ -611,5 +611,130 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-04T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-04T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/04-0800-breakfast.webp",
+      "images/2026/07/04-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      },
+      {
+        "name": "牛焼肉マヨおにぎり（100円・国産米）",
+        "nutrition": {
+          "energy_kcal": 235,
+          "protein_g": 5,
+          "fat_g": 7,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 37,
+          "sugar_g": 36,
+          "fiber_g": 1,
+          "salt_g": 1.1
+        }
+      },
+      {
+        "name": "具沢山味噌汁（人参など根菜入り）",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 3,
+          "fat_g": 2,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 8,
+          "sugar_g": 6,
+          "fiber_g": 2,
+          "salt_g": 1.5
+        }
+      }
+    ],
+    "memo": "ザバスは明治公式より（https://www.meiji.co.jp/products/sports/4902705095465.html 200ml当たり107kcal/P20.0/脂質0/炭水化物6.8(糖質6.5・食物繊維0.3)/食塩0.19）。牛焼肉マヨおにぎり（100円・国産米）は商品特定不可のため記憶ベース推定。具沢山味噌汁も記憶ベース推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-04T12:30:00+09:00-lunch",
+    "datetime": "2026-07-04T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/04-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "ごはん（おにぎり1個・約100g）",
+        "nutrition": {
+          "energy_kcal": 168,
+          "protein_g": 2.5,
+          "fat_g": 0.3,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 37,
+          "sugar_g": 36.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "納豆（1パック・タレ込み約45g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7.5,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 6,
+          "sugar_g": 3,
+          "fiber_g": 3,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "焼き海苔（2〜3枚・約6g）",
+        "nutrition": {
+          "energy_kcal": 12,
+          "protein_g": 2,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0.05,
+          "carbohydrate_g": 2.5,
+          "sugar_g": 0.5,
+          "fiber_g": 2,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "おにぎりの具（明太子／たらこ・約15g）",
+        "nutrition": {
+          "energy_kcal": 20,
+          "protein_g": 3,
+          "fat_g": 0.7,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.7
+        }
+      }
+    ],
+    "memo": "ごはん・納豆・焼き海苔・明太子はいずれも標準的な食品成分からの記憶ベース推定（商品特定不可）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
