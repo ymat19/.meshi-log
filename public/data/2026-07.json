@@ -736,5 +736,130 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-04T20:00:00+09:00-dinner",
+    "datetime": "2026-07-04T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/04-2000-dinner.webp",
+      "images/2026/07/04-2000-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ビール 中ジョッキ ×5",
+        "nutrition": {
+          "energy_kcal": 900,
+          "protein_g": 6.5,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 67.5,
+          "sugar_g": 67.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 87
+        }
+      },
+      {
+        "name": "豚ロース天 3切れ（マヨ・キャベツ添え）",
+        "nutrition": {
+          "energy_kcal": 430,
+          "protein_g": 23,
+          "fat_g": 29,
+          "saturated_fat_g": 8,
+          "carbohydrate_g": 20,
+          "sugar_g": 18.5,
+          "fiber_g": 1.5,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "鶏レバームース（約60g）",
+        "nutrition": {
+          "energy_kcal": 200,
+          "protein_g": 8,
+          "fat_g": 17,
+          "saturated_fat_g": 9,
+          "carbohydrate_g": 3,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "バゲット（約50g）",
+        "nutrition": {
+          "energy_kcal": 135,
+          "protein_g": 4.5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.15,
+          "carbohydrate_g": 27.5,
+          "sugar_g": 26,
+          "fiber_g": 1.5,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "シーザーサラダ（ハム・コーン・フライドオニオン・粉チーズ・約233g）",
+        "nutrition": {
+          "energy_kcal": 320,
+          "protein_g": 12,
+          "fat_g": 24,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 18,
+          "sugar_g": 14,
+          "fiber_g": 4,
+          "salt_g": 2.2
+        }
+      },
+      {
+        "name": "温泉卵 1個",
+        "nutrition": {
+          "energy_kcal": 70,
+          "protein_g": 6,
+          "fat_g": 5,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "ラーメン ハーフ（醤油系・約1/2杯）",
+        "nutrition": {
+          "energy_kcal": 300,
+          "protein_g": 12,
+          "fat_g": 10,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 42,
+          "sugar_g": 40,
+          "fiber_g": 2,
+          "salt_g": 3
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "居酒屋での飲み。ビールは中ジョッキ435ml/5%換算×5杯（1杯約180kcal・純アルコール17.4g、計87.0g）。ザバスは明治公式（https://www.meiji.co.jp/products/sports/4902705095465.html 200ml当たり107kcal/P20/脂質0/炭水化物6.8(糖質6.5・食物繊維0.3)/食塩0.19）。豚ロース天・鶏レバームース・バゲット・シーザーサラダ・温玉・ハーフラーメンは外食で商品特定不可のため記憶ベース推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "お酒",
+      "揚げ物",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
