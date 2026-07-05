@@ -861,5 +861,203 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-05T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-05T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/05-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "食パン（6枚切り 1枚・トースト）",
+        "nutrition": {
+          "energy_kcal": 158,
+          "protein_g": 5.6,
+          "fat_g": 2.6,
+          "saturated_fat_g": 1.1,
+          "carbohydrate_g": 28,
+          "sugar_g": 26.6,
+          "fiber_g": 1.4,
+          "salt_g": 0.7
+        }
+      },
+      {
+        "name": "クレアおばさんの具だくさんミネストローネ（グリコ 180g）",
+        "nutrition": {
+          "energy_kcal": 72,
+          "protein_g": 2.0,
+          "fat_g": 0.54,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 14.8,
+          "sugar_g": 12.8,
+          "fiber_g": 2.0,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （過去ログ流用の公式表示値）。クレアおばさんの具だくさんミネストローネ(グリコ 180g)はグリコ公式(180g=72kcal/P2.0/脂質0.54/炭水化物14.8/食塩1.5 https://www.glico.com/jp/product/food_curry/creastew/44433/ )。飽和脂肪酸・糖質・食物繊維は未表示のため具材から推定(糖質=炭水化物-食物繊維)。",
+    "tags": [
+      "自炊",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-05T12:30:00+09:00-lunch",
+    "datetime": "2026-07-05T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/05-1230-lunch-1.webp",
+      "images/2026/07/05-1230-lunch-2.webp",
+      "images/2026/07/05-1230-lunch-3.webp",
+      "images/2026/07/05-1230-lunch-4.webp",
+      "images/2026/07/05-1230-lunch-5.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオのたたき（約100g・薬味/にんにく）",
+        "nutrition": {
+          "energy_kcal": 120,
+          "protein_g": 26,
+          "fat_g": 2.5,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "アジ刺身（約60g）",
+        "nutrition": {
+          "energy_kcal": 67,
+          "protein_g": 12,
+          "fat_g": 2.7,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "ブリカマ塩焼き（約150g・可食部）",
+        "nutrition": {
+          "energy_kcal": 333,
+          "protein_g": 32,
+          "fat_g": 26,
+          "saturated_fat_g": 8.4,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "厚揚げ焼き（約140g）",
+        "nutrition": {
+          "energy_kcal": 200,
+          "protein_g": 15,
+          "fat_g": 15.8,
+          "saturated_fat_g": 2.2,
+          "carbohydrate_g": 1.3,
+          "sugar_g": 0.3,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ピーマン（1個・焼き）",
+        "nutrition": {
+          "energy_kcal": 10,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 0.8,
+          "fiber_g": 0.7,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml ×2本",
+        "nutrition": {
+          "energy_kcal": 520,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 72
+        }
+      }
+    ],
+    "memo": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html 。ストロングゼロ 無糖ドライ 9% 500ml×2本: https://www.suntory.co.jp/rtd/strongzero/dry/ （公式値・過去ログ流用、500ml=260kcal/アルコール36g）。ブリカマ塩焼き・アジ刺身・厚揚げは標準成分からの推定。カツオたたき/ピーマン/たくあん/パックごはんは過去ログ流用。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "焼き魚",
+      "お酒",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
