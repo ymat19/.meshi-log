@@ -887,12 +887,12 @@
         "name": "クレアおばさんの具だくさんミネストローネ（グリコ 180g）",
         "nutrition": {
           "energy_kcal": 72,
-          "protein_g": 2.0,
+          "protein_g": 2,
           "fat_g": 0.54,
           "saturated_fat_g": 0.1,
           "carbohydrate_g": 14.8,
           "sugar_g": 12.8,
-          "fiber_g": 2.0,
+          "fiber_g": 2,
           "salt_g": 1.5
         }
       },
@@ -1069,6 +1069,61 @@
       "焼き魚",
       "お酒",
       "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-05T19:00:00+09:00-dinner",
+    "datetime": "2026-07-05T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/05-1900-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "白ごはん（約130g）",
+        "nutrition": {
+          "energy_kcal": 203,
+          "protein_g": 3.3,
+          "fat_g": 0.4,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 48.1,
+          "sugar_g": 47.4,
+          "fiber_g": 0.7,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "カツオ刺身（昼の残り・約25g）",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 6.5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "たくあん（2切れ・約15g）",
+        "nutrition": {
+          "energy_kcal": 4,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1,
+          "sugar_g": 0.6,
+          "fiber_g": 0.4,
+          "salt_g": 0.6
+        }
+      }
+    ],
+    "memo": "白ごはん130g・たくあん2切れ・カツオ刺身残りは過去ログの確定値をスケール流用（白ごはん200g=312kcal、カツオたたき100g=120kcal、たくあん2切れ15g）。普通のごはん（水気少し・お茶漬けではない）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
     ],
     "estimated": true,
     "schemaVersion": 1
