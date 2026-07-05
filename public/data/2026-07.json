@@ -1127,5 +1127,63 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-06T05:38:00+09:00-breakfast",
+    "datetime": "2026-07-06T05:38:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/06-0538-breakfast.webp",
+      "images/2026/07/06-0538-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "セブンプレミアム THE PRICE 旨辛麺（66g・生卵入り）",
+        "nutrition": {
+          "energy_kcal": 301,
+          "protein_g": 6.5,
+          "fat_g": 12,
+          "saturated_fat_g": 5.5,
+          "carbohydrate_g": 41.5,
+          "sugar_g": 39.5,
+          "fiber_g": 2,
+          "salt_g": 4.5
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "セブンプレミアム THE PRICE 旨辛麺 66g: エネルギー301kcal・内容量66gはパッケージ表示（確定）。公式 https://7premium.jp/product/search/detail?id=11935 に P/F/C/塩分の内訳掲載が無いため、同サイズの油揚げ麺カップの標準組成からの推定値（記憶ベース推定）。生卵1個は過去記録の確定値を流用。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200mlは明治公式値（過去記録流用・107kcal/P20/糖質6.5/食塩0.19）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
