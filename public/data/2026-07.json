@@ -957,6 +957,19 @@
         }
       },
       {
+        "name": "刺身のツマ（大根千切り 約40g・わかめ少量 約10g）",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.4,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 2.2,
+          "sugar_g": 1.2,
+          "fiber_g": 1.0,
+          "salt_g": 0.2
+        }
+      },
+      {
         "name": "ブリカマ塩焼き（約150g・可食部）",
         "nutrition": {
           "energy_kcal": 333,
@@ -1049,7 +1062,7 @@
         }
       }
     ],
-    "memo": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html 。ストロングゼロ 無糖ドライ 9% 500ml×2本: https://www.suntory.co.jp/rtd/strongzero/dry/ （公式値・過去ログ流用、500ml=260kcal/アルコール36g）。ブリカマ塩焼き・アジ刺身・厚揚げは標準成分からの推定。カツオたたき/ピーマン/たくあん/パックごはんは過去ログ流用。",
+    "memo": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html 。ストロングゼロ 無糖ドライ 9% 500ml×2本: https://www.suntory.co.jp/rtd/strongzero/dry/ （公式値・過去ログ流用、500ml=260kcal/アルコール36g）。ブリカマ塩焼き・アジ刺身・厚揚げ・刺身のツマ(大根/わかめ)は標準成分からの推定。カツオたたき/ピーマン/たくあん/パックごはんは過去ログ流用。",
     "tags": [
       "自炊",
       "刺身",
