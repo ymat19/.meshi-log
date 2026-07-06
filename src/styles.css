@@ -289,6 +289,44 @@ main {
   padding: 40px 16px;
 }
 
+/* One stacked card per selected nutrient — each nutrient gets its own chart so
+   scales never collide. */
+.trend__charts {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.trend__chart {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 12px;
+}
+
+.trend__chart:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.trend__chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+  padding: 0 4px;
+}
+
+.trend__chart-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.trend__chart-target {
+  font-size: 11px;
+  color: var(--muted);
+}
+
 /* Legend for the good/warning bands behind the trend chart. */
 .trend__zone {
   display: flex;

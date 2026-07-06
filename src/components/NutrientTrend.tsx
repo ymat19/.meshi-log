@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   CartesianGrid,
   Line,
@@ -10,27 +10,33 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
-import type { Config, MealEntry, NutrientKey } from '../data/types'
+import type { Config, MealEntry, NutrientDef, NutrientKey } from '../data/types'
 import { dailyTotals } from '../lib/nutrition'
 
 const PERIODS = [7, 30, 90] as const
 const DEFAULT_DAYS = 30
 
-// Chart view state lives in the URL query string (not localStorage) so a view
-// is shareable/bookmarkable and survives reloads without hidden device-local
-// state. `?mock` (handled elsewhere) is preserved untouched.
+// Chart view state lives in BOTH the URL query string and localStorage.
+//   - The URL makes a view shareable/bookmarkable and survives reloads.
+//   - localStorage remembers the last view on this device so a plain visit
+//     (no query string) restores it instead of snapping back to the default.
+// Priority on load: the query string always wins when present; only when NONE
+// of the chart params appear in the URL do we fall back to localStorage.
+// The URL still omits anything equal to its default so the common-case URL
+// stays clean, while localStorage always stores the full current state.
 //   n   = added nutrient tags (comma-separated)
 //   sel = the subset currently drawn — omitted when it equals `n` (all drawn)
 //   d   = period in days — omitted when it is the default (30)
-// All three are omitted entirely when the view is the default, keeping the
-// common-case URL clean.
 const QS_NUTRIENTS = 'n'
 const QS_SELECTED = 'sel'
 const QS_PERIOD = 'd'
 
+// Where the last view is remembered on this device.
+const STORAGE_KEY = 'meshi-log:trend'
+
 // Colour a line segment turns when it sits on the "bad" side of its 100% line
 // (above for 上限型, below for 目標型). Shared with the warning band fill so the
-// danger signal reads the same whether the selection is mixed or homogeneous.
+// danger signal reads the same across every chart.
 const DANGER = '#e0556d'
 
 // Stable colour per nutrient, assigned by its position in the config so a
@@ -58,6 +64,15 @@ const DEFAULT_NUTRIENTS: readonly NutrientKey[] = [
   'protein_g',
 ] as const
 
+// Which nutrient tags the user has added, and which of them are currently
+// drawn. Multiple nutrients can be selected at once — each selected tag is
+// rendered as its OWN chart (stacking one graph per nutrient), so wildly
+// different units/scales never get crammed onto a single axis.
+interface TrendState {
+  nutrients: NutrientKey[]
+  selected: NutrientKey[]
+}
+
 // The default tag/selection set, filtered to nutrients the config actually
 // defines so a config change can never leave the chart referencing a dead key.
 function defaultState(validKeys: NutrientKey[], fallback: NutrientKey): TrendState {
@@ -66,56 +81,281 @@ function defaultState(validKeys: NutrientKey[], fallback: NutrientKey): TrendSta
   return { nutrients: list, selected: list }
 }
 
-// Which nutrient tags the user has added, and which of them are currently
-// drawn. Multiple nutrients can be selected at once — every selected tag is
-// rendered as its own line. Reflected into the URL query string so it survives
-// reloads and can be shared.
-interface TrendState {
-  nutrients: NutrientKey[]
-  selected: NutrientKey[]
-}
-
 // Order-insensitive set equality. Selection/tag order has no rendering meaning
-// (tags and lines are always laid out in config order), so we compare as sets.
+// (tags and charts are always laid out in config order), so we compare as sets.
 function sameSet(a: NutrientKey[], b: NutrientKey[]): boolean {
   if (a.length !== b.length) return false
   const set = new Set(a)
   return b.every((k) => set.has(k))
 }
 
-// Parse a comma-separated key list, dropping anything the config no longer
-// defines so a config change can never leave the chart referencing a dead key.
-function parseKeys(raw: string | null, validKeys: NutrientKey[]): NutrientKey[] {
-  if (!raw) return []
-  return raw
-    .split(',')
-    .filter((k): k is NutrientKey => validKeys.includes(k as NutrientKey))
+// Keep only the entries that are keys the config still defines, so a config
+// change (or stale localStorage) can never leave the chart referencing a dead
+// key. Accepts any input shape (comma string, array, junk) defensively.
+function sanitizeKeys(input: unknown, validKeys: NutrientKey[]): NutrientKey[] {
+  const raw = typeof input === 'string' ? input.split(',') : input
+  if (!Array.isArray(raw)) return []
+  return raw.filter((k): k is NutrientKey => validKeys.includes(k as NutrientKey))
 }
 
-// Read state from the URL query string. Falls back to the default set when no
-// nutrients are specified. A present-but-empty `sel` is honoured as "nothing
-// drawn"; an absent `sel` means "all added tags drawn".
-function loadState(validKeys: NutrientKey[], fallback: NutrientKey): TrendState {
-  const params = new URLSearchParams(window.location.search)
-  if (!params.has(QS_NUTRIENTS)) return defaultState(validKeys, fallback)
-  const nutrients = parseKeys(params.get(QS_NUTRIENTS), validKeys)
-  if (nutrients.length === 0) return defaultState(validKeys, fallback)
+// Accept a period only if it is one of the offered options.
+function validPeriod(n: unknown): number {
+  return (PERIODS as readonly number[]).includes(n as number)
+    ? (n as number)
+    : DEFAULT_DAYS
+}
+
+interface View {
+  state: TrendState
+  days: number
+}
+
+// True when the URL carries any of the chart's params. When none are present
+// we treat the URL as "unset" and fall back to localStorage.
+function hasChartParams(params: URLSearchParams): boolean {
+  return (
+    params.has(QS_NUTRIENTS) ||
+    params.has(QS_SELECTED) ||
+    params.has(QS_PERIOD)
+  )
+}
+
+// Build the view from the URL. A present-but-empty `sel` is honoured as
+// "nothing drawn"; an absent `sel` means "all added tags drawn".
+function fromUrl(
+  params: URLSearchParams,
+  validKeys: NutrientKey[],
+  fallback: NutrientKey,
+): View {
+  const days = validPeriod(Number(params.get(QS_PERIOD)))
+  if (!params.has(QS_NUTRIENTS)) return { state: defaultState(validKeys, fallback), days }
+  const nutrients = sanitizeKeys(params.get(QS_NUTRIENTS), validKeys)
+  if (nutrients.length === 0) return { state: defaultState(validKeys, fallback), days }
   const selected = params.has(QS_SELECTED)
-    ? parseKeys(params.get(QS_SELECTED), validKeys).filter((k) =>
+    ? sanitizeKeys(params.get(QS_SELECTED), validKeys).filter((k) =>
         nutrients.includes(k),
       )
     : [...nutrients]
-  return { nutrients, selected }
+  return { state: { nutrients, selected }, days }
 }
 
-// Read the period from the URL, accepting only the offered options.
-function loadPeriod(): number {
-  const raw = new URLSearchParams(window.location.search).get(QS_PERIOD)
-  const n = raw ? Number(raw) : NaN
-  return (PERIODS as readonly number[]).includes(n) ? n : DEFAULT_DAYS
+// Build the view from localStorage, or null when nothing usable is stored.
+function fromStorage(validKeys: NutrientKey[]): View | null {
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY)
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as {
+      nutrients?: unknown
+      selected?: unknown
+      days?: unknown
+    }
+    const nutrients = sanitizeKeys(parsed.nutrients, validKeys)
+    if (nutrients.length === 0) return null
+    const selected = sanitizeKeys(parsed.selected, validKeys).filter((k) =>
+      nutrients.includes(k),
+    )
+    return { state: { nutrients, selected }, days: validPeriod(parsed.days) }
+  } catch {
+    return null
+  }
+}
+
+// Decide the initial view: the query string always wins when present; only a
+// URL with no chart params at all falls back to localStorage, then default.
+function loadInitial(validKeys: NutrientKey[], fallback: NutrientKey): View {
+  const params = new URLSearchParams(window.location.search)
+  if (hasChartParams(params)) return fromUrl(params, validKeys, fallback)
+  return fromStorage(validKeys) ?? { state: defaultState(validKeys, fallback), days: DEFAULT_DAYS }
+}
+
+// A single nutrient's daily trend, plotted as a percentage of its target so the
+// 100% line is always meaningful. Each selected nutrient gets one of these, so
+// scales never collide and every chart carries its own good/warning band.
+function TrendChart({
+  nutrient,
+  data,
+  color,
+}: {
+  nutrient: NutrientDef
+  data: { date: string; value: number | null }[]
+  color: string
+}) {
+  const isReach = nutrient.goal === 'reach'
+  const gradId = `trend-danger-${nutrient.key}`
+
+  // The base line is the nutrient's colour; where it sits on the "bad" side of
+  // its 100% line we OVERLAY a red dashed line, so danger reads as the
+  // nutrient's colour and red alternating rather than a second full line.
+  //   null      → never crosses into its bad side (no overlay)
+  //   DANGER    → the whole line is on the bad side (solid red overlay)
+  //   url(#id)  → a vertical gradient: red on the bad side, transparent on safe
+  const danger = useMemo(() => {
+    const onBadSide = (pct: number) => (isReach ? pct < 100 : pct > 100)
+    const vals = data
+      .map((d) => d.value)
+      .filter((v): v is number => typeof v === 'number')
+    if (vals.length === 0) return { stroke: null as string | null }
+    const dataMax = Math.max(...vals)
+    const dataMin = Math.min(...vals)
+    if (dataMax === dataMin) {
+      return { stroke: onBadSide(dataMax) ? DANGER : null }
+    }
+    const off = Math.min(1, Math.max(0, (dataMax - 100) / (dataMax - dataMin)))
+    if (off <= 0) return { stroke: isReach ? DANGER : null }
+    if (off >= 1) return { stroke: isReach ? null : DANGER }
+    // offset 0 = top (dataMax), 1 = bottom (dataMin); the top region (0..off)
+    // is the stretch above 100%, the bottom region (off..1) is below 100%.
+    return {
+      stroke: `url(#${gradId})`,
+      off,
+      topOpacity: isReach ? 0 : 1,
+      botOpacity: isReach ? 1 : 0,
+    }
+  }, [data, isReach, gradId])
+
+  const renderTip = (props: {
+    active?: boolean
+    label?: string | number
+    payload?: { value?: number }[]
+  }) => {
+    if (!props.active || !props.payload?.length) return null
+    const raw = Number(props.payload[0].value)
+    const pct = Math.round(raw)
+    const text =
+      nutrient.target == null
+        ? `${pct}`
+        : `${Math.round((raw / 100) * nutrient.target * 10) / 10} ${nutrient.unit}（目標比 ${pct}%）`
+    return (
+      <div className="trend__tip">
+        <div className="trend__tip-label">{props.label}</div>
+        <div className="trend__tip-row">
+          <span className="trend__tip-name" style={{ color }}>
+            {nutrient.label}
+          </span>
+          <span className="trend__tip-val">{text}</span>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="trend__chart">
+      <div className="trend__chart-head">
+        <span className="trend__chart-name" style={{ color }}>
+          {nutrient.label}
+        </span>
+        <span className="trend__chart-target">
+          {nutrient.target != null
+            ? `基準 ${nutrient.target}${nutrient.unit}／日（${isReach ? '目標型' : '上限型'}）`
+            : nutrient.unit}
+        </span>
+      </div>
+      <ResponsiveContainer width="100%" height={180}>
+        <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+          <defs>
+            {danger.off != null && (
+              <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
+                <stop offset={danger.off} stopColor={DANGER} stopOpacity={danger.topOpacity} />
+                <stop offset={danger.off} stopColor={DANGER} stopOpacity={danger.botOpacity} />
+              </linearGradient>
+            )}
+          </defs>
+          <CartesianGrid strokeDasharray="3 3" vertical={false} />
+          {/* Good (green) / warning (red) zones around the 100% line. Each chart
+              is a single nutrient, so the direction is unambiguous. */}
+          {isReach ? (
+            <>
+              <ReferenceArea y1={100} fill="#85b79d" fillOpacity={0.06} />
+              <ReferenceArea
+                y1={0}
+                y2={100}
+                fill="#e0556d"
+                fillOpacity={0.08}
+                label={{ value: '不足注意', position: 'insideBottomLeft', fontSize: 10, fill: '#c0455c' }}
+              />
+            </>
+          ) : (
+            <>
+              <ReferenceArea y1={0} y2={100} fill="#85b79d" fillOpacity={0.06} />
+              <ReferenceArea
+                y1={100}
+                fill="#e0556d"
+                fillOpacity={0.08}
+                label={{ value: '超過注意', position: 'insideTopLeft', fontSize: 10, fill: '#c0455c' }}
+              />
+            </>
+          )}
+          <XAxis dataKey="date" tick={{ fontSize: 11 }} minTickGap={16} />
+          <YAxis
+            tick={{ fontSize: 11 }}
+            width={44}
+            // Always keep the 100% target line in view, even on low-intake days.
+            domain={[0, (max: number) => Math.max(110, Math.ceil(max / 10) * 10)]}
+            tickFormatter={(v: number) => `${v}%`}
+          />
+          <ReferenceLine
+            y={100}
+            stroke="#e8a13a"
+            strokeWidth={1.5}
+            strokeDasharray="6 4"
+            ifOverflow="extendDomain"
+            label={{
+              value: '基準 100%',
+              position: 'insideTopRight',
+              fontSize: 11,
+              fontWeight: 700,
+              fill: '#c97e16',
+            }}
+          />
+          <Tooltip content={renderTip} />
+          <Line
+            type="monotone"
+            dataKey="value"
+            name={nutrient.label}
+            stroke={color}
+            strokeWidth={2}
+            dot={false}
+            activeDot={{ r: 4, fill: color }}
+            connectNulls
+            isAnimationActive={false}
+          />
+          {danger.stroke && (
+            // Red dashes over the bad stretch; gaps reveal the base colour, so
+            // danger reads as colour+red alternating.
+            <Line
+              type="monotone"
+              dataKey="value"
+              stroke={danger.stroke}
+              strokeWidth={2}
+              strokeDasharray="6 6"
+              dot={false}
+              activeDot={false}
+              legendType="none"
+              connectNulls
+              isAnimationActive={false}
+            />
+          )}
+        </LineChart>
+      </ResponsiveContainer>
+      <p className="trend__zone">
+        {isReach ? (
+          <>
+            <span className="trend__zone-ok">緑帯＝基準以上でOK</span>
+            <span className="trend__zone-ng">赤い破線＝不足注意（目標型）</span>
+          </>
+        ) : (
+          <>
+            <span className="trend__zone-ok">緑帯＝基準以下でOK</span>
+            <span className="trend__zone-ng">赤い破線＝超過注意（上限型）</span>
+          </>
+        )}
+      </p>
+    </div>
+  )
 }
 
 // Daily trend of any number of selected nutrients over a selectable period.
+// Each selected nutrient is rendered as its own chart.
 export function NutrientTrend({
   config,
   entries,
@@ -129,16 +369,22 @@ export function NutrientTrend({
   const colorFor = (key: NutrientKey) =>
     PALETTE[validKeys.indexOf(key) % PALETTE.length]
 
-  const [state, setState] = useState<TrendState>(() =>
-    loadState(validKeys, fallback),
+  const initial = useMemo(
+    () => loadInitial(validKeys, fallback),
+    // Read once on mount; validKeys/fallback are stable for a given config.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
   )
-  const [days, setDays] = useState<number>(() => loadPeriod())
+  const [state, setState] = useState<TrendState>(initial.state)
+  const [days, setDays] = useState<number>(initial.days)
   const [adding, setAdding] = useState(false)
   const addRef = useRef<HTMLDivElement>(null)
 
-  // Reflect state into the URL on every change, preserving any other params
-  // (e.g. ?mock) and omitting anything equal to its default so the common-case
-  // URL stays clean. Uses replaceState so toggling tags doesn't spam history.
+  // Reflect state into the URL AND localStorage on every change. The URL
+  // preserves any other params (e.g. ?mock) and omits anything equal to its
+  // default so the common-case URL stays clean; localStorage always stores the
+  // full current view so a plain visit can restore it. replaceState avoids
+  // spamming history when toggling tags.
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const def = defaultState(validKeys, fallback)
@@ -162,6 +408,20 @@ export function NutrientTrend({
     const qs = params.toString()
     const url = `${window.location.pathname}${qs ? `?${qs}` : ''}${window.location.hash}`
     window.history.replaceState(null, '', url)
+
+    try {
+      window.localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          nutrients: state.nutrients,
+          selected: state.selected,
+          days,
+        }),
+      )
+    } catch {
+      // Storage may be unavailable (private mode, quota) — the URL still holds
+      // the view, so persistence is best-effort.
+    }
   }, [state, days, validKeys, fallback])
 
   // Close the add menu when clicking elsewhere.
@@ -206,111 +466,22 @@ export function NutrientTrend({
     (n) => !state.nutrients.includes(n.key),
   )
 
-  // Keep the drawn nutrients in config order so lines and legend are stable.
+  // Keep the drawn nutrients in config order so charts and legend are stable.
   const drawn = config.nutrients.filter((n) => state.selected.includes(n.key))
 
-  // The 100% line means opposite things for 上限型 (stay under) and 目標型
-  // (reach it), so the good/bad zones can only be shaded when every drawn
-  // nutrient points the same way. With a mixed selection a single horizontal
-  // band would be misleading, so we show a hint instead of a band.
-  const reachCount = drawn.filter((n) => n.goal === 'reach').length
-  const zone =
-    drawn.length === 0
-      ? 'none'
-      : reachCount === drawn.length
-        ? 'reach' // all 目標型: good above 100, bad below
-        : reachCount === 0
-          ? 'limit' // all 上限型: good below 100, bad above
-          : 'mixed'
+  // One row per date, holding each drawn nutrient's value as a percentage of
+  // its target (falling back to the raw amount when no target is set). Sliced
+  // out per chart below so every chart shares an identical date axis.
+  const daily = useMemo(() => dailyTotals(entries, days), [entries, days])
 
-  // Each line is plotted as a percentage of that nutrient's daily target, so
-  // nutrients with wildly different units/scales (kcal vs g) share one axis and
-  // none gets pinned to the bottom. The tooltip recovers the real amount.
-  const data = useMemo(
-    () =>
-      dailyTotals(entries, days).map((d) => {
-        const row: Record<string, number | string> = { date: d.date.slice(5) }
-        for (const n of drawn) {
-          const value = d.totals[n.key] ?? 0
-          row[n.key] = n.target ? (value / n.target) * 100 : value
-        }
-        return row
-      }),
-    [entries, days, drawn],
-  )
-
-  // Each nutrient is drawn as its own solid colour line so it stays
-  // identifiable. On the "bad" side of its 100% line (above for 上限型, below
-  // for 目標型) we OVERLAY a red dashed line, so the danger stretch reads as the
-  // nutrient's colour and red alternating — flagging risk without two lines
-  // collapsing into indistinguishable solid red. `danger` is the overlay stroke:
-  //   null            → no overlay (the line never crosses into its bad side)
-  //   DANGER          → solid red overlay (whole line is on the bad side)
-  //   url(#id)        → gradient: red on the bad side, transparent on the safe
-  // The gradient is vertical; offset 0 = top (dataMax), 1 = bottom (dataMin),
-  // switching opacity at where 100% falls within the line's own value range.
-  const lineStrokes = useMemo(() => {
-    return drawn.map((n) => {
-      const color = colorFor(n.key)
-      const isReach = n.goal === 'reach'
-      const onBadSide = (pct: number) => (isReach ? pct < 100 : pct > 100)
-      const vals = data
-        .map((d) => d[n.key])
-        .filter((v): v is number => typeof v === 'number')
-      const id = `trend-danger-${n.key}`
-      if (vals.length === 0) return { key: n.key, color, danger: null as string | null }
-      const dataMax = Math.max(...vals)
-      const dataMin = Math.min(...vals)
-      if (dataMax === dataMin) {
-        return { key: n.key, color, danger: onBadSide(dataMax) ? DANGER : null }
+  const seriesFor = (n: NutrientDef) =>
+    daily.map((d) => {
+      const value = d.totals[n.key] ?? 0
+      return {
+        date: d.date.slice(5),
+        value: n.target ? (value / n.target) * 100 : value,
       }
-      const off = Math.min(1, Math.max(0, (dataMax - 100) / (dataMax - dataMin)))
-      if (off <= 0) return { key: n.key, color, danger: isReach ? DANGER : null }
-      if (off >= 1) return { key: n.key, color, danger: isReach ? null : DANGER }
-      // Red on the bad side (opacity 1), transparent on the safe side.
-      const topOpacity = isReach ? 0 : 1 // top region (0..off) = above 100
-      const botOpacity = isReach ? 1 : 0 // bottom region (off..1) = below 100
-      return { key: n.key, color, danger: `url(#${id})`, id, off, topOpacity, botOpacity }
     })
-  }, [drawn, data])
-
-  // Custom tooltip: each nutrient may be rendered as two overlapping lines
-  // (base + red danger overlay) sharing a dataKey, so dedupe by key to avoid
-  // listing it twice. Also recovers the real amount from the plotted %.
-  const renderTip = (props: {
-    active?: boolean
-    label?: string | number
-    payload?: { dataKey?: string | number; value?: number }[]
-  }) => {
-    if (!props.active || !props.payload?.length) return null
-    const seen = new Set<string>()
-    const rows: JSX.Element[] = []
-    for (const item of props.payload) {
-      const key = String(item.dataKey)
-      if (seen.has(key)) continue
-      seen.add(key)
-      const def = config.nutrients.find((n) => n.key === key)
-      const pct = Math.round(Number(item.value))
-      const text =
-        def?.target == null
-          ? `${pct}`
-          : `${Math.round(((Number(item.value) / 100) * def.target) * 10) / 10} ${def.unit}（目標比 ${pct}%）`
-      rows.push(
-        <div className="trend__tip-row" key={key}>
-          <span className="trend__tip-name" style={{ color: colorFor(key as NutrientKey) }}>
-            {def?.label ?? key}
-          </span>
-          <span className="trend__tip-val">{text}</span>
-        </div>,
-      )
-    }
-    return (
-      <div className="trend__tip">
-        <div className="trend__tip-label">{props.label}</div>
-        {rows}
-      </div>
-    )
-  }
 
   return (
     <section className="trend">
@@ -393,127 +564,19 @@ export function NutrientTrend({
       </div>
 
       {drawn.length > 0 ? (
-        <ResponsiveContainer width="100%" height={220}>
-          <LineChart
-            data={data}
-            margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
-          >
-            <defs>
-              {lineStrokes.map((s) =>
-                s.id ? (
-                  <linearGradient key={s.id} id={s.id} x1="0" y1="0" x2="0" y2="1">
-                    <stop offset={s.off} stopColor={DANGER} stopOpacity={s.topOpacity} />
-                    <stop offset={s.off} stopColor={DANGER} stopOpacity={s.botOpacity} />
-                  </linearGradient>
-                ) : null,
-              )}
-            </defs>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} />
-            {/* Shade the good (green) / warning (red) zones around the 100%
-                line. Only meaningful when all drawn nutrients share a goal
-                direction — see `zone` above. */}
-            {zone === 'limit' && (
-              <>
-                <ReferenceArea y1={0} y2={100} fill="#85b79d" fillOpacity={0.06} />
-                <ReferenceArea
-                  y1={100}
-                  fill="#e0556d"
-                  fillOpacity={0.08}
-                  label={{ value: '超過注意', position: 'insideTopLeft', fontSize: 10, fill: '#c0455c' }}
-                />
-              </>
-            )}
-            {zone === 'reach' && (
-              <>
-                <ReferenceArea y1={100} fill="#85b79d" fillOpacity={0.06} />
-                <ReferenceArea
-                  y1={0}
-                  y2={100}
-                  fill="#e0556d"
-                  fillOpacity={0.08}
-                  label={{ value: '不足注意', position: 'insideBottomLeft', fontSize: 10, fill: '#c0455c' }}
-                />
-              </>
-            )}
-            <XAxis dataKey="date" tick={{ fontSize: 11 }} minTickGap={16} />
-            <YAxis
-              tick={{ fontSize: 11 }}
-              width={44}
-              // Always keep the 100% target line in view, even on low-intake days.
-              domain={[0, (max: number) => Math.max(110, Math.ceil(max / 10) * 10)]}
-              tickFormatter={(v: number) => `${v}%`}
+        <div className="trend__charts">
+          {drawn.map((n) => (
+            <TrendChart
+              key={n.key}
+              nutrient={n}
+              data={seriesFor(n)}
+              color={colorFor(n.key)}
             />
-            <ReferenceLine
-              y={100}
-              stroke="#e8a13a"
-              strokeWidth={1.5}
-              strokeDasharray="6 4"
-              ifOverflow="extendDomain"
-              label={{
-                value: '基準 100%',
-                position: 'insideTopRight',
-                fontSize: 11,
-                fontWeight: 700,
-                fill: '#c97e16',
-              }}
-            />
-            <Tooltip content={renderTip} />
-            {drawn.map((n, i) => {
-              const s = lineStrokes[i]
-              return (
-                <Fragment key={n.key}>
-                  <Line
-                    type="monotone"
-                    dataKey={n.key}
-                    name={n.label}
-                    stroke={s.color}
-                    strokeWidth={2}
-                    dot={false}
-                    activeDot={{ r: 4, fill: s.color }}
-                    isAnimationActive={false}
-                  />
-                  {s.danger && (
-                    // Red dashes over the bad stretch; gaps reveal the base
-                    // colour, so danger reads as colour+red alternating.
-                    <Line
-                      type="monotone"
-                      dataKey={n.key}
-                      stroke={s.danger}
-                      strokeWidth={2}
-                      strokeDasharray="6 6"
-                      dot={false}
-                      activeDot={false}
-                      legendType="none"
-                      isAnimationActive={false}
-                    />
-                  )}
-                </Fragment>
-              )
-            })}
-          </LineChart>
-        </ResponsiveContainer>
+          ))}
+        </div>
       ) : (
         <p className="trend__empty">
           タグをクリックして表示する栄養素を選んでください
-        </p>
-      )}
-
-      {zone === 'limit' && (
-        <p className="trend__zone">
-          <span className="trend__zone-ok">緑帯＝基準以下でOK</span>
-          <span className="trend__zone-ng">赤い破線＝超過注意（上限型）</span>
-        </p>
-      )}
-      {zone === 'reach' && (
-        <p className="trend__zone">
-          <span className="trend__zone-ok">緑帯＝基準以上でOK</span>
-          <span className="trend__zone-ng">赤い破線＝不足注意（目標型）</span>
-        </p>
-      )}
-      {zone === 'mixed' && (
-        <p className="trend__zone trend__zone--mixed">
-          <span className="trend__zone-ng">赤い破線の区間＝注意</span>
-          （上限型は100%超／目標型は100%未満）。1タイプだけ表示すると背景にも基準帯が出ます。
         </p>
       )}
     </section>
