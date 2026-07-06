@@ -1255,5 +1255,74 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-06T20:27:00+09:00-dinner",
+    "datetime": "2026-07-06T20:27:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/06-2027-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオのたたき（にんにく薬味・約120g）",
+        "nutrition": {
+          "energy_kcal": 144,
+          "protein_g": 31,
+          "fat_g": 3,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "アジ刺身（約100g）",
+        "nutrition": {
+          "energy_kcal": 112,
+          "protein_g": 20,
+          "fat_g": 4.5,
+          "saturated_fat_g": 1.2,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "刺身のツマ（大根千切り・大葉・ねぎ・玉ねぎ）",
+        "nutrition": {
+          "energy_kcal": 15,
+          "protein_g": 0.5,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.4,
+          "sugar_g": 2.4,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "刺身盛り合わせ（カツオのたたき＋アジ）＋白ごはん。カツオのたたきは過去記録（約100g=120kcal/P26）を量に合わせ約120gにスケール。アジ刺身は過去記録（約60g=67kcal/P12）を約100g（まあじ生 約112kcal/100g）にスケール。量は本人確認済み。ツマ・ごはんは過去記録の確定値を流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
