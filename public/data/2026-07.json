@@ -1195,16 +1195,16 @@
     ],
     "items": [
       {
-        "name": "麻婆豆腐（クックドゥ極 麻辣麻婆豆腐用1袋・木綿豆腐1丁・豚ひき肉100g／自炊）",
+        "name": "麻婆豆腐（クックドゥ極 麻辣麻婆豆腐用／自炊・作った全量の約2/3を喫食）",
         "nutrition": {
-          "energy_kcal": 750,
-          "protein_g": 52,
-          "fat_g": 54,
-          "saturated_fat_g": 15.5,
-          "carbohydrate_g": 20,
-          "sugar_g": 15,
-          "fiber_g": 5,
-          "salt_g": 6.5
+          "energy_kcal": 500,
+          "protein_g": 34.7,
+          "fat_g": 36,
+          "saturated_fat_g": 10.3,
+          "carbohydrate_g": 13.3,
+          "sugar_g": 10,
+          "fiber_g": 3.3,
+          "salt_g": 4.3
         }
       },
       {
@@ -1248,7 +1248,7 @@
         }
       }
     ],
-    "memo": "麻婆豆腐はクックドゥ極 麻辣麻婆豆腐用をパッケージの作り方どおりに調理（木綿豆腐1丁約375g＋豚ひき肉100g＋長ねぎ）した全量。タレ出典: 味の素公式 https://www.ajinomoto.co.jp/products/detail/?ProductName=cookdo_50 （1袋125g=2.5人前, 1人前50gあたり99kcal/P2.8/F7.6/C4.7/食塩2.6→1袋247.5kcal/P7/F19/C11.75/食塩6.5）。木綿豆腐・豚ひき肉・長ねぎは標準的な食品成分から加算。アサヒ スーパードライは公式 https://www.asahibeer.co.jp/products/ing_beer.html （100ml=42kcal/炭水化物3.0g/純アルコール4.0g）より350ml缶(本人確認)で算出。ピーマン2個・ご飯200gは過去記録の確定値を流用。糖質=炭水化物-食物繊維。",
+    "memo": "麻婆豆腐はクックドゥ極 麻辣麻婆豆腐用をパッケージの作り方どおりに調理（木綿豆腐1丁約375g＋豚ひき肉100g＋長ねぎ）し、作った全量の約2/3を喫食（本人申告）。全量は約750kcal(P52/F54/C20/食塩6.5)で、その2/3を計上。タレ出典: 味の素公式 https://www.ajinomoto.co.jp/products/detail/?ProductName=cookdo_50 （1袋125g=2.5人前, 1人前50gあたり99kcal/P2.8/F7.6/C4.7/食塩2.6）。木綿豆腐・豚ひき肉・長ねぎは標準的な食品成分から加算。アサヒ スーパードライは公式 https://www.asahibeer.co.jp/products/ing_beer.html （100ml=42kcal/炭水化物3.0g/純アルコール4.0g）より350ml缶(本人確認)で算出。ピーマン2個・ご飯200gは過去記録の確定値を流用。糖質=炭水化物-食物繊維。",
     "tags": [
       "自炊",
       "お酒"
