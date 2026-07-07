@@ -1311,5 +1311,163 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-07T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-07T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/07-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI やわらかロースのかつ丼（日清食品・冷凍1食360g）",
+        "nutrition": {
+          "energy_kcal": 598,
+          "protein_g": 24.6,
+          "fat_g": 14.9,
+          "saturated_fat_g": 3.4,
+          "carbohydrate_g": 91.4,
+          "sugar_g": 83.8,
+          "fiber_g": 7.6,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "日清 完全メシ DELI やわらかロースのかつ丼（冷凍・1食360g）。公式栄養成分表示より（598kcal/P24.6/F14.9/飽和脂肪酸3.4/炭水化物91.4(糖質83.8・食物繊維7.6)/食塩2.8）。出典 https://www.nissin.com/jp/product/items/13003/",
+    "tags": [
+      "中食",
+      "完全メシ"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-07T12:00:00+09:00-lunch",
+    "datetime": "2026-07-07T12:00:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/07-1200-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI 生パスタのカルボナーラ（日清食品・冷凍1食301g）",
+        "nutrition": {
+          "energy_kcal": 484,
+          "protein_g": 20,
+          "fat_g": 15.5,
+          "saturated_fat_g": 3.8,
+          "carbohydrate_g": 70.9,
+          "sugar_g": 64.2,
+          "fiber_g": 6.7,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "日清 完全メシ DELI 生パスタのカルボナーラ（冷凍・1食301g）。公式栄養成分表示より（484kcal/P20.0/F15.5/飽和脂肪酸3.8/炭水化物70.9(糖質64.2・食物繊維6.7)/食塩2.8）。出典 https://www.nissin.com/jp/product/items/12274/",
+    "tags": [
+      "中食",
+      "完全メシ",
+      "麺"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-07T17:00:00+09:00-snack",
+    "datetime": "2026-07-07T17:00:00+09:00",
+    "type": "snack",
+    "photos": [],
+    "items": [
+      {
+        "name": "プロテイン1杯（パーソナルジム提供・ホエイ・水割り想定）",
+        "nutrition": {
+          "energy_kcal": 110,
+          "protein_g": 20,
+          "fat_g": 1.5,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 3,
+          "sugar_g": 3,
+          "fiber_g": 0,
+          "salt_g": 0.15
+        }
+      }
+    ],
+    "memo": "パーソナルジムで提供されたプロテイン1杯（紙コップ・水割り想定）。銘柄不明のため記憶ベース推定（標準的なホエイプロテイン1回分＝たんぱく質約20g・約110kcalから推定）。写真なし。",
+    "tags": [
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-07T21:00:00+09:00-dinner",
+    "datetime": "2026-07-07T21:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/07-2100-dinner.webp",
+      "images/2026/07/07-2100-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "卵チャーハン（パックごはん200g・卵2個・油大さじ1・塩こしょう）",
+        "nutrition": {
+          "energy_kcal": 536,
+          "protein_g": 16.8,
+          "fat_g": 23,
+          "saturated_fat_g": 4.7,
+          "carbohydrate_g": 65.8,
+          "sugar_g": 65.3,
+          "fiber_g": 0.5,
+          "salt_g": 1.4
+        }
+      },
+      {
+        "name": "あらびきウインナー 2本（約40g）",
+        "nutrition": {
+          "energy_kcal": 128,
+          "protein_g": 5.3,
+          "fat_g": 11.4,
+          "saturated_fat_g": 4.3,
+          "carbohydrate_g": 1.3,
+          "sugar_g": 1.3,
+          "fiber_g": 0,
+          "salt_g": 0.76
+        }
+      },
+      {
+        "name": "麻婆豆腐（約70g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 4.5,
+          "fat_g": 5.5,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 4,
+          "sugar_g": 3.3,
+          "fiber_g": 0.7,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0（明治・20g・200ml）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "卵チャーハン（パックごはん200g＋卵2個＋油大さじ1＋塩こしょう）・あらびきウインナー2本・麻婆豆腐少量・ザバス。分量は本人申告と写真から。ごはんはパックごはん（アイリスオーヤマ 低温製法米200g＝288kcal/P4.6/F0.8/C65.4/食塩0、過去記録流用）に卵2個(鶏卵全卵 標準成分)・油大さじ1(約106kcal)・塩こしょうを加算。ウインナー2本(約40g)・麻婆豆腐(約70g)は標準的な食品成分からの推定。ザバス MILK PROTEIN 脂肪0（20g・200ml、明治公式値を過去記録より流用: 107kcal/P20/脂質0/炭水化物6.8(糖質6.5・食物繊維0.3)/食塩0.19）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
