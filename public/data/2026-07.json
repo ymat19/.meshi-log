@@ -1562,7 +1562,9 @@
     "id": "2026-07-08T18:08:00+09:00-dinner",
     "datetime": "2026-07-08T18:08:00+09:00",
     "type": "dinner",
-    "photos": [],
+    "photos": [
+      "images/2026/07/08-1808-dinner.webp"
+    ],
     "items": [
       {
         "name": "お通し（1人前）",
@@ -1696,7 +1698,9 @@
     "id": "2026-07-08T23:30:00+09:00-snack",
     "datetime": "2026-07-08T23:30:00+09:00",
     "type": "snack",
-    "photos": [],
+    "photos": [
+      "images/2026/07/08-2330-snack.webp"
+    ],
     "items": [
       {
         "name": "メガ角ハイボール（1杯）",
