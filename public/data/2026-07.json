@@ -1469,5 +1469,271 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-08T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-08T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/08-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 20g（200ml）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "朝食。ザバス MILK PROTEIN 脂肪0 20g(200ml)（明治公式）: https://www.meiji.co.jp/products/sports/4902705095465.html （107kcal/P20.0/脂質0/炭水化物6.8・糖質6.5・食物繊維0.3/食塩0.19）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-08T12:30:00+09:00-lunch",
+    "datetime": "2026-07-08T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/08-1230-lunch.webp",
+      "images/2026/07/08-1230-lunch-2.webp",
+      "images/2026/07/08-1230-lunch-3.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI 濃厚芝麻醤味の汁なし担々麺（つけ麺スタイル・日清食品）",
+        "nutrition": {
+          "energy_kcal": 482,
+          "protein_g": 22.1,
+          "fat_g": 13.9,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 70.8,
+          "sugar_g": 64.6,
+          "fiber_g": 6.2,
+          "salt_g": 2.9
+        }
+      },
+      {
+        "name": "トマト（中1個 約150g）",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 1.1,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 7,
+          "sugar_g": 5.5,
+          "fiber_g": 1.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 20g（200ml）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "昼食。完全メシ DELI 汁なし担々麺をつけ麺スタイルで（白い薄切りは製品付属の具）。公式栄養成分（日清食品ニュースリリース 482kcal/P22.1/F13.9/炭水化物70.8・糖質64.6・食物繊維6.2/食塩2.9）: https://www.nissin.com/jp/company/news/12084/ 。飽和脂肪酸は公式非掲載のため同シリーズ標準から推定(3.5g)。トマトは標準的な食品成分(生100gあたり約20kcal)から150gで推定。ザバス MILK PROTEIN 脂肪0 20g(200ml)公式: https://www.meiji.co.jp/products/sports/4902705095465.html 。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-08T18:08:00+09:00-dinner",
+    "datetime": "2026-07-08T18:08:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "お通し（1人前）",
+        "nutrition": {
+          "energy_kcal": 40,
+          "protein_g": 1.5,
+          "fat_g": 2,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 3.5,
+          "sugar_g": 2.5,
+          "fiber_g": 1,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "定番串カツ8本盛り（牛・豚・玉ねぎ・れんこん・えび・うずら・紅生姜・チーズ／2人でシェア半分）",
+        "nutrition": {
+          "energy_kcal": 298,
+          "protein_g": 12,
+          "fat_g": 19.8,
+          "saturated_fat_g": 5.7,
+          "carbohydrate_g": 18.8,
+          "sugar_g": 16.9,
+          "fiber_g": 1.9,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "冷やしピーマン（シェア半分）",
+        "nutrition": {
+          "energy_kcal": 50,
+          "protein_g": 1,
+          "fat_g": 3.5,
+          "saturated_fat_g": 0.5,
+          "carbohydrate_g": 3.5,
+          "sugar_g": 2.2,
+          "fiber_g": 1.3,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "ポテトサラダ（シェア半分）",
+        "nutrition": {
+          "energy_kcal": 203,
+          "protein_g": 3,
+          "fat_g": 14,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 16.5,
+          "sugar_g": 14.5,
+          "fiber_g": 2,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "無限ニンニクホルモン（串6本／シェア半分）",
+        "nutrition": {
+          "energy_kcal": 165,
+          "protein_g": 9,
+          "fat_g": 12,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 5,
+          "sugar_g": 4.5,
+          "fiber_g": 0.5,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "無限スパイスホルモン（串2本／シェア半分）",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 3,
+          "fat_g": 4.5,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 1.3,
+          "fiber_g": 0.2,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "ポテトフライ（シェア半分）",
+        "nutrition": {
+          "energy_kcal": 200,
+          "protein_g": 2.5,
+          "fat_g": 12,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 21,
+          "sugar_g": 19,
+          "fiber_g": 2,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "クッキー&クリーム（アイス／シェア半分）",
+        "nutrition": {
+          "energy_kcal": 154,
+          "protein_g": 2.5,
+          "fat_g": 8,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 19,
+          "sugar_g": 18.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "ザ・プレミアム・モルツ 香るエール ハーフ ×3（約600ml）",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 2.4,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 17.4,
+          "sugar_g": 17.4,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 28.4
+        }
+      }
+    ],
+    "memo": "夕食。串カツ田中（2名で来店・お通し×2）。料理は2人でシェアのため全量の約50%を自分の分として記録。お酒は自分が飲んだ香るエール ハーフ×3のみ記録（同席者のプレモル275ml・ぶどうサワー・ハイボールは除外）。カロリーは串カツ田中カロリー一覧: https://omisehakku.com/kushitanaka-calorie/ （串カツ牛74/豚98/玉ねぎ64/れんこん60/えび44/うずら93/紅生姜75/チーズ88、冷やしピーマン99、ポテトサラダ406、ポテトフライ400、クッキー&クリーム154／全量）。串カツ・ホルモン・サイドのPFCは揚げ物標準からの推定、無限ホルモン2種のカロリーは公式非公開のため推定。香るエール(ザ・プレミアム・モルツ 6%・45kcal/100ml・糖質2.9g/100ml)公式: https://products.suntory.co.jp/d/4901777392885/ 、ハーフ1杯約200ml×3で算出。純アルコール=600×0.06×0.789≒28.4g。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "揚げ物",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-08T23:30:00+09:00-snack",
+    "datetime": "2026-07-08T23:30:00+09:00",
+    "type": "snack",
+    "photos": [],
+    "items": [
+      {
+        "name": "メガ角ハイボール（1杯）",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 30
+        }
+      },
+      {
+        "name": "五目焼きそば（1皿）",
+        "nutrition": {
+          "energy_kcal": 520,
+          "protein_g": 22,
+          "fat_g": 19,
+          "saturated_fat_g": 4,
+          "carbohydrate_g": 65,
+          "sugar_g": 60,
+          "fiber_g": 5,
+          "salt_g": 4.8
+        }
+      }
+    ],
+    "memo": "夜食（居酒屋『多福』・川崎、1名）。レシート日付は2026-07-09 深夜だが本人希望により前日07-08の夜食として記録。メガ角ハイボールは角ハイボール(約7%)のメガジョッキ、店舗提供のため公式値なし・記憶ベース推定(ウイスキー約90ml相当、純アルコール約30g、糖質0)。五目焼きそばは店舗提供のため公式値なし、カロリーSlism 五目焼きそば標準( https://calorie.slism.jp/204760/ 1人前346g=354kcal)を居酒屋の1皿量に合わせて推定(520kcal/P22/F19/炭水化物65・糖質60・食物繊維5/食塩4.8)。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "麺",
+      "お酒",
+      "夜食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
