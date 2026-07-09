@@ -1838,5 +1838,89 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-09T22:15:00+09:00-dinner",
+    "datetime": "2026-07-09T22:15:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/09-2215-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ほっけの塩焼き（セブン）",
+        "nutrition": {
+          "energy_kcal": 125,
+          "protein_g": 17,
+          "fat_g": 6.5,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g・2枚入りのうち1枚）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "ピーマン（1個・焼き）",
+        "nutrition": {
+          "energy_kcal": 10,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 0.8,
+          "fiber_g": 0.7,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "シャウエッセン 2本（約46g）",
+        "nutrition": {
+          "energy_kcal": 144,
+          "protein_g": 5.7,
+          "fat_g": 13.5,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 1.3,
+          "sugar_g": 1.2,
+          "fiber_g": 0.1,
+          "salt_g": 0.76
+        }
+      },
+      {
+        "name": "アサヒ スーパードライ 350ml缶",
+        "nutrition": {
+          "energy_kcal": 147,
+          "protein_g": 1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 10.5,
+          "sugar_g": 10.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 14
+        }
+      }
+    ],
+    "memo": "夕食。相模屋 焼いておいしい絹厚揚げ（公式 https://sagamiya-kk.co.jp/products/kinu_atsuage.html 1枚150g=156kcal/P9.5/F8.7/C11.1/食塩0.14）を2枚入りのうち1枚喫食（本人申告）。※初回に過去ログの一般厚揚げ推定値200kcalを誤って流用したため公式値156kcalに訂正。飽和脂肪酸・食物繊維は公式非掲載のため大豆製品の標準組成から推定。ほっけの塩焼き（セブン）はセブン公式が栄養非掲載のため fatsecret 1パック値(121kcal/P16.4/F6.1/C0.1) https://www.fatsecret.jp/カロリー-栄養/セブンイレブン/ほっけの塩焼/1包装 を基に調整、食塩相当量・飽和脂肪酸は塩焼き魚の標準組成から推定。シャウエッセンは日本ハム公式 https://www.nipponham.co.jp/topics_detail1/id=1728 （1本72kcal、100g=325kcal/P12.4/F29.3/C2.9/食塩1.9）×2本(約46g)、飽和脂肪酸は豚肉ソーセージ標準から推定。ピーマン1個・焼きは過去記録(7/5)の確定値を流用。アサヒ スーパードライ 350ml缶は公式 https://www.asahibeer.co.jp/products/ing_beer.html （100ml=42kcal/炭水化物3.0g/純アルコール4.0g）で換算、純アルコール14.0g。糖質=炭水化物-食物繊維。主食（ごはん等）は喫食していないため計上なし。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
