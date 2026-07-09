@@ -1739,5 +1739,76 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-09T20:19:00+09:00-dinner",
+    "datetime": "2026-07-09T20:19:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/09-2019-dinner.webp",
+      "images/2026/07/09-2019-dinner-2.webp",
+      "images/2026/07/09-2019-dinner-3.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI 旨辛ビビンバ",
+        "nutrition": {
+          "energy_kcal": 590,
+          "protein_g": 23.3,
+          "fat_g": 16.9,
+          "saturated_fat_g": 2.8,
+          "carbohydrate_g": 85.8,
+          "sugar_g": 78.1,
+          "fiber_g": 7.7,
+          "salt_g": 2.7
+        }
+      },
+      {
+        "name": "モッツァレラとろけるスライスチーズ 3枚",
+        "nutrition": {
+          "energy_kcal": 162,
+          "protein_g": 11.7,
+          "fat_g": 12.3,
+          "saturated_fat_g": 6.9,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.6,
+          "fiber_g": 0.6,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "完全メシ DELI 五目あんかけ焼そば",
+        "nutrition": {
+          "energy_kcal": 476,
+          "protein_g": 18.8,
+          "fat_g": 14.5,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 69.7,
+          "sugar_g": 63.6,
+          "fiber_g": 6.1,
+          "salt_g": 2.9
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 20g 200ml ×2本",
+        "nutrition": {
+          "energy_kcal": 214,
+          "protein_g": 40,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 13.6,
+          "sugar_g": 13,
+          "fiber_g": 0.6,
+          "salt_g": 0.38
+        }
+      }
+    ],
+    "memo": "夕食。完全メシビビンバにモッツァレラスライス3枚を追加、完全メシ焼そば、ザバス2本。既製品出典 — 完全メシ DELI 旨辛ビビンバ(1食331g): https://www.nissin.com/jp/product/items/13101/ （590kcal/P23.3/脂質16.9・飽和2.8/炭水化物85.8・糖質78.1・食物繊維7.7/食塩2.7）。完全メシ DELI オイスターソース仕立ての五目あんかけ焼そば(1食350g): https://www.nissin.com/jp/product/items/13165/ （476kcal/P18.8/脂質14.5・飽和3.2/炭水化物69.7・糖質63.6・食物繊維6.1/食塩2.9）。ザバス MILK PROTEIN 脂肪0 20g 200ml: https://www.meiji.co.jp/products/sports/4902705095465.html （1本107kcal/P20.0/脂質0/炭水化物6.8・糖質6.5・食物繊維0.3/食塩0.19、過去記録流用×2本）。モッツァレラとろけるスライスチーズ(トップバリュ・1枚18g): https://www.topvalu.net/items/detail/4549414283617/ （54kcal/P3.9/脂質4.1/炭水化物0.4・糖質0.2・食物繊維0.2/食塩0.3、×3枚）。飽和脂肪酸は公式非掲載のためモッツァレラ標準約13g/100gから1枚2.3gと推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
