@@ -1936,5 +1936,202 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-10T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-10T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/10-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "メキシカンタコスチーズチキン（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 559,
+          "protein_g": 24.3,
+          "fat_g": 28.1,
+          "saturated_fat_g": 9,
+          "carbohydrate_g": 52.9,
+          "sugar_g": 50.4,
+          "fiber_g": 2.5,
+          "salt_g": 3.8
+        }
+      },
+      {
+        "name": "マックフライポテト M（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 410,
+          "protein_g": 5.5,
+          "fat_g": 20,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 52.4,
+          "sugar_g": 47.4,
+          "fiber_g": 5,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "コカ・コーラ ゼロ M（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.03
+        }
+      }
+    ],
+    "memo": "マクドナルド朝。メキシカンタコスチーズチキン: https://www.mcdonalds.co.jp/products/6810/ (559kcal/P24.3/F28.1/C52.9/食塩3.8)。マックフライポテトM: https://www.mcdonalds.co.jp/products/2020/ (410kcal/P5.5/F20.0/C52.4/食塩0.8)。飽和脂肪酸・食物繊維は公式非掲載のため推定(バーガー飽和9.0・食物繊維2.5/ポテト飽和2.0・食物繊維5.0)。糖質=炭水化物-食物繊維。コーラはゼロカロリー(食塩は微量ナトリウム)。",
+    "tags": [
+      "外食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-10T15:00:00+09:00-snack",
+    "datetime": "2026-07-10T15:00:00+09:00",
+    "type": "snack",
+    "photos": [
+      "images/2026/07/10-1500-snack.webp",
+      "images/2026/07/10-1500-snack-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 チョコレート風味 200ml",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.9,
+          "sugar_g": 6.5,
+          "fiber_g": 0.4,
+          "salt_g": 0.19
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 チョコレート風味 200ml",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.9,
+          "sugar_g": 6.5,
+          "fiber_g": 0.4,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "間食。ザバス MILK PROTEIN 脂肪0 チョコレート風味 200ml×2本: https://www.meiji.co.jp/products/sports/4902705068087.html (1本107kcal/P20.0/脂質0/炭水化物6.9/食塩0.19)。糖質=炭水化物-食物繊維(食物繊維0-0.7の中間0.4で算出)。",
+    "tags": [
+      "間食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-10T19:30:00+09:00-dinner",
+    "datetime": "2026-07-10T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/10-1930-dinner.webp",
+      "images/2026/07/10-1930-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI 旨辛豆板醤の肉味噌まぜうどん",
+        "nutrition": {
+          "energy_kcal": 507,
+          "protein_g": 20.1,
+          "fat_g": 13.8,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 79.5,
+          "sugar_g": 70.8,
+          "fiber_g": 8.7,
+          "salt_g": 2.9
+        }
+      },
+      {
+        "name": "生ハム 6枚（約30g）",
+        "nutrition": {
+          "energy_kcal": 74,
+          "protein_g": 7.2,
+          "fat_g": 5,
+          "saturated_fat_g": 1.7,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.84
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "ビール 350ml缶（通常）",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 1.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 10.9,
+          "sugar_g": 10.9,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 14
+        }
+      },
+      {
+        "name": "トマト 小2個（約120g）",
+        "nutrition": {
+          "energy_kcal": 24,
+          "protein_g": 0.8,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0.02,
+          "carbohydrate_g": 5.6,
+          "sugar_g": 4.4,
+          "fiber_g": 1.2,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "夕食+晩酌。完全メシDELI 旨辛豆板醤の肉味噌まぜうどん: https://www.nissin.com/jp/product/items/13051/ (1食350g・507kcal/P20.1/F13.8/C79.5/糖質70.8/食物繊維8.7/食塩2.9・飽和脂肪酸は非掲載のため推定4.5)。生ハム6枚は約30gとして標準成分から推定。ミニカマンベールは過去記録の確定値(1個25g・65kcal)を流用×2。ビールは350ml通常缶として推定(アルコール14g)。トマトは小2個約120gで標準成分から推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "お酒",
+      "晩酌",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
