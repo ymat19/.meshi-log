@@ -2292,5 +2292,52 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-11T22:00:00+09:00-snack",
+    "datetime": "2026-07-11T22:00:00+09:00",
+    "type": "snack",
+    "photos": [
+      "images/2026/07/11-2200-snack.webp",
+      "images/2026/07/11-2200-snack-2.webp"
+    ],
+    "items": [
+      {
+        "name": "冷凍 完全メシ DELI 濃厚白湯スープのちゃんぽん（日清食品・1食308g）",
+        "nutrition": {
+          "energy_kcal": 458,
+          "protein_g": 20.6,
+          "fat_g": 12.2,
+          "saturated_fat_g": 3.6,
+          "carbohydrate_g": 70.1,
+          "sugar_g": 63.3,
+          "fiber_g": 6.8,
+          "salt_g": 2.9
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 ミルク風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "夜食（22時台、21時の夕食とは別）。冷凍 完全メシ DELI 濃厚白湯スープのちゃんぽんは日清公式より（https://www.nissin.com/jp/product/items/12736/ 1食308g=458kcal/P20.6/F12.2/飽和3.6/炭水化物70.1(糖質63.3・食物繊維6.8)/食塩2.9）。ザバス MILK PROTEIN 脂肪0 ミルク風味 200ml は明治公式（過去ログ確定値）: 107kcal/P20.0/脂質0/炭水化物6.8(糖質6.5・食物繊維0.3)/食塩0.19。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "完全メシ",
+      "麺",
+      "プロテイン",
+      "夜食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
