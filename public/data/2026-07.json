@@ -2339,5 +2339,201 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-12T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-12T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/12-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "からあげ弁当（ローソンストア100）",
+        "nutrition": {
+          "energy_kcal": 750,
+          "protein_g": 25,
+          "fat_g": 22,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 110,
+          "sugar_g": 106.5,
+          "fiber_g": 3.5,
+          "salt_g": 2.6
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "出典: からあげ弁当は100円ローソン（ローソンストア100）で公式栄養値の公開が無く記憶ベース推定（ごはん＋唐揚げ＋やきそば＋紅生姜のコンビニ弁当）。ザバスは過去ログ・明治公式値を流用。",
+    "tags": [
+      "中食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-12T12:30:00+09:00-lunch",
+    "datetime": "2026-07-12T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "鶏なんこつ唐揚げ（快活CLUB・1皿）",
+        "nutrition": {
+          "energy_kcal": 250,
+          "protein_g": 12,
+          "fat_g": 15,
+          "saturated_fat_g": 2.8,
+          "carbohydrate_g": 14,
+          "sugar_g": 13.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "ビール 350ml ×2",
+        "nutrition": {
+          "energy_kcal": 280,
+          "protein_g": 2.2,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 21.8,
+          "sugar_g": 21.8,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 28
+        }
+      }
+    ],
+    "memo": "出典: 快活CLUBは公式栄養値の公開が無く軟骨唐揚げは記憶ベース推定。ビールは350ml缶×2として過去ログ値（1本140kcal/alc14g）を流用。",
+    "tags": [
+      "外食",
+      "揚げ物",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-12T22:30:00+09:00-dinner",
+    "datetime": "2026-07-12T22:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/12-2230-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ふんわり山芋の鉄板焼（鳥貴族）",
+        "nutrition": {
+          "energy_kcal": 210,
+          "protein_g": 7,
+          "fat_g": 12,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 17,
+          "sugar_g": 15.5,
+          "fiber_g": 1.5,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "親鶏炙り焼き マヨサラダ（鳥貴族）",
+        "nutrition": {
+          "energy_kcal": 320,
+          "protein_g": 22,
+          "fat_g": 22,
+          "saturated_fat_g": 4.5,
+          "carbohydrate_g": 9,
+          "sugar_g": 7,
+          "fiber_g": 2,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "きも（タレ）（鳥貴族）",
+        "nutrition": {
+          "energy_kcal": 120,
+          "protein_g": 14,
+          "fat_g": 4,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 7,
+          "sugar_g": 6.7,
+          "fiber_g": 0.3,
+          "salt_g": 1.3
+        }
+      },
+      {
+        "name": "きも焼 塩ごま油添え（鳥貴族）",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 13,
+          "fat_g": 12,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 3,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.4
+        }
+      },
+      {
+        "name": "なんこつ唐揚げ（鳥貴族）",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 11,
+          "fat_g": 14,
+          "saturated_fat_g": 2.6,
+          "carbohydrate_g": 13,
+          "sugar_g": 12.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "大270g 鳥たれご飯（鳥貴族・ご飯もの）",
+        "nutrition": {
+          "energy_kcal": 480,
+          "protein_g": 14,
+          "fat_g": 8,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 88,
+          "sugar_g": 86.5,
+          "fiber_g": 1.5,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "ザ・プレミアム・モルツ 中ジョッキ ×4（鳥貴族）",
+        "nutrition": {
+          "energy_kcal": 660,
+          "protein_g": 5.6,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 50.4,
+          "sugar_g": 50.4,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 60.8
+        }
+      }
+    ],
+    "memo": "出典: 鳥貴族は公式栄養値の公開が無く全品記憶ベース推定。マスク済レシートより全11点¥4,290（ふんわり山芋の鉄板焼/親鶏炙り焼きマヨサラダ/きも/きも焼塩ごま油添え/なんこつ唐揚げ/大270g鳥たれご飯/ザ・プレミアム・モルツ×4）。モルツは過去ログの中ジョッキ単価（165kcal/alc15.2g）×4で算出。会計は日をまたいで7/13 0時台だが飲みは7/12（昨日）夜のため7/12で記録。",
+    "tags": [
+      "外食",
+      "お酒",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
