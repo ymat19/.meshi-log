@@ -1,5 +1,15 @@
 {
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/jst-date.sh\""
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "hooks": [
