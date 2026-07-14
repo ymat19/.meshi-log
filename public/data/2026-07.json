@@ -2827,5 +2827,62 @@
     ],
     "estimated": false,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-14T19:30:00+09:00-dinner",
+    "datetime": "2026-07-14T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/14-1930-dinner.webp",
+      "images/2026/07/14-1930-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI 四川風麻婆丼（日清食品・冷凍1食351g）",
+        "nutrition": {
+          "energy_kcal": 582,
+          "protein_g": 23,
+          "fat_g": 14.6,
+          "saturated_fat_g": 3.7,
+          "carbohydrate_g": 88.3,
+          "sugar_g": 80.8,
+          "fiber_g": 7.5,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "味の素 ギョーザ 4個",
+        "nutrition": {
+          "energy_kcal": 152,
+          "protein_g": 5.6,
+          "fat_g": 8,
+          "saturated_fat_g": 2.4,
+          "carbohydrate_g": 14.8,
+          "sugar_g": 13.2,
+          "fiber_g": 1.6,
+          "salt_g": 1.1
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "完全メシ DELI 四川風麻婆丼（冷凍351g）: 公式栄養成分より https://www.nissin.com/jp/product/items/13131/ 。味の素 ギョーザは公式1個(23g)値×4個（38kcal/P1.4/F2.0/炭水3.7/塩0.28）で算出、飽和脂肪酸のみ公式非公開のため脂質からの標準推定。ザバス MILK PROTEIN 200ml（P20）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "完全メシ"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
