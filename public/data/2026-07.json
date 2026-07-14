@@ -2762,9 +2762,35 @@
           "fiber_g": 2.5,
           "salt_g": 3.2
         }
+      },
+      {
+        "name": "納豆（1パック・タレ込み約45g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7.5,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 6,
+          "sugar_g": 3,
+          "fiber_g": 3,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
       }
     ],
-    "memo": "松屋 豚汁（単品・公式）: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html 。おにぎりのごはん・明太子/たらこの具は標準的な食品成分からの推定（商品特定不可）。糖質=炭水化物-食物繊維。",
+    "memo": "松屋 豚汁（単品・公式）: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html 。おにぎりのごはん・明太子/たらこの具・納豆・生卵は標準的な食品成分からの推定（商品特定不可）。糖質=炭水化物-食物繊維。",
     "tags": [
       "外食",
       "自炊"
