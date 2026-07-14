@@ -2543,33 +2543,20 @@
     "photos": [],
     "items": [
       {
-        "name": "松屋 牛皿（並・1つ）",
+        "name": "松屋 牛めし（並盛）",
         "nutrition": {
-          "energy_kcal": 377,
-          "protein_g": 12.4,
-          "fat_g": 33.7,
-          "saturated_fat_g": 14,
-          "carbohydrate_g": 6,
-          "sugar_g": 5.7,
-          "fiber_g": 0.3,
-          "salt_g": 1.6
+          "energy_kcal": 687,
+          "protein_g": 17.1,
+          "fat_g": 28.9,
+          "saturated_fat_g": 11,
+          "carbohydrate_g": 85.5,
+          "sugar_g": 84,
+          "fiber_g": 1.5,
+          "salt_g": 3
         }
       },
       {
-        "name": "白ごはん（約200g）",
-        "nutrition": {
-          "energy_kcal": 312,
-          "protein_g": 5,
-          "fat_g": 0.6,
-          "saturated_fat_g": 0.2,
-          "carbohydrate_g": 74,
-          "sugar_g": 73,
-          "fiber_g": 1,
-          "salt_g": 0
-        }
-      },
-      {
-        "name": "生卵 1個",
+        "name": "生卵 1個（牛めしに追加）",
         "nutrition": {
           "energy_kcal": 71,
           "protein_g": 6.2,
@@ -2595,7 +2582,7 @@
         }
       }
     ],
-    "memo": "牛丼＝松屋 牛皿を白ごはんに乗せ生卵を落としたもの。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html （過去ログ流用）。白ごはん約200g・生卵は標準成分から推定（過去ログ流用）。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値・過去ログ流用）。糖質=炭水化物-食物繊維。",
+    "memo": "牛丼＝松屋 牛めし（並盛）に生卵を追加。松屋 牛めし並盛 公式値: 687kcal/P17.1/F28.9/C85.5/食塩3.0（ https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyumeshi_hp_250422.html ）。飽和脂肪酸・食物繊維は公式非掲載のため牛丼の標準から推定(飽和11/繊維1.5)、糖質=炭水化物-食物繊維。生卵は標準成分から推定。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値）。",
     "tags": [
       "外食",
       "プロテイン"
@@ -2683,33 +2670,20 @@
     ],
     "items": [
       {
-        "name": "松屋 牛皿（並・1つ）",
+        "name": "松屋 牛めし（並盛）",
         "nutrition": {
-          "energy_kcal": 377,
-          "protein_g": 12.4,
-          "fat_g": 33.7,
-          "saturated_fat_g": 14,
-          "carbohydrate_g": 6,
-          "sugar_g": 5.7,
-          "fiber_g": 0.3,
-          "salt_g": 1.6
+          "energy_kcal": 687,
+          "protein_g": 17.1,
+          "fat_g": 28.9,
+          "saturated_fat_g": 11,
+          "carbohydrate_g": 85.5,
+          "sugar_g": 84,
+          "fiber_g": 1.5,
+          "salt_g": 3
         }
       },
       {
-        "name": "白ごはん（約200g）",
-        "nutrition": {
-          "energy_kcal": 312,
-          "protein_g": 5,
-          "fat_g": 0.6,
-          "saturated_fat_g": 0.2,
-          "carbohydrate_g": 74,
-          "sugar_g": 73,
-          "fiber_g": 1,
-          "salt_g": 0
-        }
-      },
-      {
-        "name": "生卵 1個",
+        "name": "生卵 1個（牛めしに追加）",
         "nutrition": {
           "energy_kcal": 71,
           "protein_g": 6.2,
@@ -2735,7 +2709,7 @@
         }
       }
     ],
-    "memo": "牛丼＝松屋 牛皿を白ごはんに乗せ生卵を落としたもの（卵は写真では見えないが乗せた）、紅生姜添え。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html （過去ログ流用）。白ごはん約200g・生卵は標準成分から推定（過去ログ流用）。松屋 豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （過去ログ流用）。糖質=炭水化物-食物繊維。",
+    "memo": "牛丼＝松屋 牛めし（並盛）に生卵を追加（卵は写真では見えないが乗せた）、紅生姜添え・テイクアウト。松屋 牛めし並盛 公式値: 687kcal/P17.1/F28.9/C85.5/食塩3.0（ https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyumeshi_hp_250422.html ）。飽和脂肪酸・食物繊維は公式非掲載のため牛丼の標準から推定(飽和11/繊維1.5)、糖質=炭水化物-食物繊維。生卵は標準成分から推定。松屋 豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （過去ログ流用）。",
     "tags": [
       "外食"
     ],
