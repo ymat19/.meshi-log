@@ -2715,5 +2715,91 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-14T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-14T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/14-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "おにぎり ごはん（約100g）",
+        "nutrition": {
+          "energy_kcal": 168,
+          "protein_g": 2.5,
+          "fat_g": 0.3,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 37,
+          "sugar_g": 36.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "おにぎりの具（明太子／たらこ・約15g）",
+        "nutrition": {
+          "energy_kcal": 20,
+          "protein_g": 3,
+          "fat_g": 0.7,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.7
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）",
+        "nutrition": {
+          "energy_kcal": 243,
+          "protein_g": 9.2,
+          "fat_g": 14.9,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 17.6,
+          "sugar_g": 15.1,
+          "fiber_g": 2.5,
+          "salt_g": 3.2
+        }
+      }
+    ],
+    "memo": "松屋 豚汁（単品・公式）: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html 。おにぎりのごはん・明太子/たらこの具は標準的な食品成分からの推定（商品特定不可）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-14T12:30:00+09:00-lunch",
+    "datetime": "2026-07-14T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/14-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI やわらかロースのかつ丼（日清食品・冷凍1食360g）",
+        "nutrition": {
+          "energy_kcal": 598,
+          "protein_g": 24.6,
+          "fat_g": 14.9,
+          "saturated_fat_g": 3.4,
+          "carbohydrate_g": 91.4,
+          "sugar_g": 83.8,
+          "fiber_g": 7.6,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "日清 完全メシ DELI やわらかロースのかつ丼（冷凍・1食360g）。公式栄養成分表示より。出典 https://www.nissin.com/jp/product/items/13003/",
+    "tags": [
+      "中食",
+      "完全メシ"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
   }
 ]
