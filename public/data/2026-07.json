@@ -2535,5 +2535,211 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-13T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-13T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "松屋 牛皿（並・1つ）",
+        "nutrition": {
+          "energy_kcal": 377,
+          "protein_g": 12.4,
+          "fat_g": 33.7,
+          "saturated_fat_g": 14,
+          "carbohydrate_g": 6,
+          "sugar_g": 5.7,
+          "fiber_g": 0.3,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "牛丼＝松屋 牛皿を白ごはんに乗せ生卵を落としたもの。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html （過去ログ流用）。白ごはん約200g・生卵は標準成分から推定（過去ログ流用）。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値・過去ログ流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-13T12:30:00+09:00-lunch",
+    "datetime": "2026-07-13T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/13-1230-lunch.webp",
+      "images/2026/07/13-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "鮭おにぎり（100円・国産米）",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 4.2,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 40,
+          "sugar_g": 39.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.1
+        }
+      },
+      {
+        "name": "ツナマヨおにぎり（100円・国産米）",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 5,
+          "fat_g": 7,
+          "saturated_fat_g": 1.2,
+          "carbohydrate_g": 40,
+          "sugar_g": 39.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）",
+        "nutrition": {
+          "energy_kcal": 243,
+          "protein_g": 9.2,
+          "fat_g": 14.9,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 17.6,
+          "sugar_g": 15.1,
+          "fiber_g": 2.5,
+          "salt_g": 3.2
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "鮭・ツナマヨおにぎり（各100円・税込108円・国産米の店頭品）。ツナマヨは過去ログ流用。鮭は銘柄特定不可のため一般的な鮭おにぎり(約100g)から推定（参考: https://calorie.slism.jp/200974/ ）。松屋 豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （過去ログ流用）。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値・過去ログ流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "外食",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-13T19:00:00+09:00-dinner",
+    "datetime": "2026-07-13T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/13-1900-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 牛皿（並・1つ）",
+        "nutrition": {
+          "energy_kcal": 377,
+          "protein_g": 12.4,
+          "fat_g": 33.7,
+          "saturated_fat_g": 14,
+          "carbohydrate_g": 6,
+          "sugar_g": 5.7,
+          "fiber_g": 0.3,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）",
+        "nutrition": {
+          "energy_kcal": 243,
+          "protein_g": 9.2,
+          "fat_g": 14.9,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 17.6,
+          "sugar_g": 15.1,
+          "fiber_g": 2.5,
+          "salt_g": 3.2
+        }
+      }
+    ],
+    "memo": "牛丼＝松屋 牛皿を白ごはんに乗せ生卵を落としたもの（卵は写真では見えないが乗せた）、紅生姜添え。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html （過去ログ流用）。白ごはん約200g・生卵は標準成分から推定（過去ログ流用）。松屋 豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （過去ログ流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
