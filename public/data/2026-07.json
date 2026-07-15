@@ -2984,5 +2984,128 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-15T19:00:00+09:00-dinner",
+    "datetime": "2026-07-15T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/15-1900-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "タコミート（合いびき肉・タコス味・約100g）",
+        "nutrition": {
+          "energy_kcal": 250,
+          "protein_g": 15,
+          "fat_g": 18,
+          "saturated_fat_g": 7,
+          "carbohydrate_g": 6,
+          "sugar_g": 4,
+          "fiber_g": 1,
+          "salt_g": 1.3
+        }
+      },
+      {
+        "name": "レタス（約50g）",
+        "nutrition": {
+          "energy_kcal": 7,
+          "protein_g": 0.3,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 1,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サルサソース（約30g）",
+        "nutrition": {
+          "energy_kcal": 10,
+          "protein_g": 0.4,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 2,
+          "sugar_g": 1.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "アボカド／ワカモレ（約40g）",
+        "nutrition": {
+          "energy_kcal": 70,
+          "protein_g": 1,
+          "fat_g": 6.5,
+          "saturated_fat_g": 1.2,
+          "carbohydrate_g": 2,
+          "sugar_g": 0.3,
+          "fiber_g": 2,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "白チーズ（カマンベール系・約40g）",
+        "nutrition": {
+          "energy_kcal": 110,
+          "protein_g": 6.5,
+          "fat_g": 9,
+          "saturated_fat_g": 5.5,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "ごはん 200g",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ドリトス メキシカン・タコス味 1袋（60g・ジャパンフリトレー）",
+        "nutrition": {
+          "energy_kcal": 307,
+          "protein_g": 4.1,
+          "fat_g": 15.2,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 38.5,
+          "sugar_g": 37,
+          "fiber_g": 1.5,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml ×2本",
+        "nutrition": {
+          "energy_kcal": 520,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 72
+        }
+      }
+    ],
+    "memo": "タコライス（自炊）＋つまみ＋酒。タコミート・白チーズ・レタス・サルサ・アボカドは記憶ベース推定（量は写真から）。ドリトス出典: https://www.fritolay.co.jp/products/doritos_mexican_tacos_1808/ （1袋60g=307kcal・P4.1・F15.2・C38.5）。ストロングゼロは過去ログ実値（500ml×2本＝520kcal・アルコール72g）。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "スナック"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
