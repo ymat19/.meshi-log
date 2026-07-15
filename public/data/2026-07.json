@@ -2884,5 +2884,105 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-15T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-15T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/15-0800-breakfast.webp",
+      "images/2026/07/15-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "カレー（自炊・鶏カレーのルウ／ごはん別）",
+        "nutrition": {
+          "energy_kcal": 280,
+          "protein_g": 14,
+          "fat_g": 14,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 25,
+          "sugar_g": 22,
+          "fiber_g": 3,
+          "salt_g": 2.2
+        }
+      },
+      {
+        "name": "ごはん 0.8合（約264g）",
+        "nutrition": {
+          "energy_kcal": 410,
+          "protein_g": 7,
+          "fat_g": 1,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 93,
+          "sugar_g": 92.4,
+          "fiber_g": 0.6,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "目玉焼き",
+        "nutrition": {
+          "energy_kcal": 100,
+          "protein_g": 7,
+          "fat_g": 8,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "カレー・ごはん0.8合・目玉焼きは記憶ベース推定（自炊）。目玉焼きは写真に写っていたため追加。ザバスは黄色パック＋「20」表記からキャラメル風味200ml（20g/107kcal）と判断。過去ログの実値流用。写真2枚目はザバス。",
+    "tags": [
+      "自炊",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-15T12:30:00+09:00-lunch",
+    "datetime": "2026-07-15T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/15-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "冷凍 完全メシ DELI やわらか鶏もも肉の親子丼（日清食品・1食375g）",
+        "nutrition": {
+          "energy_kcal": 580,
+          "protein_g": 22.8,
+          "fat_g": 17,
+          "saturated_fat_g": 4.2,
+          "carbohydrate_g": 84,
+          "sugar_g": 76.5,
+          "fiber_g": 7.5,
+          "salt_g": 2.4
+        }
+      }
+    ],
+    "memo": "完全メシ親子丼の出典: https://www.nissin.com/jp/product/items/13132/ （冷凍 完全メシ DELI やわらか鶏もも肉の親子丼・580kcal/375g・現在は生産終了品）。",
+    "tags": [
+      "中食",
+      "完全メシ"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
