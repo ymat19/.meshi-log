@@ -3107,5 +3107,87 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-16T09:35:00+09:00-breakfast",
+    "datetime": "2026-07-16T09:35:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/16-0935-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "カレー（自炊・鶏カレーのルウ／ごはん別）",
+        "nutrition": {
+          "energy_kcal": 280,
+          "protein_g": 14,
+          "fat_g": 14,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 25,
+          "sugar_g": 22,
+          "fiber_g": 3,
+          "salt_g": 2.2
+        }
+      },
+      {
+        "name": "ごはん 200g（パックごはん相当）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "目玉焼き",
+        "nutrition": {
+          "energy_kcal": 100,
+          "protein_g": 7,
+          "fat_g": 8,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g・2枚入りのうち1枚）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "朝食（自炊）。カレー・ごはん・目玉焼きは記憶ベース推定（自炊、前日7/15の自炊値を流用）。ごはんは本人申告200g＝パックごはん相当(288kcal/P4.6/F0.8/C65.4/食塩0、過去ログ流用)。相模屋 焼いておいしい絹厚揚げ 1枚150g: https://sagamiya-kk.co.jp/products/kinu_atsuage.html （公式156kcal/P9.5/F8.7/C11.1/食塩0.14、飽和脂肪酸・食物繊維は大豆製品標準から推定）。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治公式・過去ログ流用）: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （107kcal/P20/糖質6.5/食塩0.19）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
