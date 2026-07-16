@@ -3235,5 +3235,52 @@
     ],
     "estimated": false,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-16T20:20:00+09:00-dinner",
+    "datetime": "2026-07-16T20:20:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/16-2020-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオのたたき（薬味/にんにく・約150g）",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 39,
+          "fat_g": 3.8,
+          "saturated_fat_g": 0.9,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "カツオのたたき（にんにく・玉ねぎ薬味付きのパック・約150g）は過去記録の確定値（100gあたり120kcal/P26/F2.5/飽和0.6/炭0.1/塩0.5）を150gにスケール。ストロングゼロ 無糖ドライ 9% 500mlは過去記録の確定値（260kcal・アルコール36g、糖質0）。",
+    "tags": [
+      "中食",
+      "お酒",
+      "刺身",
+      "晩酌",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
