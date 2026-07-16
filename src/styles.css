@@ -38,15 +38,21 @@ main {
 /* 禁酒日数バナー（目立つトップ表示） */
 .sober {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: column;
+  gap: 14px;
   background: linear-gradient(135deg, #85b79d, #5e9b80);
   color: #fff;
   border-radius: 16px;
   padding: 18px 20px;
   margin-bottom: 24px;
   box-shadow: 0 2px 8px rgba(94, 155, 128, 0.35);
+}
+
+.sober__top {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .sober__icon {
@@ -76,6 +82,33 @@ main {
   flex-basis: 100%;
   font-size: 12px;
   opacity: 0.85;
+}
+
+.sober__calorie {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 12px;
+}
+
+.sober__calorie-label {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sober__calorie-value {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.sober__calorie-unit {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .mock-badge {
