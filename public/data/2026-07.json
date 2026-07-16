@@ -3189,5 +3189,51 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-16T12:30:00+09:00-lunch",
+    "datetime": "2026-07-16T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/16-1230-lunch.webp",
+      "images/2026/07/16-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI 4種の魚介が決め手の濃厚つけ麺（日清食品・冷凍1食318g）",
+        "nutrition": {
+          "energy_kcal": 540,
+          "protein_g": 21.3,
+          "fat_g": 13.8,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 85.6,
+          "sugar_g": 78.1,
+          "fiber_g": 7.5,
+          "salt_g": 2.7
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 200ml（明治・P20）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "冷凍 完全メシ DELI 4種の魚介が決め手の濃厚つけ麺（1食318g）は公式栄養成分より（540kcal/P21.3/F13.8/飽和3.2/炭水化物85.6(糖質78.1・食物繊維7.5)/食塩2.7）。出典 https://www.nissin.com/jp/product/items/12978/ 。ザバス MILK PROTEIN 脂肪0 200ml（P20）は過去記録の明治公式確定値を流用（107kcal/P20/脂質0/炭水化物6.8(糖質6.5・食物繊維0.3)/食塩0.19、出典 https://www.meiji.co.jp/products/sports/4902705095465.html ）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "完全メシ",
+      "麺",
+      "プロテイン"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
   }
 ]
