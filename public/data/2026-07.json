@@ -3282,5 +3282,110 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-22T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-22T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/22-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "やみつきガーリック 大盛ペペロンチーノ（セブンイレブン）",
+        "nutrition": {
+          "energy_kcal": 863,
+          "protein_g": 34.3,
+          "fat_g": 41.2,
+          "saturated_fat_g": 12,
+          "carbohydrate_g": 92.6,
+          "sugar_g": 84.7,
+          "fiber_g": 7.9,
+          "salt_g": 5.7
+        }
+      }
+    ],
+    "memo": "やみつきガーリック 大盛ペペロンチーノ（セブンイレブン）。公式より 863kcal/P34.3/F41.2/炭水化物92.6(糖質84.7・食物繊維7.9)/食塩5.7。出典 https://www.sej.co.jp/products/a/item/090009/ 飽和脂肪酸は公式非掲載のためベーコン・ソーセージ・オイル構成から推定(12g)。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-22T12:00:00+09:00-lunch",
+    "datetime": "2026-07-22T12:00:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/22-1200-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "田舎そばと茶そばの味比べ 足柄茶使用（セブンイレブン）",
+        "nutrition": {
+          "energy_kcal": 440,
+          "protein_g": 17,
+          "fat_g": 3,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 84,
+          "sugar_g": 78,
+          "fiber_g": 6,
+          "salt_g": 3.6
+        }
+      }
+    ],
+    "memo": "田舎そばと茶そばの味比べ 足柄茶使用（セブンイレブン・550円税込594円）。公式・栄養DBともに栄養成分表示が見つからないため記憶ベース推定（2種のそば計2玉相当＋つゆ・ねぎ）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-22T20:00:00+09:00-dinner",
+    "datetime": "2026-07-22T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/22-2000-dinner-doria.webp",
+      "images/2026/07/22-2000-dinner-savas.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI ミラノ風チキンドリア（日清食品・冷凍1食390g）",
+        "nutrition": {
+          "energy_kcal": 510,
+          "protein_g": 20.6,
+          "fat_g": 12.2,
+          "saturated_fat_g": 3.6,
+          "carbohydrate_g": 82.1,
+          "sugar_g": 75,
+          "fiber_g": 7.1,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "完全メシ DELI ミラノ風チキンドリア（冷凍・1食390g）は日清公式より 510kcal/P20.6/F12.2/飽和3.6/炭水化物82.1(糖質75.0・食物繊維7.1)/食塩2.5。出典 https://www.nissin.com/jp/product/items/13004/ ザバス ミルクプロテイン 脂肪0 キャラメル風味 200ml は明治公式より 107kcal/P20.0/脂質0/炭水化物6.8(糖質6.5・食物繊維0.3)/食塩0.19（過去ログ流用 https://www.meiji.co.jp/products/sports/4902705095465.html ）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "完全メシ",
+      "たんぱく質"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
