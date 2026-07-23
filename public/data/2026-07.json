@@ -3447,5 +3447,50 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-23T20:00:00+09:00-dinner",
+    "datetime": "2026-07-23T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/23-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "明星 今日もおつ豆さま えだ豆味焼そば（東京デザイン専門学校コラボ・1食151g/めん130g）",
+        "nutrition": {
+          "energy_kcal": 720,
+          "protein_g": 14.9,
+          "fat_g": 32.8,
+          "saturated_fat_g": 14.2,
+          "carbohydrate_g": 91.2,
+          "sugar_g": 87.2,
+          "fiber_g": 4,
+          "salt_g": 6.7
+        }
+      },
+      {
+        "name": "アサヒ スーパードライ 生ジョッキ缶 485ml",
+        "nutrition": {
+          "energy_kcal": 204,
+          "protein_g": 1.5,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 14.6,
+          "sugar_g": 14.6,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 19.4
+        }
+      }
+    ],
+    "memo": "焼そば: 明星 今日もおつ豆さま えだ豆味焼そば（東京デザイン専門学校コラボ・7/20発売・1食151g/めん130g）。公式栄養成分表示より（720kcal/P14.9/F32.8/炭水化物91.2/食塩6.7）。出典 https://www.myojofoods.co.jp/products/items/13845 。パッケージ表示は法定5項目のみのため、飽和脂肪酸(14.2g)は揚げ麺の飽和比率(自ログ ごつ盛り実測比0.43)、食物繊維(4.0g)は類似カップ焼そば実績＋枝豆かやく分から推定、糖質=炭水化物-食物繊維で算出。 ビール: アサヒ スーパードライ 生ジョッキ缶 485ml。公式値ベース(100mlあたり42kcal/糖質3.0g/アルコール5%)を485mlに換算(204kcal/糖質14.6/純アルコール19.4g)。出典 https://www.asahibeer.co.jp/superdry/",
+    "tags": [
+      "中食",
+      "麺",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
