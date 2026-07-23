@@ -3387,5 +3387,65 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-23T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-23T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/23-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "セブンイレブン ロースカツカレー（ちいかわコラボ）",
+        "nutrition": {
+          "energy_kcal": 986,
+          "protein_g": 27.7,
+          "fat_g": 40.1,
+          "saturated_fat_g": 12,
+          "carbohydrate_g": 129.2,
+          "sugar_g": 127.7,
+          "fiber_g": 1.5,
+          "salt_g": 2.9
+        }
+      }
+    ],
+    "memo": "セブンイレブン ロースカツカレー（ちいかわコラボ企画時に購入）。公式栄養成分ベース（986kcal/P27.7/F40.1/炭水化物129.2(糖質127.7・食物繊維1.5)/食塩2.9）。飽和脂肪酸のみ表示が無いため脂質40.1gから推定(12.0g)。出典 https://conmeshi.com/post-176443/",
+    "tags": [
+      "中食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-23T12:30:00+09:00-lunch",
+    "datetime": "2026-07-23T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/23-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI やわらかロースのかつ丼（日清食品・冷凍1食360g）",
+        "nutrition": {
+          "energy_kcal": 598,
+          "protein_g": 24.6,
+          "fat_g": 14.9,
+          "saturated_fat_g": 3.4,
+          "carbohydrate_g": 91.4,
+          "sugar_g": 83.8,
+          "fiber_g": 7.6,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "日清 完全メシ DELI やわらかロースのかつ丼（冷凍・1食360g）。公式栄養成分表示より（598kcal/P24.6/F14.9/飽和脂肪酸3.4/炭水化物91.4(糖質83.8・食物繊維7.6)/食塩2.8）。出典 https://www.nissin.com/jp/product/items/13003/",
+    "tags": [
+      "中食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
