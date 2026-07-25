@@ -3726,5 +3726,122 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-25T12:30:00+09:00-lunch",
+    "datetime": "2026-07-25T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/25-1230-lunch.webp",
+      "images/2026/07/25-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "味噌汁（ネギ）",
+        "nutrition": {
+          "energy_kcal": 35,
+          "protein_g": 2.5,
+          "fat_g": 1,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 4,
+          "sugar_g": 3,
+          "fiber_g": 1,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "ブリ刺身（約100g・血合い含む/自分でさばき）",
+        "nutrition": {
+          "energy_kcal": 257,
+          "protein_g": 21,
+          "fat_g": 17.6,
+          "saturated_fat_g": 4.4,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      }
+    ],
+    "memo": "自炊。1匹のブリをさばき、昼は刺身、夜はカマの塩焼き。栄養値は日本食品標準成分表ベースの推定。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-25T19:00:00+09:00-dinner",
+    "datetime": "2026-07-25T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/25-1900-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリカマ塩焼き（約150g・可食部）",
+        "nutrition": {
+          "energy_kcal": 333,
+          "protein_g": 32,
+          "fat_g": 26,
+          "saturated_fat_g": 8.4,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "焼きピーマン 2個（約70g）",
+        "nutrition": {
+          "energy_kcal": 20,
+          "protein_g": 0.7,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 3.6,
+          "sugar_g": 2,
+          "fiber_g": 1.6,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "自炊。昼にさばいたブリのカマを塩焼き。ピーマン2個も喫食。缶: サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml（https://products.suntory.co.jp/b/-196/）。カマの栄養値は日本食品標準成分表ベースの推定。",
+    "tags": [
+      "自炊",
+      "魚",
+      "焼き魚",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
