@@ -3492,5 +3492,239 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-24T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-24T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/24-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "ごはん（約150g）",
+        "nutrition": {
+          "energy_kcal": 234,
+          "protein_g": 3.8,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 55.5,
+          "sugar_g": 54.7,
+          "fiber_g": 0.8,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ゆで卵 2個",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 12.4,
+          "fat_g": 10,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "スライストマト 約120g",
+        "nutrition": {
+          "energy_kcal": 24,
+          "protein_g": 0.9,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 5.6,
+          "sugar_g": 4.4,
+          "fiber_g": 1.2,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "豚バラの甘辛焼き（約80g）",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 11,
+          "fat_g": 20,
+          "saturated_fat_g": 7,
+          "carbohydrate_g": 9,
+          "sugar_g": 8.8,
+          "fiber_g": 0.2,
+          "salt_g": 1.1
+        }
+      }
+    ],
+    "memo": "自炊プレート（ごはん・ゆで卵・トマト・豚バラ甘辛）。ゆで卵/トマト/ごはんは過去ログ値を流用、豚バラ甘辛は記憶ベース推定。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-24T20:50:00+09:00-dinner",
+    "datetime": "2026-07-24T20:50:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/24-2050-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ザ・プレミアム・モルツ 中ジョッキ ×6.5（鳥貴族・2人で13杯の半分）",
+        "nutrition": {
+          "energy_kcal": 936,
+          "protein_g": 6.5,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 65,
+          "sugar_g": 65,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 90.2
+        }
+      },
+      {
+        "name": "知多ハイボール ×0.5（鳥貴族・1杯の半分）",
+        "nutrition": {
+          "energy_kcal": 48,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 7
+        }
+      },
+      {
+        "name": "もも貴族焼 たれ ×1（鳥貴族・2本の半分）",
+        "nutrition": {
+          "energy_kcal": 236,
+          "protein_g": 18,
+          "fat_g": 14,
+          "saturated_fat_g": 4,
+          "carbohydrate_g": 6,
+          "sugar_g": 5.4,
+          "fiber_g": 0.6,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "ちからこぶ たれ ×0.5（鳥貴族・1本の半分）",
+        "nutrition": {
+          "energy_kcal": 74,
+          "protein_g": 6.5,
+          "fat_g": 4.5,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 1.5,
+          "fiber_g": 0,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "トリキのチャンジャ ×0.5（鳥貴族・シェア半分）",
+        "nutrition": {
+          "energy_kcal": 25,
+          "protein_g": 3,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 1.5,
+          "sugar_g": 1.35,
+          "fiber_g": 0.15,
+          "salt_g": 1.1
+        }
+      },
+      {
+        "name": "鶏旨丼 たれ ×0.5（鳥貴族・シェア半分）",
+        "nutrition": {
+          "energy_kcal": 215,
+          "protein_g": 10,
+          "fat_g": 6,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 33,
+          "sugar_g": 32.4,
+          "fiber_g": 0.6,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "豚と玉ねぎの串カツ ×0.5（鳥貴族・シェア半分）",
+        "nutrition": {
+          "energy_kcal": 95,
+          "protein_g": 4,
+          "fat_g": 6,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 6.5,
+          "sugar_g": 6,
+          "fiber_g": 0.5,
+          "salt_g": 0.45
+        }
+      },
+      {
+        "name": "とり天 梅肉ソース添え ×0.5（鳥貴族・シェア半分）",
+        "nutrition": {
+          "energy_kcal": 115,
+          "protein_g": 7,
+          "fat_g": 6.5,
+          "saturated_fat_g": 1.4,
+          "carbohydrate_g": 6.5,
+          "sugar_g": 6.1,
+          "fiber_g": 0.4,
+          "salt_g": 0.65
+        }
+      }
+    ],
+    "memo": "鳥貴族（2人分の注文を半分で計上）。レシート全量: モルツ×13/ちからこぶ×1/トリキのチャンジャ×1/もも貴族焼×2/鶏旨丼×1/豚と玉ねぎの串カツ×1/とり天梅肉ソース添え×1/知多ハイボール×1。モルツは公式144kcal/杯相当・alc13.9g/杯（過去ログ 2026-06-26 準拠）で13杯÷2＝6.5杯換算。ちからこぶ/もも貴族焼/鶏旨丼は過去ログ値、チャンジャ/串カツ/とり天/知多ハイボールは記憶ベース推定（鳥貴族は栄養成分非公開）。レシートは店名・住所・電話・日時・登録番号を画像でマスク済み。",
+    "tags": [
+      "外食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-24T22:30:00+09:00-dinner",
+    "datetime": "2026-07-24T22:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/24-2230-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "家系ラーメン（豚骨醤油・ほうれん草・のり・チャーシュー）",
+        "nutrition": {
+          "energy_kcal": 750,
+          "protein_g": 32,
+          "fat_g": 30,
+          "saturated_fat_g": 9,
+          "carbohydrate_g": 78,
+          "sugar_g": 74,
+          "fiber_g": 4,
+          "salt_g": 7.5
+        }
+      },
+      {
+        "name": "ねぎ丼（味玉・のり）",
+        "nutrition": {
+          "energy_kcal": 470,
+          "protein_g": 13,
+          "fat_g": 14,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 68,
+          "sugar_g": 65,
+          "fiber_g": 3,
+          "salt_g": 2.5
+        }
+      }
+    ],
+    "memo": "鳥貴族のあとのシメ。家系ラーメン＋ねぎ丼（味玉のせ）。いずれも外食で栄養成分非公開のため記憶ベース推定。",
+    "tags": [
+      "外食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
