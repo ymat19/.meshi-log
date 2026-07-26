@@ -3843,5 +3843,200 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-26T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-26T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/26-0800-breakfast.webp",
+      "images/2026/07/26-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "炊きたてパックごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 63.9,
+          "fiber_g": 1.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "納豆（1パック・タレ込み約45g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7.5,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 6,
+          "sugar_g": 3,
+          "fiber_g": 3,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "ブリ刺身（約100g・自分でさばき）",
+        "nutrition": {
+          "energy_kcal": 257,
+          "protein_g": 21,
+          "fat_g": 17.6,
+          "saturated_fat_g": 4.4,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "朝食。ブリは自分でさばいた分の刺身（100g=257kcal、7/25記録の確定値を流用）。納豆・パックごはんは過去ログの確定値を流用（商品特定不可のため標準パックごはん値）。ザバス MILK PROTEIN 脂肪0 200ml は本人が容量・味を失念のため、過去ログ標準の200ml/P20（明治公式 107kcal/P20/脂質0/炭水化物6.8・糖6.5/食塩0.19 https://www.meiji.co.jp/products/sports/4902705068087.html ）で計上。大根つまは喫食不明のため計上せず。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-26T12:30:00+09:00-lunch",
+    "datetime": "2026-07-26T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/26-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "豚肉の甘辛炒め（約100g）",
+        "nutrition": {
+          "energy_kcal": 290,
+          "protein_g": 16,
+          "fat_g": 20,
+          "saturated_fat_g": 7.2,
+          "carbohydrate_g": 9,
+          "sugar_g": 8.8,
+          "fiber_g": 0.2,
+          "salt_g": 1.4
+        }
+      },
+      {
+        "name": "トマト（約150g）",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 1.1,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 7,
+          "sugar_g": 5.5,
+          "fiber_g": 1.5,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "昼食。ご飯に豚肉の甘辛炒めをのせ、トマトを添えたもの。白ごはん200g・トマト150gは過去ログの確定値を流用。豚肉の甘辛炒め（約100g、砂糖・醤油だれ）は標準的な食品成分からの記憶ベース推定。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "肉"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-26T19:30:00+09:00-dinner",
+    "datetime": "2026-07-26T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/26-1930-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ血合い刺身（約100g・自分でさばき）",
+        "nutrition": {
+          "energy_kcal": 150,
+          "protein_g": 22,
+          "fat_g": 7,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "ご飯（180g）",
+        "nutrition": {
+          "energy_kcal": 281,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 66.6,
+          "sugar_g": 65.7,
+          "fiber_g": 0.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "冷奴（絹豆腐150g＋醤油）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7.6,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 4,
+          "sugar_g": 3.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "しじみの味噌汁",
+        "nutrition": {
+          "energy_kcal": 40,
+          "protein_g": 3.5,
+          "fat_g": 1,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 4,
+          "sugar_g": 3,
+          "fiber_g": 1,
+          "salt_g": 1.4
+        }
+      }
+    ],
+    "memo": "夕食。ブリ血合い刺身（同じブリの血合い部分・約100g）は血合いのためやや低脂質・高たんぱくとして記憶ベース推定。ご飯180g・冷奴（絹豆腐150g＋醤油、7/3記録の確定値ベース）は過去ログ流用。しじみの味噌汁はしじみ入り味噌汁の標準値から推定。大根つまは喫食不明のため計上せず。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
