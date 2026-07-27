@@ -4038,5 +4038,178 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-27T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-27T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/27-0800-breakfast.webp",
+      "images/2026/07/27-0800-breakfast-savas.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ中落ち丼（中落ち約80g・ご飯にのせ）",
+        "nutrition": {
+          "energy_kcal": 190,
+          "protein_g": 16,
+          "fat_g": 13,
+          "saturated_fat_g": 3.3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "パックごはん（アイリスオーヤマ 低温製法米のおいしいごはん 200g）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ブリのあら汁（あら・大根入り）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 8,
+          "fat_g": 4.5,
+          "saturated_fat_g": 1.2,
+          "carbohydrate_g": 5,
+          "sugar_g": 3.5,
+          "fiber_g": 1.5,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 20g（200ml）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "朝食。1匹のブリをさばき、中落ちを丼に、あらはあら汁に。中落ち・あら汁は日本食品標準成分表ベースの記憶推定（中落ちはブリ刺身の値に準拠）。ごはんは過去ログのパックごはん確定値を流用。ザバス MILK PROTEIN 脂肪0 20g(200ml)は明治公式より（107kcal/P20.0/脂質0/炭水化物6.8・糖質6.5・食物繊維0.3/食塩0.19）: https://www.meiji.co.jp/products/sports/4902705095465.html 。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-27T12:30:00+09:00-lunch",
+    "datetime": "2026-07-27T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/27-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "冷凍 完全メシ ぶたいか玉お好み焼（日清食品・1食296g）",
+        "nutrition": {
+          "energy_kcal": 450,
+          "protein_g": 20.7,
+          "fat_g": 15,
+          "saturated_fat_g": 3.4,
+          "carbohydrate_g": 58.4,
+          "sugar_g": 52.1,
+          "fiber_g": 6.3,
+          "salt_g": 2.9
+        }
+      }
+    ],
+    "memo": "昼食。日清 冷凍 完全メシ ぶたいか玉お好み焼（1食296g）。公式栄養成分表示より（450kcal/P20.7/F15.0/飽和脂肪酸3.4/炭水化物58.4・糖質52.1・食物繊維6.3/食塩2.9）。出典 https://www.nissin.com/jp/product/items/13017/",
+    "tags": [
+      "完全メシ",
+      "冷凍"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-27T19:30:00+09:00-dinner",
+    "datetime": "2026-07-27T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/27-1930-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ刺身（約150g・サクの半量）",
+        "nutrition": {
+          "energy_kcal": 385,
+          "protein_g": 31.5,
+          "fat_g": 26.4,
+          "saturated_fat_g": 6.6,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.7
+        }
+      },
+      {
+        "name": "白ごはん（パックごはん200g相当）",
+        "nutrition": {
+          "energy_kcal": 288,
+          "protein_g": 4.6,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 65.4,
+          "sugar_g": 64.9,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "味噌汁（具入り）",
+        "nutrition": {
+          "energy_kcal": 35,
+          "protein_g": 2.5,
+          "fat_g": 1,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 4,
+          "sugar_g": 3,
+          "fiber_g": 1,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "夕食。ブリ刺身は写真のサクの半量（約150g）を喫食。ブリ刺身の栄養値は過去ログの確定値（100g=257kcal/P21/F17.6/飽和4.4）を1.5倍にスケール＋つけ醤油ぶんの塩分を加算。ごはん・味噌汁は過去ログ流用/標準推定。缶: サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml（260kcal・純アルコール36g）: https://products.suntory.co.jp/b/-196/ 。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "魚",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
