@@ -4211,5 +4211,153 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-28T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-28T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/28-0800-breakfast-1.webp",
+      "images/2026/07/28-0800-breakfast-2.webp",
+      "images/2026/07/28-0800-breakfast-3.webp"
+    ],
+    "items": [
+      {
+        "name": "麦ごはん（押し麦入り・約160g）",
+        "nutrition": {
+          "energy_kcal": 250,
+          "protein_g": 4.2,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 56,
+          "sugar_g": 53.2,
+          "fiber_g": 2.8,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "豆腐と大根の味噌汁（絹豆腐約150g＋大根）",
+        "nutrition": {
+          "energy_kcal": 130,
+          "protein_g": 10,
+          "fat_g": 5.5,
+          "saturated_fat_g": 1,
+          "carbohydrate_g": 10,
+          "sugar_g": 7.5,
+          "fiber_g": 2.5,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "ブリ刺身（約150g）",
+        "nutrition": {
+          "energy_kcal": 385,
+          "protein_g": 31.5,
+          "fat_g": 26.4,
+          "saturated_fat_g": 6.6,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.7
+        }
+      }
+    ],
+    "memo": "朝食。麦ごはん・豆腐と大根の味噌汁・ブリ刺身は自炊で記憶ベース推定（過去ログの絹豆腐150g・ブリ刺身約150g=サク半量の確定値を流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "和食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-28T12:30:00+09:00-lunch",
+    "datetime": "2026-07-28T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/28-1230-lunch-1.webp",
+      "images/2026/07/28-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ビッグマック（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 525,
+          "protein_g": 26.1,
+          "fat_g": 28,
+          "saturated_fat_g": 10,
+          "carbohydrate_g": 42.1,
+          "sugar_g": 39.3,
+          "fiber_g": 2.8,
+          "salt_g": 2.7
+        }
+      },
+      {
+        "name": "マックフライポテト L（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 515,
+          "protein_g": 7,
+          "fat_g": 25,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 66,
+          "sugar_g": 59.7,
+          "fiber_g": 6.3,
+          "salt_g": 0.9
+        }
+      }
+    ],
+    "memo": "昼食。マクドナルド公式栄養情報より（ビッグマック・マックフライポテトL）。過去ログの確定値を流用。糖質=炭水化物-食物繊維。出典 https://www.mcdonalds.co.jp/products/",
+    "tags": [
+      "外食",
+      "ファストフード"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-28T19:00:00+09:00-dinner",
+    "datetime": "2026-07-28T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/28-1900-dinner-1.webp",
+      "images/2026/07/28-1900-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI やわらかロースのかつ丼（日清食品・冷凍1食360g）",
+        "nutrition": {
+          "energy_kcal": 598,
+          "protein_g": 24.6,
+          "fat_g": 14.9,
+          "saturated_fat_g": 3.4,
+          "carbohydrate_g": 91.4,
+          "sugar_g": 83.8,
+          "fiber_g": 7.6,
+          "salt_g": 2.8
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 20g（200ml）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "夕食。日清 完全メシ DELI やわらかロースのかつ丼（冷凍・1食360g）はパッケージ表示より（598kcal/P24.6/F14.9/飽和脂肪酸3.4/炭水化物91.4・糖質83.8・食物繊維7.6/食塩2.8）。出典 https://www.nissin.com/jp/product/items/13003/ 。ザバス MILK PROTEIN 脂肪0 20g(200ml)は明治公式より（107kcal/P20.0/脂質0/炭水化物6.8・糖質6.5・食物繊維0.3/食塩0.19）: https://www.meiji.co.jp/products/sports/4902705095465.html 。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "冷凍食品",
+      "中食",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
