@@ -4572,5 +4572,92 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-30T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-30T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/30-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ DELI やわらかロースのかつ丼（日清食品・冷凍1食360g）",
+        "nutrition": {
+          "energy_kcal": 598,
+          "protein_g": 24.6,
+          "fat_g": 14.9,
+          "saturated_fat_g": 3.4,
+          "carbohydrate_g": 91.4,
+          "sugar_g": 83.8,
+          "fiber_g": 7.6,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "完全メシ DELI やわらかロースのかつ丼: 写真のパッケージ栄養成分表示（1食360gあたり 598kcal/たんぱく質24.6g/脂質14.9g/炭水化物91.4g（糖質83.8g・食物繊維7.6g）/食塩相当量2.8g）より。飽和脂肪酸は過去記録（2026-07-07等）の3.4gを流用。 https://www.nissin.com/jp/products/brands/kanzenmeshi/",
+    "tags": [
+      "中食",
+      "冷凍食品"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-30T12:30:00+09:00-lunch",
+    "datetime": "2026-07-30T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/30-1230-lunch-1.webp",
+      "images/2026/07/30-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "日清 チキンラーメン（85g）",
+        "nutrition": {
+          "energy_kcal": 377,
+          "protein_g": 8.2,
+          "fat_g": 14.5,
+          "saturated_fat_g": 6.4,
+          "carbohydrate_g": 53.6,
+          "sugar_g": 50.9,
+          "fiber_g": 2.7,
+          "salt_g": 5.6
+        }
+      },
+      {
+        "name": "目玉焼き",
+        "nutrition": {
+          "energy_kcal": 100,
+          "protein_g": 7,
+          "fat_g": 8,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "日清 チキンラーメン（85g）: 過去記録 2026-07-03 の実値を流用（日清公式ベース https://www.eatsmart.jp/do/caloriecheck/detail/param/foodCode/9900520002101 ）。麺の銘柄は本人確認済み。目玉焼き（卵1個＋油）は過去ログの実値を流用。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: 過去12回の記録と同値（明治公式 https://www.meiji.co.jp/sports/savas/products/milk-protein/ ）。",
+    "tags": [
+      "自炊",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
