@@ -4659,5 +4659,117 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-30T19:30:00+09:00-dinner",
+    "datetime": "2026-07-30T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/07/30-1930-dinner-1.webp",
+      "images/2026/07/30-1930-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ しゃぶしゃぶ用（約300g）",
+        "nutrition": {
+          "energy_kcal": 772,
+          "protein_g": 63,
+          "fat_g": 52.8,
+          "saturated_fat_g": 13.2,
+          "carbohydrate_g": 0.9,
+          "sugar_g": 0.9,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "絹豆腐（約300g・1丁）",
+        "nutrition": {
+          "energy_kcal": 168,
+          "protein_g": 14.8,
+          "fat_g": 9,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 6,
+          "sugar_g": 5,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "えのき（約100g）",
+        "nutrition": {
+          "energy_kcal": 34,
+          "protein_g": 2.7,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0.04,
+          "carbohydrate_g": 7.6,
+          "sugar_g": 3.7,
+          "fiber_g": 3.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "水菜（約80g）",
+        "nutrition": {
+          "energy_kcal": 18,
+          "protein_g": 1.8,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0.02,
+          "carbohydrate_g": 3.8,
+          "sugar_g": 1.4,
+          "fiber_g": 2.4,
+          "salt_g": 0.08
+        }
+      },
+      {
+        "name": "鍋つゆ（昆布だし）＋ポン酢 約30ml",
+        "nutrition": {
+          "energy_kcal": 30,
+          "protein_g": 1,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0.02,
+          "carbohydrate_g": 5.5,
+          "sugar_g": 5.3,
+          "fiber_g": 0.2,
+          "salt_g": 2.4
+        }
+      },
+      {
+        "name": "ご飯（180g）",
+        "nutrition": {
+          "energy_kcal": 281,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 66.6,
+          "sugar_g": 65.7,
+          "fiber_g": 0.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.3,
+          "sugar_g": 3.3,
+          "fiber_g": 0,
+          "salt_g": 0.5,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "ぶりしゃぶ鍋（自炊）。ブリの量は写真からの採寸推定：缶の胴径66mm（350/500ml共通の固定寸法）をスケール基準に、柵は長さ約19cm・太い側の幅約7cm・細い側約3.3cm・厚み約4cm → 体積約285cm³×比重1.05で約300g。単位あたりの成分は過去ログ（2026-07-29 ぶりしゃぶ）の実値 100gあたり257kcal・P21・F17.6・飽和4.4 を流用。絹豆腐は鍋の写真で大ぶりの塊が12個前後＝1丁（約300g）と判断し、過去ログ 150g の実値を2倍。えのき・水菜・鍋つゆ＋ポン酢は 2026-07-29 の実値を流用（日本食品標準成分表ベースの推定）。ご飯180gは本人申告。サントリー -196 ストロングゼロ ダブルレモン 500ml: 公式値（アルコール9%／100mlあたり54kcal・炭水化物0.4〜0.9g・食塩相当量0.06〜0.13gの中央値を採用）https://products.suntory.co.jp/d/4901777192782/ 、アルコール量は公式計算式 500ml×9/100×0.8=36g。",
+    "tags": [
+      "自炊",
+      "鍋",
+      "魚",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
