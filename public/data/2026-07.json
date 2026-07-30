@@ -4426,20 +4426,20 @@
         }
       },
       {
-        "name": "ご飯（約200g）",
+        "name": "ご飯（180g）",
         "nutrition": {
-          "energy_kcal": 312,
-          "protein_g": 5,
-          "fat_g": 0.6,
+          "energy_kcal": 281,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
           "saturated_fat_g": 0.2,
-          "carbohydrate_g": 74,
-          "sugar_g": 73,
-          "fiber_g": 1,
+          "carbohydrate_g": 66.6,
+          "sugar_g": 65.7,
+          "fiber_g": 0.9,
           "salt_g": 0
         }
       }
     ],
-    "memo": "ブリ刺身の値は過去ログ（2026-07-25〜28 の「ブリ刺身（約100g）」）と同値を流用。ご飯量は写真からの推定。",
+    "memo": "ブリ刺身の値は過去ログ（2026-07-25〜28 の「ブリ刺身（約100g）」）と同値を流用。ご飯180gは本人申告。",
     "tags": [
       "自炊",
       "魚"
