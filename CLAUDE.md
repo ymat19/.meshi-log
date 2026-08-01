@@ -154,6 +154,17 @@ npm run deploy       # ビルドして wrangler deploy で本番公開（通常�
   （fast-forward）で data コミットを main に載せる。**push 後は `git log origin/main` と
   本番URLで「main に載り本番に反映された」ことを検証してから完了報告する**（ブランチに
   push しただけで報告を締めない）。
+- **食事記録の作業は、最初に `git checkout -B main origin/main` してから始める。**
+  ハーネスは毎回フィーチャーブランチ（`claude/...`）をチェックアウトしてくるが、記録は
+  main 直 push なので、そのままだと記録コミットが「フィーチャーブランチから見て未 push」
+  の状態で残り、stop hook が毎回「Unverified なコミットがある」と誤検知する。最初に main
+  に乗っておけば push 後に差分が消えて警告も出ない。
+  **この警告への対処として `commit.gpgsign` を false にしてはいけない。** コミットは
+  `gpg.ssh.program`（`/tmp/code-sign` → 環境側バイナリ）で実際に署名されており、鍵は壊れて
+  いない（`.pub` が 0 バイトなのは実鍵がコンテナ外にあるためのプレースホルダ）。この
+  コンテナには `ssh-keygen` も `allowedSignersFile` も無く**署名を検証する手段が無い**ので
+  `%G?` が常に `N` を返すだけ。gpgsign を切ると、今ちゃんと付いている署名を本当に消して
+  GitHub 上で本当に Unverified になる。**署名設定には触らない。**
 
 ### 開発作業の DoD（完了の定義）
 
