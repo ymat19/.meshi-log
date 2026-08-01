@@ -4771,5 +4771,187 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-31T08:00:00+09:00-breakfast",
+    "datetime": "2026-07-31T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/07/31-0800-breakfast.webp",
+      "images/2026/07/31-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリのあら煮（頭・かま＋大根／醤油の煮物・可食部約80g）",
+        "nutrition": {
+          "energy_kcal": 235,
+          "protein_g": 17.6,
+          "fat_g": 14.2,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 12.3,
+          "sugar_g": 10.9,
+          "fiber_g": 1.4,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "ブリのあら煮（醤油の煮物・本人申告）。7/27朝の「ブリのあら汁」と同じ4kgのブリのあら。可食部約80g＋大根約100g＋煮汁（醤油大1・みりん大1・砂糖小1のうち約6割摂取）として推定。パックごはんは写真のパッケージ表示そのまま（1食180g／たん白質4.5g・脂質0.5g・炭水化物60.5g・食塩0.0g、製造：テーブルマーク新潟魚沼工場、JAN 4901520156962）。エネルギーだけ器で隠れて「26◯」までしか読めないため表示のP/F/Cから265kcalとして計上（同社ふっくらつや炊き180gは261kcal/P4.5/F0.5: https://www.askul.co.jp/p/U895638/ ）。食物繊維は公式非掲載のため白飯標準から推定、糖質=炭水化物-食物繊維。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml: https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値・過去ログ流用）。",
+    "tags": [
+      "自炊",
+      "魚",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-31T12:30:00+09:00-lunch",
+    "datetime": "2026-07-31T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/07/31-1230-lunch.webp",
+      "images/2026/07/31-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリのあら煮（頭・かま＋大根／醤油の煮物・可食部約80g）",
+        "nutrition": {
+          "energy_kcal": 235,
+          "protein_g": 17.6,
+          "fat_g": 14.2,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 12.3,
+          "sugar_g": 10.9,
+          "fiber_g": 1.4,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      }
+    ],
+    "memo": "朝と同じブリのあら煮（醤油の煮物・本人申告）を昼にも。可食部約80g＋大根約100g＋煮汁として推定。パックごはんは写真のパッケージ表示そのまま（1食180g／P4.5・F0.5・C60.5・食塩0.0、テーブルマーク新潟魚沼工場製）、エネルギーは器で隠れて読めない分をP/F/Cから265kcalと算出。たくあんは過去ログ（7/5昼・約20g）流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-07-31T19:30:00+09:00-dinner",
+    "datetime": "2026-07-31T19:30:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "松屋 オリジナルカレー（冷凍・1袋180g）",
+        "nutrition": {
+          "energy_kcal": 225,
+          "protein_g": 4.8,
+          "fat_g": 13.1,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 20.5,
+          "sugar_g": 19,
+          "fiber_g": 1.5,
+          "salt_g": 3.2
+        }
+      },
+      {
+        "name": "ごはん（パックごはん180g相当）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "目玉焼き 2個（油で焼いた）",
+        "nutrition": {
+          "energy_kcal": 220,
+          "protein_g": 14,
+          "fat_g": 18,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 0.6,
+          "sugar_g": 0.6,
+          "fiber_g": 0,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "森永クラフト フレッシュモッツァレラ（メダル）3枚",
+        "nutrition": {
+          "energy_kcal": 93,
+          "protein_g": 6.6,
+          "fat_g": 7.3,
+          "saturated_fat_g": 4.7,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.11
+        }
+      }
+    ],
+    "memo": "写真なし・本人申告（ご飯＋カレー＋卵2個＋モッツァレラ）。松屋 オリジナルカレー（冷凍1袋180g）公式値: 225kcal/P4.8/脂質13.1/炭水化物20.5/食塩3.2（ https://e-shop.matsuyafoods.co.jp/products/kare1 ）。飽和脂肪酸・食物繊維は公式非掲載のためカレールウ標準から推定（飽和6/繊維1.5）。ごはんは同日の朝昼と同じパックごはん180g相当として計上。目玉焼きは過去ログ（6/20朝・卵1個110kcal）の2個ぶん。森永クラフト フレッシュモッツァレラ（メダル1枚約12.5g×3枚＝約37.5g、100g当たり248kcal/P17.5/脂質19.5/炭水化物0.5/食塩0.3）: https://www.morinagamilk.co.jp/products/cheese/mozzarella/277.html （7/9昼の記録値を流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
