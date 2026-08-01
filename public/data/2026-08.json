@@ -1,0 +1,145 @@
+[
+  {
+    "id": "2026-08-01T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-01T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/01-0800-breakfast-1.webp",
+      "images/2026/08/01-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリのあら煮（身＋大根／醤油の煮物・可食部約80g）",
+        "nutrition": {
+          "energy_kcal": 235,
+          "protein_g": 17.6,
+          "fat_g": 14.2,
+          "saturated_fat_g": 3.5,
+          "carbohydrate_g": 12.3,
+          "sugar_g": 10.9,
+          "fiber_g": 1.4,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "ピーマン 4個（約140g・チーズ焼き／油少々）",
+        "nutrition": {
+          "energy_kcal": 50,
+          "protein_g": 1.2,
+          "fat_g": 2.3,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 7.1,
+          "sugar_g": 3.9,
+          "fiber_g": 3.2,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "とろけるチーズ（約40g・写真からの推定）",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 10,
+          "fat_g": 10.8,
+          "saturated_fat_g": 6.8,
+          "carbohydrate_g": 0.6,
+          "sugar_g": 0.6,
+          "fiber_g": 0,
+          "salt_g": 0.8
+        }
+      }
+    ],
+    "memo": "自炊。ピーマンのチーズ焼き＋ブリのあら煮＋パックごはん＋たくあん。【ブリのあら煮】7/27・7/31 と同じ4kgのブリのあらを醤油で煮たものの続き。可食部は写真の大根スライス（直径約6.5cm）をスケールにした採寸で約85gとなり、7/31 の記録値（可食部80g＋大根約100g＋煮汁）と整合するため同値を流用。大根2切れも約100gで一致。【ピーマン 4個（約140g）】本人申告で4個。日本食品標準成分表の青ピーマン生（100g当たり22kcal/P0.9/F0.2/C5.1/繊維2.3）×1.4＋焼き油約2gを加算。【とろけるチーズ 約40g】量は本人も不明のため写真の溶けたチーズの被覆量からの推定（推定値）。ナチュラルチーズ（ゴーダ／チェダー系ミックス 100g当たり約350kcal/P25/F27/飽和17/C1.5/食塩2.0）の40g相当として算出。【パックごはん】7/31 と同じテーブルマーク 炊きたてごはん180g（パッケージ表示 P4.5・F0.5・C60.5・食塩0.0、エネルギーはP/F/Cから265kcal算出、JAN 4901520156962）https://www.askul.co.jp/p/U895638/ 。【たくあん】過去ログ（7/5・7/31）の約20g の確定値を流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-01T12:30:00+09:00-lunch",
+    "datetime": "2026-08-01T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/01-1230-lunch-1.webp",
+      "images/2026/08/01-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "まぜそば（店・太麺／もやし・ニラ・豚肉・辛だれ）",
+        "nutrition": {
+          "energy_kcal": 769,
+          "protein_g": 27.8,
+          "fat_g": 27.9,
+          "saturated_fat_g": 7,
+          "carbohydrate_g": 111.5,
+          "sugar_g": 104.4,
+          "fiber_g": 7.1,
+          "salt_g": 5.9
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.3,
+          "sugar_g": 3.3,
+          "fiber_g": 0,
+          "salt_g": 0.5,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "昼はお店のまぜそば（本人申告）。当初 冷凍の「蒙古タンメン中本 汁なし麻辛麺」と推定したが、本人確認で店のまぜそばと判明したため引き直した。【まぜそば・推定値】店名・銘柄が不明のため公式値は引けず、写真の内容（太麺・もやし・ニラ・豚肉・赤い辛だれ）から日本食品標準成分表ベースで積算した推定：中華生麺180g（249kcal/P8.6/F1.2/C55.7/繊維2.7/食塩1.0 per 100g）＝448kcal/P15.5/F2.2/C100.3/繊維4.9/塩1.8、豚肉（チャーシュー・豚バラ系）約50g＝130kcal/P8/F10.5/飽和4.0/塩0.6、もやし約60g＝8kcal/繊維0.8、ニラ約15g＝3kcal/繊維0.4、辛だれ・香味油約50g（ごま油・味噌・醤油・唐辛子）＝180kcal/F15/C8/塩3.5。合計 769kcal/P27.8/F27.9/飽和7.0/C111.5/繊維7.1/塩5.9。店のまぜそば一般（台湾まぜそば等 800〜900kcal・食塩5〜7g）の範囲内で整合。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】写真のパッケージは 7/31 朝と同一（黄色地・MILK PROTEIN 20g）。明治公式 https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値・過去ログ流用）。【サントリー -196 ストロングゼロ ダブルレモン 9% 500ml ×1本】本人申告。公式 https://products.suntory.co.jp/d/4901777192782/ （アルコール9%／100mlあたり54kcal・炭水化物0.4〜0.9g・食塩0.06〜0.13gの中央値）、純アルコール=500×9/100×0.8=36g。7/30 夜の記録値を流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "麺",
+      "お酒",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  }
+]
