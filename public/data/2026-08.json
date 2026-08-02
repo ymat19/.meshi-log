@@ -269,5 +269,76 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-02T20:30:00+09:00-dinner",
+    "datetime": "2026-08-02T20:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/02-2030-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "セブンプレミアム 乾燥させたタンスライス 1袋（28g）",
+        "nutrition": {
+          "energy_kcal": 99,
+          "protein_g": 8.3,
+          "fat_g": 5.7,
+          "saturated_fat_g": 2.1,
+          "carbohydrate_g": 3.7,
+          "sugar_g": 3.7,
+          "fiber_g": 0,
+          "salt_g": 1.4
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 2個（25g×2）",
+        "nutrition": {
+          "energy_kcal": 130,
+          "protein_g": 8.6,
+          "fat_g": 10.2,
+          "saturated_fat_g": 6.4,
+          "carbohydrate_g": 0.8,
+          "sugar_g": 0.8,
+          "fiber_g": 0,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "アサヒ スーパードライ 生ジョッキ缶 485ml",
+        "nutrition": {
+          "energy_kcal": 204,
+          "protein_g": 1.5,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 14.6,
+          "sugar_g": 14.6,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 19.4
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "晩酌。写真には生ジョッキ缶・タンスライスの袋・ミニカマンベール2個が写っている（ストロング500は写真外、本人申告）。既製品出典 — セブンプレミアム 乾燥させたタンスライス28g: 公式表示 99kcal/P8.3/F5.7/炭水化物3.7(糖質3.7・食物繊維0)/食塩1.4g https://www.sej.co.jp/products/a/item/380800/ 。飽和脂肪酸は表示が無いため豚タンの脂肪組成から2.1gと推定。 アサヒ スーパードライ 生ジョッキ缶485ml（204kcal/糖質14.6/純アルコール19.4g https://www.asahibeer.co.jp/superdry/ ）・イル・ド・フランス ミニカマンベール25g・-196 ストロングゼロ無糖ドライ500ml（260kcal/9%・純アルコール36g https://products.suntory.co.jp/d/4901777241015/ ）は過去記録から流用。ストロングは銘柄未確認のため過去ログで最頻の無糖ドライで記録。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
