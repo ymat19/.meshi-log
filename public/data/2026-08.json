@@ -383,5 +383,106 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-03T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-03T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/03-0800-breakfast-1.webp",
+      "images/2026/08/03-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "セブンイレブン ジム飯 チキンジャンバラヤ（Wellni ビルめし×JBBF・冷凍1食290g）",
+        "nutrition": {
+          "energy_kcal": 409,
+          "protein_g": 47.3,
+          "fat_g": 6.4,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 42.1,
+          "sugar_g": 38.9,
+          "fiber_g": 3.2,
+          "salt_g": 2.8
+        }
+      },
+      {
+        "name": "クレアおばさんの具だくさんコーンチャウダー（グリコ 180g）",
+        "nutrition": {
+          "energy_kcal": 124,
+          "protein_g": 3.1,
+          "fat_g": 3.8,
+          "saturated_fat_g": 2,
+          "carbohydrate_g": 19.4,
+          "sugar_g": 17.9,
+          "fiber_g": 1.5,
+          "salt_g": 1.5
+        }
+      }
+    ],
+    "memo": "高たんぱく冷凍弁当＋スープの朝食。ジム飯 チキンジャンバラヤ: パッケージ表示（1食290g=409kcal/P47.3/F6.4/炭水化物42.1/食塩2.8）＋セブン公式 https://www.sej.co.jp/products/a/item/410623/ （糖質38.9・食物繊維3.2）。飽和脂肪酸は公式非掲載のため鶏むね中心の低脂質構成から推定(1.5g)。クレアおばさんの具だくさんコーンチャウダーはグリコ公式 https://www.glico.com/jp/product/food_curry/creastew/44429/ （180g=124kcal/P3.1/F3.8/C19.4/食塩1.5）、飽和脂肪酸・食物繊維は非掲載のため推定（過去ログ 2026-07-03 夜の確定値を流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "冷凍食品",
+      "高たんぱく"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-03T12:30:00+09:00-lunch",
+    "datetime": "2026-08-03T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/03-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "焙煎ごまタルタルシュリンプ（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 460,
+          "protein_g": 14.9,
+          "fat_g": 21.6,
+          "saturated_fat_g": 7.7,
+          "carbohydrate_g": 52.6,
+          "sugar_g": 50.6,
+          "fiber_g": 2,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "マックフライポテト L（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 515,
+          "protein_g": 7,
+          "fat_g": 25,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 66,
+          "sugar_g": 59.7,
+          "fiber_g": 6.3,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "コカ・コーラ ゼロ L（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      }
+    ],
+    "memo": "マクドナルド。焙煎ごまタルタルシュリンプはマクドナルド公式より https://www.mcdonalds.co.jp/products/6420/ （460kcal/P14.9/F21.6/飽和脂肪酸7.71/炭水化物52.6/食塩2.5）。食物繊維は公式非掲載のためバンズ＋レタスから推定(2.0g)、糖質=炭水化物-食物繊維。マックフライポテトL https://www.mcdonalds.co.jp/products/2050/ （515kcal/P7.0/F25.0/C66.0/食物繊維6.3/食塩0.9、飽和脂肪酸は非掲載のため推定2.3g）とコカ・コーラ ゼロ L（0kcal・食塩は微量ナトリウムぶん）は過去ログの確定値を流用。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
