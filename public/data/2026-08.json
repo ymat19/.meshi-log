@@ -457,7 +457,7 @@
           "protein_g": 4.7,
           "fat_g": 16.7,
           "saturated_fat_g": 1.5,
-          "carbohydrate_g": 44.0,
+          "carbohydrate_g": 44,
           "sugar_g": 39.8,
           "fiber_g": 4.2,
           "salt_g": 0.6
@@ -481,6 +481,51 @@
     "tags": [
       "外食",
       "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-03T21:30:00+09:00-dinner",
+    "datetime": "2026-08-03T21:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/03-2130-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "冷凍 完全メシ DELI ナポリ風ベーコン入りミックスピザ（日清食品・1食223g）",
+        "nutrition": {
+          "energy_kcal": 511,
+          "protein_g": 20.3,
+          "fat_g": 14.9,
+          "saturated_fat_g": 3.3,
+          "carbohydrate_g": 73.3,
+          "sugar_g": 66.7,
+          "fiber_g": 6.6,
+          "salt_g": 2.4
+        }
+      },
+      {
+        "name": "アサヒ スーパードライ 生ジョッキ缶 350ml",
+        "nutrition": {
+          "energy_kcal": 147,
+          "protein_g": 1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 10.5,
+          "sugar_g": 10.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 14
+        }
+      }
+    ],
+    "memo": "冷凍 完全メシ DELI ナポリ風ベーコン入りミックスピザは日清公式より https://www.nissin.com/jp/product/items/12960/ （1食223g=511kcal/P20.3/F14.9/飽和3.3/炭水化物73.3(糖質66.7・食物繊維6.6)/食塩2.4）。アサヒ スーパードライ 生ジョッキ缶 350ml は過去ログの485ml確定値（204kcal・純アルコール19.4g）を350mlに換算（147kcal・純アルコール14.0g、100mlあたり42kcalでスーパードライ350ml缶の過去記録と一致）。",
+    "tags": [
+      "中食",
+      "冷凍食品",
+      "お酒"
     ],
     "estimated": true,
     "schemaVersion": 1
