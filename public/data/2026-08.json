@@ -643,5 +643,62 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-04T20:00:00+09:00-dinner",
+    "datetime": "2026-08-04T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/04-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "７プレミアム 大盛り魚介豚骨まぜそば（冷凍・1食375g）",
+        "nutrition": {
+          "energy_kcal": 482,
+          "protein_g": 20.6,
+          "fat_g": 6.8,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 87,
+          "sugar_g": 82.1,
+          "fiber_g": 4.9,
+          "salt_g": 5
+        }
+      },
+      {
+        "name": "生卵 1個（まぜそばに投入）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "にんにく ひとかけ",
+        "nutrition": {
+          "energy_kcal": 6,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.02,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 1.1,
+          "fiber_g": 0.3,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "冷凍まぜそばに生卵1個とにんにくひとかけを加えた夕食（飲み物なし・本人申告）。【７プレミアム 大盛り魚介豚骨まぜそば】セブン公式表示 https://www.sej.co.jp/products/a/item/410226/ （1食375g=482kcal/P20.6/F6.8/炭水化物87.0（糖質82.1・食物繊維4.9）/食塩5.0g）。写真のパッケージ表示「1食入 375g 482kcal」と一致。飽和脂肪酸のみ公式非掲載のため、豚ガラ・香味油ベースの脂質6.8gの組成から1.8gと推定。【生卵 1個】7/6・7/13 等の確定値を流用。【にんにく ひとかけ】本人申告。日本食品標準成分表のにんにく（りん茎・生／100gあたり 129kcal/P6.0/F0.9/炭水化物27.5・食物繊維6.2）を1かけ約5gで換算。にんにくのナトリウムは微量のため食塩0。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "冷凍食品",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
