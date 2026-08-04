@@ -510,7 +510,7 @@
         "name": "アサヒ スーパードライ 生ジョッキ缶 340ml",
         "nutrition": {
           "energy_kcal": 143,
-          "protein_g": 1.0,
+          "protein_g": 1,
           "fat_g": 0,
           "saturated_fat_g": 0,
           "carbohydrate_g": 10.2,
@@ -526,6 +526,133 @@
       "中食",
       "冷凍食品",
       "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-04T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-04T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/04-0800-breakfast-1.webp",
+      "images/2026/08/04-0800-breakfast-2.webp",
+      "images/2026/08/04-0800-breakfast-3.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ 70g",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 14.7,
+          "fat_g": 12.3,
+          "saturated_fat_g": 3.1,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ウェイパー卵スープ（卵1個）",
+        "nutrition": {
+          "energy_kcal": 82,
+          "protein_g": 6.5,
+          "fat_g": 5.5,
+          "saturated_fat_g": 1.7,
+          "carbohydrate_g": 1,
+          "sugar_g": 1,
+          "fiber_g": 0,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "長ねぎ（約80g・スープの具）",
+        "nutrition": {
+          "energy_kcal": 28,
+          "protein_g": 1.1,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0.02,
+          "carbohydrate_g": 6.6,
+          "sugar_g": 4.6,
+          "fiber_g": 2,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "自炊の朝食。パックごはん＋ブリ、ねぎ入りの卵スープ、ザバス。【ブリ 70g】本人申告で70g。7/25 からの4kgのブリの続きで、7/25〜8/2 と同じ 100gあたり 257kcal/P21/F17.6/飽和4.4/炭水化物0.3/食塩0.1 を 70g に換算。【ウェイパー卵スープ（卵1個）】7/2 の確定値を流用（82kcal/P6.5/F5.5/飽和1.7/炭水化物1.0/食塩2.0）。【長ねぎ 約80g】量は写真からの推定。7/29 の確定値（100gあたり 35kcal/P1.4/F0.1/炭水化物8.3/食物繊維2.5）を0.8倍。糖質=炭水化物-食物繊維。【パックごはん】7/31・8/1・8/2 と同じテーブルマーク 炊きたてごはん180g の確定値を流用。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】7/1 の確定値を流用（107kcal/P20/F0/炭水化物6.8/食塩0.19）明治公式 https://www.meiji.co.jp/sports/savas/products/milk-protein/",
+    "tags": [
+      "自炊",
+      "高たんぱく"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-04T12:30:00+09:00-lunch",
+    "datetime": "2026-08-04T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/04-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "焙煎ごまタルタルシュリンプ（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 460,
+          "protein_g": 14.9,
+          "fat_g": 21.6,
+          "saturated_fat_g": 7.7,
+          "carbohydrate_g": 52.6,
+          "sugar_g": 50.6,
+          "fiber_g": 2,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "フライドポテト（マックフライポテトLの1/3・昨日の残り）",
+        "nutrition": {
+          "energy_kcal": 172,
+          "protein_g": 2.3,
+          "fat_g": 8.3,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 22,
+          "sugar_g": 19.9,
+          "fiber_g": 2.1,
+          "salt_g": 0.3
+        }
+      }
+    ],
+    "memo": "マクドナルド（ドリンクなし・本人申告）。焙煎ごまタルタルシュリンプはマクドナルド公式 https://www.mcdonalds.co.jp/products/6420/ （460kcal/P14.9/F21.6/飽和脂肪酸7.71/炭水化物52.6/食塩2.5）。食物繊維は公式非掲載のためバンズ＋レタスから推定(2.0g)、糖質=炭水化物-食物繊維（8/3 昼と同値）。フライドポテトは本人申告で「昨日の残り」。8/3 昼に マックフライポテトL の2/3 を記録済みのため、その残り1/3 を今日に計上（二重計上なし）。L の公式値 https://www.mcdonalds.co.jp/products/2050/ （515kcal/P7.0/F25.0/C66.0/食物繊維6.3/食塩0.9、飽和脂肪酸は非掲載のため推定2.3g）の1/3。",
+    "tags": [
+      "外食",
+      "揚げ物"
     ],
     "estimated": true,
     "schemaVersion": 1
