@@ -710,20 +710,20 @@
     ],
     "items": [
       {
-        "name": "松のや ロースかつ定食（ライス大盛・みそ汁/キャベツ込み・テイクアウト）",
+        "name": "松のや ロースかつ定食（ライス大盛・キャベツ込み／みそ汁は夜に移動・テイクアウト）",
         "nutrition": {
-          "energy_kcal": 998,
-          "protein_g": 29.5,
-          "fat_g": 32.1,
-          "saturated_fat_g": 8.6,
-          "carbohydrate_g": 153.4,
-          "sugar_g": 149.3,
-          "fiber_g": 4.1,
-          "salt_g": 2.5
+          "energy_kcal": 970,
+          "protein_g": 28.1,
+          "fat_g": 31.4,
+          "saturated_fat_g": 8.4,
+          "carbohydrate_g": 149.7,
+          "sugar_g": 146.4,
+          "fiber_g": 3.3,
+          "salt_g": 0.9
         }
       }
     ],
-    "memo": "松乃家（松のや）のロースかつ定食をテイクアウト。ごはんは本人申告で大盛。【ロースかつ定食（並）】松のや公式 https://www.matsuyafoods.co.jp/matsunoya/menu/teishoku/tei_rosu_hp_260506.html （830kcal/P26.8/F31.8/炭水化物113.4/食塩2.5。定食類にはみそ汁の栄養成分も含まれる。公式値は店内量目基準）。【ライス大盛の差分】松のや ライス（並）公式 https://www.matsuyafoods.co.jp/matsunoya/menu/side_menu/side_rice_hp_250221.html （343kcal/P5.5/F0.7/炭水化物81.6/食塩0）に、松屋公式の並→大盛の比率 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html （並344kcal/C76.1 → 大盛512kcal/C113.2＝約1.49倍）を適用し、大盛≒511kcal/P8.2/F1.0/C121.6 と算出。並との差分 +168kcal/P+2.7/F+0.3/C+40.0 を定食に加算した。なお定食の炭水化物113.4gのうち81.6gがライス（並）ぶんで、残り31.8gが衣・キャベツ・みそ汁ぶんとして整合する。【飽和脂肪酸・食物繊維】公式非掲載のため推定：飽和脂肪酸は揚げ油＋豚ロース由来で脂質の約27%＝8.6g、食物繊維はごはん大盛（約1.1g）＋千切りキャベツ約70g（1.3g）＋パン粉の衣（0.8g）＋みそ汁（0.9g）＝4.1g。糖質=炭水化物-食物繊維。",
+    "memo": "松乃家（松のや）のロースかつ定食をテイクアウト。ごはんは本人申告で大盛。【ロースかつ定食（並）】松のや公式 https://www.matsuyafoods.co.jp/matsunoya/menu/teishoku/tei_rosu_hp_260506.html （830kcal/P26.8/F31.8/炭水化物113.4/食塩2.5。定食類にはみそ汁の栄養成分も含まれる。公式値は店内量目基準）。【ライス大盛の差分】松のや ライス（並）公式 https://www.matsuyafoods.co.jp/matsunoya/menu/side_menu/side_rice_hp_250221.html （343kcal/P5.5/F0.7/炭水化物81.6/食塩0）に、松屋公式の並→大盛の比率 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html （並344kcal/C76.1 → 大盛512kcal/C113.2＝約1.49倍）を適用し、大盛≒511kcal/P8.2/F1.0/C121.6 と算出。並との差分 +168kcal/P+2.7/F+0.3/C+40.0 を定食に加算した。なお定食の炭水化物113.4gのうち81.6gがライス（並）ぶんで、残り31.8gが衣・キャベツ・みそ汁ぶんとして整合する。【飽和脂肪酸・食物繊維】公式非掲載のため推定：飽和脂肪酸は揚げ油＋豚ロース由来で脂質の約27%＝8.6g、食物繊維はごはん大盛（約1.1g）＋千切りキャベツ約70g（1.3g）＋パン粉の衣（0.8g）＋みそ汁（0.9g）＝4.1g。なお付属のみそ汁は朝には飲まず 8/5 夜に飲んだため、定食の値から松のや みそ汁単品ぶん（28kcal/P1.4/F0.7/炭水化物3.7/食塩1.6 https://www.matsuyafoods.co.jp/matsunoya/menu/side_menu/side_misoshiru_hp_240809.html 、飽和0.2・繊維0.8は推定）を控除し、20:30 の夕食に移した（二重計上の回避。1日合計は変わらない）。糖質=炭水化物-食物繊維。",
     "tags": [
       "外食",
       "揚げ物"
@@ -771,6 +771,118 @@
     "tags": [
       "中食",
       "麺",
+      "高たんぱく"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-05T20:30:00+09:00-dinner",
+    "datetime": "2026-08-05T20:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/05-2030-dinner-1.webp",
+      "images/2026/08/05-2030-dinner-2.webp",
+      "images/2026/08/05-2030-dinner-3.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ 70g",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 14.7,
+          "fat_g": 12.3,
+          "saturated_fat_g": 3.1,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "大根のツマ（約60g）",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.2,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 2.5,
+          "sugar_g": 1.7,
+          "fiber_g": 0.8,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "松のや みそ汁（朝の定食に付属・夜に飲んだ）",
+        "nutrition": {
+          "energy_kcal": 28,
+          "protein_g": 1.4,
+          "fat_g": 0.7,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 3.7,
+          "sugar_g": 2.9,
+          "fiber_g": 0.8,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "ブランデー 60ml（40%）",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 19
+        }
+      },
+      {
+        "name": "チョコレート効果 カカオ86% 2粒",
+        "nutrition": {
+          "energy_kcal": 58,
+          "protein_g": 1.4,
+          "fat_g": 4.6,
+          "saturated_fat_g": 2.8,
+          "carbohydrate_g": 3.6,
+          "sugar_g": 2,
+          "fiber_g": 1.6,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "ブリ＋大根のツマ、ごはん・たくあん、みそ汁、〆にブランデーと高カカオチョコ。【ブリ 70g】本人申告で70g。7/25 からの4kgのブリの続きで、7/25〜8/4 と同じ 100gあたり 257kcal/P21/F17.6/飽和4.4/炭水化物0.3/食塩0.1 を 70g に換算。【大根のツマ 約60g】本人確認で大根のツマ（松のやのキャベツの残りではない）。7/5 の「刺身のツマ（大根千切り 約40g）」と同じ大根生100gあたり15kcal/P0.4/F0.1/炭水化物4.1/食物繊維1.4 を60gに換算。量は写真からの推定。【松のや みそ汁】朝のロースかつ定食に付属していたものを夜に飲んだ。松のや公式 https://www.matsuyafoods.co.jp/matsunoya/menu/side_menu/side_misoshiru_hp_240809.html （28kcal/P1.4/F0.7/炭水化物3.7/食塩1.6。飽和脂肪酸・食物繊維は非掲載のため味噌・油揚げ・わかめから推定）。朝の定食の公式値はみそ汁込みのため、同額を朝から控除して二重計上を回避している。【パックごはん 180g】本人申告。7/31〜8/4 と同じテーブルマーク 炊きたてごはん180g の確定値を流用。【たくあん 約20g】写真より。6/26・7/5・8/1 の確定値を流用。【ブランデー 60ml（40%）】6/28 の「ブランデー 60ml（40%）」の確定値を流用（140kcal・純アルコール19g＝60×0.40×0.789）。【チョコレート効果 カカオ86% 2粒】明治公式 https://www.meiji.co.jp/products/chocolate/4902777205410.html （1枚5.0gあたり29kcal/P0.7/F2.3/糖質1.0/食物繊維0.8）の2粒ぶん。6/28 の記録と同値。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "お酒",
       "高たんぱく"
     ],
     "estimated": true,
