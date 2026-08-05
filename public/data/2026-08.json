@@ -700,5 +700,80 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-05T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-05T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/05-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "松のや ロースかつ定食（ライス大盛・みそ汁/キャベツ込み・テイクアウト）",
+        "nutrition": {
+          "energy_kcal": 998,
+          "protein_g": 29.5,
+          "fat_g": 32.1,
+          "saturated_fat_g": 8.6,
+          "carbohydrate_g": 153.4,
+          "sugar_g": 149.3,
+          "fiber_g": 4.1,
+          "salt_g": 2.5
+        }
+      }
+    ],
+    "memo": "松乃家（松のや）のロースかつ定食をテイクアウト。ごはんは本人申告で大盛。【ロースかつ定食（並）】松のや公式 https://www.matsuyafoods.co.jp/matsunoya/menu/teishoku/tei_rosu_hp_260506.html （830kcal/P26.8/F31.8/炭水化物113.4/食塩2.5。定食類にはみそ汁の栄養成分も含まれる。公式値は店内量目基準）。【ライス大盛の差分】松のや ライス（並）公式 https://www.matsuyafoods.co.jp/matsunoya/menu/side_menu/side_rice_hp_250221.html （343kcal/P5.5/F0.7/炭水化物81.6/食塩0）に、松屋公式の並→大盛の比率 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html （並344kcal/C76.1 → 大盛512kcal/C113.2＝約1.49倍）を適用し、大盛≒511kcal/P8.2/F1.0/C121.6 と算出。並との差分 +168kcal/P+2.7/F+0.3/C+40.0 を定食に加算した。なお定食の炭水化物113.4gのうち81.6gがライス（並）ぶんで、残り31.8gが衣・キャベツ・みそ汁ぶんとして整合する。【飽和脂肪酸・食物繊維】公式非掲載のため推定：飽和脂肪酸は揚げ油＋豚ロース由来で脂質の約27%＝8.6g、食物繊維はごはん大盛（約1.1g）＋千切りキャベツ約70g（1.3g）＋パン粉の衣（0.8g）＋みそ汁（0.9g）＝4.1g。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-05T12:30:00+09:00-lunch",
+    "datetime": "2026-08-05T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/05-1230-lunch-1.webp",
+      "images/2026/08/05-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "一本釣り鰹だし香る石臼挽そば粉のざるそば（セブンイレブン・1食）",
+        "nutrition": {
+          "energy_kcal": 334,
+          "protein_g": 16.3,
+          "fat_g": 3,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 63.1,
+          "sugar_g": 57.9,
+          "fiber_g": 5.2,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "セブンイレブンのざるそば＋ザバス。【一本釣り鰹だし香る石臼挽そば粉のざるそば】8/2 夜に同一商品を記録済みのため確定値を流用。セブン公式表示 334kcal/P16.3/F3.0/炭水化物63.1(糖質57.9・食物繊維5.2)/食塩2.0 https://www.sej.co.jp/products/a/item/090415/ （写真の値段シール398円・税込429.84円・製造ニッセーデリカ湘南工場と一致）。わさび・刻み海苔・つゆは商品付属で表示値に含む。飽和脂肪酸のみ表示が無いためそば粉・小麦由来で0.6gと推定。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】写真の黄色パッケージは 7/31 朝・8/1 昼・8/2・8/4 朝と同一。明治公式 https://www.meiji.co.jp/products/wellness/savas/products/a15.html （公式表示値・過去ログ流用）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺",
+      "高たんぱく"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
