@@ -887,5 +887,35 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-06T10:00:00+09:00-breakfast",
+    "datetime": "2026-08-06T10:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/06-1000-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "松のや 鬼おろしポン酢ロースかつ（ライス大盛・キャベツ/みそ汁なし・テイクアウト）",
+        "nutrition": {
+          "energy_kcal": 985,
+          "protein_g": 28.5,
+          "fat_g": 31.4,
+          "saturated_fat_g": 8.5,
+          "carbohydrate_g": 152.7,
+          "sugar_g": 150,
+          "fiber_g": 2.7,
+          "salt_g": 2.6
+        }
+      }
+    ],
+    "memo": "松乃家（松のや）の鬼おろしポン酢ロースかつ定食をテイクアウト。本人確認で「かつ＋ライスのみ」（キャベツ・みそ汁なし）、ごはんは大盛。【ベース】松のや 鬼おろしポン酢ロースかつ定食（並）公式 https://www.matsuyafoods.co.jp/matsunoya/menu/teishoku/tei_oroshipon_rosu_hp_260506.html （861kcal/P28.1/F31.9/炭水化物120/食塩4.2。定食類の公式値にはみそ汁の栄養成分も含まれる）。【ライス大盛の差分】8/5 朝の記録で算出した値を流用: 松のや ライス（並）公式 https://www.matsuyafoods.co.jp/matsunoya/menu/side_menu/side_rice_hp_250221.html に松屋公式の並→大盛比率 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html （約1.49倍）を適用し、差分 +168kcal/P+2.7/F+0.3/C+40.0 を加算。【控除】キャベツ・みそ汁が付かなかったぶんを公式値から控除した。みそ汁は過去ログの松のやみそ汁実値（28kcal/P1.4/F0.7/飽和0.2/C3.7/繊維0.8/塩1.6）、千切りキャベツ約70g は標準成分（16kcal/P0.9/F0.1/C3.6/繊維1.3/塩0）。【飽和脂肪酸・食物繊維】公式非掲載のため推定：飽和脂肪酸は揚げ油＋豚ロース由来で脂質の約27%＝8.5g、食物繊維はごはん大盛（約1.1g）＋パン粉の衣（0.8g）＋鬼おろし大根約60g（0.8g）＝2.7g。塩分が 8/5 のロースかつ定食（2.5g）と近い値なのは、ポン酢だれぶんの加算（公式4.2g）とみそ汁ぶんの控除（-1.6g）が相殺したため。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
