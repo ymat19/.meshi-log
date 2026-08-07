@@ -917,5 +917,80 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-06T12:30:00+09:00-lunch",
+    "datetime": "2026-08-06T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/06-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ 日清のどん兵衛 カレーうどん（日清食品・カップ1食112g）",
+        "nutrition": {
+          "energy_kcal": 452,
+          "protein_g": 17.9,
+          "fat_g": 13.4,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 67.9,
+          "sugar_g": 60.7,
+          "fiber_g": 7.2,
+          "salt_g": 2.9
+        }
+      }
+    ],
+    "memo": "完全メシ 日清のどん兵衛 カレーうどん（カップ・1食112g）公式表示値: 452kcal/P17.9/脂質13.4/飽和脂肪酸2.3/炭水化物67.9（糖質60.7・食物繊維7.2）/食塩相当量2.9 — https://www.nissin.com/jp/products/items/13263/ （ニュースリリース: https://www.nissin.com/jp/company/news/13441/ ）。飽和脂肪酸・糖質・食物繊維まで公式に記載があるため推定値なし。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-06T20:00:00+09:00-dinner",
+    "datetime": "2026-08-06T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/06-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリカマ塩焼き（約150g・可食部）",
+        "nutrition": {
+          "energy_kcal": 333,
+          "protein_g": 32,
+          "fat_g": 26,
+          "saturated_fat_g": 8.4,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.3,
+          "sugar_g": 3.3,
+          "fiber_g": 0,
+          "salt_g": 0.5,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "クッキングシートで焼いたブリカマ＋鬼おろしポン酢＋缶チューハイ。ブリカマ塩焼き（約150g・可食部）は過去ログ 7/5 昼・7/25 夜の実値をそのまま流用（333kcal/P32/F26/飽和8.4/C0.5/繊維0/塩1.2）。サントリー -196 ストロングゼロ ダブルレモン 9% 500ml は過去ログ 7/30・8/1 の実値を流用（270kcal/C3.3/塩0.5/アルコール36g）。写真の白いカップの鬼おろしポン酢は本人確認により「朝の松のや付属ぶんの残りを夜に使った」ものなので、朝の 2026-08-06 10:00 の定食公式値に既に含まれる。二重計上を避けるため夜には計上していない。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "高たんぱく"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
