@@ -1158,5 +1158,116 @@
     ],
     "estimated": false,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-08T19:00:00+09:00-dinner",
+    "datetime": "2026-08-08T19:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/08-1900-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ビール 中ジョッキ ×4（博多系大衆居酒屋）",
+        "nutrition": {
+          "energy_kcal": 720,
+          "protein_g": 5.2,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 54,
+          "sugar_g": 54,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 69.6
+        }
+      },
+      {
+        "name": "もつ鍋 1人前（博多系大衆居酒屋・もつ/キャベツ/ニラ/豆腐）",
+        "nutrition": {
+          "energy_kcal": 520,
+          "protein_g": 27,
+          "fat_g": 35,
+          "saturated_fat_g": 13,
+          "carbohydrate_g": 16,
+          "sugar_g": 11,
+          "fiber_g": 5,
+          "salt_g": 4.5
+        }
+      },
+      {
+        "name": "ごまさば（博多系大衆居酒屋・約80g）",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 16,
+          "fat_g": 16,
+          "saturated_fat_g": 3.8,
+          "carbohydrate_g": 5,
+          "sugar_g": 4.5,
+          "fiber_g": 0.5,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "博多一口餃子 8個（博多系大衆居酒屋）",
+        "nutrition": {
+          "energy_kcal": 240,
+          "protein_g": 8,
+          "fat_g": 12,
+          "saturated_fat_g": 3.6,
+          "carbohydrate_g": 24,
+          "sugar_g": 22.5,
+          "fiber_g": 1.5,
+          "salt_g": 1.5
+        }
+      },
+      {
+        "name": "とり天 1皿（博多系大衆居酒屋）",
+        "nutrition": {
+          "energy_kcal": 320,
+          "protein_g": 20,
+          "fat_g": 18,
+          "saturated_fat_g": 3.8,
+          "carbohydrate_g": 19,
+          "sugar_g": 18,
+          "fiber_g": 1,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "セブンイレブン ソーセージとベーコンの大盛ペペロンチーノ",
+        "nutrition": {
+          "energy_kcal": 845,
+          "protein_g": 36.4,
+          "fat_g": 34.8,
+          "saturated_fat_g": 12.2,
+          "carbohydrate_g": 102.2,
+          "sugar_g": 91.1,
+          "fiber_g": 11.1,
+          "salt_g": 8.8
+        }
+      },
+      {
+        "name": "井村屋 あずきバー 1本",
+        "nutrition": {
+          "energy_kcal": 98,
+          "protein_g": 1.7,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 22.4,
+          "sugar_g": 21,
+          "fiber_g": 1.4,
+          "salt_g": 0.09
+        }
+      }
+    ],
+    "memo": "博多系の大衆居酒屋で約5000円ぶん＋帰宅後にセブンのペペロンチーノとあずきバー。【居酒屋ぶんは記憶ベースの推定】写真も参照できる過去記録も無いため、5000円相当の一般的な注文（ビール中ジョッキ4杯＋もつ鍋1人前＋ごまさば＋博多一口餃子8個＋とり天1皿）を想定して標準的な食品成分から推定した。ビールは過去ログの実値（中ジョッキ1杯=180kcal/C13.5/アルコール17.4g）の4杯ぶん。もつ鍋（もつ約120g・キャベツ150g・ニラ50g・豆腐50g・醤油ベースのスープ）、ごまさば（さば刺身約80g＋ごまだれ）、一口餃子（1個約15g×8）、とり天（鶏むね約100gの天ぷら）は一般的な分量からの推定。実際の注文内容が分かれば差し替える。【セブンイレブン】ソーセージとベーコンの大盛ペペロンチーノ 公式値: 845kcal/P36.4/脂質34.8/炭水化物102.2（糖質91.1・食物繊維11.1）/食塩相当量8.8 — https://www.sej.co.jp/products/a/item/091238/ 。写真の厚切りベーコン・ソーセージ・ガーリックチップと一致するため大盛版の公式値を採用した（通常サイズだった場合は各値がおおよそ6割になる）。飽和脂肪酸は公式非掲載のため、ベーコン・ソーセージ・オリーブオイル由来で脂質の約35%＝12.2gと推定。【井村屋 あずきバー】6本入BOXの1本ぶん公式値: 98kcal/P1.7/脂質0.2/炭水化物22.4/食塩0.09 — https://mdinfo.jccu.coop/sp/shohindetail/4902220009473/120621 （井村屋公式 https://www.imuraya.co.jp/goods/ice/c-azuki/azuki65/ の65ml単品版なら110kcal）。食物繊維はあずき由来で約1.4gと推定、飽和脂肪酸は脂質0.2gのうち約0.1g。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "お酒",
+      "中食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
