@@ -1396,5 +1396,265 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-09T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-09T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/09-0800-breakfast-1.webp",
+      "images/2026/08/09-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ 切り落とし刺身（約150g）",
+        "nutrition": {
+          "energy_kcal": 386,
+          "protein_g": 31.5,
+          "fat_g": 26.4,
+          "saturated_fat_g": 6.6,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "玉ねぎスライス（約40g）",
+        "nutrition": {
+          "energy_kcal": 13,
+          "protein_g": 0.4,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.4,
+          "sugar_g": 2.8,
+          "fiber_g": 0.6,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "醤油 小さじ2＋わさび少々",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.9,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0.9,
+          "sugar_g": 0.9,
+          "fiber_g": 0,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74,
+          "sugar_g": 73,
+          "fiber_g": 1,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "たくあん（約20g）",
+        "nutrition": {
+          "energy_kcal": 5,
+          "protein_g": 0.1,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.2,
+          "sugar_g": 0.8,
+          "fiber_g": 0.4,
+          "salt_g": 0.8
+        }
+      }
+    ],
+    "memo": "自炊。ブリの切り落とし刺身（玉ねぎスライス添え）＋白ごはん＋たくあん。【ブリ 切り落とし刺身】品目は本人申告。栄養値は過去記録 2026-07-24／07-25 の「ブリ刺身（約100g）」確定値（257kcal/P21/F17.6/飽和4.4/C0.3/塩0.1）を、写真の量（器の底を覆う2.5〜3cm角の切り身が20切れ前後＝切り落としパック1つ相当）から約150gにスケール。【玉ねぎスライス】刺身に添えた薄切り。日本食品標準成分表の玉ねぎ生（100g当たり33kcal/P1.0/F0.1/C8.4/繊維1.5）×0.4。【醤油 小さじ2＋わさび】過去ログ（2026-08-02）の確定値を流用。【白ごはん 約200g】【たくあん 約20g】いずれも過去ログの確定値を流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-09T12:30:00+09:00-lunch",
+    "datetime": "2026-08-09T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "お通し（1人前）",
+        "nutrition": {
+          "energy_kcal": 40,
+          "protein_g": 1.5,
+          "fat_g": 2,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 3.5,
+          "sugar_g": 2.5,
+          "fiber_g": 1,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "串カツ豚 ×2",
+        "nutrition": {
+          "energy_kcal": 196,
+          "protein_g": 9,
+          "fat_g": 13,
+          "saturated_fat_g": 4,
+          "carbohydrate_g": 9,
+          "sugar_g": 8.4,
+          "fiber_g": 0.6,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "串カツ牛 ×1",
+        "nutrition": {
+          "energy_kcal": 74,
+          "protein_g": 4,
+          "fat_g": 4.5,
+          "saturated_fat_g": 1.7,
+          "carbohydrate_g": 4,
+          "sugar_g": 3.7,
+          "fiber_g": 0.3,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "串カツ玉ネギ ×1",
+        "nutrition": {
+          "energy_kcal": 64,
+          "protein_g": 1,
+          "fat_g": 4,
+          "saturated_fat_g": 0.5,
+          "carbohydrate_g": 6,
+          "sugar_g": 5.3,
+          "fiber_g": 0.7,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "串カツレンコン ×1",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 0.8,
+          "fat_g": 3.5,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 6.5,
+          "sugar_g": 5.6,
+          "fiber_g": 0.9,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "無限ホルモン串 10本（ニンニク／スパイス）",
+        "nutrition": {
+          "energy_kcal": 550,
+          "protein_g": 30,
+          "fat_g": 40,
+          "saturated_fat_g": 15,
+          "carbohydrate_g": 16.7,
+          "sugar_g": 15,
+          "fiber_g": 1.7,
+          "salt_g": 3.3
+        }
+      },
+      {
+        "name": "ザ・プレミアム・モルツ〈香る〉エール 中ジョッキ ×6（435ml×6・6%）",
+        "nutrition": {
+          "energy_kcal": 1175,
+          "protein_g": 10.4,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 75.7,
+          "sugar_g": 75.7,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 123.6
+        }
+      }
+    ],
+    "memo": "昼食。串カツ田中に1人で来店、支払い約5,000円・内訳不明（本人申告）／お酒は6杯（本人申告）。内訳は公式メニューの税込価格から約5,000円に収まる標準的な注文として逆算した推定：お通し297＋串カツ豚187×2＋串カツ牛198＋玉ネギ121＋レンコン121＋無限ホルモン串10本550＋香るエール中ジョッキ550×6＝計4,961円。価格出典: 串カツ田中 公式グランドメニュー（2026.07.01〜） https://kushi-tanaka.com/menu/ ／ ホットペッパー掲載メニュー https://www.hotpepper.jp/strJ001246830/food/ ・ https://www.hotpepper.jp/strJ001246830/drink/ 。串カツのカロリーは串カツ田中カロリー一覧（串カツ豚98／牛74／玉ねぎ64／れんこん60）https://omisehakku.com/kushitanaka-calorie/ 、PFCは揚げ物標準からの推定。無限ホルモン串は公式非公開のため過去ログ 2026-07-08 の推定値（1本=55kcal/P3/F4/飽和1.5/塩0.33）を10本にスケール。お通しは過去ログ 2026-07-08 の値を流用。香るエールは公式（6%・45kcal/100ml・糖質2.9g/100ml）https://products.suntory.co.jp/d/4901777392885/ 、中ジョッキ435ml×6杯＝2,610mlで算出、純アルコール=2610×0.06×0.789≒123.6g。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "揚げ物",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-09T20:00:00+09:00-dinner",
+    "datetime": "2026-08-09T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "極太麺 250g（豚山 小ラーメン）",
+        "nutrition": {
+          "energy_kcal": 623,
+          "protein_g": 21.5,
+          "fat_g": 3,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 139.3,
+          "sugar_g": 132.5,
+          "fiber_g": 6.8,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "ヤサイ（もやし・キャベツ 約300g）",
+        "nutrition": {
+          "energy_kcal": 49,
+          "protein_g": 5,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 9.1,
+          "sugar_g": 4.9,
+          "fiber_g": 4.2,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "豚（チャーシュー2枚・約90g）",
+        "nutrition": {
+          "energy_kcal": 300,
+          "protein_g": 16,
+          "fat_g": 24,
+          "saturated_fat_g": 9,
+          "carbohydrate_g": 2.5,
+          "sugar_g": 2.5,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "スープ・アブラ（微乳化豚骨＋背脂＋カエシ）",
+        "nutrition": {
+          "energy_kcal": 420,
+          "protein_g": 6,
+          "fat_g": 38,
+          "saturated_fat_g": 15,
+          "carbohydrate_g": 6,
+          "sugar_g": 6,
+          "fiber_g": 0,
+          "salt_g": 4.5
+        }
+      }
+    ],
+    "memo": "夕食。ラーメン豚山 小ラーメン（本人申告）。豚山は栄養成分を公開していないため、公式メニューの構成（小ラーメン＝麺250g・豚2枚・ヤサイ標準300g）https://www.butayama.com/menu ・ https://iekei.shop/butayama をもとに日本食品標準成分表ベースで積算した推定値。【極太麺250g】中華生麺100g当たり249kcal/P8.6/F1.2/C55.7/繊維2.7/塩1.0（過去ログ 2026-08-02 のまぜそばと同じ基準）×2.5。【ヤサイ300g】もやし約250g（100g=15kcal/P1.7/C2.6/繊維1.3）＋キャベツ約50g（100g=21kcal/繊維1.8）の茹で。【豚2枚 約90g】5時間煮込みの厚切りチャーシュー。過去ログ 2026-08-02 のチャーシュー（豚バラ煮豚と肩ロース煮豚の中間値）を90gにスケール。【スープ・アブラ】微乳化豚骨スープ＋背脂＋醤油ダレ。飲み干さず麺に絡む分＋一部を摂取した前提での推定。合計1,392kcalは二郎系小ラーメンの一般的な推定値（約1,500kcal）の範囲内で整合。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "麺",
+      "二郎系"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
