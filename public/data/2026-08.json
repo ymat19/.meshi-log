@@ -2036,5 +2036,76 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-12T12:30:00+09:00-lunch",
+    "datetime": "2026-08-12T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/12-1230-lunch-1.webp",
+      "images/2026/08/12-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ刺身（約150g）",
+        "nutrition": {
+          "energy_kcal": 386,
+          "protein_g": 31.5,
+          "fat_g": 26.4,
+          "saturated_fat_g": 6.6,
+          "carbohydrate_g": 0.5,
+          "sugar_g": 0.5,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "醤油 小さじ2＋わさび少々",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.9,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0.9,
+          "sugar_g": 0.9,
+          "fiber_g": 0,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ハナマルキ からだに嬉しいしじみ汁（即席・1食16.8g）",
+        "nutrition": {
+          "energy_kcal": 23,
+          "protein_g": 1.9,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.1,
+          "carbohydrate_g": 2.5,
+          "sugar_g": 1.9,
+          "fiber_g": 0.6,
+          "salt_g": 2
+        }
+      }
+    ],
+    "memo": "昼食。ブリの刺身（生・醤油）＋パックごはん＋インスタントしじみ汁（本人申告）。【ブリ刺身 約150g】本人未計量のため写真からの推定。写真で数えられる切れ数は約12切れ、ブリのそぎ切り1切れ10〜15gとして約150gと見積もり、8/09 記録『ブリ 切り落とし刺身（約150g）』の確定値（386kcal/P31.5/F26.4/飽和6.6/塩0.2）を流用。なお器と身の一部が写真右端で見切れており、実際はこれより多い可能性がある。【醤油 小さじ2＋わさび少々】8/02・8/09 の記録値を流用。【パックごはん】写真のパッケージ表示（テーブルマーク 新潟魚沼工場製 180g・265kcal/P4.5/脂質0.5/炭水化物60.5/食塩0.0）をそのまま採用。【ハナマルキ からだに嬉しいしじみ汁】公式表示 1食16.8g当たり 23kcal/たんぱく質1.9/脂質0.6/炭水化物2.5/食塩相当量2.0 — https://www.hanamaruki.co.jp/products/kenko_shijimi_ornithine.html （具材がわかめ・味付しじみ・ねぎで写真のねぎと一致するため本品と同定。飽和脂肪酸・食物繊維は非公表のため推定）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "中食",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
