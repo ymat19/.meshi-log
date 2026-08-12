@@ -1994,5 +1994,47 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-12T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-12T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/12-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 豚汁（単品）",
+        "nutrition": {
+          "energy_kcal": 243,
+          "protein_g": 9.2,
+          "fat_g": 14.9,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 17.6,
+          "sugar_g": 15.1,
+          "fiber_g": 2.5,
+          "salt_g": 3.2
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "松屋 豚汁（単品）1個とパックごはん180g。豚汁の出典: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （飽和脂肪酸・食物繊維は非公表のため推定）。パックごはんは過去記録の値を流用。",
+    "tags": [
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
