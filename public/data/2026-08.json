@@ -1864,5 +1864,135 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-11T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-11T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/11-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 うまトマチーズ牛めし（並盛）の半分（テイクアウト）",
+        "nutrition": {
+          "energy_kcal": 449,
+          "protein_g": 13.5,
+          "fat_g": 23.3,
+          "saturated_fat_g": 8.5,
+          "carbohydrate_g": 44.3,
+          "sugar_g": 42.5,
+          "fiber_g": 1.8,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）の半分",
+        "nutrition": {
+          "energy_kcal": 122,
+          "protein_g": 4.6,
+          "fat_g": 7.5,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 8.8,
+          "sugar_g": 7.5,
+          "fiber_g": 1.3,
+          "salt_g": 1.6
+        }
+      }
+    ],
+    "memo": "松屋テイクアウト。うまトマチーズ牛めしと豚汁を朝・昼・夜に分けて食べた朝のぶん（牛めし半分＋豚汁半分）。うまトマチーズ牛めし 並盛: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html （公式933kcalはみそ汁込みのため、みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html 35kcal/塩1.5g を控除して単品898kcalとし、その半量）。豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （243kcalの半量）。飽和脂肪酸・食物繊維は非公表のため推定。",
+    "tags": [
+      "外食",
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-11T12:30:00+09:00-lunch",
+    "datetime": "2026-08-11T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/11-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 うまトマチーズ牛めし（並盛）の残り半分（テイクアウト）",
+        "nutrition": {
+          "energy_kcal": 449,
+          "protein_g": 13.5,
+          "fat_g": 23.3,
+          "saturated_fat_g": 8.5,
+          "carbohydrate_g": 44.3,
+          "sugar_g": 42.5,
+          "fiber_g": 1.8,
+          "salt_g": 1.8
+        }
+      }
+    ],
+    "memo": "朝に食べた松屋 うまトマチーズ牛めし（並盛）の残り半分。写真は朝と同じテイクアウト時のもの。出典: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html （公式933kcalはみそ汁込みのため、みそ汁35kcal/塩1.5gを控除した単品898kcalの半量）。飽和脂肪酸・食物繊維は非公表のため推定。",
+    "tags": [
+      "外食",
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-11T20:00:00+09:00-dinner",
+    "datetime": "2026-08-11T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/11-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ兜 半分の塩焼き（可食部 約110g）",
+        "nutrition": {
+          "energy_kcal": 245,
+          "protein_g": 23,
+          "fat_g": 19,
+          "saturated_fat_g": 6.1,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）の残り半分",
+        "nutrition": {
+          "energy_kcal": 122,
+          "protein_g": 4.6,
+          "fat_g": 7.5,
+          "saturated_fat_g": 2.5,
+          "carbohydrate_g": 8.8,
+          "sugar_g": 7.5,
+          "fiber_g": 1.3,
+          "salt_g": 1.6
+        }
+      }
+    ],
+    "memo": "ブリ兜は半割りの片側を塩焼き。可食部は約110gと見て、過去記録『ブリカマ塩焼き（約150g・可食部）333kcal』から比例換算した推定値。パックごはんは写真のパッケージ（テーブルマーク・新潟魚沼工場製 180g）で過去記録の値を流用。豚汁は朝の残り半分（https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html 243kcalの半量）。",
+    "tags": [
+      "自炊",
+      "魚",
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
