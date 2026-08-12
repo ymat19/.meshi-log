@@ -2107,5 +2107,61 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-12T21:00:00+09:00-snack",
+    "datetime": "2026-08-12T21:00:00+09:00",
+    "type": "snack",
+    "photos": [],
+    "items": [
+      {
+        "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.3,
+          "sugar_g": 3.3,
+          "fiber_g": 0,
+          "salt_g": 0.5,
+          "alcohol_g": 36
+        }
+      },
+      {
+        "name": "宝焼酎のやわらかお茶割り（緑茶割り）4% 350ml",
+        "nutrition": {
+          "energy_kcal": 84,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.04,
+          "alcohol_g": 11
+        }
+      },
+      {
+        "name": "宝焼酎の烏龍割り（ウーロン割り）6% 350ml",
+        "nutrition": {
+          "energy_kcal": 130,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 16.6
+        }
+      }
+    ],
+    "memo": "夜の飲酒のみ（食事なし・本人申告）。【ストロングゼロ ダブルレモン 500ml】7/30 記録の確定値（270kcal/炭水化物3.3/食塩0.5/アルコール36g）を流用。【茶割り2種】本人申告「コンビニで売っている一番メジャーなやつ」より、緑茶割り・ウーロン割りが揃うコンビニ定番の宝酒造「宝焼酎のお茶割りシリーズ」と同定。公式の100mlあたり値（やわらかお茶割り 4%: 24kcal/炭水化物0/食塩0.01、烏龍割り 6%: 37kcal/炭水化物0/食塩0）を本人申告の350mlに換算した。出典: https://www.takarashuzo.co.jp/soudan/eiyo/chuhai.html ・ https://www.takarashuzo.co.jp/products/soft_alcohol/ochawari/ （なお同シリーズの実際の缶容量は335ml／480ml で350ml缶は無いため、本人申告の350mlで計上している。銘柄違いなら要訂正）。純アルコール量は 容量×度数×0.789 で算出（緑茶割り11.0g、ウーロン割り16.6g）。両商品とも公式に糖質0g・たんぱく質0g・脂質0gのため0を記載。",
+    "tags": [
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
