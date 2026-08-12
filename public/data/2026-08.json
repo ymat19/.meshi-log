@@ -2109,6 +2109,61 @@
     "schemaVersion": 1
   },
   {
+    "id": "2026-08-12T20:00:00+09:00-dinner",
+    "datetime": "2026-08-12T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/12-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 うまトマ牛めし（並盛・テイクアウト）",
+        "nutrition": {
+          "energy_kcal": 898,
+          "protein_g": 27,
+          "fat_g": 46.6,
+          "saturated_fat_g": 17,
+          "carbohydrate_g": 88.6,
+          "sugar_g": 85,
+          "fiber_g": 3.6,
+          "salt_g": 3.6
+        }
+      },
+      {
+        "name": "松屋 温泉卵 2個",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 12,
+          "fat_g": 10,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.6,
+          "sugar_g": 0.6,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）の 2/3",
+        "nutrition": {
+          "energy_kcal": 162,
+          "protein_g": 6.1,
+          "fat_g": 9.9,
+          "saturated_fat_g": 3.3,
+          "carbohydrate_g": 11.7,
+          "sugar_g": 10.1,
+          "fiber_g": 1.7,
+          "salt_g": 2.1
+        }
+      }
+    ],
+    "memo": "夕食。松屋テイクアウト（うまトマ牛めし＋温泉卵2個＋豚汁2/3・本人申告）。同日朝の豚汁と同じテイクアウト注文。【うまトマ牛めし 並盛】品名は本人申告どおり。松屋の現行メニューにチーズ抜きの単独商品は無く、公式は「うまトマチーズ牛めし」のみのため、8/11 に記録した同一商品と同じ導出値を使用（公式933kcal https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html はみそ汁込みのため、みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html 35kcal/塩1.5g を控除して単品898kcalとした）。飽和脂肪酸・食物繊維は非公表のため推定。【温泉卵 2個】ウェブ検索が実行できなかったため、過去記録 2026-07-04『温泉卵 1個』（70kcal/P6/F5/飽和1.5/炭水化物0.3/塩0.2）を2個分に換算して流用。【豚汁】https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （243kcal/P9.2/脂質14.9/炭水化物17.6/食塩3.2）の 2/3 量。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
     "id": "2026-08-12T21:00:00+09:00-snack",
     "datetime": "2026-08-12T21:00:00+09:00",
     "type": "snack",
@@ -2157,7 +2212,7 @@
         }
       }
     ],
-    "memo": "夜の飲酒のみ（食事なし・本人申告）。【ストロングゼロ ダブルレモン 500ml】7/30 記録の確定値（270kcal/炭水化物3.3/食塩0.5/アルコール36g）を流用。【茶割り2種】本人申告「コンビニで売っている一番メジャーなやつ」より、緑茶割り・ウーロン割りが揃うコンビニ定番の宝酒造「宝焼酎のお茶割りシリーズ」と同定。公式の100mlあたり値（やわらかお茶割り 4%: 24kcal/炭水化物0/食塩0.01、烏龍割り 6%: 37kcal/炭水化物0/食塩0）を本人申告の350mlに換算した。出典: https://www.takarashuzo.co.jp/soudan/eiyo/chuhai.html ・ https://www.takarashuzo.co.jp/products/soft_alcohol/ochawari/ （なお同シリーズの実際の缶容量は335ml／480ml で350ml缶は無いため、本人申告の350mlで計上している。銘柄違いなら要訂正）。純アルコール量は 容量×度数×0.789 で算出（緑茶割り11.0g、ウーロン割り16.6g）。両商品とも公式に糖質0g・たんぱく質0g・脂質0gのため0を記載。",
+    "memo": "夜の飲酒ぶん（同じ夜の食事は 20:00 の夕食エントリに別途記録済み）。【ストロングゼロ ダブルレモン 500ml】7/30 記録の確定値（270kcal/炭水化物3.3/食塩0.5/アルコール36g）を流用。【茶割り2種】本人申告「コンビニで売っている一番メジャーなやつ」より、緑茶割り・ウーロン割りが揃うコンビニ定番の宝酒造「宝焼酎のお茶割りシリーズ」と同定。公式の100mlあたり値（やわらかお茶割り 4%: 24kcal/炭水化物0/食塩0.01、烏龍割り 6%: 37kcal/炭水化物0/食塩0）を本人申告の350mlに換算した。出典: https://www.takarashuzo.co.jp/soudan/eiyo/chuhai.html ・ https://www.takarashuzo.co.jp/products/soft_alcohol/ochawari/ （なお同シリーズの実際の缶容量は335ml／480ml で350ml缶は無いため、本人申告の350mlで計上している。銘柄違いなら要訂正）。純アルコール量は 容量×度数×0.789 で算出（緑茶割り11.0g、ウーロン割り16.6g）。両商品とも公式に糖質0g・たんぱく質0g・脂質0gのため0を記載。",
     "tags": [
       "お酒"
     ],
