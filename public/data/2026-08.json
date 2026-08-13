@@ -2218,5 +2218,133 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-13T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-13T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/13-0800-breakfast-1.webp",
+      "images/2026/08/13-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリの漬け（約100g・醤油だれ）",
+        "nutrition": {
+          "energy_kcal": 270,
+          "protein_g": 21.6,
+          "fat_g": 17.6,
+          "saturated_fat_g": 4.4,
+          "carbohydrate_g": 1.8,
+          "sugar_g": 1.8,
+          "fiber_g": 0,
+          "salt_g": 1.4
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "きざみ海苔・小ねぎ・白ごま（約15g）",
+        "nutrition": {
+          "energy_kcal": 20,
+          "protein_g": 1.2,
+          "fat_g": 0.9,
+          "saturated_fat_g": 0.15,
+          "carbohydrate_g": 1.8,
+          "sugar_g": 0.9,
+          "fiber_g": 0.9,
+          "salt_g": 0.05
+        }
+      },
+      {
+        "name": "松屋 豚汁（単品）",
+        "nutrition": {
+          "energy_kcal": 243,
+          "protein_g": 9.2,
+          "fat_g": 14.9,
+          "saturated_fat_g": 5,
+          "carbohydrate_g": 17.6,
+          "sugar_g": 15.1,
+          "fiber_g": 2.5,
+          "salt_g": 3.2
+        }
+      }
+    ],
+    "memo": "ブリの漬け＝過去ログ「ブリ刺身（約100g）」の実値に漬けだれ分を加算。松屋 豚汁（単品）＝過去ログの実値を流用: https://www.matsuyafoods.co.jp/matsuya/pdf/nutrition.pdf",
+    "tags": [
+      "自炊",
+      "魚",
+      "丼"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-13T12:30:00+09:00-lunch",
+    "datetime": "2026-08-13T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/13-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "完全メシ 日清焼そばU.F.O.（日清食品・1食123g）",
+        "nutrition": {
+          "energy_kcal": 458,
+          "protein_g": 18,
+          "fat_g": 13.9,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 71.1,
+          "sugar_g": 61.2,
+          "fiber_g": 9.9,
+          "salt_g": 3.6
+        }
+      },
+      {
+        "name": "温泉卵 2個",
+        "nutrition": {
+          "energy_kcal": 140,
+          "protein_g": 12,
+          "fat_g": 10,
+          "saturated_fat_g": 3,
+          "carbohydrate_g": 0.6,
+          "sugar_g": 0.6,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "完全メシ 日清焼そばU.F.O.: https://www.nissin.com/jp/products/items/12179 / ザバス MILK PROTEIN 脂肪0 キャラメル風味: https://www.meiji.co.jp/products/savas/  いずれも過去ログの実値を流用",
+    "tags": [
+      "中食",
+      "麺",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
