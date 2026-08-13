@@ -2346,5 +2346,62 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-13T21:00:00+09:00-dinner",
+    "datetime": "2026-08-13T21:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/13-2100-dinner-1.webp",
+      "images/2026/08/13-2100-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "ブリ刺身（約100g）",
+        "nutrition": {
+          "energy_kcal": 257,
+          "protein_g": 21,
+          "fat_g": 17.6,
+          "saturated_fat_g": 4.4,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "醤油 小さじ2＋わさび少々",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.9,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0.9,
+          "sugar_g": 0.9,
+          "fiber_g": 0,
+          "salt_g": 1.7
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "ブリ刺身・醤油わさび・パックごはん180g はいずれも過去ログの実値を流用（テーブルマーク 炊きたてごはん 新潟魚沼工場製 180g）",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
