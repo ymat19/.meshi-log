@@ -2403,5 +2403,118 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-17T10:30:00+09:00-breakfast",
+    "datetime": "2026-08-17T10:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/17-1030-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "ベーコンレタスバーガー（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 362,
+          "protein_g": 17.5,
+          "fat_g": 19.4,
+          "saturated_fat_g": 7.31,
+          "carbohydrate_g": 30.1,
+          "sugar_g": 28.6,
+          "fiber_g": 1.5,
+          "salt_g": 2.2
+        }
+      },
+      {
+        "name": "マックフライポテト L（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 517,
+          "protein_g": 7,
+          "fat_g": 25.2,
+          "saturated_fat_g": 9.45,
+          "carbohydrate_g": 66,
+          "sugar_g": 59.7,
+          "fiber_g": 6.3,
+          "salt_g": 0.9
+        }
+      },
+      {
+        "name": "コカ・コーラ ゼロ（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      }
+    ],
+    "memo": "マクドナルドのセット（本人申告: ポテトL・ドリンクはコカ・コーラ ゼロ）。出典 — ベーコンレタスバーガー公式 https://www.mcdonalds.co.jp/products/1040/ （362kcal/P17.5/F19.4/飽和7.31/炭水化物30.1/食塩2.2）、食物繊維のみ公式非掲載のためバンズ＋レタスから1.5g と推定。マックフライポテトL公式 https://www.mcdonalds.co.jp/products/2050/ （517kcal/P7.0/F25.2/飽和9.45/炭水化物66.0/食塩0.9）、食物繊維は公式非掲載のため過去ログの推定値6.3gを流用。コカ・コーラ ゼロは0kcal、食塩は微量ナトリウムぶんで過去ログの確定値を流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-17T13:00:00+09:00-lunch",
+    "datetime": "2026-08-17T13:00:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/17-1300-lunch.webp",
+      "images/2026/08/17-1300-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "味の素 ギョーザ 6個",
+        "nutrition": {
+          "energy_kcal": 210,
+          "protein_g": 8.4,
+          "fat_g": 8.4,
+          "saturated_fat_g": 2.6,
+          "carbohydrate_g": 24.6,
+          "sugar_g": 22.8,
+          "fiber_g": 1.8,
+          "salt_g": 1.44
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク新潟魚沼工場製）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "餃子は本人申告どおり味の素ギョーザ6個。出典 — 味の素冷凍食品 ギョーザ公式 https://www.ffa.ajinomoto.com/products/detail/id/293 （1個23gあたり 35kcal/P1.4/F1.4/炭水化物4.1/食塩0.24）を6個ぶんに換算。油・水不要タイプのため調理油の加算なし。飽和脂肪酸と食物繊維のみ公式非掲載のため、豚肉・皮・キャベツから推定（飽和2.6g／繊維1.8g）。パックごはんはパッケージ表示（265kcal/P4.5/F0.5/炭水化物60.5/食塩0.0）＋過去ログの確定値を流用。ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml は過去ログの確定値を流用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
