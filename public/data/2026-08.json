@@ -2588,5 +2588,63 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-18T20:00:00+09:00-dinner",
+    "datetime": "2026-08-18T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/18-2000-dinner-1.webp",
+      "images/2026/08/18-2000-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 うまトマチーズ牛めし（並盛）※公式表示（みそ汁込み）そのまま",
+        "nutrition": {
+          "energy_kcal": 933,
+          "protein_g": 28.7,
+          "fat_g": 47.9,
+          "saturated_fat_g": 17.3,
+          "carbohydrate_g": 92.3,
+          "sugar_g": 88.6,
+          "fiber_g": 3.7,
+          "salt_g": 5
+        }
+      },
+      {
+        "name": "温泉卵 1個（松屋・公式「半熟玉子」表示値）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 5.8,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "夕食。うまトマチーズ牛めし（並盛・全量）に温泉卵1個をのせ、ザバスを併飲（本人申告）。全項目、過去記録の流用をせず今回一次情報を引き直した。【松屋 うまトマチーズ牛めし 並盛】松屋公式メニューページ https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html の並盛表示値 933kcal/P28.7/脂質47.9/炭水化物92.3/食塩5.0 を減算・加工せずそのまま採用。公式注記「特定原材料・栄養成分の数値には、みそ汁も含まれております」のとおり、この値はみそ汁込みの表示である（8/11・8/12 の記録はここからみそ汁35kcal/塩1.5gを引いた898kcalを使っており、本エントリとは基準が異なる）。飽和脂肪酸17.3gと食物繊維3.7gのみ公式非掲載のため推定（脂質・炭水化物の内訳からの推定値）。糖質=炭水化物-食物繊維=88.6。【温泉卵 1個】松屋公式サイドメニュー「半熟玉子」表示値 71kcal/P5.8/脂質4.8/炭水化物0.1/食塩0.2 を採用 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_tamago_han_hp_250422.html （公式メニューに「温泉玉子」の掲載は無く、同一形態の半熟玉子の表示値を用いた。品名は本人申告どおり温泉卵と記載）。飽和脂肪酸1.6gのみ非掲載のため鶏卵の脂質組成から推定。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】明治公式 https://www.meiji.co.jp/products/sports/4902705095465.html の1本200ml当たり表示 107kcal/P20.0/脂質0/炭水化物6.8（糖類6.5・食物繊維0〜0.7）/食塩相当量0.19 を採用。食物繊維は公式レンジの中央値0.3として糖質6.5とした。",
+    "tags": [
+      "中食",
+      "松屋",
+      "プロテイン"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
