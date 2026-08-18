@@ -2518,6 +2518,49 @@
     "schemaVersion": 1
   },
   {
+    "id": "2026-08-17T20:00:00+09:00-dinner",
+    "datetime": "2026-08-17T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/17-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "一本釣り鰹だし香る石臼挽そば粉のざるそば（セブンイレブン・1食）",
+        "nutrition": {
+          "energy_kcal": 334,
+          "protein_g": 16.3,
+          "fat_g": 3,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 63.1,
+          "sugar_g": 57.9,
+          "fiber_g": 5.2,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "手巻寿司 納豆巻（セブンイレブン・1本）",
+        "nutrition": {
+          "energy_kcal": 178,
+          "protein_g": 5,
+          "fat_g": 2,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 36.3,
+          "sugar_g": 33.5,
+          "fiber_g": 2.8,
+          "salt_g": 1.9
+        }
+      }
+    ],
+    "memo": "セブンイレブンの中食2品。既製品出典 — 一本釣り鰹だし香る石臼挽そば粉のざるそば: 今回あらためて公式を引き直し、公式表示 334kcal/P16.3/F3.0/炭水化物63.1(糖質57.9・食物繊維5.2)/食塩2.0g をそのまま採用 https://www.sej.co.jp/products/a/item/090415/ （写真の値段シールの 334kcal・製造ニッセーデリカ湘南工場と一致）。手巻寿司 納豆巻: 公式表示 178kcal/P5.0/F2.0/炭水化物36.3(糖質33.5・食物繊維2.8)/食塩1.9g https://www.sej.co.jp/products/a/item/041436/ 。飽和脂肪酸のみ両商品とも公式ページに掲載が無いことを確認したうえで推定（そば0.6g＝そば粉・小麦由来の脂質から、納豆巻0.3g＝大豆・米由来の脂質から）。わさび・刻み海苔・つゆはそばの表示値に含む。時刻は本人申告が無いため夕食の標準として20:00で記録。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
     "id": "2026-08-18T08:00:00+09:00-breakfast",
     "datetime": "2026-08-18T08:00:00+09:00",
     "type": "breakfast",
