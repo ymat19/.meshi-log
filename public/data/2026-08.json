@@ -1874,16 +1874,16 @@
     ],
     "items": [
       {
-        "name": "松屋 うまトマチーズ牛めし（並盛）の半分（テイクアウト）",
+        "name": "松屋 うまトマチーズ牛めし（並盛・みそ汁なし）の半分（テイクアウト）",
         "nutrition": {
           "energy_kcal": 449,
-          "protein_g": 13.5,
+          "protein_g": 13.45,
           "fat_g": 23.3,
-          "saturated_fat_g": 8.5,
+          "saturated_fat_g": 8.55,
           "carbohydrate_g": 44.3,
-          "sugar_g": 42.5,
-          "fiber_g": 1.8,
-          "salt_g": 1.8
+          "sugar_g": 42.6,
+          "fiber_g": 1.7,
+          "salt_g": 1.75
         }
       },
       {
@@ -1900,7 +1900,7 @@
         }
       }
     ],
-    "memo": "松屋テイクアウト。うまトマチーズ牛めしと豚汁を朝・昼・夜に分けて食べた朝のぶん（牛めし半分＋豚汁半分）。うまトマチーズ牛めし 並盛: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html （公式933kcalはみそ汁込みのため、みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html 35kcal/塩1.5g を控除して単品898kcalとし、その半量）。豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （243kcalの半量）。飽和脂肪酸・食物繊維は非公表のため推定。",
+    "memo": "松屋テイクアウト。うまトマチーズ牛めしと豚汁を朝・昼・夜に分けて食べた朝のぶん（牛めし半分＋豚汁半分）。うまトマチーズ牛めし 並盛: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html （公式933kcalはみそ汁込みのため、みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html 35kcal/塩1.5g を控除して単品898kcalとし、その半量）。豚汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （243kcalの半量）。飽和脂肪酸・食物繊維は非公表のため推定。 【2026-08-18 訂正】食塩相当量を訂正。公式並盛5.0gからみそ汁1.5gを引くと3.5g（半量1.75g）だが、1.8g（全量換算3.6g）と誤って記録していた。あわせて、みそ汁を減算した調整値であることが item 名から見えるよう「（並盛・みそ汁なし）」を明記し、たんぱく質も 27.0→26.9（28.7-1.8の正しい差）に訂正した。公式値: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html ／ みそ汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html",
     "tags": [
       "外食",
       "中食"
@@ -1917,20 +1917,20 @@
     ],
     "items": [
       {
-        "name": "松屋 うまトマチーズ牛めし（並盛）の残り半分（テイクアウト）",
+        "name": "松屋 うまトマチーズ牛めし（並盛・みそ汁なし）の残り半分（テイクアウト）",
         "nutrition": {
           "energy_kcal": 449,
-          "protein_g": 13.5,
+          "protein_g": 13.45,
           "fat_g": 23.3,
-          "saturated_fat_g": 8.5,
+          "saturated_fat_g": 8.55,
           "carbohydrate_g": 44.3,
-          "sugar_g": 42.5,
-          "fiber_g": 1.8,
-          "salt_g": 1.8
+          "sugar_g": 42.6,
+          "fiber_g": 1.7,
+          "salt_g": 1.75
         }
       }
     ],
-    "memo": "朝に食べた松屋 うまトマチーズ牛めし（並盛）の残り半分。写真は朝と同じテイクアウト時のもの。出典: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html （公式933kcalはみそ汁込みのため、みそ汁35kcal/塩1.5gを控除した単品898kcalの半量）。飽和脂肪酸・食物繊維は非公表のため推定。",
+    "memo": "朝に食べた松屋 うまトマチーズ牛めし（並盛）の残り半分。写真は朝と同じテイクアウト時のもの。出典: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html （公式933kcalはみそ汁込みのため、みそ汁35kcal/塩1.5gを控除した単品898kcalの半量）。飽和脂肪酸・食物繊維は非公表のため推定。 【2026-08-18 訂正】食塩相当量を訂正（公式5.0−みそ汁1.5=3.5g の半量1.75g。従来1.8g）。あわせて item 名にみそ汁減算済みであることを明記し、たんぱく質を 27.0→26.9 に訂正。公式値: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html ／ みそ汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html",
     "tags": [
       "外食",
       "中食"
@@ -2117,16 +2117,16 @@
     ],
     "items": [
       {
-        "name": "松屋 うまトマ牛めし（並盛・テイクアウト）",
+        "name": "松屋 うまトマチーズ牛めし（並盛・みそ汁なし）（テイクアウト）",
         "nutrition": {
           "energy_kcal": 898,
-          "protein_g": 27,
+          "protein_g": 26.9,
           "fat_g": 46.6,
-          "saturated_fat_g": 17,
+          "saturated_fat_g": 17.1,
           "carbohydrate_g": 88.6,
-          "sugar_g": 85,
-          "fiber_g": 3.6,
-          "salt_g": 3.6
+          "sugar_g": 85.2,
+          "fiber_g": 3.4,
+          "salt_g": 3.5
         }
       },
       {
@@ -2156,7 +2156,7 @@
         }
       }
     ],
-    "memo": "夕食。松屋テイクアウト（うまトマ牛めし＋温泉卵2個＋豚汁2/3・本人申告）。同日朝の豚汁と同じテイクアウト注文。【うまトマ牛めし 並盛】品名は本人申告どおり。松屋の現行メニューにチーズ抜きの単独商品は無く、公式は「うまトマチーズ牛めし」のみのため、8/11 に記録した同一商品と同じ導出値を使用（公式933kcal https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html はみそ汁込みのため、みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html 35kcal/塩1.5g を控除して単品898kcalとした）。飽和脂肪酸・食物繊維は非公表のため推定。【温泉卵 2個】ウェブ検索が実行できなかったため、過去記録 2026-07-04『温泉卵 1個』（70kcal/P6/F5/飽和1.5/炭水化物0.3/塩0.2）を2個分に換算して流用。【豚汁】https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （243kcal/P9.2/脂質14.9/炭水化物17.6/食塩3.2）の 2/3 量。糖質=炭水化物-食物繊維。",
+    "memo": "夕食。松屋テイクアウト（うまトマ牛めし＋温泉卵2個＋豚汁2/3・本人申告）。同日朝の豚汁と同じテイクアウト注文。【うまトマ牛めし 並盛】品名は本人申告どおり。松屋の現行メニューにチーズ抜きの単独商品は無く、公式は「うまトマチーズ牛めし」のみのため、8/11 に記録した同一商品と同じ導出値を使用（公式933kcal https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html はみそ汁込みのため、みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html 35kcal/塩1.5g を控除して単品898kcalとした）。飽和脂肪酸・食物繊維は非公表のため推定。【温泉卵 2個】ウェブ検索が実行できなかったため、過去記録 2026-07-04『温泉卵 1個』（70kcal/P6/F5/飽和1.5/炭水化物0.3/塩0.2）を2個分に換算して流用。【豚汁】https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_tonjiru_hp_240716.html （243kcal/P9.2/脂質14.9/炭水化物17.6/食塩3.2）の 2/3 量。糖質=炭水化物-食物繊維。 【2026-08-18 訂正】食塩相当量 3.6→3.5g（公式5.0−みそ汁1.5）、たんぱく質 27.0→26.9g（公式28.7−みそ汁1.8）に訂正。item 名は、公式メニューにチーズ抜きの単独商品が存在せず本エントリが公式「うまトマチーズ牛めし」の値を用いていることを明示するため「うまトマチーズ牛めし（並盛・みそ汁なし）」に統一した。公式値: https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html ／ みそ汁: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html",
     "tags": [
       "中食"
     ],
@@ -2599,16 +2599,16 @@
     ],
     "items": [
       {
-        "name": "松屋 うまトマチーズ牛めし（並盛）※公式表示（みそ汁込み）そのまま",
+        "name": "松屋 うまトマチーズ牛めし（並盛・みそ汁なし）",
         "nutrition": {
-          "energy_kcal": 933,
-          "protein_g": 28.7,
-          "fat_g": 47.9,
-          "saturated_fat_g": 17.3,
-          "carbohydrate_g": 92.3,
-          "sugar_g": 88.6,
-          "fiber_g": 3.7,
-          "salt_g": 5
+          "energy_kcal": 898,
+          "protein_g": 26.9,
+          "fat_g": 46.6,
+          "saturated_fat_g": 17.1,
+          "carbohydrate_g": 88.6,
+          "sugar_g": 85.2,
+          "fiber_g": 3.4,
+          "salt_g": 3.5
         }
       },
       {
@@ -2638,7 +2638,7 @@
         }
       }
     ],
-    "memo": "夕食。うまトマチーズ牛めし（並盛・全量）に温泉卵1個をのせ、ザバスを併飲（本人申告）。全項目、過去記録の流用をせず今回一次情報を引き直した。【松屋 うまトマチーズ牛めし 並盛】松屋公式メニューページ https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html の並盛表示値 933kcal/P28.7/脂質47.9/炭水化物92.3/食塩5.0 を減算・加工せずそのまま採用。公式注記「特定原材料・栄養成分の数値には、みそ汁も含まれております」のとおり、この値はみそ汁込みの表示である（8/11・8/12 の記録はここからみそ汁35kcal/塩1.5gを引いた898kcalを使っており、本エントリとは基準が異なる）。飽和脂肪酸17.3gと食物繊維3.7gのみ公式非掲載のため推定（脂質・炭水化物の内訳からの推定値）。糖質=炭水化物-食物繊維=88.6。【温泉卵 1個】松屋公式サイドメニュー「半熟玉子」表示値 71kcal/P5.8/脂質4.8/炭水化物0.1/食塩0.2 を採用 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_tamago_han_hp_250422.html （公式メニューに「温泉玉子」の掲載は無く、同一形態の半熟玉子の表示値を用いた。品名は本人申告どおり温泉卵と記載）。飽和脂肪酸1.6gのみ非掲載のため鶏卵の脂質組成から推定。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】明治公式 https://www.meiji.co.jp/products/sports/4902705095465.html の1本200ml当たり表示 107kcal/P20.0/脂質0/炭水化物6.8（糖類6.5・食物繊維0〜0.7）/食塩相当量0.19 を採用。食物繊維は公式レンジの中央値0.3として糖質6.5とした。",
+    "memo": "夕食。うまトマチーズ牛めし（並盛・全量）に温泉卵1個をのせ、ザバスを併飲（本人申告）。全項目、過去記録の流用をせず今回一次情報を引き直した。【松屋 うまトマチーズ牛めし 並盛】松屋公式メニューページ https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html の並盛表示値 933kcal/P28.7/脂質47.9/炭水化物92.3/食塩5.0 を減算・加工せずそのまま採用。公式注記「特定原材料・栄養成分の数値には、みそ汁も含まれております」のとおり、この値はみそ汁込みの表示である（8/11・8/12 の記録はここからみそ汁35kcal/塩1.5gを引いた898kcalを使っており、本エントリとは基準が異なる）。飽和脂肪酸17.3gと食物繊維3.7gのみ公式非掲載のため推定（脂質・炭水化物の内訳からの推定値）。糖質=炭水化物-食物繊維=88.6。【温泉卵 1個】松屋公式サイドメニュー「半熟玉子」表示値 71kcal/P5.8/脂質4.8/炭水化物0.1/食塩0.2 を採用 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_tamago_han_hp_250422.html （公式メニューに「温泉玉子」の掲載は無く、同一形態の半熟玉子の表示値を用いた。品名は本人申告どおり温泉卵と記載）。飽和脂肪酸1.6gのみ非掲載のため鶏卵の脂質組成から推定。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】明治公式 https://www.meiji.co.jp/products/sports/4902705095465.html の1本200ml当たり表示 107kcal/P20.0/脂質0/炭水化物6.8（糖類6.5・食物繊維0〜0.7）/食塩相当量0.19 を採用。食物繊維は公式レンジの中央値0.3として糖質6.5とした。 【2026-08-18 訂正】自宅で食べた（ザバス併飲・店内飲食ではない）ためみそ汁は付かない。公式表示933kcal/塩5.0gはみそ汁込みの数値なので、公式みそ汁35kcal/P1.8/F1.3/C3.7/塩1.5を差し引いた 898kcal/P26.9/F46.6/C88.6/塩3.5 に訂正した。減算していることが item 名から見えるよう「（みそ汁なし）」を明記。8/11・8/12 の同一商品と同じ基準に統一した。",
     "tags": [
       "中食",
       "松屋",

@@ -1348,14 +1348,14 @@
       {
         "name": "松屋 うまトマハンバーグ（単品）",
         "nutrition": {
-          "energy_kcal": 487,
-          "protein_g": 28.3,
-          "fat_g": 29.5,
-          "carbohydrate_g": 24.8,
-          "salt_g": 4.4,
-          "saturated_fat_g": 11,
-          "sugar_g": 22.8,
-          "fiber_g": 2
+          "energy_kcal": 582,
+          "protein_g": 28,
+          "fat_g": 37.5,
+          "saturated_fat_g": 14,
+          "carbohydrate_g": 27.6,
+          "sugar_g": 25.4,
+          "fiber_g": 2.2,
+          "salt_g": 4.7
         }
       },
       {
@@ -1412,7 +1412,7 @@
         }
       }
     ],
-    "memo": "推定値。松屋 うまトマハンバーグ単品: https://food-db.work/foods/matsuya-ldr324/（公式 https://www.matsuyafoods.co.jp）/ チーズ2枚・ピーマンは推定。ストロングゼロは既往記録値。",
+    "memo": "推定値。松屋 うまトマハンバーグ単品: https://food-db.work/foods/matsuya-ldr324/（公式 https://www.matsuyafoods.co.jp）/ チーズ2枚・ピーマンは推定。ストロングゼロは既往記録値。 【2026-08-18 訂正】うまトマハンバーグ（単品）の栄養値を、非公式の個人サイト(food-db.work)由来の 487kcal/P28.3/F29.5/C24.8/塩4.4 から、松屋公式の栄養成分一覧 https://www.matsuyafoods.co.jp/matsuya/pdf/260224_nutritional_matsuya.pdf の「うまトマハンバーグ（単品）582 28.0 37.5 27.6 4.7」に差し替えた（既製品は公式必須のルール違反だったため）。飽和脂肪酸14.0gと食物繊維2.2gは公式非掲載のため脂質・炭水化物量に比例させた推定。糖質=炭水化物-食物繊維。",
     "tags": [
       "外食",
       "お酒"
@@ -1507,14 +1507,14 @@
       {
         "name": "松屋 牛皿（並・1つ）",
         "nutrition": {
-          "energy_kcal": 377,
-          "protein_g": 12.4,
-          "fat_g": 33.7,
-          "carbohydrate_g": 6,
-          "salt_g": 1.6,
-          "saturated_fat_g": 14,
-          "fiber_g": 0.3,
-          "sugar_g": 5.7
+          "energy_kcal": 299,
+          "protein_g": 9.8,
+          "fat_g": 26.9,
+          "saturated_fat_g": 11.2,
+          "carbohydrate_g": 4.3,
+          "sugar_g": 4.1,
+          "fiber_g": 0.2,
+          "salt_g": 1.1
         }
       },
       {
@@ -1584,7 +1584,7 @@
         }
       }
     ],
-    "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは個包装ミニ1個（約25g、6/23と同型）に訂正。豆腐・ごはん量は推定。",
+    "memo": "牛皿を白ごはんに乗せ卵黄を落とした牛丼。松屋 牛皿: https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/side_gyuu_hp_240716.html / -196ストロング無糖ドライ: https://products.suntory.co.jp/d/4901777240971/ / カマンベールは個包装ミニ1個（約25g、6/23と同型）に訂正。豆腐・ごはん量は推定。 【2026-08-18 訂正】牛皿「並」として記録しながら、松屋公式の栄養成分一覧で「牛皿（大盛）377 12.4 33.7 6.0 1.6」の行の数値を採ってしまっていた（行の取り違え）。公式 https://www.matsuyafoods.co.jp/matsuya/pdf/260224_nutritional_matsuya.pdf の「牛皿（並）299 9.8 26.9 4.3 1.1」に訂正（-78kcal）。飽和脂肪酸11.2gと食物繊維0.2gは公式非掲載のため脂質・炭水化物量に比例させた推定。糖質=炭水化物-食物繊維。",
     "tags": [
       "外食",
       "お酒",
