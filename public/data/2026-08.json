@@ -2772,5 +2772,49 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-19T12:30:00+09:00-lunch",
+    "datetime": "2026-08-19T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/19-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "焼きとうもろこし（自分で焼いた・1/2本・可食部約100g）",
+        "nutrition": {
+          "energy_kcal": 104,
+          "protein_g": 4.2,
+          "fat_g": 2.2,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 19.1,
+          "sugar_g": 15.7,
+          "fiber_g": 3.4,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "本人申告：自分で焼いたとうもろこし 1/2本＋ザバス。【焼きとうもろこし】本人回答「自分で焼いた・1/2本」。とうもろこし1本の可食部は廃棄率50%で約200gのため、1/2本＝可食部約100gとして計上。直火焼きは水分が飛ぶ乾式加熱なので、日本食品標準成分表の「スイートコーン 未熟種子 電子レンジ調理」100g値をそのまま採用（104kcal/P4.2/脂質2.2/炭水化物19.1/食物繊維3.4/食塩0） https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06339_7 。参考に「生」は89kcal・廃棄率50% https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06175_7 。飽和脂肪酸は成分表の脂肪酸表（脂質1g当たり150mg）から脂質2.2g×0.150＝0.3gと算出。写真では醤油だれの照りが無く、味付けの申告も無かったため調味料は加算していない（バター・醤油・塩を使っていた場合は要修正）。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】明治公式 https://www.meiji.co.jp/products/sports/4902705095465.html の表示値（107kcal/P20.0/脂質0/炭水化物6.8（糖質6.5・食物繊維0〜0.7）/食塩0.19）。写真のパッケージに「常温保存可能」「ビタミンB6・ビタミンD配合」「キャラメル香料使用」の表記があり同商品と一致。食物繊維は幅表示の中央値0.3gを採用。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "プロテイン",
+      "高たんぱく"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
