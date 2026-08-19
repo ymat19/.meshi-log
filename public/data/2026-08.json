@@ -2689,5 +2689,88 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-19T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-19T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/19-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 ライス（並盛・テイクアウト）",
+        "nutrition": {
+          "energy_kcal": 344,
+          "protein_g": 5.1,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 76.1,
+          "sugar_g": 75.5,
+          "fiber_g": 0.6,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "松屋 オリジナルカレー（冷凍・1袋180g）",
+        "nutrition": {
+          "energy_kcal": 225,
+          "protein_g": 4.8,
+          "fat_g": 13.1,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 20.5,
+          "sugar_g": 19,
+          "fiber_g": 1.5,
+          "salt_g": 3.2
+        }
+      },
+      {
+        "name": "目玉焼き",
+        "nutrition": {
+          "energy_kcal": 100,
+          "protein_g": 7,
+          "fat_g": 8,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "イル・ド・フランス ミニカマンベール 1個（25g）",
+        "nutrition": {
+          "energy_kcal": 65,
+          "protein_g": 4.3,
+          "fat_g": 5.1,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "にんにく（縦割り・約20g）",
+        "nutrition": {
+          "energy_kcal": 26,
+          "protein_g": 1.3,
+          "fat_g": 0.2,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 5.5,
+          "sugar_g": 4.3,
+          "fiber_g": 1.2,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "本人申告「朝／ご飯／松屋冷凍カレー／カマンベールチーズ一個」＋写真から目玉焼き・にんにくを追加。ごはんは本人回答「松屋の米」の並盛。【松屋 ライス（並盛）】公式メニュー https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html の表示値 344kcal/P5.1/脂質0.6/炭水化物76.1/食塩0。飽和脂肪酸・食物繊維・糖質は公式非掲載のため、米飯（精白米）の標準組成から飽和0.2g・食物繊維0.6gと推定。松屋オンラインショップには白飯単体の商品が無い（ https://e-shop.matsuyafoods.co.jp/collections/gohan ）ため、店舗のテイクアウトライスとして計上した。【松屋 オリジナルカレー（冷凍・1袋180g）】今回引き直した公式値 https://e-shop.matsuyafoods.co.jp/products/kare1 （180g＝225kcal/P4.8/脂質13.1/炭水化物20.5/食塩3.2）。飽和脂肪酸・食物繊維は公式非掲載のためカレールウ標準から推定（飽和6.0／繊維1.5）。【目玉焼き】卵1個ぶん、過去ログ（6/20 等）の確定値。【イル・ド・フランス ミニカマンベール 1個（25g）】公式表示 65kcal/P4.3/脂質5.1/炭水化物0.4/食塩0.4 https://www.amazon.co.jp/dp/B0BL25BTCV 。飽和脂肪酸のみ非掲載のため乳脂肪の組成から3.2gと推定。【にんにく（縦割り・約20g）】写真を拡大して確認（くさび形の縦割り・断面に芽の窪み）。8/16 の同名記録と同値、日本食品標準成分表のにんにく りん茎 生を20gで換算。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "自炊",
+      "冷凍食品"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
