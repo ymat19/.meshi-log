@@ -17,6 +17,18 @@
 // 100g bases (176kcal vs 187kcal). Any two items whose names agree once their
 // size is stripped must agree per 100g/100ml as well.
 //
+// The fourth check keeps *annotations* out of item names. An item name is what
+// the dashboard renders, and it must say only what was eaten: the food (brand
+// and product name included) and how much of it. Everything else — where the
+// number came from, how it was estimated, which other dish it was dropped into,
+// whose leftovers it was, how many people split the plate, whether it was
+// takeout — is commentary. It belongs in the entry's memo, where the reasoning
+// already lives. Commentary in the name is not just noise: it silently splits
+// one food across several names (「生卵 1個」 vs 「生卵 1個（まぜそばに投入）」),
+// and the same-name check above then has nothing to compare, so the values are
+// free to drift apart unnoticed. That is exactly how the egg and 焼き海苔
+// records ended up on three different bases each.
+//
 // alcohol_g stays optional by design: it is only present when the item actually
 // contained alcohol (a sober meal legitimately omits it).
 //
@@ -94,6 +106,41 @@ const foodKeyOf = (name: string): string =>
     .replace(/\d+(?:\.\d+)?(ml|g|kg|本|枚|個|袋|杯|缶|パック|人前|切れ|尾|房|片)?/g, '')
     .replace(/[×x]/g, '')
 
+// --- 品名に混じった注釈の検出 --------------------------------------------
+// 品名に書いてよいのは「食品名（メーカー・商品名を含む）＋分量・実際に食べた内容」
+// だけ。根拠・経緯・文脈は memo に書く。
+const NAME_BANS: { pattern: RegExp; why: string }[] = [
+  {
+    pattern: /本人申告|記憶ベース|推定|流用|出典|表示値|非掲載|公式値|想定|不明|相当/,
+    why: '出典・推定方法・確度は memo に書く',
+  },
+  {
+    pattern: /テイクアウト|自炊|工場製/,
+    why: '入手経路・調理者・製造元の説明は memo に書く',
+  },
+  {
+    pattern: /シェア|\d+\s*人で|のうち/,
+    why: 'シェアや入数の内訳計算は memo に書く（品名には実際に食べた数量だけ書く）',
+  },
+  {
+    pattern: /に投入|に追加|にのせ|にかけ|に入れ/,
+    why: 'どの料理に入れたかは memo に書く',
+  },
+  {
+    pattern: /残り|昨日|一昨日|今朝|のぶん/,
+    why: 'いつの食べ残しか・何食目のぶんかは memo に書く',
+  },
+]
+
+interface NameProblem {
+  name: string
+  at: string
+  why: string
+  matched: string
+}
+
+const nameProblems: NameProblem[] = []
+
 interface Scaled {
   name: string
   at: string
@@ -144,6 +191,13 @@ for (const month of index.months) {
           ...(byFood.get(key) ?? []),
           { name: item.name, at: entry.id, portion, per100 },
         ])
+      }
+
+      for (const ban of NAME_BANS) {
+        const m = item.name.match(ban.pattern)
+        if (m) {
+          nameProblems.push({ name: item.name, at: entry.id, why: ban.why, matched: m[0] })
+        }
       }
 
       const variants = byName.get(item.name) ?? new Map<string, string[]>()
@@ -219,6 +273,26 @@ if (conflicts.length > 0) {
   process.exit(1)
 }
 
+if (nameProblems.length > 0) {
+  console.error(
+    `\n❌ データ検証に失敗: item 名に注釈が入っている品目が ${nameProblems.length} 件あります。\n`,
+  )
+  for (const p of nameProblems) {
+    console.error(`  「${p.name}」  (${p.at})`)
+    console.error(`      「${p.matched}」 は注釈です — ${p.why}`)
+  }
+  console.error(
+    `\nitem 名に書いてよいのは「食品名（メーカー・商品名を含む）＋分量・実際に\n` +
+      `食べた内容」だけです。それ以外は entry の memo に書いてください。\n` +
+      `・OK: 「相模屋 焼いておいしい絹厚揚げ 1枚（150g）」「松屋 牛めし（並盛）」\n` +
+      `      「松のや ロースかつ定食（ライス大盛・みそ汁/キャベツ込み）」「ポテトサラダ 半分」\n` +
+      `・NG: 「生卵 1個（まぜそばに投入）」「厚揚げ（2枚入りのうち1枚）」\n` +
+      `      「温泉卵（松屋・公式表示値）」「牛めし（テイクアウト）」「唐揚げ（シェア半分）」\n` +
+      `注釈は同じ食品を複数の品名に割り、上の同名チェックを無力化します。\n`,
+  )
+  process.exit(1)
+}
+
 if (scaleConflicts.length > 0) {
   console.error(
     `\n❌ データ検証に失敗: 同じ食品なのに 100g/100ml 換算が食い違う組み合わせが ${scaleConflicts.length} 件あります。\n`,
@@ -242,5 +316,5 @@ if (scaleConflicts.length > 0) {
 console.log(
   `✅ データ検証OK: 全 item が必須栄養素 (${requiredKeys.join(', ')}) を保持しています` +
     `（一食の合計は item から導出）。同名 item の栄養値の食い違いも、` +
-    `同一食品の 100g/100ml 換算の食い違いもありません。`,
+    `同一食品の 100g/100ml 換算の食い違いも、item 名の注釈もありません。`,
 )
