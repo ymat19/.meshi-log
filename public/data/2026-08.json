@@ -128,7 +128,7 @@
           "sugar_g": 2.8,
           "fiber_g": 0,
           "salt_g": 0.45,
-          "alcohol_g": 36.0
+          "alcohol_g": 36
         }
       }
     ],
@@ -329,7 +329,7 @@
           "sugar_g": 1.8,
           "fiber_g": 0,
           "salt_g": 0.23,
-          "alcohol_g": 36.0
+          "alcohol_g": 36
         }
       }
     ],
@@ -510,7 +510,7 @@
         "name": "アサヒ スーパードライ 生ジョッキ缶 340ml",
         "nutrition": {
           "energy_kcal": 143,
-          "protein_g": 1.0,
+          "protein_g": 1,
           "fat_g": 0,
           "saturated_fat_g": 0,
           "carbohydrate_g": 10.2,
@@ -993,7 +993,7 @@
           "sugar_g": 2.8,
           "fiber_g": 0,
           "salt_g": 0.45,
-          "alcohol_g": 36.0
+          "alcohol_g": 36
         }
       }
     ],
@@ -1449,12 +1449,12 @@
         "name": "白ごはん（約200g）",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       },
@@ -2180,7 +2180,7 @@
           "sugar_g": 2.8,
           "fiber_g": 0,
           "salt_g": 0.45,
-          "alcohol_g": 36.0
+          "alcohol_g": 36
         }
       },
       {
@@ -2916,7 +2916,7 @@
           "sugar_g": 1.8,
           "fiber_g": 0,
           "salt_g": 0.23,
-          "alcohol_g": 36.0
+          "alcohol_g": 36
         }
       },
       {
@@ -2940,6 +2940,119 @@
       "お酒",
       "晩酌",
       "スナック"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-20T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-20T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/20-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "７プレミアム 大盛り魚介豚骨まぜそば（冷凍・1食375g）",
+        "nutrition": {
+          "energy_kcal": 482,
+          "protein_g": 20.6,
+          "fat_g": 6.8,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 87,
+          "sugar_g": 82.1,
+          "fiber_g": 4.9,
+          "salt_g": 5
+        }
+      },
+      {
+        "name": "卵 1個（まぜそばにのせ）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      }
+    ],
+    "memo": "朝食。セブンイレブンの冷凍まぜそばに卵1個をのせたもの（本人申告・商品名も本人確認済み）。【７プレミアム 大盛り魚介豚骨まぜそば】今回あらためてセブン公式を引き直し、公式表示 482kcal/P20.6/F6.8/炭水化物87.0（糖質82.1・食物繊維4.9）/食塩相当量5.0g をそのまま採用 https://www.sej.co.jp/products/a/item/410226/ 。飽和脂肪酸のみ公式ページに掲載が無いことを確認したうえで、豚ガラ・香味油ベースの脂質6.8gの組成から1.8gと推定。【卵 1個】写真では白身が固まった温泉卵状だが、生卵でも温泉卵でも栄養値は同じ（可食部約50g）。日本食品標準成分表(八訂)「鶏卵 全卵 生」100g＝142kcal・P12.2・脂質10.2・炭水化物0.3・食塩0.4 の50g換算で、過去ログの「生卵 1個」と同値。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-20T12:30:00+09:00-lunch",
+    "datetime": "2026-08-20T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/20-1230-lunch-1.webp",
+      "images/2026/08/20-1230-lunch-2.webp",
+      "images/2026/08/20-1230-lunch-3.webp"
+    ],
+    "items": [
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g・2枚入りのうち1枚）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "ご飯（180g）",
+        "nutrition": {
+          "energy_kcal": 281,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.18,
+          "carbohydrate_g": 66.8,
+          "sugar_g": 64.1,
+          "fiber_g": 2.7,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "納豆（1パック・タレ込み約45g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7.5,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.7,
+          "carbohydrate_g": 6,
+          "sugar_g": 3,
+          "fiber_g": 3,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "焼き海苔（全形2枚・約6g）",
+        "nutrition": {
+          "energy_kcal": 17.8,
+          "protein_g": 2.5,
+          "fat_g": 0.22,
+          "saturated_fat_g": 0.03,
+          "carbohydrate_g": 2.7,
+          "sugar_g": 0.5,
+          "fiber_g": 2.2,
+          "salt_g": 0.08
+        }
+      }
+    ],
+    "memo": "昼食（自炊）。焼いた絹厚揚げ・海苔にのせた納豆・ごはん。ごはん180g／納豆1パック／焼き海苔 全形2枚ぶんは本人申告。【相模屋 焼いておいしい絹厚揚げ】今回あらためて公式を引き直し、公式表示 1枚150g＝156kcal/P9.5/F8.7/炭水化物11.1/食塩相当量0.14g をそのまま採用 https://sagamiya-kk.co.jp/products/kinu_atsuage.html 。飽和脂肪酸・食物繊維は公式ページに掲載が無いことを確認したうえで大豆製品の標準組成から推定。同定根拠：8/19 夕食の写真と同じ茶色のフライパン・同じ正方形・同じ揚げ皮の質感で、8/19 に「2枚入りのうち1枚」を記録済み＝今回が残りの1枚。【ご飯 180g】日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の180g換算（過去ログの「ご飯（180g）」と同一出典・同値）。【納豆】銘柄が特定できないため、日本食品標準成分表(八訂)「だいず 納豆 糸引き納豆」ベースの1パック（納豆約45g＋付属たれ）の推定で、過去ログの同名 item と同値。【焼き海苔 全形2枚・約6g】日本食品標準成分表(八訂)「あまのり 焼きのり」100g＝297kcal・P41.4・脂質3.7・炭水化物44.3・食物繊維36.0・食塩相当量1.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=9_09004_7 の6g換算。飽和脂肪酸は本表に記載が無いため、同DBの脂肪酸成分表（脂質1g当たり飽和脂肪酸149mg）×脂質3.7g/100g＝0.55g/100g から換算。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
     ],
     "estimated": true,
     "schemaVersion": 1
