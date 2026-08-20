@@ -2816,5 +2816,159 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-19T20:00:00+09:00-dinner",
+    "datetime": "2026-08-19T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/19-2000-dinner-1.webp",
+      "images/2026/08/19-2000-dinner-2.webp",
+      "images/2026/08/19-2000-dinner-3.webp"
+    ],
+    "items": [
+      {
+        "name": "牛めしの具（市販・冷凍 1食分・135g）",
+        "nutrition": {
+          "energy_kcal": 230,
+          "protein_g": 11.3,
+          "fat_g": 15.7,
+          "saturated_fat_g": 6.5,
+          "carbohydrate_g": 9.5,
+          "sugar_g": 9.3,
+          "fiber_g": 0.2,
+          "salt_g": 2.1
+        }
+      },
+      {
+        "name": "トマトソース 約50g（うまトマ風・自炊）",
+        "nutrition": {
+          "energy_kcal": 23,
+          "protein_g": 0.6,
+          "fat_g": 1,
+          "saturated_fat_g": 0.15,
+          "carbohydrate_g": 3.3,
+          "sugar_g": 2.7,
+          "fiber_g": 0.6,
+          "salt_g": 0.5
+        }
+      },
+      {
+        "name": "とろけるチーズ 約20g",
+        "nutrition": {
+          "energy_kcal": 63,
+          "protein_g": 4.5,
+          "fat_g": 5.2,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.56
+        }
+      },
+      {
+        "name": "レタス 約80g",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.5,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 2.2,
+          "sugar_g": 1.3,
+          "fiber_g": 0.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "生卵 1個（牛丼に追加）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g・2枚入りのうち1枚）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "コーンソテー（とうもろこし1/2本・可食部約100g・油小さじ1）",
+        "nutrition": {
+          "energy_kcal": 141,
+          "protein_g": 4.2,
+          "fat_g": 6.2,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 19.1,
+          "sugar_g": 15.7,
+          "fiber_g": 3.4,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "カルビー ポテトチップス コンソメパンチ 100g",
+        "nutrition": {
+          "energy_kcal": 556,
+          "protein_g": 5.5,
+          "fat_g": 35.1,
+          "saturated_fat_g": 3.9,
+          "carbohydrate_g": 54.5,
+          "sugar_g": 50.3,
+          "fiber_g": 4.2,
+          "salt_g": 0.91
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml",
+        "nutrition": {
+          "energy_kcal": 182,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0.7,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.1,
+          "alcohol_g": 25
+        }
+      }
+    ],
+    "memo": "本人申告：うまトマ風の牛丼の具は「市販・冷凍を自炊」、卵は牛丼に落とした、ストロングは無糖ドライ500ml＋350ml、ポテチはカルビー コンソメパンチ100g。写真は3枚（レタスの上の牛丼の具／厚揚げ＋コーンソテー／割った前の生卵）。【牛めしの具（市販・冷凍 1食分135g）】商品名の申告が無かったため、松屋公式通販「牛めしの具（プレミアム仕様）」1袋135gの公式表示 230kcal/P11.3/脂質15.7/炭水化物9.5/食塩2.1 https://e-shop.matsuyafoods.co.jp/products/us10-80-135g を採用。写真の肉・玉ねぎの見た目は 8/11・8/12・8/18 に記録した松屋うまトマチーズ牛めしと一致する。飽和脂肪酸・食物繊維は公式非掲載のため牛脂中心の脂質組成から推定（飽和6.5／繊維0.2）。※実際の商品名が分かれば公式表示に差し替える。【トマトソース 約50g】【とろけるチーズ 約20g】写真から量を推定。トマトソースは市販パスタソース標準（100g＝45kcal前後）、チーズはプロセスチーズ（100g＝313kcal/P22.7/脂質26.0/飽和16.0/食塩2.8）の20g換算。いずれも記憶ベースの推定。【レタス 約80g】日本食品標準成分表のレタス（生・100g＝11kcal/P0.6/脂質0.1/炭水化物2.8/食物繊維1.1/食塩0）の80g換算。【生卵 1個】過去ログの確定値。本人回答どおり牛丼に落としたもの。【相模屋 焼いておいしい絹厚揚げ】公式 https://sagamiya-kk.co.jp/products/kinu_atsuage.html （1枚150g＝156kcal/P9.5/脂質8.7/炭水化物11.1/食塩0.14）。飽和脂肪酸・食物繊維は公式非掲載のため大豆製品標準から推定。【コーンソテー】昼に記録したとうもろこしの残り1/2本（可食部約100g）を炒めたものと解釈。成分表「スイートコーン 未熟種子 電子レンジ調理」100g値 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06339_7 に、写真の照りからサラダ油小さじ1（4g＝37kcal/脂質4.0/飽和0.33）を加算。【カルビー ポテトチップス コンソメパンチ】公式 https://www.calbee.co.jp/products/detail/?p=20211224105439 の1袋55g当たり表示（306kcal/P3.0/脂質19.3/炭水化物30.0/食塩0.5）を100gに換算（556kcal/P5.5/脂質35.1/炭水化物54.5/食塩0.91）。飽和脂肪酸・食物繊維は公式非掲載のため、成分表「ポテトチップス」100g（脂質35.2中の飽和3.86／食物繊維4.2） https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=15_15103_7 を採用。【ストロングゼロ 無糖ドライ 500ml・350ml】サントリー公式（products.suntory.co.jp）は今回アクセスが 403 で拒否されたため引き直せず、過去ログの確定値（500ml＝260kcal・純アルコール36g／350ml＝182kcal・純アルコール25g、いずれも糖質0）を流用した。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "冷凍食品",
+      "お酒",
+      "晩酌",
+      "スナック"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
