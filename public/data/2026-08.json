@@ -2816,5 +2816,132 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-19T20:00:00+09:00-dinner",
+    "datetime": "2026-08-19T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/19-2000-dinner-1.webp",
+      "images/2026/08/19-2000-dinner-2.webp",
+      "images/2026/08/19-2000-dinner-3.webp"
+    ],
+    "items": [
+      {
+        "name": "うまトマ牛めしの具（ライスなし・レタスの上）",
+        "nutrition": {
+          "energy_kcal": 554,
+          "protein_g": 21.8,
+          "fat_g": 46,
+          "saturated_fat_g": 16.9,
+          "carbohydrate_g": 12.5,
+          "sugar_g": 9.7,
+          "fiber_g": 2.8,
+          "salt_g": 3.5
+        }
+      },
+      {
+        "name": "レタス 約80g",
+        "nutrition": {
+          "energy_kcal": 9,
+          "protein_g": 0.5,
+          "fat_g": 0.1,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 2.2,
+          "sugar_g": 1.3,
+          "fiber_g": 0.9,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "生卵 1個（牛丼に追加）",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.2,
+          "fat_g": 4.8,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g・2枚入りのうち1枚）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "コーンソテー（とうもろこし1/2本・可食部約100g）",
+        "nutrition": {
+          "energy_kcal": 104,
+          "protein_g": 4.2,
+          "fat_g": 2.2,
+          "saturated_fat_g": 0.3,
+          "carbohydrate_g": 19.1,
+          "sugar_g": 15.7,
+          "fiber_g": 3.4,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "カルビー ポテトチップス コンソメパンチ 100g",
+        "nutrition": {
+          "energy_kcal": 556,
+          "protein_g": 5.5,
+          "fat_g": 35.1,
+          "saturated_fat_g": 3.9,
+          "carbohydrate_g": 54.5,
+          "sugar_g": 50.3,
+          "fiber_g": 4.2,
+          "salt_g": 0.91
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 36
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml",
+        "nutrition": {
+          "energy_kcal": 182,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0.7,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.1,
+          "alcohol_g": 25
+        }
+      }
+    ],
+    "memo": "本人申告：うまトマ牛めし（ライスの代わりにレタス）＋生卵、厚揚げ、コーンソテー、ストロングゼロ無糖ドライ500ml＋350ml、カルビー ポテトチップス コンソメパンチ100g。【うまトマ牛めしの具】松屋公式メニュー https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html の並盛表示値 933kcal/P28.7/脂質47.9/炭水化物92.3/食塩5.0（公式注記のとおりみそ汁込み）から、みそ汁分（35kcal・食塩1.5g／過去ログの実値）と、ライス並盛 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html の 344kcal/P5.1/脂質0.6/炭水化物76.1/食塩0 を差し引いて具のみとした。ライスを引いたのは、写真の器がレタス敷きで米粒が一切写っていないため。飽和脂肪酸・食物繊維は公式非掲載のため 8/18 記録と同じ推定内訳（牛めし全体で飽和17.1／繊維3.4）からライス分（飽和0.2／繊維0.6）を引いた値。糖質=炭水化物-食物繊維。【レタス 約80g】写真から量を推定。日本食品標準成分表のレタス（生・100g＝11kcal/P0.6/脂質0.1/炭水化物2.8/食物繊維1.1/食塩0）の80g換算。【生卵 1個】本人回答どおり牛丼に落としたもの。過去ログ（7/6・8/6 等）の確定値。【相模屋 焼いておいしい絹厚揚げ】公式 https://sagamiya-kk.co.jp/products/kinu_atsuage.html （1枚150g＝156kcal/P9.5/脂質8.7/炭水化物11.1/食塩0.14）。飽和脂肪酸・食物繊維は公式非掲載のため大豆製品標準から推定。【コーンソテー】同日昼に記録したとうもろこしの残り1/2本（可食部約100g）。成分表「スイートコーン 未熟種子 電子レンジ調理」100g値をそのまま採用 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06339_7 。調理油は分量の申告が無いため加算していない。【カルビー ポテトチップス コンソメパンチ】公式 https://www.calbee.co.jp/products/detail/?p=20211224105439 の1袋55g当たり表示（306kcal/P3.0/脂質19.3/炭水化物30.0/食塩0.5）を100gに換算（556kcal/P5.5/脂質35.1/炭水化物54.5/食塩0.91）。飽和脂肪酸・食物繊維は公式非掲載のため成分表「ポテトチップス」100g（脂質35.2中の飽和3.86／食物繊維4.2）https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=15_15103_7 を採用。【ストロングゼロ 無糖ドライ 500ml・350ml】サントリー公式（products.suntory.co.jp）が今回 403 で開けず引き直せなかったため、過去ログの確定値（500ml＝260kcal・純アルコール36g／350ml＝182kcal・純アルコール25g、いずれも糖質0）を流用した。",
+    "tags": [
+      "自炊",
+      "お酒",
+      "晩酌",
+      "スナック"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
