@@ -223,14 +223,14 @@
       {
         "name": "ごはん 約200g",
         "nutrition": {
-          "energy_kcal": 312.0,
-          "protein_g": 5.0,
+          "energy_kcal": 312,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
-          "salt_g": 0.0
+          "fiber_g": 3,
+          "salt_g": 0
         }
       },
       {
@@ -668,7 +668,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -2132,7 +2132,7 @@
       {
         "name": "松屋 半熟玉子 2個",
         "nutrition": {
-          "energy_kcal": 142.0,
+          "energy_kcal": 142,
           "protein_g": 11.6,
           "fat_g": 9.6,
           "saturated_fat_g": 3.2,
@@ -2314,7 +2314,7 @@
       {
         "name": "温泉卵 2個",
         "nutrition": {
-          "energy_kcal": 142.0,
+          "energy_kcal": 142,
           "protein_g": 12.2,
           "fat_g": 10.2,
           "saturated_fat_g": 3.1,
@@ -2584,7 +2584,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -2856,7 +2856,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -2968,7 +2968,7 @@
       {
         "name": "卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -3020,7 +3020,7 @@
           "carbohydrate_g": 66.8,
           "sugar_g": 64.1,
           "fiber_g": 2.7,
-          "salt_g": 0.0
+          "salt_g": 0
         }
       },
       {
@@ -3053,6 +3053,76 @@
     "memo": "昼食（自炊）。焼いた絹厚揚げ・海苔にのせた納豆・ごはん。ごはん180g／納豆1パック／焼き海苔 全形2枚ぶんは本人申告。【相模屋 焼いておいしい絹厚揚げ】今回あらためて公式を引き直し、公式表示 1枚150g＝156kcal/P9.5/F8.7/炭水化物11.1/食塩相当量0.14g をそのまま採用 https://sagamiya-kk.co.jp/products/kinu_atsuage.html 。飽和脂肪酸・食物繊維は公式ページに掲載が無いことを確認したうえで大豆製品の標準組成から推定。同定根拠：8/19 夕食の写真と同じ茶色のフライパン・同じ正方形・同じ揚げ皮の質感で、8/19 に「2枚入りのうち1枚」を記録済み＝今回が残りの1枚。【ご飯 180g】日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の180g換算（過去ログの「ご飯（180g）」と同一出典・同値）。【納豆】銘柄が特定できないため、日本食品標準成分表(八訂)「だいず 納豆 糸引き納豆」ベースの1パック（納豆約45g＋付属たれ）の推定で、過去ログの同名 item と同値。【焼き海苔 全形2枚・約6g】日本食品標準成分表(八訂)「あまのり 焼きのり」100g＝297kcal・P41.4・脂質3.7・炭水化物44.3・食物繊維36.0・食塩相当量1.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=9_09004_7 の6g換算。飽和脂肪酸は本表に記載が無いため、同DBの脂肪酸成分表（脂質1g当たり飽和脂肪酸149mg）×脂質3.7g/100g＝0.55g/100g から換算。糖質=炭水化物-食物繊維。 【訂正 2026-08-20・品名から注釈を削除】item 名に食品名・分量以外の注釈（出典や推定方法、どの料理に入れたか、いつの残りか、何人でシェアしたかの内訳計算、テイクアウトか否か、製造工場名など）が入っていたため、すべて削除して品名を「食品名（メーカー・商品名を含む）＋分量・実際に食べた内容」だけに統一した。削除した情報のうち根拠にあたるものはこの memo に残っている。名寄せの結果あらわになった同一食品の値の食い違いは、出典を1つに決めて全件引き直した——自炊の白飯は日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 、ゆで卵は八訂「鶏卵 全卵 ゆで」100g＝134kcal・P12.5・脂質10.4・炭水化物0.3・食塩0.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12005_7 （飽和脂肪酸は生卵と同じ脂肪酸組成＝脂質1g当たり305mgで換算）、目玉焼きは八訂の生卵1個＋調合油3g（100g＝886kcal https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7 ・飽和は調合油の標準組成から推定）＋塩0.1g。糖質=炭水化物-食物繊維。",
     "tags": [
       "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-20T20:00:00+09:00-dinner",
+    "datetime": "2026-08-20T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/20-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "松屋 うまトマ牛めしの具（ライス・みそ汁なし）",
+        "nutrition": {
+          "energy_kcal": 554,
+          "protein_g": 21.8,
+          "fat_g": 46,
+          "saturated_fat_g": 16.9,
+          "carbohydrate_g": 12.5,
+          "sugar_g": 9.7,
+          "fiber_g": 2.8,
+          "salt_g": 3.5
+        }
+      },
+      {
+        "name": "ご飯（180g）",
+        "nutrition": {
+          "energy_kcal": 280.8,
+          "protein_g": 4.5,
+          "fat_g": 0.54,
+          "saturated_fat_g": 0.18,
+          "carbohydrate_g": 66.8,
+          "sugar_g": 64.1,
+          "fiber_g": 2.7,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "生卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.1,
+          "fat_g": 5.1,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.8,
+          "sugar_g": 1.8,
+          "fiber_g": 0,
+          "salt_g": 0.23,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "夕食。本人回答「うまトマ牛めしだが米は180」＋ストロングゼロ1本。写真は黒い角容器の牛めし（薄切り肉・パセリ入りトマトソース・とろけたチーズ・割り落とした生卵）と缶が1本。【松屋 うまトマ牛めしの具】品名は本人申告どおり。松屋の現行メニューにチーズ抜きの単独商品は無く、公式は「うまトマチーズ牛めし」のみのため、その公式値を出典とする。松屋公式メニュー https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html の並盛表示値 933kcal/P28.7/脂質47.9/炭水化物92.3/食塩5.0（公式注記「特定原材料・栄養成分の数値には、みそ汁も含まれております」のとおりみそ汁込み）から、公式みそ汁 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_misoshiru_hp_250422.html （35kcal/P1.8/脂質1.3/炭水化物3.7/食塩1.5）と、公式ライス並盛 https://www.matsuyafoods.co.jp/matsuya/menu/sidemenu/sidemenu_rice_hp_240716.html （344kcal/P5.1/脂質0.6/炭水化物76.1/食塩0・飽和0.2／食物繊維0.6は米飯の標準組成からの推定）を差し引いて具のぶんとした。ライスを控除したのは本人が「米は180」と明示したためで、エージェントの憶測による主食の引き算ではない（差し引いたぶんは下の「ご飯（180g）」として別item で計上している）。飽和脂肪酸・食物繊維は公式非掲載のため、牛めし全体での推定値（飽和17.1／繊維3.4）から同じくライスぶんを控除した。【ご飯（180g）】本人回答「米は180」。日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の180g換算で、過去ログの同名item と同一出典・同値。銘柄の申告が無かったため、同日昼と同じ自炊のごはんとして計上した（テーブルマークのパックごはん180gだった場合は265kcal/炭水化物60.5/食物繊維0.5に要修正）。【生卵 1個】写真のとおり容器に割り落としたもの。日本食品標準成分表(八訂)「鶏卵 全卵 生」100g＝142kcal・P12.2・脂質10.2・炭水化物0.4・食物繊維0・食塩相当量0.4 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12004_7 の可食部50g換算（飽和脂肪酸は同DBの脂肪酸成分表 脂質1g当たり305mg で換算）。【サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml】写真の缶のバーコードを拡大して JAN 4901777241015 を読み取り、サントリー公式商品ページ https://products.suntory.co.jp/d/4901777241015/ の該当商品が「-196 ストロングゼロ〈無糖ドライ〉500ml缶」であること、マツキヨココカラ https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901777241015 ・楽天マート https://sm.rakuten.co.jp/item/4901777241015 の商品ページでも同一であることを確認して銘柄・容量を確定した。公式サイトは今回も 403 で本文を取得できなかったため、缶ラベル表示を転記した独立ソース2件を突き合わせた——100ml当たり 52kcal・たんぱく質0・脂質0・炭水化物0.1〜0.6g（中央値0.35）・糖類0・食塩相当量0.02〜0.07g（中央値0.045）https://www.chu-hi-guide.com/196-strong-zero-dry/ 、アルコール分9%・純アルコール量7.2/100ml https://www.kakuyasu.co.jp/store/commodity/0010/00232198/ 。500ml換算で 260kcal・炭水化物1.8g・食塩0.23g・純アルコール36g（8/20 に出典を統一した既存記録と同一の導出）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "お酒"
     ],
     "estimated": true,
     "schemaVersion": 1
