@@ -3126,5 +3126,250 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-21T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-21T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/21-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "鶏もも（皮つき・約150g）",
+        "nutrition": {
+          "energy_kcal": 285,
+          "protein_g": 24.9,
+          "fat_g": 21.3,
+          "saturated_fat_g": 6.555,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.3
+        }
+      },
+      {
+        "name": "レタス 約60g",
+        "nutrition": {
+          "energy_kcal": 6.6,
+          "protein_g": 0.36,
+          "fat_g": 0.06,
+          "saturated_fat_g": 0.015,
+          "carbohydrate_g": 1.68,
+          "sugar_g": 1.02,
+          "fiber_g": 0.66,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "食塩 1.0g",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      }
+    ],
+    "memo": "朝食（自炊）。白い器に皮つきの鶏肉とレタスを澄んだ煮汁で煮たスープ煮、横にパックごはん。部位は本人回答「鶏もも（皮つき）」。同定根拠：肉に焼き色がまったく無く煮汁が澄んでいる＝焼かずに煮たもの、皮が縮れて脂が透けている、レタスは薄く波打った半透明の葉。【鶏もも（皮つき・約150g）】日本食品標準成分表(八訂)「肉類/＜鳥肉類＞/にわとり/［若どり・主品目］/もも/皮つき/生」100g＝190kcal・たんぱく質16.6・脂質14.2・炭水化物0・食物繊維0・食塩相当量0.2 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11221_7 の150g換算。飽和脂肪酸は同DBの脂肪酸成分表「06.脂肪酸-可食部100g」4.37g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11221_7&MODE=4 から換算。分量は鍋に入れた生の重量として、器に見えている3切れから約150gと推定した（写真からの推定なので誤差あり）。煮汁に溶け出したぶんも本人が汁ごと食べているため、生の値をそのまま計上している。【レタス 約60g】日本食品標準成分表(八訂)のレタス（生）100g＝11kcal・P0.6・脂質0.1・炭水化物2.8・食物繊維1.1・食塩0（飽和脂肪酸0.02）の60g換算で、過去ログの「レタス 約80g」と同一換算。量は写真からの推定。【パックごはん（炊きたてごはん 180g・テーブルマーク）】写真のパッケージを拡大し「内容量：180g」「テーブルマーク株式会社」「新潟魚沼工場」の表示を読み取って商品を特定。パッケージ表示 265kcal/P4.5/脂質0.5/炭水化物60.5/食塩0 で、過去ログの同名item と同値。【食塩 1.0g】スープの味付けぶん。使った調味料の申告が無いため、家庭の汁物1杯ぶんの食塩相当量として1.0gを見込んだ推定値で、これだけは出典のない見積もり。実際に何で味付けしたか分かれば差し替える。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-21T12:30:00+09:00-lunch",
+    "datetime": "2026-08-21T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/21-1230-lunch-1.webp",
+      "images/2026/08/21-1230-lunch-2.webp"
+    ],
+    "items": [
+      {
+        "name": "鶏もも（皮つき・約100g）",
+        "nutrition": {
+          "energy_kcal": 190,
+          "protein_g": 16.6,
+          "fat_g": 14.2,
+          "saturated_fat_g": 4.37,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "レタス 約40g",
+        "nutrition": {
+          "energy_kcal": 4.4,
+          "protein_g": 0.24,
+          "fat_g": 0.04,
+          "saturated_fat_g": 0.01,
+          "carbohydrate_g": 1.12,
+          "sugar_g": 0.68,
+          "fiber_g": 0.44,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "食塩 1.0g",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "昼食（自炊）。朝と同じ鶏もものスープ煮の残りと、茶碗によそったパックごはん、ザバス。写真は2枚——1枚目が器のスープ煮とごはん、2枚目がザバスの紙パック（ストロー挿し）。【鶏もも（皮つき・約100g）】部位は本人回答「鶏もも（皮つき）」。日本食品標準成分表(八訂)「肉類/＜鳥肉類＞/にわとり/［若どり・主品目］/もも/皮つき/生」100g＝190kcal・P16.6・脂質14.2・炭水化物0・食物繊維0・食塩0.2 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11221_7 、飽和脂肪酸は脂肪酸成分表「06.脂肪酸-可食部100g」4.37g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11221_7&MODE=4 。器に見えているのは大きめの1切れなので約100gと推定（写真からの推定）。【レタス 約40g】八訂のレタス（生）100g値の40g換算で、過去ログの同食品と同一換算。【パックごはん（炊きたてごはん 180g・テーブルマーク）】朝と同じ商品。パッケージ表示 265kcal/P4.5/脂質0.5/炭水化物60.5/食塩0。【食塩 1.0g】スープの味付けぶん。調味料の申告が無いため汁物1杯ぶん1.0gの見積もりで、出典のない推定値。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】明治公式 https://www.meiji.co.jp/products/sports/4902705095465.html の1本200ml当たり表示 107kcal/P20.0/脂質0/炭水化物6.8（糖類6.5・食物繊維0〜0.7）/食塩相当量0.19 を採用（食物繊維は幅表示の中央値0.3）。銘柄の同定根拠：紙パックの地色がクリーム〜金でオレンジの帯が斜めに入り、ロゴがこげ茶、果物のイラストが無い＝キャラメル風味の意匠。過去24件の同名item と同じ商品。ラベルの風味名そのものは手ブレで読めなかったので、違っていれば差し替える。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-21T20:00:00+09:00-dinner",
+    "datetime": "2026-08-21T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "お通し（1人前）",
+        "nutrition": {
+          "energy_kcal": 40,
+          "protein_g": 1.5,
+          "fat_g": 2,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 3.5,
+          "sugar_g": 2.5,
+          "fiber_g": 1,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "生ビール 中ジョッキ ×3",
+        "nutrition": {
+          "energy_kcal": 540,
+          "protein_g": 3.9,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 40.5,
+          "sugar_g": 40.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 52.2
+        }
+      },
+      {
+        "name": "ハイボール ×3",
+        "nutrition": {
+          "energy_kcal": 300,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 39
+        }
+      },
+      {
+        "name": "枝豆",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 5,
+          "fat_g": 2.5,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 4,
+          "sugar_g": 1.5,
+          "fiber_g": 2.5,
+          "salt_g": 0.6
+        }
+      },
+      {
+        "name": "唐揚げ 1皿",
+        "nutrition": {
+          "energy_kcal": 550,
+          "protein_g": 30,
+          "fat_g": 35,
+          "saturated_fat_g": 6,
+          "carbohydrate_g": 25,
+          "sugar_g": 20,
+          "fiber_g": 1,
+          "salt_g": 2.5
+        }
+      },
+      {
+        "name": "冷奴（絹豆腐150g＋醤油）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 7.6,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 4,
+          "sugar_g": 3.5,
+          "fiber_g": 0.5,
+          "salt_g": 0.9
+        }
+      }
+    ],
+    "memo": "夕食。大衆居酒屋で5000円分ぐらい（本人申告）。写真なし。内訳は本人回答「酒多め（ハイボール・ビール5〜7杯）＋つまみ数品」に沿って組み立てた推定で、このエントリは全体が記憶ベースの推定であることを明記しておく（店名・伝票が不明で一次情報が無い）。杯数は5〜7杯の中央を取って6杯とし、大衆居酒屋の一般的な単価（生ビール中600円前後・ハイボール450円前後・お通し400円前後・一品400〜700円）で5000円に収まる構成として、生ビール中ジョッキ3杯＋ハイボール3杯（約3150円）＋お通し・枝豆・唐揚げ・冷奴（約1900円）を置いた。各itemの栄養値は過去ログの同名itemと同値に揃えてある（「お通し（1人前）」「生ビール 中ジョッキ ×1」の3杯ぶん、「ハイボール ×1」の3杯ぶん、「枝豆」「唐揚げ 1皿」「冷奴（絹豆腐150g＋醤油）」）。品目・杯数・分量が実際と違っていれば、この構成ごと差し替える。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "外食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
