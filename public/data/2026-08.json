@@ -3688,5 +3688,130 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-23T20:30:00+09:00-dinner",
+    "datetime": "2026-08-23T20:30:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/23-2030-dinner-1.webp",
+      "images/2026/08/23-2030-dinner-2.webp",
+      "images/2026/08/23-2030-dinner-3.webp",
+      "images/2026/08/23-2030-dinner-4.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオのたたき（約100g）",
+        "nutrition": {
+          "energy_kcal": 150,
+          "protein_g": 25,
+          "fat_g": 6.2,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "ポン酢（約15g）",
+        "nutrition": {
+          "energy_kcal": 8.85,
+          "protein_g": 0.555,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.62,
+          "sugar_g": 1.575,
+          "fiber_g": 0.045,
+          "salt_g": 1.17
+        }
+      },
+      {
+        "name": "ねぎ（小口・約20g）",
+        "nutrition": {
+          "energy_kcal": 5.2,
+          "protein_g": 0.4,
+          "fat_g": 0.06,
+          "saturated_fat_g": 0.008,
+          "carbohydrate_g": 1.08,
+          "sugar_g": 0.58,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "にんにくスライス（約5g）",
+        "nutrition": {
+          "energy_kcal": 6.45,
+          "protein_g": 0.32,
+          "fat_g": 0.045,
+          "saturated_fat_g": 0.0065,
+          "carbohydrate_g": 1.375,
+          "sugar_g": 1.065,
+          "fiber_g": 0.31,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.8,
+          "sugar_g": 1.8,
+          "fiber_g": 0,
+          "salt_g": 0.23,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "夕食。写真4枚——(1)白い器のカツオのたたき（刻みねぎとにんにくスライスの薬味）、(2)焼いた絹厚揚げ、(3)ストロングゼロの缶、(4)コルクの敷板のレタス。カツオは8/22朝から続く同じサクの4食目で、今回も皮側が中心（銀青色の皮に焼き目、身は暗赤色）。本人回答で、かけたのはポン酢、量は今までと同じ約100g、主食はパックごはん180g、酒はストロングゼロ無糖ドライ500ml×1。【カツオのたたき（約100g）】日本食品標準成分表(八訂)「魚介類/＜魚類＞/（かつお類）/かつお/秋獲り/生」100g＝150kcal・たんぱく質25.0・脂質6.2・炭水化物0.2・食物繊維0・食塩相当量0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 、飽和脂肪酸は脂肪酸成分表「06.脂肪酸-可食部100g」1.5g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7&MODE=4 。【ポン酢（約15g）】本人回答。日本食品標準成分表(八訂)「調味料及び香辛料類/＜調味料類＞/（調味ソース類）/ぽん酢しょうゆ/市販品」100g＝59kcal・P3.7・脂質0・炭水化物10.8・食物繊維0.3・食塩相当量7.8 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17137_7 の15g換算。魚のitemには混ぜず別itemにしている。【ねぎ（小口・約20g）】日本食品標準成分表(八訂)「野菜類/（ねぎ類）/こねぎ/葉/生」100g＝26kcal・たんぱく質2.0・脂質0.3・炭水化物5.4・食物繊維2.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06228_7 、飽和脂肪酸は脂肪酸成分表0.04g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06228_7&MODE=4 の20g換算。量は器に散らしてある写真からの推定。【にんにくスライス（約5g）】八訂「にんにく りん茎 生」100g＝129kcal・P6.4・脂質0.9・炭水化物27.5・食物繊維6.2・食塩0（飽和脂肪酸は脂肪酸成分表0.13g/100g）の5g換算で、8/22 の同食品と同一換算。【レタス 約50g】八訂のレタス（生）100g＝11kcal・P0.6・脂質0.1・炭水化物2.8・食物繊維1.1・食塩0（飽和0.02）の50g換算。【相模屋 焼いておいしい絹厚揚げ 1枚（150g）】今回あらためて公式を引き直し、公式表示 1枚150g＝156kcal/P9.5/脂質8.7/炭水化物11.1/食塩相当量0.14g をそのまま採用 https://sagamiya-kk.co.jp/products/kinu_atsuage.html 。飽和脂肪酸・糖質・食物繊維は公式ページに掲載が無いことを確認したうえで大豆製品の標準組成から推定。同定根拠：8/19・8/20 と同じ正方形・同じ揚げ皮の質感で、金属の鍋で焼いた面が均一に色づいている。【パックごはん（炊きたてごはん 180g・テーブルマーク）】パッケージ表示 265kcal/P4.5/脂質0.5/炭水化物60.5/食塩0。【サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml】写真の缶は黒地に赤い DRY・ALC.9% の意匠で無糖ドライ。公式 products.suntory.co.jp は 403 のため、ラベル転記の独立ソース2件（100ml＝52kcal・炭水化物0.1〜0.6g・食塩0.02〜0.07g https://www.chu-hi-guide.com/196-strong-zero-dry/ ／アルコール分9%・純アルコール7.2/100ml https://www.kakuyasu.co.jp/store/commodity/0010/00232198/ ）の500ml換算で、既存記録と同一の導出。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
