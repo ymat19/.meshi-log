@@ -141,6 +141,30 @@ interface NameProblem {
 
 const nameProblems: NameProblem[] = []
 
+// --- 落ちた調味料の検出 --------------------------------------------------
+// たれ・ポン酢・醤油のような調味料は、料理に絡んで沈むので写真にはまず写らない。
+// 「写っていない＝かけていない」と読んで item ごと落とすと、その一食の食塩相当量
+// だけが黙って消える。実際に、同じカツオのたたきを3食記録するあいだに、付属の
+// たれを2食では計上し、3食目だけ「写真に無い・小袋は使い切ったはず」という推測で
+// 0 にしていた（塩分 0.88g → 0.10g）。0 は「その食品に本当に含まれない」ときだけ
+// 書いてよい値で、確認できないことの穴埋めに使ってはならない。
+//
+// そこで、ある料理が過去に「ほぼ毎回」同じ調味料を伴って記録されているのに、
+// 今回だけ調味料がひとつも無い、という組み合わせを機械的に拾う。調味料を本当に
+// かけていないなら、entry に他の調味料 item がある（別の味付けをした）か、
+// そもそもその料理の常連ではない、のどちらかになるはずなので、この条件は
+// 「聞かずに 0 にした」ケースだけを狙って当たる。
+const CONDIMENT =
+  /たれ|タレ|ぽん酢|ポン酢|醤油|しょうゆ|ソース|ドレッシング|マヨ|食塩|わさび|ワサビ|七味|ラー油|つゆ|ケチャップ|ふりかけ/
+
+interface MissingCondiment {
+  dish: string
+  condiment: string
+  seen: number
+  total: number
+  at: string
+}
+
 interface Scaled {
   name: string
   at: string
@@ -156,6 +180,9 @@ interface ScaleConflict {
 }
 
 const byFood = new Map<string, Scaled[]>()
+
+// entry ごとの item 名一覧（落ちた調味料の検出に使う）
+const entryNames: { at: string; names: string[] }[] = []
 
 // 比較の許容: 相対2%まで（丸め由来）。加えて「実際の一食分に効くか」で足切りする。
 // 100g 換算のズレを一番小さい分量に戻したとき 2kcal / 0.1g 未満なら、それは
@@ -174,6 +201,7 @@ for (const month of index.months) {
       problems.push({ file, id: entry.id, where: 'items', missing: requiredKeys })
       continue
     }
+    entryNames.push({ at: entry.id, names: entry.items.map((i) => i.name) })
     // Every food item must carry a full nutrition breakdown.
     for (const item of entry.items) {
       const itemMissing = missingFrom(item.nutrition)
@@ -232,6 +260,42 @@ for (const [key, group] of byFood) {
       low: { name: low.name, at: low.at, value: low.per100[k] },
       high: { name: high.name, at: high.at, value: high.per100[k] },
     })
+  }
+}
+
+// 料理（foodKey）-> その料理を含む entry
+const dishEntries = new Map<string, { at: string; names: string[] }[]>()
+for (const e of entryNames) {
+  for (const key of new Set(e.names.map(foodKeyOf))) {
+    dishEntries.set(key, [...(dishEntries.get(key) ?? []), e])
+  }
+}
+
+const missingCondiments: MissingCondiment[] = []
+for (const [dish, rows] of dishEntries) {
+  // 3食以上の実績がないと「毎回この調味料で食べる」とは言えない。
+  if (rows.length < 3) continue
+  // 調味料そのものを主語にしても意味がない。
+  if (rows.some((r) => r.names.some((n) => foodKeyOf(n) === dish && CONDIMENT.test(n)))) continue
+
+  const together = new Map<string, number>()
+  for (const r of rows) {
+    for (const key of new Set(
+      r.names.filter((n) => foodKeyOf(n) !== dish && CONDIMENT.test(n)).map(foodKeyOf),
+    )) {
+      together.set(key, (together.get(key) ?? 0) + 1)
+    }
+  }
+
+  for (const [condiment, seen] of together) {
+    // 「1食を除く全部」で同伴しているものだけ。たまたま1〜2回一緒だった、は拾わない。
+    if (seen < 2 || seen < rows.length - 1 || seen >= rows.length) continue
+    for (const r of rows) {
+      if (r.names.some((n) => foodKeyOf(n) === condiment)) continue
+      // 別の調味料で食べた回は、意図してそうしている。
+      if (r.names.some((n) => CONDIMENT.test(n))) continue
+      missingCondiments.push({ dish, condiment, seen, total: rows.length, at: r.at })
+    }
   }
 }
 
@@ -313,8 +377,33 @@ if (scaleConflicts.length > 0) {
   process.exit(1)
 }
 
+if (missingCondiments.length > 0) {
+  console.error(
+    `\n❌ データ検証に失敗: いつも付けている調味料が落ちている記録が ${missingCondiments.length} 件あります。\n`,
+  )
+  for (const m of missingCondiments) {
+    console.error(`  ${m.at}`)
+    console.error(
+      `      「${m.dish}」は ${m.total} 食中 ${m.seen} 食で「${m.condiment}」と一緒に記録されて` +
+        `いますが、この一食には調味料の item がひとつもありません。`,
+    )
+  }
+  console.error(
+    `\nたれ・ポン酢・醤油は料理に絡んで沈むので、写真にはまず写りません。\n` +
+      `「写っていない＝かけていない」と読んで item を落とすと、その一食の食塩相当量\n` +
+      `だけが黙って消えます（0 は「その食品に本当に含まれない」ときだけ書ける値で、\n` +
+      `確認できないことの穴埋めには使えません）。\n` +
+      `・かけたなら item を足す（過去の同名 item と同一出典・同一換算で）\n` +
+      `・本当にかけていない／別のものをかけたなら、その調味料を item にする\n` +
+      `・どちらか分からないなら AskUserQuestion で聞く。本文に「無しで計上します、\n` +
+      `  違ったら言ってください」と書いて確認をユーザーに投げるのは禁止です。\n`,
+  )
+  process.exit(1)
+}
+
 console.log(
   `✅ データ検証OK: 全 item が必須栄養素 (${requiredKeys.join(', ')}) を保持しています` +
     `（一食の合計は item から導出）。同名 item の栄養値の食い違いも、` +
-    `同一食品の 100g/100ml 換算の食い違いも、item 名の注釈もありません。`,
+    `同一食品の 100g/100ml 換算の食い違いも、item 名の注釈も、` +
+    `いつも付けている調味料の抜けもありません。`,
 )
