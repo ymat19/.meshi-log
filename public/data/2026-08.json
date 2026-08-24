@@ -120,7 +120,7 @@
       {
         "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
         "nutrition": {
-          "energy_kcal": 270.0,
+          "energy_kcal": 270,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -321,7 +321,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -985,7 +985,7 @@
       {
         "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
         "nutrition": {
-          "energy_kcal": 270.0,
+          "energy_kcal": 270,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -2172,7 +2172,7 @@
       {
         "name": "サントリー -196 ストロングゼロ ダブルレモン 9% 500ml",
         "nutrition": {
-          "energy_kcal": 270.0,
+          "energy_kcal": 270,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -2908,7 +2908,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -2922,7 +2922,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml",
         "nutrition": {
-          "energy_kcal": 182.0,
+          "energy_kcal": 182,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -3120,7 +3120,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -3809,7 +3809,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -3862,7 +3862,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml",
         "nutrition": {
-          "energy_kcal": 182.0,
+          "energy_kcal": 182,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -3878,6 +3878,115 @@
     "tags": [
       "自炊",
       "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-24T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-24T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/24-0800-breakfast.webp",
+      "images/2026/08/24-0800-breakfast-2.webp"
+    ],
+    "items": [
+      {
+        "name": "パックごはん（炊きたてごはん 180g・テーブルマーク）",
+        "nutrition": {
+          "energy_kcal": 265,
+          "protein_g": 4.5,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 60.5,
+          "sugar_g": 60,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "卵 2個",
+        "nutrition": {
+          "energy_kcal": 142,
+          "protein_g": 12.2,
+          "fat_g": 10.2,
+          "saturated_fat_g": 3.2,
+          "carbohydrate_g": 0.4,
+          "sugar_g": 0.4,
+          "fiber_g": 0,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "レタス 約60g",
+        "nutrition": {
+          "energy_kcal": 6.6,
+          "protein_g": 0.36,
+          "fat_g": 0.06,
+          "saturated_fat_g": 0.015,
+          "carbohydrate_g": 1.68,
+          "sugar_g": 1.02,
+          "fiber_g": 0.66,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サラダ油 大さじ1（12g）",
+        "nutrition": {
+          "energy_kcal": 106,
+          "protein_g": 0,
+          "fat_g": 12,
+          "saturated_fat_g": 1.32,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "食塩 1.0g",
+        "nutrition": {
+          "energy_kcal": 0,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "味の素 ギョーザ 2個",
+        "nutrition": {
+          "energy_kcal": 70,
+          "protein_g": 2.8,
+          "fat_g": 2.8,
+          "saturated_fat_g": 0.87,
+          "carbohydrate_g": 8.2,
+          "sugar_g": 7.6,
+          "fiber_g": 0.6,
+          "salt_g": 0.48
+        }
+      },
+      {
+        "name": "ポン酢（約10g）",
+        "nutrition": {
+          "energy_kcal": 5.9,
+          "protein_g": 0.37,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.08,
+          "sugar_g": 1.05,
+          "fiber_g": 0.03,
+          "salt_g": 0.78
+        }
+      }
+    ],
+    "memo": "朝食（自炊）。写真2枚——(1)赤茶の器に盛った卵チャーハン（レタス入り）、(2)アルミ鍋で羽根つきのまま真っ黒に焦げた餃子2個。本人回答で、米は180g・パックごはん、卵は2個、餃子は味の素 ギョーザ2個、餃子につけたのはポン酢。【野菜の同定】チャーハンの淡い半透明の具はレタス。根拠：拡大すると葉身に網目状の細かい葉脈が走り、縁が波打ったフリル状で、緑の葉身がそのまま淡白色の中肋につながっている（玉ねぎの鱗片なら同心円状の平行線だけで、緑の葉身も波打つ縁も出ない）。量は器に見えている葉の大きさから約60g。本人は8/19以降ほぼ毎食レタスを使っており、家庭の調理で玉ねぎを記録した実績は無い。【パックごはん（炊きたてごはん 180g・テーブルマーク）】パッケージ表示 265kcal/P4.5/脂質0.5/炭水化物60.5/食塩0。【卵 2個】日本食品標準成分表(八訂)「鶏卵 全卵 生」の1個(可食部約50g)換算 71kcal・P6.1・脂質5.1・飽和1.6・炭水化物0.2・食塩0.2 の2個ぶん https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12004_7 。【レタス 約60g】八訂「レタス 土耕栽培 結球葉 生」100g＝11kcal・P0.6・脂質0.1・炭水化物2.8・食物繊維1.1・食塩0 の60g換算 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06312_7 。【サラダ油 大さじ1（12g）】八訂「植物油脂類 調合油」100g＝886kcal・脂質100.0・たんぱく質0・炭水化物0・食物繊維0・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7 、飽和脂肪酸は同DBの脂肪酸成分表「06.脂肪酸-可食部100g」10.97g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7&MODE=4 の12g換算（1.32g）。炒め油は写真に写らないが、チャーハンなので必ず使っている（推定を過小側に倒さないため大さじ1で計上）。【食塩 1.0g】味付けは塩こしょうのみ。ごはんに醤油の色が回っていないため醤油は計上していない。【味の素 ギョーザ 2個】味の素冷凍食品の公式商品ページ https://www.ffa.ajinomoto.com/products/detail/id/293 （12個入276g・JAN 4901001397457）の栄養成分表示 1個(23g)当たり 35kcal・たんぱく質1.4g・脂質1.4g・炭水化物4.1g・食塩相当量0.24g をそのまま2個ぶんに換算。飽和脂肪酸・食物繊維は公式ページに掲載が無いことを確認したうえで、豚肉と植物油の脂質組成から飽和を脂質の約31%（0.87g）、キャベツ・ニラと小麦粉の皮から食物繊維を1個0.3gとして推定。糖質＝炭水化物−食物繊維。焦げは炭化した部分で、栄養値は変わらないためそのまま計上した。【ポン酢（約10g）】8/23の記録と同じ出典・同じ100g換算（59kcal/P3.7/脂質0/炭水化物10.8/食物繊維0.3/食塩7.8）の10g換算。餃子のつけだれは本人回答どおりポン酢。糖質=炭水化物-食物繊維。 【訂正・同一商品の値の食い違い】味の素 ギョーザの記録が2系統に割れていた——7/14 は1個あたり38kcal/脂質2.0/食塩0.28、8/17 は1個あたり35kcal/脂質1.4/食塩0.24。今回あらためて公式を引き直したところ現行の表示値は後者（1個23g＝35kcal/P1.4/F1.4/C4.1/食塩0.24）だったため、7/14 の「味の素 ギョーザ 4個」も同じ公式値で全件引き直した。",
+    "tags": [
+      "自炊",
+      "餃子"
     ],
     "estimated": true,
     "schemaVersion": 1
