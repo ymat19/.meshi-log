@@ -3990,5 +3990,47 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-24T12:30:00+09:00-lunch",
+    "datetime": "2026-08-24T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "豚レバーの唐揚げ（約100g）",
+        "nutrition": {
+          "energy_kcal": 247,
+          "protein_g": 20.4,
+          "fat_g": 15.4,
+          "saturated_fat_g": 2.1,
+          "carbohydrate_g": 9,
+          "sugar_g": 9,
+          "fiber_g": 0,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "生ビール 中ジョッキ ×1",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 1.3,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 13.5,
+          "sugar_g": 13.5,
+          "fiber_g": 0,
+          "salt_g": 0,
+          "alcohol_g": 17.4
+        }
+      }
+    ],
+    "memo": "昼食（外食・中華屋）。本人申告：豚レバー揚げの小皿、生ビール中ジョッキ。味付けは本人回答どおり塩コショウのみ（甘辛だれ・あんは絡めていない）。写真なし。【豚レバーの唐揚げ（約100g）】レバーの量は本人に確認できる性質のものではないため、中華屋の小皿一皿として可食部100g（6切れ前後）と見積もった推定。内訳は、日本食品標準成分表(八訂)「肉類/＜畜肉類＞/ぶた/［副生物］/肝臓/生」100g＝114kcal・たんぱく質20.4・脂質3.4・炭水化物2.5・食物繊維0・食塩相当量0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11166_7 （飽和脂肪酸は同DBの脂肪酸成分表「06.脂肪酸-可食部100g」0.78g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11166_7&MODE=4 ）に、衣の片栗粉8g（八訂「じゃがいもでん粉」100g＝338kcal・炭水化物81.6・食物繊維0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=2_02034_7 ）と、揚げの吸油12g（八訂「植物油脂類 調合油」100g＝886kcal・脂質100.0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7 、飽和は脂肪酸成分表10.97g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7&MODE=4 ）を加算したもの。食塩は下味と振り塩のぶんを1.1g（店の味付けは家庭より濃いめに寄せた）とし、レバー自体の0.1gと合わせて1.2g。衣と揚げ油は料理そのものの構成要素なので同じitemに含め、つけだれのような別添の調味料とは分けて扱っている。【生ビール 中ジョッキ ×1】過去記録と同じ中ジョッキ1杯（約435ml・アルコール5%）の換算値で、8/10・8/21 と同値に揃えた。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "外食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
