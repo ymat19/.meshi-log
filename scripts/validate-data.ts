@@ -29,6 +29,17 @@
 // free to drift apart unnoticed. That is exactly how the egg and 焼き海苔
 // records ended up on three different bases each.
 //
+// The fifth check keeps photo-derived metrology out of memos. A top-down photo
+// carries no scale reference and no thickness, so a weight "measured" from it is
+// not a measurement — it is a guess wearing units. On 2026-08-24 a katsuo portion
+// was written up with pixel areas, a px/mm scale and a projected area in cm², and
+// the number moved 110g→240g→140g→110g→140g→120g across six revisions before the
+// portion was put on a scale: 60g. Every one of those was two to four times the
+// real value, and each was more convincing than the last because it carried more
+// digits. Numbers derived that way must not enter the record at all, so the memo
+// may not cite pixels, projected area, or a scale factor as the basis of a
+// quantity. A weight comes from the scale, the package, or the person.
+//
 // alcohol_g stays optional by design: it is only present when the item actually
 // contained alcohol (a sober meal legitimately omits it).
 //
@@ -132,6 +143,24 @@ const NAME_BANS: { pattern: RegExp; why: string }[] = [
   },
 ]
 
+// --- memo に混じった「写真からの計測」の検出 ------------------------------
+// 真上からの写真には寸法の基準物も厚みも写らない。そこから出した「実測値」は
+// measurement ではなく、単位の付いた当て推量である。量の根拠になれるのは
+// 計りに乗せた値・商品の表示値・本人の申告だけ。
+const MEMO_BANS: { pattern: RegExp; why: string }[] = [
+  {
+    // 「720px」「190px」のように画素を単位として量を語っているもの。「縮尺が
+    // 写っていないので本人に聞いた」のような正しい記述は巻き込まないよう、
+    // 数字を伴う画素表記と、写真計測に固有の語だけを対象にする。
+    pattern: /\d+\s*px|画素数|投影面積|自己相関|形状係数|(?:px|ピクセル)\s*\/\s*mm|mm\s*\/\s*px/,
+    why: '写真から寸法・重量を算出しない（量は計量値・表示値・本人申告で決める）',
+  },
+  {
+    pattern: /(?:厚み|厚さ|奥行き?)を?(?:仮定|と仮定|と置|と見)/,
+    why: '写真に写らない厚み・奥行きを仮定で埋めて重量を出さない',
+  },
+]
+
 interface NameProblem {
   name: string
   at: string
@@ -139,7 +168,14 @@ interface NameProblem {
   matched: string
 }
 
+interface MemoProblem {
+  at: string
+  why: string
+  matched: string
+}
+
 const nameProblems: NameProblem[] = []
+const memoProblems: MemoProblem[] = []
 
 // --- 落ちた調味料の検出 --------------------------------------------------
 // たれ・ポン酢・醤油のような調味料は、料理に絡んで沈むので写真にはまず写らない。
@@ -202,6 +238,13 @@ for (const month of index.months) {
       continue
     }
     entryNames.push({ at: entry.id, names: entry.items.map((i) => i.name) })
+
+    for (const ban of MEMO_BANS) {
+      const m = entry.memo?.match(ban.pattern)
+      if (m) {
+        memoProblems.push({ at: entry.id, why: ban.why, matched: m[0] })
+      }
+    }
     // Every food item must carry a full nutrition breakdown.
     for (const item of entry.items) {
       const itemMissing = missingFrom(item.nutrition)
@@ -353,6 +396,25 @@ if (nameProblems.length > 0) {
       `・NG: 「生卵 1個（まぜそばに投入）」「厚揚げ（2枚入りのうち1枚）」\n` +
       `      「温泉卵（松屋・公式表示値）」「牛めし（テイクアウト）」「唐揚げ（シェア半分）」\n` +
       `注釈は同じ食品を複数の品名に割り、上の同名チェックを無力化します。\n`,
+  )
+  process.exit(1)
+}
+
+if (memoProblems.length > 0) {
+  console.error(
+    `\n❌ データ検証に失敗: memo に写真からの計測を根拠として書いている記録が ${memoProblems.length} 件あります。\n`,
+  )
+  for (const p of memoProblems) {
+    console.error(`  ${p.at}`)
+    console.error(`      「${p.matched}」 — ${p.why}`)
+  }
+  console.error(
+    `\n真上からの写真には、寸法の基準物も厚みも写っていません。そこから出した\n` +
+      `「実測値」は measurement ではなく、単位の付いた当て推量です。桁と単位が\n` +
+      `付くぶん、根拠のない数字より始末が悪くなります。\n` +
+      `・量の根拠にしてよいもの: 計りに乗せた値／商品の栄養成分表示・内容量／本人の申告\n` +
+      `・分からないときは 0 で埋めず、AskUserQuestion で聞く\n` +
+      `検査を通すために語を言い換えるのは禁止です。導出そのものを記録から外してください。\n`,
   )
   process.exit(1)
 }
