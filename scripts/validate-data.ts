@@ -40,6 +40,17 @@
 // may not cite pixels, projected area, or a scale factor as the basis of a
 // quantity. A weight comes from the scale, the package, or the person.
 //
+// The sixth check anchors portions to what this person actually eats. Their own
+// history is remarkably tight — pack rice is 180g in 23 records out of 23, the
+// protein drink 200ml in 26 of 26, the atsuage 150g in 6 of 6 — so the median of
+// past records is a far better estimate of a serving than anything read off a
+// photograph. On 2026-08-24 that prior was available and ignored in favour of a
+// pixel computation that came out at twice the real weight. So: when a food
+// already has an established serving, recording a different one has to name the
+// evidence that justified departing from it (the person said so, or a package
+// says so). Asking them to weigh food is not an option — sending a photo is the
+// whole point of this tool.
+//
 // alcohol_g stays optional by design: it is only present when the item actually
 // contained alcohol (a sober meal legitimately omits it).
 //
@@ -58,6 +69,7 @@ import type { MealEntry, Nutrition, NutrientKey } from '../src/data/types'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const dataDir = resolve(here, '../public/data')
+
 
 const requiredKeys = config.nutrients
   .filter((n) => n.required)
@@ -89,6 +101,13 @@ const signatureOf = (n: Nutrition | undefined): string =>
 
 const readJson = (path: string): unknown =>
   JSON.parse(readFileSync(path, 'utf8'))
+// 一次情報で裏が取れた基準量。履歴の中央値より、こちらを優先する。
+const rawKnownPortions = (
+  readJson(resolve(here, 'known-portions.json')) as {
+    portions: Record<string, { grams: number; source: string; effectiveFrom?: string }>
+  }
+).portions
+
 
 // Required nutrients absent (or non-numeric) on a given nutrition record.
 const missingFrom = (n: Nutrition | undefined): NutrientKey[] =>
@@ -116,6 +135,11 @@ const foodKeyOf = (name: string): string =>
     .replace(/[（）()\[\]【】,、・/／\s\-−ー℃%％]/g, '')
     .replace(/\d+(?:\.\d+)?(ml|g|kg|本|枚|個|袋|杯|缶|パック|人前|切れ|尾|房|片)?/g, '')
     .replace(/[×x]/g, '')
+
+// known-portions.json は人が読める品名で書く。突き合わせは foodKey で行う。
+const knownPortions = new Map(
+  Object.entries(rawKnownPortions).map(([name, v]) => [foodKeyOf(name), v]),
+)
 
 // --- 品名に混じった注釈の検出 --------------------------------------------
 // 品名に書いてよいのは「食品名（メーカー・商品名を含む）＋分量・実際に食べた内容」
@@ -174,8 +198,33 @@ interface MemoProblem {
   matched: string
 }
 
+interface PortionProblem {
+  at: string
+  name: string
+  portion: number
+  reference: number
+  basis: string
+}
+
+// 基準量から外れた量を書いてよいのは、一次情報がある場合だけ。
+// 「本人がそう言った」「パッケージにそう書いてある」のどちらかが memo にあること。
+const PORTION_EVIDENCE =
+  /本人申告|本人回答|本人の申告|本人が|計量|量り|計り|内容量|表示値|パッケージ表示|公式表示|表示のとおり/
+
+// memo は【品名】…… と品目ごとに区切って書く形式なので、品名が出てくる位置から
+// 次の【 までを「その品目についての記述」とみなし、その中だけで根拠語を探す。
+const hasEvidenceFor = (name: string, memo?: string): boolean => {
+  if (!memo) return false
+  const at = memo.indexOf(name)
+  if (at < 0) return false
+  const rest = memo.slice(at + name.length)
+  const end = rest.indexOf('【')
+  return PORTION_EVIDENCE.test(end < 0 ? rest : rest.slice(0, end))
+}
+
 const nameProblems: NameProblem[] = []
 const memoProblems: MemoProblem[] = []
+const portionProblems: PortionProblem[] = []
 
 // --- 落ちた調味料の検出 --------------------------------------------------
 // たれ・ポン酢・醤油のような調味料は、料理に絡んで沈むので写真にはまず写らない。
@@ -219,6 +268,8 @@ const byFood = new Map<string, Scaled[]>()
 
 // entry ごとの item 名一覧（落ちた調味料の検出に使う）
 const entryNames: { at: string; names: string[] }[] = []
+// 基準量チェック用（memo も必要）
+const entryPortions: { at: string; names: string[]; memo?: string }[] = []
 
 // 比較の許容: 相対2%まで（丸め由来）。加えて「実際の一食分に効くか」で足切りする。
 // 100g 換算のズレを一番小さい分量に戻したとき 2kcal / 0.1g 未満なら、それは
@@ -238,6 +289,7 @@ for (const month of index.months) {
       continue
     }
     entryNames.push({ at: entry.id, names: entry.items.map((i) => i.name) })
+    entryPortions.push({ at: entry.id, names: entry.items.map((i) => i.name), memo: entry.memo })
 
     for (const ban of MEMO_BANS) {
       const m = entry.memo?.match(ban.pattern)
@@ -276,6 +328,46 @@ for (const month of index.months) {
       variants.set(signature, [...(variants.get(signature) ?? []), entry.id])
       byName.set(item.name, variants)
     }
+  }
+}
+
+// --- 基準量からの逸脱 ------------------------------------------------------
+// その食品の「この人にとっての一人前」は、known-portions.json（一次情報で裏が
+// 取れた量）を最優先し、無ければ過去記録の中央値を使う。中央値は3件以上の実績が
+// あるときだけ基準として扱う（2件では中央値が意味を持たない）。
+// 対象は known-portions.json に載っている食品だけ。過去記録の中央値まで基準に
+// すると、「×2本」（2本飲んだ）や葉物の自然なブレまで拾って誤検出だらけになり、
+// 検査ごと無視されるようになる。中央値は estimate の出発点として `npm run portions`
+// で参照するものであって、コミットを止める根拠にはしない。
+// 基準量は「確定した日」以降の記録にだけ適用する。それ以前の記録は別の根拠で
+// 書かれていて、いま遡って確かめる手段が無い。過去に遡って一律に落とすと、直せない
+// ものを理由にコミットが永久に通らなくなる。
+const referenceFor = (key: string, at: string): { grams: number; basis: string } | null => {
+  const known = knownPortions.get(key)
+  if (!known) return null
+  if (known.effectiveFrom && at.slice(0, 10) < known.effectiveFrom) return null
+  return { grams: known.grams, basis: known.source }
+}
+
+// 1.5倍/0.67倍を超える差だけを見る。丸めや盛りのブレは拾わない。
+const PORTION_TOLERANCE = 1.5
+
+for (const { at, names, memo } of entryPortions) {
+  for (const name of names) {
+    // 「×2本」「2個」は2つ食べたということなので、基準と比べるのは1つあたりの量。
+    const count = Number(name.match(/[×x]\s*(\d+)/)?.[1] ?? 1)
+    const total = portionOf(name)
+    if (!total || total <= 0) continue
+    const portion = total / count
+    const ref = referenceFor(foodKeyOf(name), at)
+    if (!ref || ref.grams <= 0) continue
+    const ratio = portion / ref.grams
+    if (ratio <= PORTION_TOLERANCE && ratio >= 1 / PORTION_TOLERANCE) continue
+    // 一次情報が「その品目について」書かれているときだけ、基準から外れてよい。
+    // memo のどこかに根拠語が1つあれば全品目が免除、では緩すぎる（この形式の memo は
+    // 【品名】…… と品目ごとに区切って書くので、品名の直後だけを見る）。
+    if (hasEvidenceFor(name, memo)) continue
+    portionProblems.push({ at, name, portion, reference: ref.grams, basis: ref.basis })
   }
 }
 
@@ -415,6 +507,28 @@ if (memoProblems.length > 0) {
       `・量の根拠にしてよいもの: 計りに乗せた値／商品の栄養成分表示・内容量／本人の申告\n` +
       `・分からないときは 0 で埋めず、AskUserQuestion で聞く\n` +
       `検査を通すために語を言い換えるのは禁止です。導出そのものを記録から外してください。\n`,
+  )
+  process.exit(1)
+}
+
+if (portionProblems.length > 0) {
+  console.error(
+    `\n❌ データ検証に失敗: この人の基準量から大きく外れた分量が ${portionProblems.length} 件あります。\n`,
+  )
+  for (const p of portionProblems) {
+    const times = (p.portion / p.reference).toFixed(2)
+    console.error(`  「${p.name}」  (${p.at})`)
+    console.error(`      基準 ${p.reference}（${p.basis}）に対して ${p.portion} — ${times}倍`)
+  }
+  console.error(
+    `\nこの人の一人前は食品ごとにほぼ一定です（パックごはんは23件すべて180g、\n` +
+      `ザバスは26件すべて200ml）。**写真から読んだ大きさより、この履歴のほうが\n` +
+      `はるかに正確な手がかり**です。基準から外れた量を書くなら、その根拠が要ります。\n` +
+      `・本人がそう言った → memo に「本人申告」「本人回答」と書く\n` +
+      `・パッケージにそう書いてある → memo に「表示値」「内容量」と書く\n` +
+      `・どちらも無い → 基準量をそのまま使う。写真の見た目で増減させない\n` +
+      `一次情報が無いのに基準から動かした量は、確度が上がったのではなく下がっています。\n` +
+      `裏が取れた基準量は scripts/known-portions.json に足してください。\n`,
   )
   process.exit(1)
 }
