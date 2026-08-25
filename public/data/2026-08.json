@@ -4119,5 +4119,151 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-25T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-25T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/25-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオのたたき（約60g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 15,
+          "fat_g": 3.72,
+          "saturated_fat_g": 0.9,
+          "carbohydrate_g": 0.12,
+          "sugar_g": 0.12,
+          "fiber_g": 0,
+          "salt_g": 0.06
+        }
+      },
+      {
+        "name": "ご飯（165g）",
+        "nutrition": {
+          "energy_kcal": 257.4,
+          "protein_g": 4.13,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.17,
+          "carbohydrate_g": 61.2,
+          "sugar_g": 58.7,
+          "fiber_g": 2.48,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "朝食（自炊）。赤茶の器のごはんの上に、皮つきのカツオのたたきを4切れのせた丼。【ご飯（165g）】本人回答「1/2合」。過去記録の換算（1合＝約330g）で炊き上がり165g。日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の165g換算。【カツオのたたき（約60g）】量は scripts/known-portions.json の基準量60g（本人の計量値・2026-08-25）。写真で数えて4切れで、8/24 と同じ切れ数・同じ見え方のため基準量をそのまま採った。日本食品標準成分表(八訂)「魚介類/＜魚類＞/（かつお類）/かつお/秋獲り/生」100g＝150kcal・たんぱく質25.0・脂質6.2・炭水化物0.2・食物繊維0・食塩相当量0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 （飽和脂肪酸は同DBの脂肪酸成分表1.50g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7&MODE=4 ）の60g換算。【味付け】本人回答「何もかけていない」。醤油・たれ・ポン酢は計上していない。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-25T12:30:00+09:00-lunch",
+    "datetime": "2026-08-25T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/25-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "日清中華 汁なし担々麺 大盛り（日清食品冷凍・1食360g）",
+        "nutrition": {
+          "energy_kcal": 604,
+          "protein_g": 17,
+          "fat_g": 20.6,
+          "saturated_fat_g": 4.2,
+          "carbohydrate_g": 87.7,
+          "sugar_g": 81.5,
+          "fiber_g": 6.2,
+          "salt_g": 4.2
+        }
+      }
+    ],
+    "memo": "昼食。写真はパッケージ（「日清中華 汁なし担々麺 大盛り たっぷり360g・要冷凍・ゆで」）。【日清中華 汁なし担々麺 大盛り】今回あらためて日清食品グループ公式の商品ページ https://www.nissin.com/jp/product/items/12746/ （JAN 4548779731221）を引き直し、栄養成分表示 1食360g当たり エネルギー604kcal・たんぱく質17.0g・脂質20.6g・炭水化物87.7g・食塩相当量4.2g をそのまま採用した。飽和脂肪酸・糖質・食物繊維は公式ページに掲載が無いことを確認したうえで、8/23 の同一商品の記録と同じ換算（飽和は脂質の約20%、食物繊維は麺と青菜から6.2g）で揃えた。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "中食",
+      "麺",
+      "冷凍食品"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-25T21:00:00+09:00-dinner",
+    "datetime": "2026-08-25T21:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/25-2100-dinner.webp",
+      "images/2026/08/25-2100-dinner-2.webp"
+    ],
+    "items": [
+      {
+        "name": "一本釣り鰹だし香る石臼挽そば粉のざるそば（セブンイレブン・1食）",
+        "nutrition": {
+          "energy_kcal": 334,
+          "protein_g": 16.3,
+          "fat_g": 3,
+          "saturated_fat_g": 0.6,
+          "carbohydrate_g": 63.1,
+          "sugar_g": 57.9,
+          "fiber_g": 5.2,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "カツオのたたき（約15g）",
+        "nutrition": {
+          "energy_kcal": 22.5,
+          "protein_g": 3.75,
+          "fat_g": 0.93,
+          "saturated_fat_g": 0.23,
+          "carbohydrate_g": 0.03,
+          "sugar_g": 0.03,
+          "fiber_g": 0,
+          "salt_g": 0.02
+        }
+      },
+      {
+        "name": "にんにくスライス（約10g）",
+        "nutrition": {
+          "energy_kcal": 12.9,
+          "protein_g": 0.64,
+          "fat_g": 0.09,
+          "saturated_fat_g": 0.0133,
+          "carbohydrate_g": 2.75,
+          "sugar_g": 2.13,
+          "fiber_g": 0.62,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "夕食。写真2枚——(1)セブンイレブンのざるそばのパッケージ、(2)コルクの敷板にレタスを敷き、皮つきのカツオのたたきを1切れ置いてにんにくスライスを添えたもの。【一本釣り鰹だし香る石臼挽そば粉のざるそば】今回あらためてセブン公式 https://www.sej.co.jp/products/a/item/090415/ を引き直し、1食あたり エネルギー334kcal・たんぱく質16.3g・脂質3.0g・炭水化物63.1g（糖質57.9g・食物繊維5.2g）・食塩相当量2g をそのまま採用。パッケージ写真の334kcal・398円とも一致する。飽和脂肪酸のみ公式に掲載が無いことを確認したうえで、そば粉と小麦の脂質組成から0.6gとした（過去3件の同名itemと同値）。つゆ・わさび・刻み海苔は商品に付属するもので、この表示値に含まれる。【カツオのたたき（約15g）】写真で数えて1切れ。基準量は scripts/known-portions.json の60g（本人の計量値・2026-08-25）で、これは同日朝と同じ4切れぶんにあたるため、その1切れとして15gで計上した。当初この切れ数を本人に質問したが、写真を見れば数えられることであり、質問にすべきではなかった。栄養値の出典は同日朝と同じ八訂「かつお/秋獲り/生」 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 の15g換算。【にんにくスライス・レタス】過去記録と同じ基準量（にんにく10g、レタス50g）。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "自炊",
+      "中食",
+      "麺",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
