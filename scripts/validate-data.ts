@@ -51,6 +51,16 @@
 // says so). Asking them to weigh food is not an option — sending a photo is the
 // whole point of this tool.
 //
+// The seventh check refuses parts of an animal this person has never eaten.
+// On 2026-08-25 a photo of sliced katsuo was read as a fish head — eye, fin and
+// all — and written into the record as 「カツオのあら塩焼き（頭・カマ）」. Nobody
+// eats a katsuo head, and this person's records had never once contained one; a
+// glance at their own history would have killed the reading instantly. The
+// mistake was not the blurry pixels, it was never asking whether the thing
+// identified is a thing that gets eaten. So naming a part — 頭, 兜, カマ, あら,
+// ヒレ, 骨, 内臓 — now requires that the same part of the same animal already
+// appears in an earlier record, or that the memo says the person told us.
+//
 // alcohol_g stays optional by design: it is only present when the item actually
 // contained alcohol (a sober meal legitimately omits it).
 //
@@ -198,6 +208,22 @@ interface MemoProblem {
   matched: string
 }
 
+interface PartProblem {
+  at: string
+  name: string
+  matched: string
+}
+
+// 通常そのままでは食べない部位。品名に出すには裏付けが要る。
+// 「豚骨」「目玉焼き」「あらびき」「カマンベール」のような、部位を指していない
+// 語を巻き込まないよう除外する。
+const PART_WORDS =
+  /(?<![豚鶏牛])骨|頭|兜|カマ(?!ンベール)|あら(?!びき)|ヒレ|鰭|内臓|眼|目玉(?!焼)/
+
+// このルールの適用開始日。これより前の記録は当時の根拠で書かれていて、いま
+// 遡って裏付けを足せない。遡って落とすとコミットが永久に通らなくなる。
+const PART_RULE_FROM = '2026-08-25'
+
 interface PortionProblem {
   at: string
   name: string
@@ -225,6 +251,7 @@ const hasEvidenceFor = (name: string, memo?: string): boolean => {
 const nameProblems: NameProblem[] = []
 const memoProblems: MemoProblem[] = []
 const portionProblems: PortionProblem[] = []
+const partProblems: PartProblem[] = []
 
 // --- 落ちた調味料の検出 --------------------------------------------------
 // たれ・ポン酢・醤油のような調味料は、料理に絡んで沈むので写真にはまず写らない。
@@ -371,6 +398,30 @@ for (const { at, names, memo } of entryPortions) {
   }
 }
 
+// --- 食べない部位を名指ししていないか --------------------------------------
+// 「その人がそれを食べるのか」を、写真の見立てより先に潰す。同じ部位の記録が
+// 過去にあるか、本人がそう言ったか。どちらも無ければ、それは写真からの想像。
+{
+  const chrono = [...entryPortions].sort((a, b) => (a.at < b.at ? -1 : 1))
+  const seenParts = new Set<string>()
+  for (const { at, names, memo } of chrono) {
+    for (const name of names) {
+      const m = name.match(PART_WORDS)
+      const key = foodKeyOf(name)
+      if (!m) {
+        seenParts.add(key)
+        continue
+      }
+      // 過去に同じ部位の記録がある / 本人がそう言った、のどちらかが要る。
+      const inScope = at.slice(0, 10) >= PART_RULE_FROM
+      if (inScope && !seenParts.has(key) && !hasEvidenceFor(name, memo)) {
+        partProblems.push({ at, name, matched: m[0] })
+      }
+      seenParts.add(key)
+    }
+  }
+}
+
 const conflicts: Conflict[] = [...byName]
   .filter(([, variants]) => variants.size > 1)
   .map(([name, variants]) => ({
@@ -507,6 +558,27 @@ if (memoProblems.length > 0) {
       `・量の根拠にしてよいもの: 計りに乗せた値／商品の栄養成分表示・内容量／本人の申告\n` +
       `・分からないときは 0 で埋めず、AskUserQuestion で聞く\n` +
       `検査を通すために語を言い換えるのは禁止です。導出そのものを記録から外してください。\n`,
+  )
+  process.exit(1)
+}
+
+if (partProblems.length > 0) {
+  console.error(
+    `\n❌ データ検証に失敗: 過去に食べた記録の無い部位を品名に出している item が ${partProblems.length} 件あります。\n`,
+  )
+  for (const p of partProblems) {
+    console.error(`  「${p.name}」  (${p.at})`)
+    console.error(`      「${p.matched}」 — この魚・肉のこの部位を食べた記録が過去にありません`)
+  }
+  console.error(
+    `\n写真から同定したものは、**その人がそれを食べる形になっているか**で必ず潰してください。\n` +
+      `2026-08-25 に、カツオの切り身の写真を「眼とヒレが見える」と読んで頭（あら）として\n` +
+      `記録しました。カツオの頭を食べる人はいませんし、この人の記録に一度も出てきません。\n` +
+      `過去ログを一度見れば消えた読みでした。ぼけた画素は何にでも見えるので、画素の側から\n` +
+      `詰めても止まりません。止まるのは「食べ方として成立するか」の側だけです。\n` +
+      `・過去に同じ部位を食べた記録がある → そのまま通ります\n` +
+      `・本人がそう言った → memo にその品目の記述として「本人申告」「本人回答」と書く\n` +
+      `・どちらも無い → その同定は捨てて、写真に写っている見慣れた形のほうを採る\n`,
   )
   process.exit(1)
 }
