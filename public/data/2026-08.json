@@ -4489,5 +4489,48 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-27T10:30:00+09:00-breakfast",
+    "datetime": "2026-08-27T10:30:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/08/27-1030-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "ダブルチーズバーガー（マクドナルド）",
+        "nutrition": {
+          "energy_kcal": 459,
+          "protein_g": 26.4,
+          "fat_g": 25.1,
+          "saturated_fat_g": 12.11,
+          "carbohydrate_g": 31.8,
+          "sugar_g": 30.3,
+          "fiber_g": 1.5,
+          "salt_g": 2.9
+        }
+      },
+      {
+        "name": "モンスターエナジー 355ml缶（アサヒ飲料）",
+        "nutrition": {
+          "energy_kcal": 177.5,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 46.2,
+          "sugar_g": 46.2,
+          "fiber_g": 0,
+          "salt_g": 0.71
+        }
+      }
+    ],
+    "memo": "写真1枚——マクドナルドのダブルチーズバーガー（包装のまま）とモンスターエナジーの缶。時刻10:30・缶は355ml通常版（緑）で本人確認済み。【ダブルチーズバーガー】マクドナルド公式 https://www.mcdonalds.co.jp/products/1360/ を今回引き直し（459kcal/P26.4/F25.1/飽和脂肪酸12.11/炭水化物31.8/食塩2.9g）。食物繊維は公式非掲載のため、同名itemの既存記録（8/18・8/26）と同じバンズ由来1.5gで統一。糖質=炭水化物-食物繊維=30.3g。【モンスターエナジー】アサヒ飲料公式ページは403のため、JAN 4897036690017 でラベル表示の独立転記2件を突き合わせ——セイムス https://www.seims.co.jp/shop/g/g4897036690017/ （100mlあたり50kcal/P0/F0/炭水化物13g/食塩相当量0.2g/カフェイン40mg）、アスクル https://www.askul.co.jp/p/P714719/ （100mlあたり50kcal/P0/F0/炭水化物12.6g/ナトリウム78mg=食塩相当量0.20g、旧表示形式）。現行表示形式のセイムス値を採用し355ml換算（177.5kcal/炭水化物46.2g/食塩0.71g）。飽和脂肪酸・食物繊維は脂質0の炭酸飲料で実際に含まないため0。",
+    "tags": [
+      "外食",
+      "マクドナルド"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
