@@ -4532,5 +4532,46 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-27T12:30:00+09:00-lunch",
+    "datetime": "2026-08-27T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "カツオのたたき（約120g）",
+        "nutrition": {
+          "energy_kcal": 180,
+          "protein_g": 30,
+          "fat_g": 7.44,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 0.24,
+          "sugar_g": 0.24,
+          "fiber_g": 0,
+          "salt_g": 0.12
+        }
+      },
+      {
+        "name": "ご飯（165g）",
+        "nutrition": {
+          "energy_kcal": 257.4,
+          "protein_g": 4.13,
+          "fat_g": 0.5,
+          "saturated_fat_g": 0.17,
+          "carbohydrate_g": 61.2,
+          "sugar_g": 58.7,
+          "fiber_g": 2.48,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告（「昼はご飯0.5合とカツオ120g」）。【カツオのたたき（約120g）】120g は本人申告の量。栄養値は 8/22 以降の同名itemと同じ100g当たり150kcal/P25/F6.2/飽和1.5/炭水化物0.2/食塩0.1（日本食品標準成分表(八訂) かつお・秋獲り 生）を120gに換算。【ご飯（165g）】本人申告の「ご飯0.5合」＝米75gの炊きあがり相当で、8/25朝・8/26夜の同名itemと同値（八訂 こめ・水稲めし・精白米）。調味料は本人が挙げていないため計上していない（8/25朝の同構成＝カツオのたたき＋ご飯のみ、と同じ扱い）。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
