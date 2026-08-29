@@ -4883,5 +4883,87 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-29T20:00:00+09:00-dinner",
+    "datetime": "2026-08-29T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "大阪王将 羽根つき餃子 4個",
+        "nutrition": {
+          "energy_kcal": 172,
+          "protein_g": 4.8,
+          "fat_g": 8,
+          "saturated_fat_g": 2.53,
+          "carbohydrate_g": 20,
+          "sugar_g": 18.7,
+          "fiber_g": 1.33,
+          "salt_g": 1.2
+        }
+      },
+      {
+        "name": "大阪王将 小籠包 2個",
+        "nutrition": {
+          "energy_kcal": 106,
+          "protein_g": 3.2,
+          "fat_g": 5.4,
+          "saturated_fat_g": 1.62,
+          "carbohydrate_g": 11.4,
+          "sugar_g": 11,
+          "fiber_g": 0.4,
+          "salt_g": 0.4
+        }
+      },
+      {
+        "name": "大阪王将 たれつき肉焼売 2個",
+        "nutrition": {
+          "energy_kcal": 134.4,
+          "protein_g": 2.87,
+          "fat_g": 7.21,
+          "saturated_fat_g": 1.8,
+          "carbohydrate_g": 14.49,
+          "sugar_g": 13.89,
+          "fiber_g": 0.6,
+          "salt_g": 1.12
+        }
+      },
+      {
+        "name": "カツオのたたき（約80g）",
+        "nutrition": {
+          "energy_kcal": 120,
+          "protein_g": 20,
+          "fat_g": 4.96,
+          "saturated_fat_g": 1.2,
+          "carbohydrate_g": 0.16,
+          "sugar_g": 0.16,
+          "fiber_g": 0,
+          "salt_g": 0.08
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      }
+    ],
+    "memo": "写真なし、本人申告。「王将冷凍」＝大阪王将の家庭用冷凍点心と特定。【大阪王将 羽根つき餃子 4個】本人申告「餃子4」。過去ログの確定値（6個=258kcal/P7.2/脂質12/飽和3.8/炭水化物30/食物繊維2/食塩1.8、2026-07の公式表示 https://www.eat-and.jp/foods/products/242.html 由来）を4個に比例換算。【大阪王将 小籠包 2個】本人申告「小籠包2」。検索で確認した公式表示（1個25g=53kcal/P1.6/脂質2.7/炭水化物5.7/食塩0.2、https://www.eat-and.jp/foods/products/229.html 系）を2個で換算。飽和脂肪酸は脂質の約30%、食物繊維は皮由来の少量として推定。【大阪王将 たれつき肉焼売 2個】本人申告「しゅうまい2」。検索で確認した公式表示（100gあたり192kcal/P4.1/脂質10.3/炭水化物20.7/食塩1.6、1個35g、https://www.eat-and.jp/foods/products/293.html ）を2個(70g)分で換算。飽和脂肪酸・食物繊維は豚肉焼売の標準組成からの推定。【カツオのたたき（約80g）】本人申告「カツオ80g」。今朝の記録と同じ8月の確定値（戻りガツオ・150kcal/100g）を80gで換算、今朝の記録と同一値。【相模屋 焼いておいしい絹厚揚げ 1枚（150g）】本人の言う「厚揚げ豆腐」はいつもの相模屋 焼いておいしい絹厚揚げと判断（過去ログで反復使用の定番品）。公式表示 https://sagamiya-kk.co.jp/products/kinu_atsuage.html 156kcal/P9.5/脂質8.7/炭水化物11.1/食塩0.14。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "冷凍食品",
+      "刺身",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
