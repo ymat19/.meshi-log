@@ -4671,5 +4671,148 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-28T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-28T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "カツオのたたき（約100g）",
+        "nutrition": {
+          "energy_kcal": 150,
+          "protein_g": 25,
+          "fat_g": 6.2,
+          "saturated_fat_g": 1.5,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74.2,
+          "sugar_g": 71.2,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "写真なし。【カツオのたたき（約100g）】本人申告（100g・米200gと明言）。栄養値は8月の過去ログで確定している同名品目の値をそのまま採用（8/22の訂正で戻りガツオ＝日本食品標準成分表(八訂)「かつお/秋獲り/生」100g=150kcal・脂質6.2 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 に統一済み）。【白ごはん（約200g）】本人申告（200g）。日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g=156kcal/P2.5/脂質0.3/炭水化物37.1/食物繊維1.5/食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 を200gで換算した過去ログの確定値。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-28T12:30:00+09:00-lunch",
+    "datetime": "2026-08-28T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [
+      "images/2026/08/28-1230-lunch.webp"
+    ],
+    "items": [
+      {
+        "name": "ニッスイ まんぞくプレート ふっくらごはんとカツカレー（冷凍・1食330g）",
+        "nutrition": {
+          "energy_kcal": 581,
+          "protein_g": 12.9,
+          "fat_g": 21.5,
+          "saturated_fat_g": 7.5,
+          "carbohydrate_g": 84.2,
+          "sugar_g": 81.7,
+          "fiber_g": 2.5,
+          "salt_g": 2.9
+        }
+      }
+    ],
+    "memo": "本人申告「ニッスイの冷凍カツカレー」。ニッスイ公式商品ページ https://www.nissui.co.jp/product/01193.html の商品「まんぞくプレート ふっくらごはんとカツカレー」（豚ロースカツ使用、1食330g）と特定。検索結果で複数回確認した公式表示値 581kcal/P12.9/脂質21.5/炭水化物84.2/食塩2.9を採用（一部レビューで584kcalの表記もあったがリニューアル前後の差の可能性があり、公式表示として繰り返し確認できた581kcalを採用）。飽和脂肪酸・食物繊維は公式表示を確認できなかったため、揚げ物＋カレールウの標準組成から飽和脂肪酸は脂質の約35%、食物繊維はカレーの具材量からの推定。写真の断面が白っぽく見えたためチキンカツと誤認しかけたが、本人が商品を特定したことで豚ロースカツと判明（訂正済み）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "冷凍食品",
+      "カレー",
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-28T20:00:00+09:00-dinner",
+    "datetime": "2026-08-28T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [
+      "images/2026/08/28-2000-dinner.webp"
+    ],
+    "items": [
+      {
+        "name": "カツオのたたき（約50g）",
+        "nutrition": {
+          "energy_kcal": 75,
+          "protein_g": 12.5,
+          "fat_g": 3.1,
+          "saturated_fat_g": 0.75,
+          "carbohydrate_g": 0.1,
+          "sugar_g": 0.1,
+          "fiber_g": 0,
+          "salt_g": 0.05
+        }
+      },
+      {
+        "name": "にんにくスライス（約15g）",
+        "nutrition": {
+          "energy_kcal": 19.35,
+          "protein_g": 0.96,
+          "fat_g": 0.135,
+          "saturated_fat_g": 0.02,
+          "carbohydrate_g": 4.125,
+          "sugar_g": 3.195,
+          "fiber_g": 0.93,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "紀文 チーちく（5個入り・全部）",
+        "nutrition": {
+          "energy_kcal": 110,
+          "protein_g": 9.9,
+          "fat_g": 4.3,
+          "saturated_fat_g": 2.2,
+          "carbohydrate_g": 7.9,
+          "sugar_g": 7.9,
+          "fiber_g": 0,
+          "salt_g": 1.9
+        }
+      }
+    ],
+    "memo": "【カツオのたたき（約50g）】本人回答「少ない」（過去の基準量60〜100gより少なめ、約50gと推定）。栄養値は8月の過去ログで確定している同名品目の100gあたり値（戻りガツオ・八訂「かつお/秋獲り/生」150kcal/脂質6.2 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 ）を50gに比例換算。【にんにくスライス（約15g）】本人回答「にんにくスライス」。過去ログの確定値（にんにく生・八訂を15gで換算）と同一値を採用。【相模屋 焼いておいしい絹厚揚げ 1枚（150g）】公式表示 https://sagamiya-kk.co.jp/products/kinu_atsuage.html 156kcal/P9.5/脂質8.7/炭水化物11.1/食塩0.14（今回セッションで検索により再確認、過去ログと一致）。飽和脂肪酸・食物繊維は大豆製品標準組成からの推定（過去ログ流用）。【紀文 チーちく（5個入り・全部）】本人申告「全部（5個）」で1袋分。パッケージを「チー鱈」と誤読していたが、本人指摘により紀文食品の「チーちく」（とろ〜りカマンベールチーズ入りちくわ・5個入り85g）と判明。紀文 チーちく 5個入り85gの検索結果の表示値 110kcal/P9.9/脂質4.3/炭水化物7.9/食塩1.9を採用。飽和脂肪酸は公式表示が無いためチーズ分から脂質の約50%と推定、食物繊維はちくわ・チーズいずれも0のため0（実際に含まれないため）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身",
+      "おつまみ"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
