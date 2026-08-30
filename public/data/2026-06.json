@@ -175,7 +175,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml ×2本",
         "nutrition": {
-          "energy_kcal": 520.0,
+          "energy_kcal": 520,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -305,13 +305,13 @@
       {
         "name": "ゆで卵 1個",
         "nutrition": {
-          "energy_kcal": 67.0,
+          "energy_kcal": 67,
           "protein_g": 6.2,
           "fat_g": 5.2,
           "saturated_fat_g": 1.6,
           "carbohydrate_g": 0.15,
           "sugar_g": 0.15,
-          "fiber_g": 0.0,
+          "fiber_g": 0,
           "salt_g": 0.15
         }
       },
@@ -344,7 +344,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -540,7 +540,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -685,7 +685,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml",
         "nutrition": {
-          "energy_kcal": 182.0,
+          "energy_kcal": 182,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -838,7 +838,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -1204,7 +1204,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -1302,7 +1302,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -1344,7 +1344,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -1439,7 +1439,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -1559,14 +1559,14 @@
       {
         "name": "白ごはん（普通盛り 約200g）",
         "nutrition": {
-          "energy_kcal": 312.0,
-          "protein_g": 5.0,
+          "energy_kcal": 312,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
-          "salt_g": 0.0
+          "fiber_g": 3,
+          "salt_g": 0
         }
       },
       {
@@ -1611,7 +1611,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml",
         "nutrition": {
-          "energy_kcal": 182.0,
+          "energy_kcal": 182,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -1644,12 +1644,12 @@
         "name": "白ごはん（約200g）",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       },
@@ -1767,13 +1767,13 @@
       {
         "name": "カツオ（たたき・約100g）",
         "nutrition": {
-          "energy_kcal": 108.0,
+          "energy_kcal": 108,
           "protein_g": 25.8,
           "fat_g": 0.5,
           "saturated_fat_g": 0.12,
           "carbohydrate_g": 0.1,
           "sugar_g": 0.1,
-          "fiber_g": 0.0,
+          "fiber_g": 0,
           "salt_g": 0.1
         }
       },
@@ -1807,12 +1807,12 @@
         "name": "白ごはん（200g）",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       },
@@ -1832,7 +1832,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -1877,7 +1877,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -1891,12 +1891,12 @@
         "name": "白ごはん（約200g）",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       },
@@ -2134,7 +2134,7 @@
           "saturated_fat_g": 0.204,
           "carbohydrate_g": 0.17,
           "sugar_g": 0.17,
-          "fiber_g": 0.0,
+          "fiber_g": 0,
           "salt_g": 0.17
         }
       },
@@ -2147,8 +2147,8 @@
           "saturated_fat_g": 0.33,
           "carbohydrate_g": 122.4,
           "sugar_g": 117.5,
-          "fiber_g": 5.0,
-          "salt_g": 0.0
+          "fiber_g": 5,
+          "salt_g": 0
         }
       },
       {
@@ -2183,16 +2183,16 @@
     ],
     "items": [
       {
-        "name": "大阪王将 羽根つき餃子 ×6",
+        "name": "大阪王将 羽根つき餃子 6個",
         "nutrition": {
-          "energy_kcal": 258,
-          "protein_g": 7.2,
-          "fat_g": 12,
-          "saturated_fat_g": 3.6,
-          "carbohydrate_g": 30,
-          "sugar_g": 28,
-          "fiber_g": 2,
-          "salt_g": 1.8
+          "energy_kcal": 227.8,
+          "protein_g": 4.96,
+          "fat_g": 10.22,
+          "saturated_fat_g": 3.37,
+          "carbohydrate_g": 28.91,
+          "sugar_g": 26.86,
+          "fiber_g": 2.04,
+          "salt_g": 1.61
         }
       },
       {
@@ -2212,12 +2212,12 @@
         "name": "ご飯 200g",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       },
@@ -2235,7 +2235,7 @@
         }
       }
     ],
-    "memo": "大阪王将 羽根つき餃子（公式 1個24.5g＝43kcal/P1.2/F2.0/C5.0/食塩0.3g）×6: https://www.eat-and.jp/foods/products/242.html 。ししとう・たくあんは推定。 【訂正 2026-08-20・データ整合】たくあんの100g換算（25kcal・食塩4.0g）がどの出典とも一致しておらず、記録間でも食い違っていたため、日本食品標準成分表(八訂)「だいこん 漬物 たくあん漬 塩押しだいこん漬」100g＝43kcal・P0.6・脂質0.3・炭水化物10.8・食物繊維2.3・食塩3.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06138_7 に統一した（20g＝8.6kcal・食塩0.66g／15g＝6.5kcal・食塩0.5g）。飽和脂肪酸は成分表に記載が無いため、脂質量から推定（20gで0.01g）。糖質=炭水化物-食物繊維。 【訂正 2026-08-20・データ整合】自炊のごはんの100g換算が記録間でズレていた（食物繊維 0.5g／1.5g など）ため、日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 に統一した https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 。糖質=炭水化物-食物繊維。",
+    "memo": "大阪王将 羽根つき餃子（公式 1個24.5g＝43kcal/P1.2/F2.0/C5.0/食塩0.3g）×6: https://www.eat-and.jp/foods/products/242.html 。ししとう・たくあんは推定。 【訂正 2026-08-20・データ整合】たくあんの100g換算（25kcal・食塩4.0g）がどの出典とも一致しておらず、記録間でも食い違っていたため、日本食品標準成分表(八訂)「だいこん 漬物 たくあん漬 塩押しだいこん漬」100g＝43kcal・P0.6・脂質0.3・炭水化物10.8・食物繊維2.3・食塩3.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06138_7 に統一した（20g＝8.6kcal・食塩0.66g／15g＝6.5kcal・食塩0.5g）。飽和脂肪酸は成分表に記載が無いため、脂質量から推定（20gで0.01g）。糖質=炭水化物-食物繊維。 【訂正 2026-08-20・データ整合】自炊のごはんの100g換算が記録間でズレていた（食物繊維 0.5g／1.5g など）ため、日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 に統一した https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 。糖質=炭水化物-食物繊維。 【訂正 2026-08-30・大阪王将 羽根つき餃子を現行の公式表示に統一】この品目は記録ごとに 1個43kcal 系の古い転記値を使い回しており、公式の現行表示と食い違っていた（古い値は 100g換算で171kcal・P4.0・脂質9.9・炭水化物16.2・食塩1.2 に相当する旧仕様のもの）。イートアンドフーズ公式 https://www.eat-and.jp/foods/products/242.html （JAN 4954018002081、2026年9月現在）の栄養成分表示 100gあたり エネルギー156kcal・たんぱく質3.4g・脂質7.0g・炭水化物19.8g・食塩相当量1.1g と、商品規格「12個、たれ2袋〔304g(ぎょうざ292g、たれ6g×2袋)〕」から 1個＝24.33g として全件を引き直した。飽和脂肪酸・糖質・食物繊維は公式に掲載が無いことを公式ページ上で確認したうえでの推定（飽和は脂質の33%、食物繊維は皮の小麦粉とキャベツ・はくさいから100gあたり1.4g）。付属たれは当該エントリでは記録していない。",
     "tags": [
       "中食",
       "餃子"
@@ -2282,12 +2282,12 @@
         "name": "ご飯 200g",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       }
@@ -2337,12 +2337,12 @@
         "name": "ご飯 200g",
         "nutrition": {
           "energy_kcal": 312,
-          "protein_g": 5.0,
+          "protein_g": 5,
           "fat_g": 0.6,
           "saturated_fat_g": 0.2,
           "carbohydrate_g": 74.2,
           "sugar_g": 71.2,
-          "fiber_g": 3.0,
+          "fiber_g": 3,
           "salt_g": 0
         }
       },
@@ -2436,13 +2436,13 @@
       {
         "name": "ゆで卵 1個",
         "nutrition": {
-          "energy_kcal": 67.0,
+          "energy_kcal": 67,
           "protein_g": 6.2,
           "fat_g": 5.2,
           "saturated_fat_g": 1.6,
           "carbohydrate_g": 0.15,
           "sugar_g": 0.15,
-          "fiber_g": 0.0,
+          "fiber_g": 0,
           "salt_g": 0.15
         }
       },
@@ -2563,7 +2563,7 @@
       {
         "name": "生卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
@@ -2635,7 +2635,7 @@
         "name": "アボカド 半分（約70g）＋醤油",
         "nutrition": {
           "energy_kcal": 129,
-          "protein_g": 2.0,
+          "protein_g": 2,
           "fat_g": 12.3,
           "saturated_fat_g": 2.1,
           "carbohydrate_g": 6.5,
@@ -2660,13 +2660,13 @@
       {
         "name": "ゆで卵 1個（塩少々）",
         "nutrition": {
-          "energy_kcal": 67.0,
+          "energy_kcal": 67,
           "protein_g": 6.2,
           "fat_g": 5.2,
           "saturated_fat_g": 1.6,
           "carbohydrate_g": 0.15,
           "sugar_g": 0.15,
-          "fiber_g": 0.0,
+          "fiber_g": 0,
           "salt_g": 0.3
         }
       },
@@ -2686,7 +2686,7 @@
       {
         "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
         "nutrition": {
-          "energy_kcal": 260.0,
+          "energy_kcal": 260,
           "protein_g": 0,
           "fat_g": 0,
           "saturated_fat_g": 0,
@@ -2743,7 +2743,7 @@
       {
         "name": "温泉卵 1個",
         "nutrition": {
-          "energy_kcal": 71.0,
+          "energy_kcal": 71,
           "protein_g": 6.1,
           "fat_g": 5.1,
           "saturated_fat_g": 1.6,
