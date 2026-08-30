@@ -5093,5 +5093,32 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-30T20:00:00+09:00-dinner",
+    "datetime": "2026-08-30T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "餃子の王将 天津飯（甘酢）",
+        "nutrition": {
+          "energy_kcal": 746,
+          "protein_g": 22.5,
+          "fat_g": 22.1,
+          "saturated_fat_g": 4.4,
+          "carbohydrate_g": 117.4,
+          "sugar_g": 112.8,
+          "fiber_g": 4.6,
+          "salt_g": 3
+        }
+      }
+    ],
+    "memo": "写真なし、本人申告「夜／餃子の王将 天津飯」。タレは本人回答で甘酢、時刻も本人回答で20時ごろ。【餃子の王将 天津飯（甘酢）】この品目には一次ソースが無い。餃子の王将（王将フードサービス）は栄養成分も分量も公開しておらず、公式サイト（サイトマップ記載の全ページ、メニュー3地域、商品個別ページ https://www.ohsho.co.jp/menu/east/post_359.html 、ジャストサイズ・飲物・お持ち帰り、食物アレルギー情報の画像と /menu/pdf/allergy.pdf 、原産地PDF、極王シリーズのプレスリリース https://prtimes.jp/main/html/rd/p/000000194.000011353.html ）を直接確認して、掲載があるのは主要原産地情報とアレルギー情報だけであることを同日に確認済み。よってこの値は推定で、一次ソースは各食材の日本食品標準成分表(八訂)だけであり、分量に一次ソースは無い。内訳はご飯260g・卵2個(100g)・カニカマ20g・ねぎ/たけのこ20g・かに玉を焼く油10g・甘酢あん110g（砂糖11g・しょうゆ11g・酢9g・片栗粉7g・ごま油1g・鶏がらスープと塩）。八訂の該当値は 水稲めし精白米100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 、鶏卵全卵生100g＝142kcal・P12.2・脂質10.2・飽和3.12・炭水化物0.4・食塩0.4 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12004_7 、調合油100g＝886kcal・飽和10.97 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7 、こいくちしょうゆ100g＝77kcal・P7.7・炭水化物7.9・食塩14.5 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17007_7 。ご飯260gは同日昼の炒飯と同じ基準に揃えたもので、その根拠も二次情報のみ（王将のライスは大340g/中240g/小150g、中華系のご飯物は250〜270gが一般的 https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11153790471 ）。合計746kcalは第三者の推定値が582kcal https://www.tabenavi.jp/guide/ohsho ・620kcal https://travel-drink.com/ohsho-calorie/ ・796kcal https://www.fatsecret.jp/カロリー-栄養/餃子の王将/天津飯/1人前 とばらつく中で、過小に倒さない側に置いた値。食塩3.0gはのんべえトラベルの推定3.0gと一致する。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "外食"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
