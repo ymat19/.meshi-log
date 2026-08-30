@@ -5024,5 +5024,73 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-30T12:30:00+09:00-lunch",
+    "datetime": "2026-08-30T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "餃子の王将 炒飯（並盛）",
+        "nutrition": {
+          "energy_kcal": 667,
+          "protein_g": 18.7,
+          "fat_g": 23.4,
+          "saturated_fat_g": 4.3,
+          "carbohydrate_g": 98.8,
+          "sugar_g": 94.4,
+          "fiber_g": 4.4,
+          "salt_g": 3.2
+        }
+      },
+      {
+        "name": "餃子の王将 餃子 8個",
+        "nutrition": {
+          "energy_kcal": 438,
+          "protein_g": 15.2,
+          "fat_g": 22.2,
+          "saturated_fat_g": 5.6,
+          "carbohydrate_g": 48,
+          "sugar_g": 44.7,
+          "fiber_g": 3.3,
+          "salt_g": 2
+        }
+      },
+      {
+        "name": "餃子のたれ（約13g）",
+        "nutrition": {
+          "energy_kcal": 16,
+          "protein_g": 0.5,
+          "fat_g": 1,
+          "saturated_fat_g": 0.15,
+          "carbohydrate_g": 0.7,
+          "sugar_g": 0.7,
+          "fiber_g": 0,
+          "salt_g": 1
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml ×3本",
+        "nutrition": {
+          "energy_kcal": 546,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 3.675,
+          "sugar_g": 3.675,
+          "fiber_g": 0,
+          "salt_g": 0.4725,
+          "alcohol_g": 75.6
+        }
+      }
+    ],
+    "memo": "写真なし、本人申告「昼／ストロング350 三本／王将 冷凍餃子8個／王将 チャーハン テイクアウト」。店は本人回答で餃子の王将（王将フードサービス）、炒飯のサイズは本人回答で並（レギュラー）。【出典の前提】餃子の王将は栄養成分を公開していない。公式サイトを実際に全部確認した——サイトマップ記載の全ページ、メニュー（北海道・東北・関東・甲信越／北陸・東海・関西・四国・中国／中国・九州）、商品個別ページ（例 https://www.ohsho.co.jp/menu/east/post_359.html ）、ジャストサイズ・飲物・お持ち帰り、食物アレルギー情報 https://www.ohsho.co.jp/menu/allergy/ （画像と /menu/pdf/allergy.pdf の両方を開いて中身を読み、2026年7月6日現在版が28品目の●表のみでエネルギー・食塩の列を持たないことを確認）、原産地PDF、/menu/pdf/ 配下の nutrition/eiyo/calorie 等の推測パス（全て404）。商品個別ページに付くのは主要原産地情報とアレルギー情報だけ。非公開の理由は店舗ごとに味付けを変えているためと複数の一覧サイトが説明している https://travel-drink.com/ohsho-calorie/ 。第三者サイトの値は餃子6個276〜350kcal・炒飯644〜700kcalとばらつくためそのままは採らず、量の一次情報＋日本食品標準成分表(八訂)で積み上げ、第三者の値の範囲に収まることを検算した。【餃子の王将 餃子 8個】本人の言う「冷凍餃子」は、王将が冷凍餃子を販売していない（公式「王将のこだわり」に『製造から店舗へ届けられるまで一切冷凍せず、工場から毎日店舗へ配送』 https://www.ohsho.co.jp/kodawari/ ）ことから、お持ち帰りの生餃子を家庭で冷凍して焼いたものと解釈した。1個の重量は王将の規格値26g（テレビ放映の26gを実際に5人前30個を1個ずつ計量して検証したブログ https://ameblo.jp/39512/entry-10790203688.html ）で8個＝208g。内訳は皮9g/個（八訂『ぎょうざの皮 生』100g＝275kcal・P9.3・脂質1.4・炭水化物57.0・食物繊維2.2・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01074_7 ）＋餡17g/個。餡136gの構成は公式こだわりページが挙げる主要食材（豚肉・キャベツ・ニラ・にんにく・生姜・小麦粉）どおりに 豚ひき肉41g（八訂100g＝209kcal・P17.7・脂質17.2・飽和6.24 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11163_7 ）・キャベツ68g・ニラ/にんにく/生姜14g・ラード/ごま油6g・調味料7g。焼き油8gは推測ではなく公式の焼き方 https://www.ohsho.co.jp/recipe/ の『2人前(12ケ)の生餃子に油 大さじ約1杯・熱湯約120cc』を8個ぶんに按分した値（大さじ1＝12g×8/12）。合計438kcal＝1個55kcalで、同等品である大阪王将 羽根つき餃子の公式表示（1個24.5g＝43kcal https://www.eat-and.jp/foods/products/242.html ）を26gに換算し焼き油1g/個を足した値とほぼ一致する。食塩2.0gは餡0.25g/個で、第三者一覧の餃子6個1.5g（＝0.25g/個）と同じ。【餃子のたれ（約13g）】たれは料理に絡んで写真にも残らないが、王将の餃子をたれ無しで食べる前提を置くのは過小申告になるため計上した。こいくち醤油7g（八訂100g＝77kcal・P7.7・炭水化物7.9・食塩14.5 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17007_7 ）＋穀物酢5g＋ラー油1g。【餃子の王将 炒飯（並盛）】ご飯260g（王将のライスは大340g/中240g/小150g、中華系のご飯物は250〜270gが一般的 https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11153790471 、炒飯の内容量は約250g前後との記述 https://kyotogourmet.jp/ousho-friedrice/ を踏まえ中盛りご飯＋αの260gとした）＋卵1個50g＋焼豚30g＋ねぎ等20g＋調理油15g＋塩・醤油。八訂の該当値は 水稲めし精白米100g＝156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 、鶏卵全卵生 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12004_7 、焼き豚100g＝166kcal・P19.4・脂質8.2・食塩2.4 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11195_7 、調合油100g＝886kcal・飽和10.97 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=14_14006_7 。合計667kcalは第三者4サイトの推定値（644・658・683・700kcal）のほぼ中央に収まる。食塩3.2gも第三者の3.0〜3.5gの範囲内。【サントリー -196 ストロングゼロ 無糖ドライ 9% 350ml ×3本】銘柄は過去ログどおり無糖ドライ。サントリー公式 products.suntory.co.jp は今回も Akamai により403で開けず、Internet Archive もこの環境からは403のため、JAN 4901777240971 でラベル表示を転記した独立ソース2件で裏を取った——100ml当たり 52kcal・たんぱく質0・脂質0・炭水化物0.1〜0.6g・糖類0・食塩相当量0.02〜0.07g・アルコール分9% https://www.chu-hi-guide.com/196-strong-zero-dry/ 、350ml当たり純アルコール25.2g https://www.coop-kobe.net/shelf/product/detail.html?jcd=4901777240971 。範囲表示は中央値を採り、1本＝182kcal・炭水化物1.225g・食塩0.1575g・純アルコール25.2gで、過去記録の350ml缶と同一の100ml換算になる。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "中食",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
