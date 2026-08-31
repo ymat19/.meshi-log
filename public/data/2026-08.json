@@ -5120,5 +5120,87 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-31T08:00:00+09:00-breakfast",
+    "datetime": "2026-08-31T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "カツオのたたき（約90g）",
+        "nutrition": {
+          "energy_kcal": 135,
+          "protein_g": 22.5,
+          "fat_g": 5.58,
+          "saturated_fat_g": 1.35,
+          "carbohydrate_g": 0.18,
+          "sugar_g": 0.18,
+          "fiber_g": 0,
+          "salt_g": 0.09
+        }
+      },
+      {
+        "name": "ポン酢（約15g）",
+        "nutrition": {
+          "energy_kcal": 8.85,
+          "protein_g": 0.555,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.62,
+          "sugar_g": 1.575,
+          "fiber_g": 0.045,
+          "salt_g": 1.17
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74.2,
+          "sugar_g": 71.2,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "写真なし。カツオ90g・米200gは本人申告。かけだれは本人回答どおりポン酢で、量は8/26夕食と同じ基準量15g。【カツオのたたき（約90g）】日本食品標準成分表(八訂)「魚介類/＜魚類＞/（かつお類）/かつお/秋獲り/生」100g=150kcal・P25.0・脂質6.2・炭水化物0.2・食物繊維0・食塩0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 の90g換算。飽和脂肪酸は同DBの脂肪酸成分表1.5g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7&MODE=4 から換算。【ポン酢（約15g）】八訂「調味料及び香辛料類/（調味ソース類）/ぽん酢しょうゆ/市販品」100g=59kcal・P3.7・脂質0・炭水化物10.8・食物繊維0.3・食塩7.8 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17137_7 の15g換算で、8/26夕食の同名itemと同値。魚のitemには混ぜず別itemにしている。【白ごはん（約200g）】八訂「こめ 水稲めし 精白米 うるち米」100g=156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の200g換算で、8/28・8/29の同名itemと同値。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "刺身"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-31T12:30:00+09:00-lunch",
+    "datetime": "2026-08-31T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "完全メシ 日清のどん兵衛 カレーうどん（日清食品・カップ1食112g）",
+        "nutrition": {
+          "energy_kcal": 452,
+          "protein_g": 17.9,
+          "fat_g": 13.4,
+          "saturated_fat_g": 2.3,
+          "carbohydrate_g": 67.9,
+          "sugar_g": 60.7,
+          "fiber_g": 7.2,
+          "salt_g": 2.9
+        }
+      }
+    ],
+    "memo": "写真なし。【完全メシ 日清のどん兵衛 カレーうどん】日清食品公式 https://www.nissin.com/jp/products/items/13263/ を今回引き直し、1食112g（麺80g）当たりの表示値をそのまま採用：452kcal・たんぱく質17.9g・脂質13.4g（飽和脂肪酸2.3g）・炭水化物67.9g（糖質60.7g・食物繊維7.2g）・食塩相当量2.9g。飽和脂肪酸・糖質・食物繊維まで公式に記載があるため推定値なし。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
   }
 ]
