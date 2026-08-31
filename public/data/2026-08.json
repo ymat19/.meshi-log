@@ -5230,5 +5230,59 @@
     ],
     "estimated": false,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-31T21:00:00+09:00-dinner",
+    "datetime": "2026-08-31T21:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "なべやき屋キンレイ お水がいらない 横浜家系ラーメン（冷凍・1食470g）",
+        "nutrition": {
+          "energy_kcal": 473,
+          "protein_g": 21.6,
+          "fat_g": 14.6,
+          "saturated_fat_g": 4.4,
+          "carbohydrate_g": 65.8,
+          "sugar_g": 61.6,
+          "fiber_g": 4.2,
+          "salt_g": 6.3
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74.2,
+          "sugar_g": 71.2,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "ゆで卵 1個",
+        "nutrition": {
+          "energy_kcal": 67,
+          "protein_g": 6.2,
+          "fat_g": 5.2,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.15,
+          "sugar_g": 0.15,
+          "fiber_g": 0,
+          "salt_g": 0.15
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告（キンレイ お水がいらない 家系ラーメン・ご飯200g・ゆで卵）。【なべやき屋キンレイ お水がいらない 横浜家系ラーメン】キンレイ公式の商品ページ https://www.kinrei.com/menu/18712.php を今回引き直し、1食470g（めん180g）当たりの表示値をそのまま採用：473kcal・たんぱく質21.6g・脂質14.6g・炭水化物65.8g（糖質61.6g・食物繊維4.2g）・食塩相当量6.3g。飽和脂肪酸は公式ページに掲載が無いことを確認したうえで、豚骨醤油スープ＋鶏油という脂質組成から脂質14.6gの約30%として4.4gと推定した（ここだけ推定値。同社の天下一品を記録した8/22と同じ換算率）。通販サイトには旧仕様の456g（499kcal・517kcal）の表示も出回っているが、公式の現行表示である470gを採用した。スープを飲み干したかどうかで食塩相当量は変わるが、申告が無いので表示どおり1食分を全量計上している。【白ごはん（約200g）】本人申告（200g）。日本食品標準成分表(八訂)「こめ 水稲めし 精白米 うるち米」100g=156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の200g換算で、8/28〜8/31の同名itemと同値。【ゆで卵 1個】八訂「鶏卵 全卵 ゆで」100g=134kcal・P12.5・脂質10.4・炭水化物0.3・食塩0.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12005_7 のMサイズ可食部50g換算で、8/20に全件統一した同名itemと同値。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
