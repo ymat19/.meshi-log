@@ -5202,5 +5202,33 @@
     ],
     "estimated": false,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-08-31T20:00:00+09:00-snack",
+    "datetime": "2026-08-31T20:00:00+09:00",
+    "type": "snack",
+    "photos": [],
+    "items": [
+      {
+        "name": "ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml（明治）",
+        "nutrition": {
+          "energy_kcal": 107,
+          "protein_g": 20,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 6.8,
+          "sugar_g": 6.5,
+          "fiber_g": 0.3,
+          "salt_g": 0.19
+        }
+      }
+    ],
+    "memo": "写真なし。【ザバス MILK PROTEIN 脂肪0 キャラメル風味 200ml】明治公式 https://www.meiji.co.jp/products/sports/4902705095465.html を今回引き直し、1本200ml当たりの表示値を採用：107kcal・たんぱく質20.0g・脂質0g・炭水化物6.8g（糖質6.5g・糖類5.9g・食物繊維0〜0.7g）・食塩相当量0.19g。食物繊維は幅表示のため中央値0.3gを採用（過去の同名itemと同じ扱い）。飽和脂肪酸は公式表示に項目が無いことを確認したうえで、脂質0gのため0とした（不明の穴埋めではない）。風味の申告が無かったため、過去27件で最多かつ継続しているキャラメル風味として計上。",
+    "tags": [
+      "飲料",
+      "プロテイン"
+    ],
+    "estimated": false,
+    "schemaVersion": 1
   }
 ]
