@@ -1,0 +1,97 @@
+[
+  {
+    "id": "2026-09-01T08:00:00+09:00-breakfast",
+    "datetime": "2026-09-01T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [
+      "images/2026/09/01-0800-breakfast.webp"
+    ],
+    "items": [
+      {
+        "name": "揖保乃糸 手延そうめん 2束（乾100g）",
+        "nutrition": {
+          "energy_kcal": 331,
+          "protein_g": 8.6,
+          "fat_g": 2,
+          "saturated_fat_g": 0.5,
+          "carbohydrate_g": 69.7,
+          "sugar_g": 67.2,
+          "fiber_g": 2.5,
+          "salt_g": 0.8
+        }
+      },
+      {
+        "name": "めんつゆ（ストレート 約100ml）",
+        "nutrition": {
+          "energy_kcal": 44,
+          "protein_g": 2.2,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 8.7,
+          "sugar_g": 8.7,
+          "fiber_g": 0,
+          "salt_g": 3.3
+        }
+      },
+      {
+        "name": "カツオのたたき（約60g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 15,
+          "fat_g": 3.72,
+          "saturated_fat_g": 0.9,
+          "carbohydrate_g": 0.12,
+          "sugar_g": 0.12,
+          "fiber_g": 0,
+          "salt_g": 0.06
+        }
+      },
+      {
+        "name": "卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.1,
+          "fat_g": 5.1,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      },
+      {
+        "name": "サラダ油 小さじ1/2（2g）",
+        "nutrition": {
+          "energy_kcal": 18,
+          "protein_g": 0,
+          "fat_g": 2,
+          "saturated_fat_g": 0.22,
+          "carbohydrate_g": 0,
+          "sugar_g": 0,
+          "fiber_g": 0,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "本人申告（卵1個・揖保乃糸2束・カツオ60g・レタス1枚）。写真1枚——ざるに、そうめん・錦糸卵状に焼いた卵・カツオのたたき・ちぎったレタス。質問禁止の指示のため確認ターンを省き、申告どおりの量で記録した。【揖保乃糸 手延そうめん 2束（乾100g）】1束=50g（公式 https://www.ibonoito.or.jp/feature/obi.html ・300g=6束）。栄養値は公式表示（上級品・赤帯）100gあたり 331kcal/たんぱく質8.6g/脂質2.0g/炭水化物69.7g/食塩相当量5.7g https://www.nippn.co.jp/products/dried_noodles/detail/1194538_2275.html をそのまま採用（帯の等級の申告が無いため最も一般的な上級品として計上。特級品でも336kcal/8.9/2.0/70.5と差はわずか）。飽和脂肪酸と食物繊維は公式表示に項目が無いことを確認したうえで、日本食品標準成分表(八訂)「そうめん・ひやむぎ 乾」 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01043_7 の食物繊維2.5g/100gを採用し、飽和脂肪酸は脂質2.0gの約25%（小麦＋植物油由来）として0.5gと推定。食塩相当量のみ乾麺の表示値5.7gを使わず0.8gとした——ゆでてゆで汁を捨てるため大半が抜けるので、八訂の同一食品で 乾100g中3.8g → ゆで100g中0.2g（ゆで歩留り270%＝0.54g） https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01044_7 から残存率14%を求め、5.7g×0.14=0.8gと換算した（不明の穴埋めではなく調理による損失の計算）。糖質=炭水化物-食物繊維。【めんつゆ（ストレート 約100ml）】本人は挙げていないが、そうめんはつけつゆで食べるもので、つゆは写真に写らない（8/23 の「写っていないからたれを落とす」失敗と同じ構造にしないため計上）。銘柄の申告が無いため自炊の推定値で、八訂「めんつゆ ストレート」100g=44kcal/P2.2/脂質0/炭水化物8.7/食塩3.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17029_7 を2束に対する標準的な使用量100mlで計上。【カツオのたたき（約60g）】本人申告60g。8月の同名itemと同値（八訂「かつお/秋獲り/生」100g=150kcal・P25.0・脂質6.2・炭水化物0.2・食塩0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 、飽和脂肪酸1.5g/100g の60g換算）。今回はつけだれがめんつゆのため、ポン酢は計上していない。【卵 1個】本人申告。過去14件の同名itemと同値（八訂 鶏卵・生 50g換算）。錦糸卵状に焼いていたため、フライパンに使う油を別itemで計上した。【サラダ油 小さじ1/2（2g）】焼くための油の推定（自炊）。過去ログの「サラダ油 大さじ1（12g）」と同じ100gあたり換算（883kcal・飽和11%）。【レタス 約50g】本人申告「レタス一枚」。グラム数は npm run portions の過去11件の中央値50gを採用し、8/23・8/25 の同名itemと同値（八訂 レタス 生 100g=11kcal）。",
+    "tags": [
+      "自炊",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  }
+]
