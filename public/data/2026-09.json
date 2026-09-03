@@ -368,5 +368,45 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-03T20:00:00+09:00-dinner",
+    "datetime": "2026-09-03T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "カツオのたたき（約90g）",
+        "nutrition": {
+          "energy_kcal": 135,
+          "protein_g": 22.5,
+          "fat_g": 5.58,
+          "saturated_fat_g": 1.35,
+          "carbohydrate_g": 0.18,
+          "sugar_g": 0.18,
+          "fiber_g": 0,
+          "salt_g": 0.09
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74.2,
+          "sugar_g": 71.2,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「夕飯／カツオ90g／ご飯200g」。時刻は申告が「夕飯」のみのため、過去の夕食で最多の20:00で計上。【カツオのたたき（約90g）】90gは本人申告。8月以降の同名itemと同値で、日本食品標準成分表(八訂)「魚介類/＜魚類＞/（かつお類）/かつお/秋獲り/生」100g=150kcal・P25.0・脂質6.2・炭水化物0.2・食塩0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 と、同DBの脂肪酸成分表の飽和脂肪酸1.5g/100g を90gに換算した値。【白ごはん（約200g）】200gは本人申告。八訂「こめ/水稲めし/精白米/うるち米」100g=156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の200g換算で、同名itemの過去10件と同値。かけだれの申告が無いため調味料は計上していない（8/27・8/28・8/29 の同構成の記録と同じ扱い）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
