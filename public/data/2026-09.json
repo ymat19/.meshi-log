@@ -559,5 +559,126 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-05T08:00:00+09:00-breakfast",
+    "datetime": "2026-09-05T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "中華麺 180g",
+        "nutrition": {
+          "energy_kcal": 448.2,
+          "protein_g": 15.48,
+          "fat_g": 2.16,
+          "saturated_fat_g": 0.5,
+          "carbohydrate_g": 100.26,
+          "sugar_g": 90.54,
+          "fiber_g": 9.72,
+          "salt_g": 1.8
+        }
+      },
+      {
+        "name": "ラーメンスープ（醤油・1杯分）",
+        "nutrition": {
+          "energy_kcal": 60,
+          "protein_g": 2.5,
+          "fat_g": 2.5,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 7,
+          "sugar_g": 7,
+          "fiber_g": 0,
+          "salt_g": 5
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「昨日 朝／ラーメン 具なし 麺180g」。具なし＝麺とスープのみ。時刻は申告が「朝」のみのため、過去の朝食で最多の08:00で計上。【中華麺 180g】180gは本人申告で、生麺の重量として計上した（家庭のラーメンで麺の量を言うときの標準的な表し方で、8/1のまぜそばの中華生麺180gと同じ扱い）。日本食品標準成分表(八訂)「こむぎ/［中華めん類］/中華めん/生」100g=249kcal・P8.6・脂質1.2・炭水化物55.7・食物繊維5.4・食塩1.0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01047_7 の1.8倍。飽和脂肪酸は同DBの脂肪酸成分表 0.28g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01047_7&MODE=4 から換算。【ラーメンスープ（醤油・1杯分）】銘柄の申告が無く、市販の生ラーメン付属スープ／スープの素いずれか不明のため記憶ベースの推定。醤油ラーメン1杯ぶんのスープとして 60kcal・食塩5.0g（市販の中華スープの素・付属スープの1食あたり食塩4〜6gの中央）を計上した。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-05T20:00:00+09:00-dinner",
+    "datetime": "2026-09-05T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "カツオのたたき（約60g）",
+        "nutrition": {
+          "energy_kcal": 90,
+          "protein_g": 15,
+          "fat_g": 3.72,
+          "saturated_fat_g": 0.9,
+          "carbohydrate_g": 0.12,
+          "sugar_g": 0.12,
+          "fiber_g": 0,
+          "salt_g": 0.06
+        }
+      },
+      {
+        "name": "チャーハン 1人前（ご飯200g・卵1個）",
+        "nutrition": {
+          "energy_kcal": 511,
+          "protein_g": 12.3,
+          "fat_g": 17.8,
+          "saturated_fat_g": 3.14,
+          "carbohydrate_g": 78.6,
+          "sugar_g": 75,
+          "fiber_g": 3.6,
+          "salt_g": 2.2
+        }
+      },
+      {
+        "name": "相模屋 焼いておいしい絹厚揚げ 1枚（150g）",
+        "nutrition": {
+          "energy_kcal": 156,
+          "protein_g": 9.5,
+          "fat_g": 8.7,
+          "saturated_fat_g": 1.3,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 10,
+          "fiber_g": 1.1,
+          "salt_g": 0.14
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "グリコ パピコ グレープ 1本（45ml）",
+        "nutrition": {
+          "energy_kcal": 42,
+          "protein_g": 0.095,
+          "fat_g": 0.91,
+          "saturated_fat_g": 0.5,
+          "carbohydrate_g": 8.4,
+          "sugar_g": 8.4,
+          "fiber_g": 0,
+          "salt_g": 0.0084
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「昨日 夜／カツオ60g／チャーハン／厚揚げ豆腐／レタス一枚／パピコ グレープ味 一本」。時刻は申告が「夜」のみのため、過去の夕食で最多の20:00で計上。【カツオのたたき（約60g）】60gは本人申告。scripts/known-portions.json の基準量（本人の計量値・2026-08-25）と一致し、栄養値は同名itemと同値で、日本食品標準成分表(八訂)「かつお/秋獲り/生」100g=150kcal・P25.0・脂質6.2・炭水化物0.2・食塩0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=10_10087_7 と脂肪酸成分表の飽和1.5g/100g の60g換算。かけだれの申告が無いため調味料は計上していない。【チャーハン 1人前（ご飯200g・卵1個）】銘柄・分量の申告が無いため記憶ベースの推定で、この人の過去の自炊チャーハン（2026-07-07・パックごはん200g＋卵＋油大さじ1）と同じ規模の一人前として八訂ベースで積算した——白飯200g 312kcal（八訂 水稲めし精白米 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 ）＋卵1個71kcal＋サラダ油大さじ1(12g)106kcal＋ねぎ等の具10kcal＋調味料（醤油・塩・鶏がらスープ）12kcal/食塩2.0g。【相模屋 焼いておいしい絹厚揚げ 1枚（150g）】本人の言う「厚揚げ豆腐」は過去9件で反復使用の定番品である相模屋の絹厚揚げと判断。公式ページ https://sagamiya-kk.co.jp/products/kinu_atsuage.html を今回引き直し、1枚150gあたり 156kcal・たんぱく質9.5g・脂質8.7g・炭水化物11.1g・食塩相当量0.14g（分析機関: 公財 群馬県健康づくり財団）を採用。飽和脂肪酸・食物繊維は公式非掲載のため大豆製品の標準組成から推定。【レタス 約50g】本人申告「レタス一枚」。グラム数は npm run portions の過去記録の中央値50gで、同名itemと同値（八訂 レタス生 100g=11kcal）。【グリコ パピコ グレープ 1本（45ml）】江崎グリコ公式のパピコマルチパック商品ページ https://www.glico.com/jp/product/ice/papico/46206/ （JAN 4901005376304）の栄養成分表示 グレープ1本当たり エネルギー42kcal・たんぱく質0.095g・脂質0.91g・炭水化物8.4g・食塩相当量0.0084g をそのまま採用。グレープ味は現行ラインナップではこのマルチパック（450ml＝45ml×10本）専用のフレーバーで、単品2本入り（80ml×2本）には無いことを公式のパピコ商品一覧で確認したため、1本＝45mlとして計上した。飽和脂肪酸は公式非掲載のため、氷菓の植物油脂（ヤシ・パーム系）から脂質0.91gの約55%＝0.5gと推定。食物繊維は原材料（ぶどう果汁・糖類・植物油脂・水あめ・安定剤）から実質0とした（不明の穴埋めではない）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "アイス"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
