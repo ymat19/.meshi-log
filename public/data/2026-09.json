@@ -831,5 +831,58 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-06T20:00:00+09:00-dinner",
+    "datetime": "2026-09-06T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "白ごはん（約400g）",
+        "nutrition": {
+          "energy_kcal": 624,
+          "protein_g": 10,
+          "fat_g": 1.2,
+          "saturated_fat_g": 0.4,
+          "carbohydrate_g": 148.4,
+          "sugar_g": 142.4,
+          "fiber_g": 6,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "鶏の唐揚げ（大）3個（約150g）",
+        "nutrition": {
+          "energy_kcal": 460.5,
+          "protein_g": 36.3,
+          "fat_g": 27.15,
+          "saturated_fat_g": 4.89,
+          "carbohydrate_g": 19.95,
+          "sugar_g": 18.75,
+          "fiber_g": 1.2,
+          "salt_g": 3.75
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「夜／ご飯400g／唐揚げ（大）三つ／レタス一枚」。時刻は申告が「夜」のみのため、過去の夕食で最多の20:00で計上。【白ごはん（約400g）】400gは本人申告。日本食品標準成分表(八訂)「こめ/水稲めし/精白米/うるち米」100g=156kcal・P2.5・脂質0.3・炭水化物37.1・食物繊維1.5・食塩0 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の400g換算で、同名の「白ごはん（約200g）」の記録と100gあたりの値は同一。【鶏の唐揚げ（大）3個（約150g）】個数（3個）とサイズ（大）は本人申告。グラム数の申告が無いため、から揚げ大1個＝約50gとして3個＝150gと見積もった推定。栄養値は八訂「肉類/＜鳥肉類＞/にわとり/［若どり・主品目］/もも/皮つき/から揚げ」100g=307kcal・P24.2・脂質18.1・炭水化物13.3・食物繊維0.8・食塩相当量2.5 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11289_7 の1.5倍、飽和脂肪酸は同DBの脂肪酸成分表 3.26g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11289_7&MODE=4 から換算。この八訂の値は衣・下味・揚げ油まで含んだ「から揚げ」としての成分なので、衣や油を別立てで加算はしていない。【レタス 約50g】本人申告「レタス一枚」。グラム数は npm run portions の過去記録の中央値50gで、同名itemと同値（八訂 レタス生 100g=11kcal）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "揚げ物"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
