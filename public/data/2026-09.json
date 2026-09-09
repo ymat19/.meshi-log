@@ -1305,5 +1305,86 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-09T20:00:00+09:00-dinner",
+    "datetime": "2026-09-09T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "卵焼き（卵2個）",
+        "nutrition": {
+          "energy_kcal": 190.9,
+          "protein_g": 12.4,
+          "fat_g": 14.2,
+          "saturated_fat_g": 3.64,
+          "carbohydrate_g": 3.6,
+          "sugar_g": 3.6,
+          "fiber_g": 0,
+          "salt_g": 0.84
+        }
+      },
+      {
+        "name": "らっきょう甘酢漬 4個（約24g）",
+        "nutrition": {
+          "energy_kcal": 28.1,
+          "protein_g": 0.1,
+          "fat_g": 0.07,
+          "saturated_fat_g": 0.01,
+          "carbohydrate_g": 7.06,
+          "sugar_g": 6.36,
+          "fiber_g": 0.7,
+          "salt_g": 0.46
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "絹豆腐 150g",
+        "nutrition": {
+          "energy_kcal": 84,
+          "protein_g": 7.4,
+          "fat_g": 4.5,
+          "saturated_fat_g": 0.8,
+          "carbohydrate_g": 3,
+          "sugar_g": 2.5,
+          "fiber_g": 0.5,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml",
+        "nutrition": {
+          "energy_kcal": 260,
+          "protein_g": 0,
+          "fat_g": 0,
+          "saturated_fat_g": 0,
+          "carbohydrate_g": 1.75,
+          "sugar_g": 1.75,
+          "fiber_g": 0,
+          "salt_g": 0.225,
+          "alcohol_g": 36
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「卵焼き（卵2個）／らっきょう四つ／レタス一枚／豆腐／ストロング500ml」。時刻は申告が無いため、過去の夕食で最多の20:00で計上。【卵焼き（卵2個）】卵2個は本人申告。日本食品標準成分表(八訂)「鶏卵 全卵 生」100g=142kcal・P12.2・脂質10.2・炭水化物0.4・食塩0.4 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=12_12004_7 の可食部50g/個×2個に、焼き油サラダ油小さじ1（4g・35.3kcal、過去記録の「サラダ油 大さじ1（12g）」と同じ100gあたり換算）と、味付けの砂糖小さじ1・醤油小さじ1/2（13.6kcal・食塩0.44g）を加算した推定。飽和脂肪酸は卵の3.2g（同名itemの卵1個1.6g×2）＋油0.44g。【らっきょう甘酢漬 4個（約24g）】個数は本人申告。1個の重さの申告が無いため甘酢漬らっきょう1個＝約6gとして4個＝24gと見積もった。栄養値は八訂「野菜類/（らっきょう類）/らっきょう/甘酢漬」100g=117kcal・P0.4・脂質0.3・炭水化物29.4・食物繊維2.9・食塩1.9 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=6_06306_7 の24g換算。飽和脂肪酸は脂質0.07gとごく少量のため0.01gとした。【レタス 約50g】本人申告「レタス一枚」。グラム数は過去記録の中央値50gで、同名itemと同値（八訂 レタス生 100g=11kcal）。【絹豆腐 150g】種類・分量の申告が無いため、過去記録で反復している絹豆腐の半丁150gとして同名itemと同値（八訂 絹ごし豆腐ベース）。かけ醤油の申告が無いため調味料は計上していない（過去にも「絹豆腐 150g」単独の記録がある）。【サントリー -196 ストロングゼロ 無糖ドライ 9% 500ml】フレーバーの申告が無いため、過去26件で最多かつ継続している無糖ドライとして計上。サントリー公式 https://products.suntory.co.jp/d/4901777241015/ （JAN 4901777241015・容量500ml・アルコール度数9%）の表示値 100mlあたり エネルギー52kcal・たんぱく質0g・脂質0g・炭水化物0.1〜0.6g・食塩相当量0.02〜0.07g、純アルコール量500mlあたり36g を、幅表示は中央値を採る従来どおりの扱いで換算した。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊",
+      "お酒"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
