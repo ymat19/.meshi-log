@@ -1825,5 +1825,112 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-14T08:00:00+09:00-breakfast",
+    "datetime": "2026-09-14T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "カルビ（牛バラ・約100g）",
+        "nutrition": {
+          "energy_kcal": 381,
+          "protein_g": 12.8,
+          "fat_g": 39.4,
+          "saturated_fat_g": 12.8,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "焼き肉のたれ 大さじ1（18g）",
+        "nutrition": {
+          "energy_kcal": 29.5,
+          "protein_g": 0.77,
+          "fat_g": 0.4,
+          "saturated_fat_g": 0.06,
+          "carbohydrate_g": 5.81,
+          "sugar_g": 5.74,
+          "fiber_g": 0.07,
+          "salt_g": 1.49
+        }
+      },
+      {
+        "name": "レタス 約50g",
+        "nutrition": {
+          "energy_kcal": 5.5,
+          "protein_g": 0.3,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.0125,
+          "carbohydrate_g": 1.4,
+          "sugar_g": 0.85,
+          "fiber_g": 0.55,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74.2,
+          "sugar_g": 71.2,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.1,
+          "fat_g": 5.1,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「今朝／カルビ レタス／ご飯200／卵」。時刻は申告が無いため過去の朝食で最多の08:00で計上。【カルビ（牛バラ・約100g）】量と部位の細かい申告が無いため、焼肉のカルビの一人前として牛バラ肉100gと見積もった推定。栄養値は日本食品標準成分表(八訂)「肉類/＜畜肉類＞/うし/［乳用肥育牛肉］/ばら/脂身つき/生」100g=381kcal・P12.8・脂質39.4・炭水化物0.3・食塩0.1 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11046_7 と、同DBの脂肪酸成分表の飽和脂肪酸12.79g/100g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11046_7&MODE=4 。焼いて脂が落ちるぶんは差し引いていない（落ちた量が不明で、過小側に倒さない方針のため）。【焼き肉のたれ 大さじ1（18g）】たれの申告は無いが、焼肉のカルビは味付けかたれで食べるのが通常で、たれは料理に絡んで見えないため計上した（8/23 の「写っていないからたれを落とす」失敗と同じ構造にしないため）。八訂「調味料及び香辛料類/＜調味料類＞/（調味ソース類）/焼き肉のたれ」100g=164kcal・P4.3・脂質2.2・炭水化物32.3・食物繊維0.4・食塩8.3 https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=17_17113_7 を大さじ1（18g）で換算。飽和脂肪酸はごま油由来として脂質の15%と推定。【レタス 約50g】量の申告が無いため過去記録の中央値50gで、同名itemと同値。カルビを巻いて食べる構成と読んだ。【白ごはん（約200g）】200gは本人申告。八訂「こめ/水稲めし/精白米/うるち米」100g=156kcal https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の200g換算で同名itemの過去15件と同値。【卵 1個】調理法の申告が無いため生卵として過去18件の同名itemと同値（八訂「鶏卵 全卵 生」可食部50g換算）。糖質=炭水化物-食物繊維。",
+    "tags": [
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-14T12:30:00+09:00-lunch",
+    "datetime": "2026-09-14T12:30:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "日清 カップヌードルPRO 高たんぱく＆低糖質さらに塩分控えめ チリトマトヌードル（1食80g）",
+        "nutrition": {
+          "energy_kcal": 316,
+          "protein_g": 17.4,
+          "fat_g": 18.8,
+          "saturated_fat_g": 8.5,
+          "carbohydrate_g": 37.9,
+          "sugar_g": 18.5,
+          "fiber_g": 19.4,
+          "salt_g": 2.8
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「昼／カップヌードル トマトチリ Pro」。公式商品名は「カップヌードルPRO 高たんぱく＆低糖質さらに塩分控えめ チリトマトヌードル」。時刻は申告が無いため過去の昼食で最多の12:30で計上。【日清 カップヌードルPRO 高たんぱく＆低糖質さらに塩分控えめ チリトマトヌードル（1食80g）】日清食品グループ公式の商品ページ https://www.nissin.com/jp/product/items/12972/ （JAN 4902105286906・内容量80g(麺60g)・発売地域全国）の栄養成分表示[1食(80g)当たり]をそのまま採用：熱量316kcal（めん・かやく251kcal＋スープ65kcal）・たんぱく質17.4g・脂質18.8g・炭水化物37.9g（糖質18.5g・食物繊維19.4g）・食塩相当量2.8g（めん・かやく1.3g＋スープ1.5g）。糖質と食物繊維まで公式に記載があるため、この2つは推定ではなく表示値。飽和脂肪酸のみ公式に掲載が無いことを確認したうえで、油揚げめん（パーム系油脂）の脂質組成から脂質18.8gの約45%＝8.5gと推定した。スープを残したかの申告が無いため公式の全量値で計上している。",
+    "tags": [
+      "中食",
+      "麺"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
