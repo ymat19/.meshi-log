@@ -3273,5 +3273,46 @@
     ],
     "estimated": true,
     "schemaVersion": 1
+  },
+  {
+    "id": "2026-09-24T17:00:00+09:00-lunch",
+    "datetime": "2026-09-24T17:00:00+09:00",
+    "type": "lunch",
+    "photos": [],
+    "items": [
+      {
+        "name": "松屋 うまトマチーズ牛皿（単品）",
+        "nutrition": {
+          "energy_kcal": 545,
+          "protein_g": 21.3,
+          "fat_g": 45.9,
+          "saturated_fat_g": 16.8,
+          "carbohydrate_g": 11.1,
+          "sugar_g": 8.6,
+          "fiber_g": 2.5,
+          "salt_g": 3.1
+        }
+      },
+      {
+        "name": "ご飯（180g）",
+        "nutrition": {
+          "energy_kcal": 280.8,
+          "protein_g": 4.5,
+          "fat_g": 0.54,
+          "saturated_fat_g": 0.18,
+          "carbohydrate_g": 66.8,
+          "sugar_g": 64.1,
+          "fiber_g": 2.7,
+          "salt_g": 0
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「ご飯180／うまトマチーズ 牛皿」。食事区分・時刻ともに申告が無いため、この発言の時刻（2026-09-24 16:52 JST）に合わせて17:00とし、この日の08:00の朝食に次ぐ2食目なので昼食として計上した。【松屋 うまトマチーズ牛皿（単品）】9/23の同名itemと同値。松屋公式のメニューページ https://www.matsuyafoods.co.jp/matsuya/menu/gyumeshi/gyu_umatoma_hp_260407.html はうまトマチーズ牛めしのサイズ別（小盛753／並盛933 kcal等）のみで牛皿の行が無く、公式の栄養成分・アレルゲン一覧PDF https://www.matsuyafoods.co.jp/matsuya/pdf/260224_nutritional_matsuya.pdf も2026年2月24日版のためこの商品（2026年4月7日発売）が未掲載であることは9/23に確認済み。値は松屋の公式発表値を転記している一覧 https://gourmetpress.net/calorie/matsuya/tanpin-umatoma-cheese-gyuzara-deli/ （「掲載している数値はすべて松屋の公式発表値です」と明記）を本日あらためて開いて引き直した「単品うまトマチーズ牛皿DELI」の エネルギー545kcal・たんぱく質21.3g・脂質45.9g・炭水化物11.1g・食塩相当量3.1g。飽和脂肪酸と食物繊維は公式非掲載のため推定で、飽和脂肪酸はうまトマチーズ牛めしの過去記録と同じ比率（脂質の36.7%）から16.8g、食物繊維はトマトソースと玉ねぎから2.5g（9/23と同じ）。【ご飯（180g）】180gは本人申告。同名itemの過去6件と同値で、日本食品標準成分表(八訂)「こめ/水稲めし/精白米/うるち米」100g＝156kcal・たんぱく質2.5g・脂質0.3g・炭水化物37.1g・食物繊維1.5g・食塩0g https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=1_01088_7 の180g換算。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "中食",
+      "自炊"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
   }
 ]
