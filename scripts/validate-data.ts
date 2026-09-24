@@ -464,10 +464,29 @@ for (const [dish, rows] of dishEntries) {
   // 調味料そのものを主語にしても意味がない。
   if (rows.some((r) => r.names.some((n) => foodKeyOf(n) === dish && CONDIMENT.test(n)))) continue
 
+  // 品名で別の料理にひもづいている調味料（例「大阪王将 羽根つき餃子の付属たれ」）は、
+  // その料理に付くものであって、同じ食卓に並んだだけの別の料理のものではない。
+  // 同じ entry にその料理本体があるなら、この dish の調味料として数えない。
+  // これを入れないと、たまたま2回続けて一緒に食べただけの組み合わせ（カップヌードル
+  // PRO と餃子）で、餃子のたれが麺の調味料として要求されてしまう。
+  const belongsToOtherDish = (condimentName: string, names: string[]): boolean => {
+    const key = foodKeyOf(condimentName)
+    return names.some((n) => {
+      if (CONDIMENT.test(n)) return false
+      const other = foodKeyOf(n)
+      // 検査対象の料理そのものを指す名前（例「カツオのたたきのたれ」）は当然そのまま
+      if (other === dish) return false
+      return other.length >= 4 && other !== key && key.includes(other)
+    })
+  }
+
   const together = new Map<string, number>()
   for (const r of rows) {
     for (const key of new Set(
-      r.names.filter((n) => foodKeyOf(n) !== dish && CONDIMENT.test(n)).map(foodKeyOf),
+      r.names
+        .filter((n) => foodKeyOf(n) !== dish && CONDIMENT.test(n))
+        .filter((n) => !belongsToOtherDish(n, r.names))
+        .map(foodKeyOf),
     )) {
       together.set(key, (together.get(key) ?? 0) + 1)
     }
