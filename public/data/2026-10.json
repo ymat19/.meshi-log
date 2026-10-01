@@ -1,0 +1,69 @@
+[
+  {
+    "id": "2026-10-01T08:00:00+09:00-breakfast",
+    "datetime": "2026-10-01T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "サーモンハラス（約30g）",
+        "nutrition": {
+          "energy_kcal": 65.4,
+          "protein_g": 6.03,
+          "fat_g": 4.95,
+          "saturated_fat_g": 0.654,
+          "carbohydrate_g": 0.03,
+          "sugar_g": 0.03,
+          "fiber_g": 0,
+          "salt_g": 0.03
+        }
+      },
+      {
+        "name": "ご飯（180g）",
+        "nutrition": {
+          "energy_kcal": 280.8,
+          "protein_g": 4.5,
+          "fat_g": 0.54,
+          "saturated_fat_g": 0.18,
+          "carbohydrate_g": 66.8,
+          "sugar_g": 64.1,
+          "fiber_g": 2.7,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "アマノフーズおみそ汁 長ねぎ（1食9g）",
+        "nutrition": {
+          "energy_kcal": 32,
+          "protein_g": 2,
+          "fat_g": 0.92,
+          "saturated_fat_g": 0.15,
+          "carbohydrate_g": 3.9,
+          "sugar_g": 3.1,
+          "fiber_g": 0.8,
+          "salt_g": 1.6
+        }
+      },
+      {
+        "name": "卵 1個",
+        "nutrition": {
+          "energy_kcal": 71,
+          "protein_g": 6.1,
+          "fat_g": 5.1,
+          "saturated_fat_g": 1.6,
+          "carbohydrate_g": 0.2,
+          "sugar_g": 0.2,
+          "fiber_g": 0,
+          "salt_g": 0.2
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「今朝／サーモンハラス30g／ご飯180／アマノフーズ 長ネギ味噌汁／卵一個」。時刻の申告が無いため、過去の朝食で最多の08:00で計上。【サーモンハラス（約30g）】30gは本人申告。同名食品の過去記録と同じ100gあたり換算（八訂「たいせいようさけ/養殖/皮つき/生」ベース100g＝218kcal・たんぱく質20.1g・脂質16.5g）の30g分。【ご飯（180g）】180gは本人申告、同名itemの過去記録と同値。【アマノフーズおみそ汁 長ねぎ（1食9g）】本人が挙げたアマノフーズの長ねぎのみそ汁は現行ラインナップで「アマノフーズおみそ汁 長ねぎ」1品（減塩版は別商品）。アサヒグループ食品公式の商品ページ https://www.asahi-gf.co.jp/products/food/freeze-dry/amano/amano-omisosiru/4971334214134.html （JAN 4971334214134）を本日直接開いて引き、栄養成分表示[1食分9g当たり] エネルギー32kcal・たんぱく質2.0g・脂質0.92g・炭水化物3.9g・食塩相当量1.6g をそのまま採用。飽和脂肪酸と食物繊維は公式に掲載が無いため推定で、飽和は米みその脂肪酸組成（脂質1gあたり飽和161mg）から0.15g、食物繊維はみそと長ねぎ由来で0.8g。【卵 1個】調理法の申告が無いため、同名itemの過去7件と同値（八訂「鶏卵/全卵/生」50g相当）。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "自炊",
+      "魚"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  }
+]
