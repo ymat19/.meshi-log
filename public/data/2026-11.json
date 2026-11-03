@@ -1,0 +1,123 @@
+[
+  {
+    "id": "2026-11-02T20:00:00+09:00-dinner",
+    "datetime": "2026-11-02T20:00:00+09:00",
+    "type": "dinner",
+    "photos": [],
+    "items": [
+      {
+        "name": "カルビ（牛バラ・約100g）",
+        "nutrition": {
+          "energy_kcal": 381,
+          "protein_g": 12.8,
+          "fat_g": 39.4,
+          "saturated_fat_g": 12.79,
+          "carbohydrate_g": 0.3,
+          "sugar_g": 0.3,
+          "fiber_g": 0,
+          "salt_g": 0.1
+        }
+      },
+      {
+        "name": "ハラミ（約80g）",
+        "nutrition": {
+          "energy_kcal": 230.4,
+          "protein_g": 11.84,
+          "fat_g": 21.84,
+          "saturated_fat_g": 7.97,
+          "carbohydrate_g": 0.24,
+          "sugar_g": 0.24,
+          "fiber_g": 0,
+          "salt_g": 0.08
+        }
+      },
+      {
+        "name": "牛タン（約60g）",
+        "nutrition": {
+          "energy_kcal": 190.8,
+          "protein_g": 7.98,
+          "fat_g": 19.08,
+          "saturated_fat_g": 6.72,
+          "carbohydrate_g": 0.12,
+          "sugar_g": 0.12,
+          "fiber_g": 0,
+          "salt_g": 0.12
+        }
+      },
+      {
+        "name": "焼き肉のたれ 大さじ2（36g）",
+        "nutrition": {
+          "energy_kcal": 59,
+          "protein_g": 1.54,
+          "fat_g": 0.8,
+          "saturated_fat_g": 0.12,
+          "carbohydrate_g": 11.62,
+          "sugar_g": 11.48,
+          "fiber_g": 0.14,
+          "salt_g": 2.98
+        }
+      },
+      {
+        "name": "白ごはん（約200g）",
+        "nutrition": {
+          "energy_kcal": 312,
+          "protein_g": 5,
+          "fat_g": 0.6,
+          "saturated_fat_g": 0.2,
+          "carbohydrate_g": 74.2,
+          "sugar_g": 71.2,
+          "fiber_g": 3,
+          "salt_g": 0
+        }
+      },
+      {
+        "name": "白菜キムチ（約50g）",
+        "nutrition": {
+          "energy_kcal": 13.5,
+          "protein_g": 1.15,
+          "fat_g": 0.05,
+          "saturated_fat_g": 0.01,
+          "carbohydrate_g": 2.7,
+          "sugar_g": 1.6,
+          "fiber_g": 1.1,
+          "salt_g": 1.45
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「昨晩／焼肉」。品目・店名・量の申告が無いため、店名はチェーンに紐付けず、一般的な焼肉1人前の標準的な構成として日本食品標準成分表(八訂)増補2023の値を fooddb で引いて積算した。構成＝カルビ（牛ばら 脂身つき・11046）100g／ハラミ（牛 横隔膜 生・11274）80g／牛タン（牛 舌 生・11090）60g の肉3種で生重量240g＋焼き肉のたれ大さじ2＋ごはん200g＋白菜キムチ50g（06236）。肉の量は焼肉店の一皿が生重量80〜100g前後で、3〜4皿が1人前という標準で置いた（この人の自宅焼肉の記録はカルビ40〜70gだが、「焼肉」とだけ言うときは店で食べた1人前と読んだ）。飽和脂肪酸は各食品の「脂肪酸-脂質1g当たり」表の飽和値×脂質量で算出（カルビ12.79g/100g・ハラミ13.4g/100g・タン12.6g/100gで、肉だけで27.5g）。お酒の申告が無いので飲酒は計上していない。ナムル・スープ・サラダなどの一品や追加の肉があれば足して引き直す。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "外食",
+      "焼肉"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  },
+  {
+    "id": "2026-11-03T08:00:00+09:00-breakfast",
+    "datetime": "2026-11-03T08:00:00+09:00",
+    "type": "breakfast",
+    "photos": [],
+    "items": [
+      {
+        "name": "すき家 ねぎ玉牛丼 並盛",
+        "nutrition": {
+          "energy_kcal": 803,
+          "protein_g": 29.3,
+          "fat_g": 29.8,
+          "saturated_fat_g": 9,
+          "carbohydrate_g": 105.2,
+          "sugar_g": 101.2,
+          "fiber_g": 4,
+          "salt_g": 3.2
+        }
+      }
+    ],
+    "memo": "写真なし。本人申告「今朝／すき家 ネギ玉牛丼」。時刻の申告が無いため、過去の朝食で最多の08:00で計上。サイズの申告が無いため既定の並盛で計上（主食を憶測で減らさない方針）。【すき家 ねぎ玉牛丼 並盛】すき家（ゼンショー）公式の栄養成分一覧PDF https://images.zensho.co.jp/materials/sukiya/allergen/nutrition.pdf （更新日 2026年10月27日）を本日直接取得し、ねぎ玉牛丼の行の並盛 カロリー803kcal・たんぱく質29.3g・脂質29.8g・炭水化物105.2g・食塩相当量3.2g をそのまま採用（同PDFの牛丼 並盛695kcal・たんぱく質21.7g・脂質23.4g・炭水化物99.8g・食塩2.4gとの差が、ねぎと玉（卵）の追加分として整合することも確認した）。飽和脂肪酸と食物繊維は同PDFに列が無いため推定で、飽和は牛バラ肉と卵の脂質組成から脂質29.8gの約30%＝9.0g、食物繊維はごはん・玉ねぎ・ねぎから4.0g。公式PDFの注記どおり、紅生姜・醤油・七味などの卓上調味料は含まれない値で、本人からの申告も無いため追加していない。糖質＝炭水化物−食物繊維。",
+    "tags": [
+      "外食",
+      "丼"
+    ],
+    "estimated": true,
+    "schemaVersion": 1
+  }
+]
